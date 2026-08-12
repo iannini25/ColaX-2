@@ -1,0 +1,20112 @@
+/* Generated code for Python module 'cryptography$hazmat$_oid'
+ * created by Nuitka version 4.1.3
+ *
+ * This code is in part copyright 2026 Kay Hayen.
+ *
+ * Licensed under the GNU Affero General Public License, Version 3 (the "License");
+ * you may not use this file except in compliance with the License.
+ *
+ * You may obtain a copy of the License in "LICENSE.txt" and the runtime
+ * exception granted in "LICENSE-RUNTIME.txt" from Nuitka source code. For
+ * deploying the generated code it is intended to not restrict distributing
+ * created binaries.
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include "nuitka/prelude.h"
+
+#include "nuitka/unfreezing.h"
+
+#include "__helpers.h"
+
+
+
+/* The "module_cryptography$hazmat$_oid" is a Python object pointer of module type.
+ *
+ * Note: For full compatibility with CPython, every module variable access
+ * needs to go through it except for cases where the module cannot possibly
+ * have changed in the mean time.
+ */
+
+PyObject *module_cryptography$hazmat$_oid;
+PyDictObject *moduledict_cryptography$hazmat$_oid;
+
+/* The declarations of module constants used, if any. */
+static struct ModuleConstants {
+PyObject *const_str_plain_origin;
+PyObject *const_str_plain_has_location;
+PyObject *const_str_plain_annotations;
+PyObject *const_str_digest_8079781454ad481b13cb6caedf4dbb9e;
+PyObject *const_tuple_str_plain_ObjectIdentifier_tuple;
+PyObject *const_str_plain_ObjectIdentifier;
+PyObject *const_str_digest_9db3cdd3cd765463b4eec6754eb8e087;
+PyObject *const_tuple_str_plain_hashes_tuple;
+PyObject *const_str_plain_hashes;
+PyObject *const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+PyObject *const_str_plain_ExtensionOID;
+PyObject *const_int_pos_13;
+PyObject *const_str_plain___firstlineno__;
+PyObject *const_tuple_str_digest_aa35b543e4cc4067ce2da705a47d19ca_tuple;
+PyObject *const_str_plain_SUBJECT_DIRECTORY_ATTRIBUTES;
+PyObject *const_tuple_str_digest_402231cec73b599b9bdec4daf7775016_tuple;
+PyObject *const_str_plain_SUBJECT_KEY_IDENTIFIER;
+PyObject *const_tuple_str_digest_bdfb3765c1e356e48168ea62bfdbf9a4_tuple;
+PyObject *const_str_plain_KEY_USAGE;
+PyObject *const_tuple_str_digest_2cc3298792196f3c99df7d4dd8d2c887_tuple;
+PyObject *const_str_plain_PRIVATE_KEY_USAGE_PERIOD;
+PyObject *const_tuple_str_digest_767d9ff9e747b20f9b2a62cdf04da0de_tuple;
+PyObject *const_str_plain_SUBJECT_ALTERNATIVE_NAME;
+PyObject *const_tuple_str_digest_5f81f25c17be8379db8d57e313b947b2_tuple;
+PyObject *const_str_plain_ISSUER_ALTERNATIVE_NAME;
+PyObject *const_tuple_str_digest_91f2c2e6a76ab0257b7afd78a7d8444b_tuple;
+PyObject *const_str_plain_BASIC_CONSTRAINTS;
+PyObject *const_tuple_str_digest_2958a1ef6593e1758ab759e3a2c573e0_tuple;
+PyObject *const_str_plain_NAME_CONSTRAINTS;
+PyObject *const_tuple_str_digest_32f8ab72218c1518444529b9839bc60e_tuple;
+PyObject *const_str_plain_CRL_DISTRIBUTION_POINTS;
+PyObject *const_tuple_str_digest_ddbc81b7b0b155d69df8105b5cff8140_tuple;
+PyObject *const_str_plain_CERTIFICATE_POLICIES;
+PyObject *const_tuple_str_digest_d2f818cdf8c42e2d6390ddd53b016587_tuple;
+PyObject *const_str_plain_POLICY_MAPPINGS;
+PyObject *const_tuple_str_digest_178f043eb8a7ce81b9dfbff61f4c5f19_tuple;
+PyObject *const_str_plain_AUTHORITY_KEY_IDENTIFIER;
+PyObject *const_tuple_str_digest_b0abccc6631aa6b85de08f4a664daadd_tuple;
+PyObject *const_str_plain_POLICY_CONSTRAINTS;
+PyObject *const_tuple_str_digest_a690942c66e69d63578daefd13197ae2_tuple;
+PyObject *const_str_plain_EXTENDED_KEY_USAGE;
+PyObject *const_tuple_str_digest_017b3818c501a0f2bbf7f46bc35fb8d6_tuple;
+PyObject *const_str_plain_FRESHEST_CRL;
+PyObject *const_tuple_str_digest_0779a69d82c4a51e4fdc8382116baf07_tuple;
+PyObject *const_str_plain_INHIBIT_ANY_POLICY;
+PyObject *const_tuple_str_digest_6e7f6354f6003472110f38ebbe423636_tuple;
+PyObject *const_str_plain_ISSUING_DISTRIBUTION_POINT;
+PyObject *const_tuple_str_digest_36815fa72b8e26b8a0343e58e525a6b8_tuple;
+PyObject *const_str_plain_AUTHORITY_INFORMATION_ACCESS;
+PyObject *const_tuple_str_digest_2bb014389d4aa5909b80bc2e19c3df8a_tuple;
+PyObject *const_str_plain_SUBJECT_INFORMATION_ACCESS;
+PyObject *const_tuple_str_digest_1135dc3548cae245667224b61d063e8f_tuple;
+PyObject *const_str_plain_OCSP_NO_CHECK;
+PyObject *const_tuple_str_digest_c721cd011be8e0f6c97e5d0f5ec94d60_tuple;
+PyObject *const_str_plain_TLS_FEATURE;
+PyObject *const_tuple_str_digest_48bb56d35289ac7c69544408e253d64a_tuple;
+PyObject *const_str_plain_CRL_NUMBER;
+PyObject *const_tuple_str_digest_8004dc93b6b3bd5578dfd84dda8defdc_tuple;
+PyObject *const_str_plain_DELTA_CRL_INDICATOR;
+PyObject *const_tuple_str_digest_9f975f715f271ffc97cba117d4ed2c89_tuple;
+PyObject *const_str_plain_PRECERT_SIGNED_CERTIFICATE_TIMESTAMPS;
+PyObject *const_tuple_str_digest_58def565d1c890c8595c3d29f979b69c_tuple;
+PyObject *const_str_plain_PRECERT_POISON;
+PyObject *const_tuple_str_digest_0bc61e2a46f54116dde3282ae3fd330c_tuple;
+PyObject *const_str_plain_SIGNED_CERTIFICATE_TIMESTAMPS;
+PyObject *const_tuple_str_digest_2c7ebdd8a3a2a6a23be4034d7a9d649a_tuple;
+PyObject *const_str_plain_MS_CERTIFICATE_TEMPLATE;
+PyObject *const_tuple_str_digest_572c2add736d08c741ab2bf07a73317e_tuple;
+PyObject *const_str_plain_ADMISSIONS;
+PyObject *const_str_plain___static_attributes__;
+PyObject *const_str_plain_OCSPExtensionOID;
+PyObject *const_int_pos_46;
+PyObject *const_tuple_str_digest_3a31f74521397441560a47f988d779a3_tuple;
+PyObject *const_str_plain_NONCE;
+PyObject *const_tuple_str_digest_25229aac06a4bd428e500cd82fef6bcc_tuple;
+PyObject *const_str_plain_ACCEPTABLE_RESPONSES;
+PyObject *const_str_plain_CRLEntryExtensionOID;
+PyObject *const_int_pos_51;
+PyObject *const_tuple_str_digest_9cd8ba296cec323cf723a82cc76d4826_tuple;
+PyObject *const_str_plain_CERTIFICATE_ISSUER;
+PyObject *const_tuple_str_digest_0289302dc46017fd66759aa38355e887_tuple;
+PyObject *const_str_plain_CRL_REASON;
+PyObject *const_tuple_str_digest_7aeeff5313ae33015bc6068c49b2834d_tuple;
+PyObject *const_str_plain_INVALIDITY_DATE;
+PyObject *const_str_plain_NameOID;
+PyObject *const_int_pos_57;
+PyObject *const_tuple_str_digest_f57d825cad34aac5809c155ba8a3ebb1_tuple;
+PyObject *const_str_plain_COMMON_NAME;
+PyObject *const_tuple_str_digest_aa13593fc87e4f4e4b2b52fd048b3e8a_tuple;
+PyObject *const_str_plain_COUNTRY_NAME;
+PyObject *const_tuple_str_digest_6cf4c807f183a057576c391d9f7c4e24_tuple;
+PyObject *const_str_plain_LOCALITY_NAME;
+PyObject *const_tuple_str_digest_57dccc3876eef2cf5cfce321a32febb5_tuple;
+PyObject *const_str_plain_STATE_OR_PROVINCE_NAME;
+PyObject *const_tuple_str_digest_e69bc10a8fca5202a28e2cd518549779_tuple;
+PyObject *const_str_plain_STREET_ADDRESS;
+PyObject *const_tuple_str_digest_3c60b257fb1dc5e6210b01a214ad1396_tuple;
+PyObject *const_str_plain_ORGANIZATION_IDENTIFIER;
+PyObject *const_tuple_str_digest_76c946398dd022b7261d46aa6240716f_tuple;
+PyObject *const_str_plain_ORGANIZATION_NAME;
+PyObject *const_tuple_str_digest_43626b342da00ed10ddfece11d183700_tuple;
+PyObject *const_str_plain_ORGANIZATIONAL_UNIT_NAME;
+PyObject *const_tuple_str_digest_4e0fd9298619640af3a4dad2f13d8f89_tuple;
+PyObject *const_str_plain_SERIAL_NUMBER;
+PyObject *const_tuple_str_digest_e4fbe04d850088683fca472ae668e3e8_tuple;
+PyObject *const_str_plain_SURNAME;
+PyObject *const_tuple_str_digest_2998224fa424af08b3f684a1be17945c_tuple;
+PyObject *const_str_plain_GIVEN_NAME;
+PyObject *const_tuple_str_digest_e00b2e9d0b3aff0d7f1215741c8caf4c_tuple;
+PyObject *const_str_plain_TITLE;
+PyObject *const_tuple_str_digest_60bbb67da5f07f7a5fc75db42854c2f3_tuple;
+PyObject *const_str_plain_INITIALS;
+PyObject *const_tuple_str_digest_43872ccea6747842372df8a1c4656683_tuple;
+PyObject *const_str_plain_GENERATION_QUALIFIER;
+PyObject *const_tuple_str_digest_e8435c09f6f8bb5530cfada92d890563_tuple;
+PyObject *const_str_plain_X500_UNIQUE_IDENTIFIER;
+PyObject *const_tuple_str_digest_60aaecf634db9b67af6a393dcf6de000_tuple;
+PyObject *const_str_plain_DN_QUALIFIER;
+PyObject *const_tuple_str_digest_c0c0b06f4a096cb9cc1becef6ebea806_tuple;
+PyObject *const_str_plain_PSEUDONYM;
+PyObject *const_tuple_str_digest_d987020246f2d9f737862dd92bc63eef_tuple;
+PyObject *const_str_plain_USER_ID;
+PyObject *const_tuple_str_digest_1ca6abdf9952a7d39297c45ba720642a_tuple;
+PyObject *const_str_plain_DOMAIN_COMPONENT;
+PyObject *const_tuple_str_digest_7f9fa75ff292bac6aecf30cc58bc9469_tuple;
+PyObject *const_str_plain_EMAIL_ADDRESS;
+PyObject *const_tuple_str_digest_8c8a2a5fe21909055ee3a38044fbeaa0_tuple;
+PyObject *const_str_plain_JURISDICTION_COUNTRY_NAME;
+PyObject *const_tuple_str_digest_163cafdc0ed554748c9a4b5a8c664335_tuple;
+PyObject *const_str_plain_JURISDICTION_LOCALITY_NAME;
+PyObject *const_tuple_str_digest_81ded7bbfd939cddeb47d500a53437b8_tuple;
+PyObject *const_str_plain_JURISDICTION_STATE_OR_PROVINCE_NAME;
+PyObject *const_tuple_str_digest_43752e38edbd8a4cc26d98a0eaea7118_tuple;
+PyObject *const_str_plain_BUSINESS_CATEGORY;
+PyObject *const_tuple_str_digest_9593fac7fba92df6a4af11a09356bc08_tuple;
+PyObject *const_str_plain_POSTAL_ADDRESS;
+PyObject *const_tuple_str_digest_4d1eecda490e15d970f849aecc70bec4_tuple;
+PyObject *const_str_plain_POSTAL_CODE;
+PyObject *const_tuple_str_digest_ab9d7539750cd028eb33bbcbb7ee79ef_tuple;
+PyObject *const_str_plain_INN;
+PyObject *const_tuple_str_digest_b146b7df831df69e003af30211afd1b5_tuple;
+PyObject *const_str_plain_OGRN;
+PyObject *const_tuple_str_digest_a2b091b732cd267eeb03812ab7752b2a_tuple;
+PyObject *const_str_plain_SNILS;
+PyObject *const_tuple_str_digest_d69ccf3d05e6659c8b3ce486a9cce8b0_tuple;
+PyObject *const_str_plain_UNSTRUCTURED_NAME;
+PyObject *const_tuple_str_digest_fdb578797261104103247aa2de285428_tuple;
+PyObject *const_str_plain_UNSIGNED;
+PyObject *const_str_plain_SignatureAlgorithmOID;
+PyObject *const_int_pos_93;
+PyObject *const_tuple_str_digest_d766128dd3b188cb31a47f2b60d4f03b_tuple;
+PyObject *const_str_plain_RSA_WITH_MD5;
+PyObject *const_tuple_str_digest_b84a8ae3bdd5ed5249d61bfca24aa504_tuple;
+PyObject *const_str_plain_RSA_WITH_SHA1;
+PyObject *const_tuple_str_digest_592f2dc8660724fc191cd3b965719e17_tuple;
+PyObject *const_str_plain__RSA_WITH_SHA1;
+PyObject *const_tuple_str_digest_777dc680c1db5aad08fab2430d7c4782_tuple;
+PyObject *const_str_plain_RSA_WITH_SHA224;
+PyObject *const_tuple_str_digest_bf7a54fbdb0b05505b05e9611f5ae528_tuple;
+PyObject *const_str_plain_RSA_WITH_SHA256;
+PyObject *const_tuple_str_digest_175c6aa0dbff49caa0d29fca6c1fdbb2_tuple;
+PyObject *const_str_plain_RSA_WITH_SHA384;
+PyObject *const_tuple_str_digest_cbb358e95676acbda1a7cec77811a76a_tuple;
+PyObject *const_str_plain_RSA_WITH_SHA512;
+PyObject *const_tuple_str_digest_11e69c90017408487dc7480de77c2b57_tuple;
+PyObject *const_str_plain_RSA_WITH_SHA3_224;
+PyObject *const_tuple_str_digest_628d634092584d6d3de9449f35ac7201_tuple;
+PyObject *const_str_plain_RSA_WITH_SHA3_256;
+PyObject *const_tuple_str_digest_0ecbc77378a42af013cc368d21739033_tuple;
+PyObject *const_str_plain_RSA_WITH_SHA3_384;
+PyObject *const_tuple_str_digest_6c80dee87c72a9908a70836c96727588_tuple;
+PyObject *const_str_plain_RSA_WITH_SHA3_512;
+PyObject *const_tuple_str_digest_0f59f576526d1d0c3e712a7f737c95cb_tuple;
+PyObject *const_str_plain_RSASSA_PSS;
+PyObject *const_tuple_str_digest_35eb25ced2ccdf6bcc44b71ddad61958_tuple;
+PyObject *const_str_plain_ECDSA_WITH_SHA1;
+PyObject *const_tuple_str_digest_c3b73ca09086726c1f01ebb5162d733b_tuple;
+PyObject *const_str_plain_ECDSA_WITH_SHA224;
+PyObject *const_tuple_str_digest_c65f30c441db755c29a6af4980e8b725_tuple;
+PyObject *const_str_plain_ECDSA_WITH_SHA256;
+PyObject *const_tuple_str_digest_851be9911219ad6068e49143d3248889_tuple;
+PyObject *const_str_plain_ECDSA_WITH_SHA384;
+PyObject *const_tuple_str_digest_8cf8f3c54a257961a23b52b084d86cec_tuple;
+PyObject *const_str_plain_ECDSA_WITH_SHA512;
+PyObject *const_tuple_str_digest_ea5f32e18190c861edbb3f7f35293d3d_tuple;
+PyObject *const_str_plain_ECDSA_WITH_SHA3_224;
+PyObject *const_tuple_str_digest_956aa86e408a6adabaa354462473dbe2_tuple;
+PyObject *const_str_plain_ECDSA_WITH_SHA3_256;
+PyObject *const_tuple_str_digest_0762aff50fbcc07d7063cee18aef8393_tuple;
+PyObject *const_str_plain_ECDSA_WITH_SHA3_384;
+PyObject *const_tuple_str_digest_09f9ec1bd9bc636d40a3b5dd215393b8_tuple;
+PyObject *const_str_plain_ECDSA_WITH_SHA3_512;
+PyObject *const_tuple_str_digest_65069b4fb9aa28cf3d80a60f2197040c_tuple;
+PyObject *const_str_plain_DSA_WITH_SHA1;
+PyObject *const_tuple_str_digest_649afc4ad6dae06148c7e2d99bb38960_tuple;
+PyObject *const_str_plain_DSA_WITH_SHA224;
+PyObject *const_tuple_str_digest_d276e487e55b7f956e2f735a941b29b1_tuple;
+PyObject *const_str_plain_DSA_WITH_SHA256;
+PyObject *const_tuple_str_digest_b81cf544dd27893f3ce51207857ab827_tuple;
+PyObject *const_str_plain_DSA_WITH_SHA384;
+PyObject *const_tuple_str_digest_91091cfdfbf4c6eb6dd34f078c43c4a2_tuple;
+PyObject *const_str_plain_DSA_WITH_SHA512;
+PyObject *const_tuple_str_digest_06987cfccee49a896525bf927684c3f1_tuple;
+PyObject *const_str_plain_ED25519;
+PyObject *const_tuple_str_digest_d2aa151b2525d178415599466b9d6aee_tuple;
+PyObject *const_str_plain_ED448;
+PyObject *const_tuple_str_digest_d4276f73f9fe48e814299ea9f5bc68fc_tuple;
+PyObject *const_str_plain_ML_DSA_44;
+PyObject *const_tuple_str_digest_80fd62f760f87e5b9cae90470f25d9ee_tuple;
+PyObject *const_str_plain_ML_DSA_65;
+PyObject *const_tuple_str_digest_46cdbf8ef9851e9a5311c55efee786ac_tuple;
+PyObject *const_str_plain_ML_DSA_87;
+PyObject *const_tuple_str_digest_398193cc178d9ec2885c1b3ed5bbb391_tuple;
+PyObject *const_str_plain_GOSTR3411_94_WITH_3410_2001;
+PyObject *const_tuple_str_digest_9c4343dcf24c6c6afaf10f9c2e7d1b23_tuple;
+PyObject *const_str_plain_GOSTR3410_2012_WITH_3411_2012_256;
+PyObject *const_tuple_str_digest_71ea0d189efc2f5cfcdfff6ec29064f1_tuple;
+PyObject *const_str_plain_GOSTR3410_2012_WITH_3411_2012_512;
+PyObject *const_tuple_str_digest_22189de6b6ba8121c08a004aeca07ada_tuple;
+PyObject *const_str_plain_MD5;
+PyObject *const_str_plain_SHA1;
+PyObject *const_str_plain_SHA224;
+PyObject *const_str_plain_SHA256;
+PyObject *const_str_plain_SHA384;
+PyObject *const_str_plain_SHA512;
+PyObject *const_str_plain_SHA3_224;
+PyObject *const_str_plain_SHA3_256;
+PyObject *const_str_plain_SHA3_384;
+PyObject *const_str_plain_SHA3_512;
+PyObject *const_str_plain__SIG_OIDS_TO_HASH;
+PyObject *const_str_digest_cbb2bfe8244766c544b16c66aa754e76;
+PyObject *const_str_plain_HashAlgorithmOID;
+PyObject *const_int_pos_168;
+PyObject *const_tuple_str_digest_97841e0407a21a46fa17b8ec8f246b28_tuple;
+PyObject *const_tuple_str_digest_0803e6568131d3ace6a97c0848babbec_tuple;
+PyObject *const_tuple_str_digest_d5501c4718b7c887f0d053e467278836_tuple;
+PyObject *const_tuple_str_digest_b748c93313cc612300dbdce6bc0417b9_tuple;
+PyObject *const_tuple_str_digest_173e1f5936576e525a4ec0c436e18865_tuple;
+PyObject *const_tuple_str_digest_906c3950c6c1dc08322b82663c1fc8e8_tuple;
+PyObject *const_tuple_str_digest_e825111c73dff949ac80a4a801f56561_tuple;
+PyObject *const_tuple_str_digest_bdd932b526deab6bfed3fccaed0a98ae_tuple;
+PyObject *const_tuple_str_digest_7c53876e9249a68626a9bf31a04dbc0e_tuple;
+PyObject *const_tuple_str_digest_3f94b1ccc08959c5a038201c7395f15b_tuple;
+PyObject *const_str_plain_SHA3_224_NIST;
+PyObject *const_tuple_str_digest_ccb09a632f9eb719746617c0e595a99d_tuple;
+PyObject *const_str_plain_SHA3_256_NIST;
+PyObject *const_tuple_str_digest_5921bc034a1c5618bc6f626253269d85_tuple;
+PyObject *const_str_plain_SHA3_384_NIST;
+PyObject *const_tuple_str_digest_f0a5bfe234e75f0a3713ef5a4472914c_tuple;
+PyObject *const_str_plain_SHA3_512_NIST;
+PyObject *const_str_plain_PublicKeyAlgorithmOID;
+PyObject *const_int_pos_184;
+PyObject *const_tuple_str_digest_4c2472c460bb1ae8b5b00c225545ade0_tuple;
+PyObject *const_str_plain_DSA;
+PyObject *const_tuple_str_digest_67526efcdb60c6051d3c4d632ef450e4_tuple;
+PyObject *const_str_plain_EC_PUBLIC_KEY;
+PyObject *const_tuple_str_digest_8610103a8657fcf057847084d4917365_tuple;
+PyObject *const_str_plain_RSAES_PKCS1_v1_5;
+PyObject *const_tuple_str_digest_55d27838969947e85f4df1d34421d15e_tuple;
+PyObject *const_str_plain_X25519;
+PyObject *const_tuple_str_digest_2bd272bb44927c0f33a3c332ad7c81ac_tuple;
+PyObject *const_str_plain_X448;
+PyObject *const_tuple_str_digest_5122c43aaeb33bb235c3c4afc6aef2cc_tuple;
+PyObject *const_str_plain_ML_KEM_768;
+PyObject *const_tuple_str_digest_c400104f335b965b7faf2c8e62cee0e5_tuple;
+PyObject *const_str_plain_ML_KEM_1024;
+PyObject *const_str_plain_ExtendedKeyUsageOID;
+PyObject *const_int_pos_200;
+PyObject *const_tuple_str_digest_0376a15beee26a285b06cab589a6a7cd_tuple;
+PyObject *const_str_plain_SERVER_AUTH;
+PyObject *const_tuple_str_digest_87cdc7b3da2a01efa67fc002f5f9e93d_tuple;
+PyObject *const_str_plain_CLIENT_AUTH;
+PyObject *const_tuple_str_digest_ced7dfea6e2ba0f172c63b367fc544eb_tuple;
+PyObject *const_str_plain_CODE_SIGNING;
+PyObject *const_tuple_str_digest_3d2ee337e9731ea21bdde6fb3248081f_tuple;
+PyObject *const_str_plain_EMAIL_PROTECTION;
+PyObject *const_tuple_str_digest_abe352de3ffbaa69a49d347e2acd1e80_tuple;
+PyObject *const_str_plain_TIME_STAMPING;
+PyObject *const_tuple_str_digest_bfabc35e33098bc3bd4a248a68700379_tuple;
+PyObject *const_str_plain_OCSP_SIGNING;
+PyObject *const_tuple_str_digest_42920d8d1815b6383c6613f7be148048_tuple;
+PyObject *const_str_plain_ANY_EXTENDED_KEY_USAGE;
+PyObject *const_tuple_str_digest_b1f486d61430aa578028f269cd120ebf_tuple;
+PyObject *const_str_plain_SMARTCARD_LOGON;
+PyObject *const_tuple_str_digest_293ce32998aa7267f364392b869fabe6_tuple;
+PyObject *const_str_plain_KERBEROS_PKINIT_KDC;
+PyObject *const_tuple_str_digest_af8183ec75e29900eedf72665526f56f_tuple;
+PyObject *const_str_plain_IPSEC_IKE;
+PyObject *const_tuple_str_digest_5496e4ee75db5775d3d9a502efd647bd_tuple;
+PyObject *const_str_plain_BUNDLE_SECURITY;
+PyObject *const_tuple_str_digest_ccea41f396a418a256fc15419f5a5555_tuple;
+PyObject *const_str_plain_CERTIFICATE_TRANSPARENCY;
+PyObject *const_str_plain_OtherNameFormOID;
+PyObject *const_int_pos_215;
+PyObject *const_tuple_str_digest_54731fe62fc1aa88853437677be0f551_tuple;
+PyObject *const_str_plain_PERMANENT_IDENTIFIER;
+PyObject *const_tuple_str_digest_119861f2139b2f03ce565c8597226b29_tuple;
+PyObject *const_str_plain_HW_MODULE_NAME;
+PyObject *const_tuple_str_digest_4ed534afb123635a182f7c580306d5f8_tuple;
+PyObject *const_str_plain_DNS_SRV;
+PyObject *const_tuple_str_digest_a85bb3a108037fcb412e96c090ba22cd_tuple;
+PyObject *const_str_plain_NAI_REALM;
+PyObject *const_tuple_str_digest_e5d892ec6de39d023c8f539b6763bcbf_tuple;
+PyObject *const_str_plain_SMTP_UTF8_MAILBOX;
+PyObject *const_tuple_str_digest_7371190d099cbe3ab89fcdaec1d4094c_tuple;
+PyObject *const_str_plain_ACP_NODE_NAME;
+PyObject *const_tuple_str_digest_8c0b077da28a1a6e1d53d45441f26ef6_tuple;
+PyObject *const_str_plain_BUNDLE_EID;
+PyObject *const_str_plain_AuthorityInformationAccessOID;
+PyObject *const_int_pos_225;
+PyObject *const_tuple_str_digest_07bbedf6f84f3fc5867dc620be5e095a_tuple;
+PyObject *const_str_plain_CA_ISSUERS;
+PyObject *const_tuple_str_digest_2b4acfbf018aa94fa2c4d751377b67ba_tuple;
+PyObject *const_str_plain_OCSP;
+PyObject *const_str_plain_SubjectInformationAccessOID;
+PyObject *const_int_pos_230;
+PyObject *const_tuple_str_digest_66e93f786830774b3f20fac3289ad8b4_tuple;
+PyObject *const_str_plain_CA_REPOSITORY;
+PyObject *const_str_plain_CertificatePoliciesOID;
+PyObject *const_int_pos_234;
+PyObject *const_tuple_str_digest_50321ff2fccee4024d98999f9c8d9feb_tuple;
+PyObject *const_str_plain_CPS_QUALIFIER;
+PyObject *const_tuple_str_digest_03e57fcfeaffac79e0551f43c9be177f_tuple;
+PyObject *const_str_plain_CPS_USER_NOTICE;
+PyObject *const_tuple_str_digest_fbb6e1cc86dd0b99c46a7f9000416d62_tuple;
+PyObject *const_str_plain_ANY_POLICY;
+PyObject *const_str_plain_AttributeOID;
+PyObject *const_int_pos_240;
+PyObject *const_tuple_str_digest_a9cf6de721f933fda642f0879f2a9fc9_tuple;
+PyObject *const_str_plain_CHALLENGE_PASSWORD;
+PyObject *const_str_plain_commonName;
+PyObject *const_str_plain_countryName;
+PyObject *const_str_plain_localityName;
+PyObject *const_str_plain_stateOrProvinceName;
+PyObject *const_str_plain_streetAddress;
+PyObject *const_str_plain_organizationName;
+PyObject *const_str_plain_organizationalUnitName;
+PyObject *const_str_plain_serialNumber;
+PyObject *const_str_plain_surname;
+PyObject *const_str_plain_givenName;
+PyObject *const_str_plain_title;
+PyObject *const_str_plain_generationQualifier;
+PyObject *const_str_plain_x500UniqueIdentifier;
+PyObject *const_str_plain_dnQualifier;
+PyObject *const_str_plain_pseudonym;
+PyObject *const_str_plain_userID;
+PyObject *const_str_plain_domainComponent;
+PyObject *const_str_plain_emailAddress;
+PyObject *const_str_plain_jurisdictionCountryName;
+PyObject *const_str_plain_jurisdictionLocalityName;
+PyObject *const_str_plain_jurisdictionStateOrProvinceName;
+PyObject *const_str_plain_businessCategory;
+PyObject *const_str_plain_postalAddress;
+PyObject *const_str_plain_postalCode;
+PyObject *const_str_plain_unstructuredName;
+PyObject *const_str_plain_md5WithRSAEncryption;
+PyObject *const_str_plain_sha1WithRSAEncryption;
+PyObject *const_str_plain_sha224WithRSAEncryption;
+PyObject *const_str_plain_sha256WithRSAEncryption;
+PyObject *const_str_plain_sha384WithRSAEncryption;
+PyObject *const_str_plain_sha512WithRSAEncryption;
+PyObject *const_str_plain_rsassaPss;
+PyObject *const_str_digest_c2fb55a1f09e586fc82a97de6fc73acc;
+PyObject *const_str_digest_557b29feaadb5ada1ad965906e5d1dd3;
+PyObject *const_str_digest_ad3c682658ab1bc2f4342a30cc4996e2;
+PyObject *const_str_digest_ff3f390793cb3f7a65e3ba0d8b30034e;
+PyObject *const_str_digest_8c168ca0bdafd4e71f4b6bf87eb46ded;
+PyObject *const_str_digest_17ca6fd46f3d026f6114676b663f8acd;
+PyObject *const_str_digest_3df3ca64dd8761c027ed0ba43961e89a;
+PyObject *const_str_digest_a0b774c3e9788e9c20a69f9b798eb899;
+PyObject *const_str_plain_ed25519;
+PyObject *const_str_plain_ed448;
+PyObject *const_str_digest_45c372b4d789ac400c2ec357e6d8652d;
+PyObject *const_str_digest_474b62c6824a77bfb15ce78ce7281094;
+PyObject *const_str_digest_a0fd9643bd77b0727228b4f0b7764d68;
+PyObject *const_str_digest_0fb317ec863119cbf9cf939b5b971c2c;
+PyObject *const_str_digest_4df1fd561ce0921b6184b8e7367dd223;
+PyObject *const_str_digest_93703fb7c432dffdd6c487fa17fb7868;
+PyObject *const_str_plain_sha1;
+PyObject *const_str_plain_sha224;
+PyObject *const_str_plain_sha256;
+PyObject *const_str_plain_sha384;
+PyObject *const_str_plain_sha512;
+PyObject *const_str_plain_sha3_224;
+PyObject *const_str_plain_sha3_256;
+PyObject *const_str_plain_sha3_384;
+PyObject *const_str_plain_sha3_512;
+PyObject *const_str_plain_dsaEncryption;
+PyObject *const_str_digest_7dfac6622a641613bdb887174c606fe6;
+PyObject *const_str_plain_rsaEncryption;
+PyObject *const_str_plain_serverAuth;
+PyObject *const_str_plain_clientAuth;
+PyObject *const_str_plain_codeSigning;
+PyObject *const_str_plain_emailProtection;
+PyObject *const_str_plain_timeStamping;
+PyObject *const_str_plain_OCSPSigning;
+PyObject *const_str_plain_msSmartcardLogin;
+PyObject *const_str_plain_pkInitKDC;
+PyObject *const_str_plain_subjectDirectoryAttributes;
+PyObject *const_str_plain_subjectKeyIdentifier;
+PyObject *const_str_plain_keyUsage;
+PyObject *const_str_plain_privateKeyUsagePeriod;
+PyObject *const_str_plain_subjectAltName;
+PyObject *const_str_plain_issuerAltName;
+PyObject *const_str_plain_basicConstraints;
+PyObject *const_str_plain_signedCertificateTimestampList;
+PyObject *const_str_plain_ctPoison;
+PyObject *const_str_plain_msCertificateTemplate;
+PyObject *const_str_plain_Admissions;
+PyObject *const_str_plain_cRLReason;
+PyObject *const_str_plain_invalidityDate;
+PyObject *const_str_plain_certificateIssuer;
+PyObject *const_str_plain_nameConstraints;
+PyObject *const_str_plain_cRLDistributionPoints;
+PyObject *const_str_plain_certificatePolicies;
+PyObject *const_str_plain_policyMappings;
+PyObject *const_str_plain_authorityKeyIdentifier;
+PyObject *const_str_plain_policyConstraints;
+PyObject *const_str_plain_extendedKeyUsage;
+PyObject *const_str_plain_freshestCRL;
+PyObject *const_str_plain_inhibitAnyPolicy;
+PyObject *const_str_plain_issuingDistributionPoint;
+PyObject *const_str_plain_authorityInfoAccess;
+PyObject *const_str_plain_subjectInfoAccess;
+PyObject *const_str_plain_OCSPNoCheck;
+PyObject *const_str_plain_cRLNumber;
+PyObject *const_str_plain_deltaCRLIndicator;
+PyObject *const_str_plain_TLSFeature;
+PyObject *const_str_plain_caIssuers;
+PyObject *const_str_plain_caRepository;
+PyObject *const_str_digest_f452289eeaecab0c5424fd5ec7db97f7;
+PyObject *const_str_digest_e13ae27d769f6d1d70b1707fbd3f347b;
+PyObject *const_str_plain_OCSPNonce;
+PyObject *const_str_plain_challengePassword;
+PyObject *const_str_plain__OID_NAMES;
+PyObject *const_str_digest_9bfb757ef0eb1fe95bd31200bb78fbbe;
+PyObject *const_str_digest_3ffa24faa77efc825ad10e1c5c210bf0;
+PyObject *const_tuple_str_plain___class___tuple;
+} mod_consts;
+#ifndef __NUITKA_NO_ASSERT__
+static Py_hash_t mod_consts_hash[438];
+#endif
+
+static PyObject *module_filename_obj = NULL;
+
+/* Indicator if this modules private constants were created yet. */
+static bool constants_created = false;
+
+/* Function to create module private constants. */
+static void createModuleConstants(PyThreadState *tstate) {
+    if (constants_created == false) {
+        NUITKA_MAY_BE_UNUSED int constants_loaded_count =
+            loadConstantsBlob(tstate, (PyObject **)&mod_consts, UN_TRANSLATE("cryptography.hazmat._oid"));
+        constants_created = true;
+
+#ifndef __NUITKA_NO_ASSERT__
+        if (constants_loaded_count != 438) {
+            fprintf(stderr,
+                    "Corrupt constants blob for %s: expected 438 values, got %d\n",
+                    UN_TRANSLATE("cryptography.hazmat._oid"),
+                    constants_loaded_count);
+            fflush(stderr);
+            abort();
+        }
+
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_origin", mod_consts.const_str_plain_origin);
+mod_consts_hash[0] = DEEP_HASH(tstate, mod_consts.const_str_plain_origin);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_has_location", mod_consts.const_str_plain_has_location);
+mod_consts_hash[1] = DEEP_HASH(tstate, mod_consts.const_str_plain_has_location);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_annotations", mod_consts.const_str_plain_annotations);
+mod_consts_hash[2] = DEEP_HASH(tstate, mod_consts.const_str_plain_annotations);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_8079781454ad481b13cb6caedf4dbb9e", mod_consts.const_str_digest_8079781454ad481b13cb6caedf4dbb9e);
+mod_consts_hash[3] = DEEP_HASH(tstate, mod_consts.const_str_digest_8079781454ad481b13cb6caedf4dbb9e);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_plain_ObjectIdentifier_tuple", mod_consts.const_tuple_str_plain_ObjectIdentifier_tuple);
+mod_consts_hash[4] = DEEP_HASH(tstate, mod_consts.const_tuple_str_plain_ObjectIdentifier_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ObjectIdentifier", mod_consts.const_str_plain_ObjectIdentifier);
+mod_consts_hash[5] = DEEP_HASH(tstate, mod_consts.const_str_plain_ObjectIdentifier);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_9db3cdd3cd765463b4eec6754eb8e087", mod_consts.const_str_digest_9db3cdd3cd765463b4eec6754eb8e087);
+mod_consts_hash[6] = DEEP_HASH(tstate, mod_consts.const_str_digest_9db3cdd3cd765463b4eec6754eb8e087);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_plain_hashes_tuple", mod_consts.const_tuple_str_plain_hashes_tuple);
+mod_consts_hash[7] = DEEP_HASH(tstate, mod_consts.const_tuple_str_plain_hashes_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_hashes", mod_consts.const_str_plain_hashes);
+mod_consts_hash[8] = DEEP_HASH(tstate, mod_consts.const_str_plain_hashes);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891", mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891);
+mod_consts_hash[9] = DEEP_HASH(tstate, mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ExtensionOID", mod_consts.const_str_plain_ExtensionOID);
+mod_consts_hash[10] = DEEP_HASH(tstate, mod_consts.const_str_plain_ExtensionOID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_13", mod_consts.const_int_pos_13);
+mod_consts_hash[11] = DEEP_HASH(tstate, mod_consts.const_int_pos_13);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain___firstlineno__", mod_consts.const_str_plain___firstlineno__);
+mod_consts_hash[12] = DEEP_HASH(tstate, mod_consts.const_str_plain___firstlineno__);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_aa35b543e4cc4067ce2da705a47d19ca_tuple", mod_consts.const_tuple_str_digest_aa35b543e4cc4067ce2da705a47d19ca_tuple);
+mod_consts_hash[13] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_aa35b543e4cc4067ce2da705a47d19ca_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SUBJECT_DIRECTORY_ATTRIBUTES", mod_consts.const_str_plain_SUBJECT_DIRECTORY_ATTRIBUTES);
+mod_consts_hash[14] = DEEP_HASH(tstate, mod_consts.const_str_plain_SUBJECT_DIRECTORY_ATTRIBUTES);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_402231cec73b599b9bdec4daf7775016_tuple", mod_consts.const_tuple_str_digest_402231cec73b599b9bdec4daf7775016_tuple);
+mod_consts_hash[15] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_402231cec73b599b9bdec4daf7775016_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SUBJECT_KEY_IDENTIFIER", mod_consts.const_str_plain_SUBJECT_KEY_IDENTIFIER);
+mod_consts_hash[16] = DEEP_HASH(tstate, mod_consts.const_str_plain_SUBJECT_KEY_IDENTIFIER);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_bdfb3765c1e356e48168ea62bfdbf9a4_tuple", mod_consts.const_tuple_str_digest_bdfb3765c1e356e48168ea62bfdbf9a4_tuple);
+mod_consts_hash[17] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_bdfb3765c1e356e48168ea62bfdbf9a4_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_KEY_USAGE", mod_consts.const_str_plain_KEY_USAGE);
+mod_consts_hash[18] = DEEP_HASH(tstate, mod_consts.const_str_plain_KEY_USAGE);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2cc3298792196f3c99df7d4dd8d2c887_tuple", mod_consts.const_tuple_str_digest_2cc3298792196f3c99df7d4dd8d2c887_tuple);
+mod_consts_hash[19] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2cc3298792196f3c99df7d4dd8d2c887_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_PRIVATE_KEY_USAGE_PERIOD", mod_consts.const_str_plain_PRIVATE_KEY_USAGE_PERIOD);
+mod_consts_hash[20] = DEEP_HASH(tstate, mod_consts.const_str_plain_PRIVATE_KEY_USAGE_PERIOD);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_767d9ff9e747b20f9b2a62cdf04da0de_tuple", mod_consts.const_tuple_str_digest_767d9ff9e747b20f9b2a62cdf04da0de_tuple);
+mod_consts_hash[21] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_767d9ff9e747b20f9b2a62cdf04da0de_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SUBJECT_ALTERNATIVE_NAME", mod_consts.const_str_plain_SUBJECT_ALTERNATIVE_NAME);
+mod_consts_hash[22] = DEEP_HASH(tstate, mod_consts.const_str_plain_SUBJECT_ALTERNATIVE_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_5f81f25c17be8379db8d57e313b947b2_tuple", mod_consts.const_tuple_str_digest_5f81f25c17be8379db8d57e313b947b2_tuple);
+mod_consts_hash[23] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_5f81f25c17be8379db8d57e313b947b2_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ISSUER_ALTERNATIVE_NAME", mod_consts.const_str_plain_ISSUER_ALTERNATIVE_NAME);
+mod_consts_hash[24] = DEEP_HASH(tstate, mod_consts.const_str_plain_ISSUER_ALTERNATIVE_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_91f2c2e6a76ab0257b7afd78a7d8444b_tuple", mod_consts.const_tuple_str_digest_91f2c2e6a76ab0257b7afd78a7d8444b_tuple);
+mod_consts_hash[25] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_91f2c2e6a76ab0257b7afd78a7d8444b_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_BASIC_CONSTRAINTS", mod_consts.const_str_plain_BASIC_CONSTRAINTS);
+mod_consts_hash[26] = DEEP_HASH(tstate, mod_consts.const_str_plain_BASIC_CONSTRAINTS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2958a1ef6593e1758ab759e3a2c573e0_tuple", mod_consts.const_tuple_str_digest_2958a1ef6593e1758ab759e3a2c573e0_tuple);
+mod_consts_hash[27] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2958a1ef6593e1758ab759e3a2c573e0_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_NAME_CONSTRAINTS", mod_consts.const_str_plain_NAME_CONSTRAINTS);
+mod_consts_hash[28] = DEEP_HASH(tstate, mod_consts.const_str_plain_NAME_CONSTRAINTS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_32f8ab72218c1518444529b9839bc60e_tuple", mod_consts.const_tuple_str_digest_32f8ab72218c1518444529b9839bc60e_tuple);
+mod_consts_hash[29] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_32f8ab72218c1518444529b9839bc60e_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CRL_DISTRIBUTION_POINTS", mod_consts.const_str_plain_CRL_DISTRIBUTION_POINTS);
+mod_consts_hash[30] = DEEP_HASH(tstate, mod_consts.const_str_plain_CRL_DISTRIBUTION_POINTS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_ddbc81b7b0b155d69df8105b5cff8140_tuple", mod_consts.const_tuple_str_digest_ddbc81b7b0b155d69df8105b5cff8140_tuple);
+mod_consts_hash[31] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_ddbc81b7b0b155d69df8105b5cff8140_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CERTIFICATE_POLICIES", mod_consts.const_str_plain_CERTIFICATE_POLICIES);
+mod_consts_hash[32] = DEEP_HASH(tstate, mod_consts.const_str_plain_CERTIFICATE_POLICIES);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d2f818cdf8c42e2d6390ddd53b016587_tuple", mod_consts.const_tuple_str_digest_d2f818cdf8c42e2d6390ddd53b016587_tuple);
+mod_consts_hash[33] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d2f818cdf8c42e2d6390ddd53b016587_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_POLICY_MAPPINGS", mod_consts.const_str_plain_POLICY_MAPPINGS);
+mod_consts_hash[34] = DEEP_HASH(tstate, mod_consts.const_str_plain_POLICY_MAPPINGS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_178f043eb8a7ce81b9dfbff61f4c5f19_tuple", mod_consts.const_tuple_str_digest_178f043eb8a7ce81b9dfbff61f4c5f19_tuple);
+mod_consts_hash[35] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_178f043eb8a7ce81b9dfbff61f4c5f19_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_AUTHORITY_KEY_IDENTIFIER", mod_consts.const_str_plain_AUTHORITY_KEY_IDENTIFIER);
+mod_consts_hash[36] = DEEP_HASH(tstate, mod_consts.const_str_plain_AUTHORITY_KEY_IDENTIFIER);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_b0abccc6631aa6b85de08f4a664daadd_tuple", mod_consts.const_tuple_str_digest_b0abccc6631aa6b85de08f4a664daadd_tuple);
+mod_consts_hash[37] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_b0abccc6631aa6b85de08f4a664daadd_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_POLICY_CONSTRAINTS", mod_consts.const_str_plain_POLICY_CONSTRAINTS);
+mod_consts_hash[38] = DEEP_HASH(tstate, mod_consts.const_str_plain_POLICY_CONSTRAINTS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_a690942c66e69d63578daefd13197ae2_tuple", mod_consts.const_tuple_str_digest_a690942c66e69d63578daefd13197ae2_tuple);
+mod_consts_hash[39] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_a690942c66e69d63578daefd13197ae2_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_EXTENDED_KEY_USAGE", mod_consts.const_str_plain_EXTENDED_KEY_USAGE);
+mod_consts_hash[40] = DEEP_HASH(tstate, mod_consts.const_str_plain_EXTENDED_KEY_USAGE);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_017b3818c501a0f2bbf7f46bc35fb8d6_tuple", mod_consts.const_tuple_str_digest_017b3818c501a0f2bbf7f46bc35fb8d6_tuple);
+mod_consts_hash[41] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_017b3818c501a0f2bbf7f46bc35fb8d6_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_FRESHEST_CRL", mod_consts.const_str_plain_FRESHEST_CRL);
+mod_consts_hash[42] = DEEP_HASH(tstate, mod_consts.const_str_plain_FRESHEST_CRL);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0779a69d82c4a51e4fdc8382116baf07_tuple", mod_consts.const_tuple_str_digest_0779a69d82c4a51e4fdc8382116baf07_tuple);
+mod_consts_hash[43] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0779a69d82c4a51e4fdc8382116baf07_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_INHIBIT_ANY_POLICY", mod_consts.const_str_plain_INHIBIT_ANY_POLICY);
+mod_consts_hash[44] = DEEP_HASH(tstate, mod_consts.const_str_plain_INHIBIT_ANY_POLICY);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_6e7f6354f6003472110f38ebbe423636_tuple", mod_consts.const_tuple_str_digest_6e7f6354f6003472110f38ebbe423636_tuple);
+mod_consts_hash[45] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_6e7f6354f6003472110f38ebbe423636_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ISSUING_DISTRIBUTION_POINT", mod_consts.const_str_plain_ISSUING_DISTRIBUTION_POINT);
+mod_consts_hash[46] = DEEP_HASH(tstate, mod_consts.const_str_plain_ISSUING_DISTRIBUTION_POINT);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_36815fa72b8e26b8a0343e58e525a6b8_tuple", mod_consts.const_tuple_str_digest_36815fa72b8e26b8a0343e58e525a6b8_tuple);
+mod_consts_hash[47] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_36815fa72b8e26b8a0343e58e525a6b8_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_AUTHORITY_INFORMATION_ACCESS", mod_consts.const_str_plain_AUTHORITY_INFORMATION_ACCESS);
+mod_consts_hash[48] = DEEP_HASH(tstate, mod_consts.const_str_plain_AUTHORITY_INFORMATION_ACCESS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2bb014389d4aa5909b80bc2e19c3df8a_tuple", mod_consts.const_tuple_str_digest_2bb014389d4aa5909b80bc2e19c3df8a_tuple);
+mod_consts_hash[49] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2bb014389d4aa5909b80bc2e19c3df8a_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SUBJECT_INFORMATION_ACCESS", mod_consts.const_str_plain_SUBJECT_INFORMATION_ACCESS);
+mod_consts_hash[50] = DEEP_HASH(tstate, mod_consts.const_str_plain_SUBJECT_INFORMATION_ACCESS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_1135dc3548cae245667224b61d063e8f_tuple", mod_consts.const_tuple_str_digest_1135dc3548cae245667224b61d063e8f_tuple);
+mod_consts_hash[51] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_1135dc3548cae245667224b61d063e8f_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSP_NO_CHECK", mod_consts.const_str_plain_OCSP_NO_CHECK);
+mod_consts_hash[52] = DEEP_HASH(tstate, mod_consts.const_str_plain_OCSP_NO_CHECK);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_c721cd011be8e0f6c97e5d0f5ec94d60_tuple", mod_consts.const_tuple_str_digest_c721cd011be8e0f6c97e5d0f5ec94d60_tuple);
+mod_consts_hash[53] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_c721cd011be8e0f6c97e5d0f5ec94d60_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_TLS_FEATURE", mod_consts.const_str_plain_TLS_FEATURE);
+mod_consts_hash[54] = DEEP_HASH(tstate, mod_consts.const_str_plain_TLS_FEATURE);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_48bb56d35289ac7c69544408e253d64a_tuple", mod_consts.const_tuple_str_digest_48bb56d35289ac7c69544408e253d64a_tuple);
+mod_consts_hash[55] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_48bb56d35289ac7c69544408e253d64a_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CRL_NUMBER", mod_consts.const_str_plain_CRL_NUMBER);
+mod_consts_hash[56] = DEEP_HASH(tstate, mod_consts.const_str_plain_CRL_NUMBER);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_8004dc93b6b3bd5578dfd84dda8defdc_tuple", mod_consts.const_tuple_str_digest_8004dc93b6b3bd5578dfd84dda8defdc_tuple);
+mod_consts_hash[57] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_8004dc93b6b3bd5578dfd84dda8defdc_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DELTA_CRL_INDICATOR", mod_consts.const_str_plain_DELTA_CRL_INDICATOR);
+mod_consts_hash[58] = DEEP_HASH(tstate, mod_consts.const_str_plain_DELTA_CRL_INDICATOR);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_9f975f715f271ffc97cba117d4ed2c89_tuple", mod_consts.const_tuple_str_digest_9f975f715f271ffc97cba117d4ed2c89_tuple);
+mod_consts_hash[59] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_9f975f715f271ffc97cba117d4ed2c89_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_PRECERT_SIGNED_CERTIFICATE_TIMESTAMPS", mod_consts.const_str_plain_PRECERT_SIGNED_CERTIFICATE_TIMESTAMPS);
+mod_consts_hash[60] = DEEP_HASH(tstate, mod_consts.const_str_plain_PRECERT_SIGNED_CERTIFICATE_TIMESTAMPS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_58def565d1c890c8595c3d29f979b69c_tuple", mod_consts.const_tuple_str_digest_58def565d1c890c8595c3d29f979b69c_tuple);
+mod_consts_hash[61] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_58def565d1c890c8595c3d29f979b69c_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_PRECERT_POISON", mod_consts.const_str_plain_PRECERT_POISON);
+mod_consts_hash[62] = DEEP_HASH(tstate, mod_consts.const_str_plain_PRECERT_POISON);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0bc61e2a46f54116dde3282ae3fd330c_tuple", mod_consts.const_tuple_str_digest_0bc61e2a46f54116dde3282ae3fd330c_tuple);
+mod_consts_hash[63] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0bc61e2a46f54116dde3282ae3fd330c_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SIGNED_CERTIFICATE_TIMESTAMPS", mod_consts.const_str_plain_SIGNED_CERTIFICATE_TIMESTAMPS);
+mod_consts_hash[64] = DEEP_HASH(tstate, mod_consts.const_str_plain_SIGNED_CERTIFICATE_TIMESTAMPS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2c7ebdd8a3a2a6a23be4034d7a9d649a_tuple", mod_consts.const_tuple_str_digest_2c7ebdd8a3a2a6a23be4034d7a9d649a_tuple);
+mod_consts_hash[65] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2c7ebdd8a3a2a6a23be4034d7a9d649a_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_MS_CERTIFICATE_TEMPLATE", mod_consts.const_str_plain_MS_CERTIFICATE_TEMPLATE);
+mod_consts_hash[66] = DEEP_HASH(tstate, mod_consts.const_str_plain_MS_CERTIFICATE_TEMPLATE);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_572c2add736d08c741ab2bf07a73317e_tuple", mod_consts.const_tuple_str_digest_572c2add736d08c741ab2bf07a73317e_tuple);
+mod_consts_hash[67] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_572c2add736d08c741ab2bf07a73317e_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ADMISSIONS", mod_consts.const_str_plain_ADMISSIONS);
+mod_consts_hash[68] = DEEP_HASH(tstate, mod_consts.const_str_plain_ADMISSIONS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain___static_attributes__", mod_consts.const_str_plain___static_attributes__);
+mod_consts_hash[69] = DEEP_HASH(tstate, mod_consts.const_str_plain___static_attributes__);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSPExtensionOID", mod_consts.const_str_plain_OCSPExtensionOID);
+mod_consts_hash[70] = DEEP_HASH(tstate, mod_consts.const_str_plain_OCSPExtensionOID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_46", mod_consts.const_int_pos_46);
+mod_consts_hash[71] = DEEP_HASH(tstate, mod_consts.const_int_pos_46);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_3a31f74521397441560a47f988d779a3_tuple", mod_consts.const_tuple_str_digest_3a31f74521397441560a47f988d779a3_tuple);
+mod_consts_hash[72] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_3a31f74521397441560a47f988d779a3_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_NONCE", mod_consts.const_str_plain_NONCE);
+mod_consts_hash[73] = DEEP_HASH(tstate, mod_consts.const_str_plain_NONCE);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_25229aac06a4bd428e500cd82fef6bcc_tuple", mod_consts.const_tuple_str_digest_25229aac06a4bd428e500cd82fef6bcc_tuple);
+mod_consts_hash[74] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_25229aac06a4bd428e500cd82fef6bcc_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ACCEPTABLE_RESPONSES", mod_consts.const_str_plain_ACCEPTABLE_RESPONSES);
+mod_consts_hash[75] = DEEP_HASH(tstate, mod_consts.const_str_plain_ACCEPTABLE_RESPONSES);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CRLEntryExtensionOID", mod_consts.const_str_plain_CRLEntryExtensionOID);
+mod_consts_hash[76] = DEEP_HASH(tstate, mod_consts.const_str_plain_CRLEntryExtensionOID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_51", mod_consts.const_int_pos_51);
+mod_consts_hash[77] = DEEP_HASH(tstate, mod_consts.const_int_pos_51);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_9cd8ba296cec323cf723a82cc76d4826_tuple", mod_consts.const_tuple_str_digest_9cd8ba296cec323cf723a82cc76d4826_tuple);
+mod_consts_hash[78] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_9cd8ba296cec323cf723a82cc76d4826_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CERTIFICATE_ISSUER", mod_consts.const_str_plain_CERTIFICATE_ISSUER);
+mod_consts_hash[79] = DEEP_HASH(tstate, mod_consts.const_str_plain_CERTIFICATE_ISSUER);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0289302dc46017fd66759aa38355e887_tuple", mod_consts.const_tuple_str_digest_0289302dc46017fd66759aa38355e887_tuple);
+mod_consts_hash[80] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0289302dc46017fd66759aa38355e887_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CRL_REASON", mod_consts.const_str_plain_CRL_REASON);
+mod_consts_hash[81] = DEEP_HASH(tstate, mod_consts.const_str_plain_CRL_REASON);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_7aeeff5313ae33015bc6068c49b2834d_tuple", mod_consts.const_tuple_str_digest_7aeeff5313ae33015bc6068c49b2834d_tuple);
+mod_consts_hash[82] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_7aeeff5313ae33015bc6068c49b2834d_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_INVALIDITY_DATE", mod_consts.const_str_plain_INVALIDITY_DATE);
+mod_consts_hash[83] = DEEP_HASH(tstate, mod_consts.const_str_plain_INVALIDITY_DATE);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_NameOID", mod_consts.const_str_plain_NameOID);
+mod_consts_hash[84] = DEEP_HASH(tstate, mod_consts.const_str_plain_NameOID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_57", mod_consts.const_int_pos_57);
+mod_consts_hash[85] = DEEP_HASH(tstate, mod_consts.const_int_pos_57);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_f57d825cad34aac5809c155ba8a3ebb1_tuple", mod_consts.const_tuple_str_digest_f57d825cad34aac5809c155ba8a3ebb1_tuple);
+mod_consts_hash[86] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_f57d825cad34aac5809c155ba8a3ebb1_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_COMMON_NAME", mod_consts.const_str_plain_COMMON_NAME);
+mod_consts_hash[87] = DEEP_HASH(tstate, mod_consts.const_str_plain_COMMON_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_aa13593fc87e4f4e4b2b52fd048b3e8a_tuple", mod_consts.const_tuple_str_digest_aa13593fc87e4f4e4b2b52fd048b3e8a_tuple);
+mod_consts_hash[88] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_aa13593fc87e4f4e4b2b52fd048b3e8a_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_COUNTRY_NAME", mod_consts.const_str_plain_COUNTRY_NAME);
+mod_consts_hash[89] = DEEP_HASH(tstate, mod_consts.const_str_plain_COUNTRY_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_6cf4c807f183a057576c391d9f7c4e24_tuple", mod_consts.const_tuple_str_digest_6cf4c807f183a057576c391d9f7c4e24_tuple);
+mod_consts_hash[90] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_6cf4c807f183a057576c391d9f7c4e24_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_LOCALITY_NAME", mod_consts.const_str_plain_LOCALITY_NAME);
+mod_consts_hash[91] = DEEP_HASH(tstate, mod_consts.const_str_plain_LOCALITY_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_57dccc3876eef2cf5cfce321a32febb5_tuple", mod_consts.const_tuple_str_digest_57dccc3876eef2cf5cfce321a32febb5_tuple);
+mod_consts_hash[92] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_57dccc3876eef2cf5cfce321a32febb5_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_STATE_OR_PROVINCE_NAME", mod_consts.const_str_plain_STATE_OR_PROVINCE_NAME);
+mod_consts_hash[93] = DEEP_HASH(tstate, mod_consts.const_str_plain_STATE_OR_PROVINCE_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_e69bc10a8fca5202a28e2cd518549779_tuple", mod_consts.const_tuple_str_digest_e69bc10a8fca5202a28e2cd518549779_tuple);
+mod_consts_hash[94] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_e69bc10a8fca5202a28e2cd518549779_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_STREET_ADDRESS", mod_consts.const_str_plain_STREET_ADDRESS);
+mod_consts_hash[95] = DEEP_HASH(tstate, mod_consts.const_str_plain_STREET_ADDRESS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_3c60b257fb1dc5e6210b01a214ad1396_tuple", mod_consts.const_tuple_str_digest_3c60b257fb1dc5e6210b01a214ad1396_tuple);
+mod_consts_hash[96] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_3c60b257fb1dc5e6210b01a214ad1396_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ORGANIZATION_IDENTIFIER", mod_consts.const_str_plain_ORGANIZATION_IDENTIFIER);
+mod_consts_hash[97] = DEEP_HASH(tstate, mod_consts.const_str_plain_ORGANIZATION_IDENTIFIER);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_76c946398dd022b7261d46aa6240716f_tuple", mod_consts.const_tuple_str_digest_76c946398dd022b7261d46aa6240716f_tuple);
+mod_consts_hash[98] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_76c946398dd022b7261d46aa6240716f_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ORGANIZATION_NAME", mod_consts.const_str_plain_ORGANIZATION_NAME);
+mod_consts_hash[99] = DEEP_HASH(tstate, mod_consts.const_str_plain_ORGANIZATION_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_43626b342da00ed10ddfece11d183700_tuple", mod_consts.const_tuple_str_digest_43626b342da00ed10ddfece11d183700_tuple);
+mod_consts_hash[100] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_43626b342da00ed10ddfece11d183700_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ORGANIZATIONAL_UNIT_NAME", mod_consts.const_str_plain_ORGANIZATIONAL_UNIT_NAME);
+mod_consts_hash[101] = DEEP_HASH(tstate, mod_consts.const_str_plain_ORGANIZATIONAL_UNIT_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_4e0fd9298619640af3a4dad2f13d8f89_tuple", mod_consts.const_tuple_str_digest_4e0fd9298619640af3a4dad2f13d8f89_tuple);
+mod_consts_hash[102] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_4e0fd9298619640af3a4dad2f13d8f89_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SERIAL_NUMBER", mod_consts.const_str_plain_SERIAL_NUMBER);
+mod_consts_hash[103] = DEEP_HASH(tstate, mod_consts.const_str_plain_SERIAL_NUMBER);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_e4fbe04d850088683fca472ae668e3e8_tuple", mod_consts.const_tuple_str_digest_e4fbe04d850088683fca472ae668e3e8_tuple);
+mod_consts_hash[104] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_e4fbe04d850088683fca472ae668e3e8_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SURNAME", mod_consts.const_str_plain_SURNAME);
+mod_consts_hash[105] = DEEP_HASH(tstate, mod_consts.const_str_plain_SURNAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2998224fa424af08b3f684a1be17945c_tuple", mod_consts.const_tuple_str_digest_2998224fa424af08b3f684a1be17945c_tuple);
+mod_consts_hash[106] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2998224fa424af08b3f684a1be17945c_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_GIVEN_NAME", mod_consts.const_str_plain_GIVEN_NAME);
+mod_consts_hash[107] = DEEP_HASH(tstate, mod_consts.const_str_plain_GIVEN_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_e00b2e9d0b3aff0d7f1215741c8caf4c_tuple", mod_consts.const_tuple_str_digest_e00b2e9d0b3aff0d7f1215741c8caf4c_tuple);
+mod_consts_hash[108] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_e00b2e9d0b3aff0d7f1215741c8caf4c_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_TITLE", mod_consts.const_str_plain_TITLE);
+mod_consts_hash[109] = DEEP_HASH(tstate, mod_consts.const_str_plain_TITLE);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_60bbb67da5f07f7a5fc75db42854c2f3_tuple", mod_consts.const_tuple_str_digest_60bbb67da5f07f7a5fc75db42854c2f3_tuple);
+mod_consts_hash[110] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_60bbb67da5f07f7a5fc75db42854c2f3_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_INITIALS", mod_consts.const_str_plain_INITIALS);
+mod_consts_hash[111] = DEEP_HASH(tstate, mod_consts.const_str_plain_INITIALS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_43872ccea6747842372df8a1c4656683_tuple", mod_consts.const_tuple_str_digest_43872ccea6747842372df8a1c4656683_tuple);
+mod_consts_hash[112] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_43872ccea6747842372df8a1c4656683_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_GENERATION_QUALIFIER", mod_consts.const_str_plain_GENERATION_QUALIFIER);
+mod_consts_hash[113] = DEEP_HASH(tstate, mod_consts.const_str_plain_GENERATION_QUALIFIER);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_e8435c09f6f8bb5530cfada92d890563_tuple", mod_consts.const_tuple_str_digest_e8435c09f6f8bb5530cfada92d890563_tuple);
+mod_consts_hash[114] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_e8435c09f6f8bb5530cfada92d890563_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_X500_UNIQUE_IDENTIFIER", mod_consts.const_str_plain_X500_UNIQUE_IDENTIFIER);
+mod_consts_hash[115] = DEEP_HASH(tstate, mod_consts.const_str_plain_X500_UNIQUE_IDENTIFIER);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_60aaecf634db9b67af6a393dcf6de000_tuple", mod_consts.const_tuple_str_digest_60aaecf634db9b67af6a393dcf6de000_tuple);
+mod_consts_hash[116] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_60aaecf634db9b67af6a393dcf6de000_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DN_QUALIFIER", mod_consts.const_str_plain_DN_QUALIFIER);
+mod_consts_hash[117] = DEEP_HASH(tstate, mod_consts.const_str_plain_DN_QUALIFIER);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_c0c0b06f4a096cb9cc1becef6ebea806_tuple", mod_consts.const_tuple_str_digest_c0c0b06f4a096cb9cc1becef6ebea806_tuple);
+mod_consts_hash[118] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_c0c0b06f4a096cb9cc1becef6ebea806_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_PSEUDONYM", mod_consts.const_str_plain_PSEUDONYM);
+mod_consts_hash[119] = DEEP_HASH(tstate, mod_consts.const_str_plain_PSEUDONYM);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d987020246f2d9f737862dd92bc63eef_tuple", mod_consts.const_tuple_str_digest_d987020246f2d9f737862dd92bc63eef_tuple);
+mod_consts_hash[120] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d987020246f2d9f737862dd92bc63eef_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_USER_ID", mod_consts.const_str_plain_USER_ID);
+mod_consts_hash[121] = DEEP_HASH(tstate, mod_consts.const_str_plain_USER_ID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_1ca6abdf9952a7d39297c45ba720642a_tuple", mod_consts.const_tuple_str_digest_1ca6abdf9952a7d39297c45ba720642a_tuple);
+mod_consts_hash[122] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_1ca6abdf9952a7d39297c45ba720642a_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DOMAIN_COMPONENT", mod_consts.const_str_plain_DOMAIN_COMPONENT);
+mod_consts_hash[123] = DEEP_HASH(tstate, mod_consts.const_str_plain_DOMAIN_COMPONENT);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_7f9fa75ff292bac6aecf30cc58bc9469_tuple", mod_consts.const_tuple_str_digest_7f9fa75ff292bac6aecf30cc58bc9469_tuple);
+mod_consts_hash[124] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_7f9fa75ff292bac6aecf30cc58bc9469_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_EMAIL_ADDRESS", mod_consts.const_str_plain_EMAIL_ADDRESS);
+mod_consts_hash[125] = DEEP_HASH(tstate, mod_consts.const_str_plain_EMAIL_ADDRESS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_8c8a2a5fe21909055ee3a38044fbeaa0_tuple", mod_consts.const_tuple_str_digest_8c8a2a5fe21909055ee3a38044fbeaa0_tuple);
+mod_consts_hash[126] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_8c8a2a5fe21909055ee3a38044fbeaa0_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_JURISDICTION_COUNTRY_NAME", mod_consts.const_str_plain_JURISDICTION_COUNTRY_NAME);
+mod_consts_hash[127] = DEEP_HASH(tstate, mod_consts.const_str_plain_JURISDICTION_COUNTRY_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_163cafdc0ed554748c9a4b5a8c664335_tuple", mod_consts.const_tuple_str_digest_163cafdc0ed554748c9a4b5a8c664335_tuple);
+mod_consts_hash[128] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_163cafdc0ed554748c9a4b5a8c664335_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_JURISDICTION_LOCALITY_NAME", mod_consts.const_str_plain_JURISDICTION_LOCALITY_NAME);
+mod_consts_hash[129] = DEEP_HASH(tstate, mod_consts.const_str_plain_JURISDICTION_LOCALITY_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_81ded7bbfd939cddeb47d500a53437b8_tuple", mod_consts.const_tuple_str_digest_81ded7bbfd939cddeb47d500a53437b8_tuple);
+mod_consts_hash[130] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_81ded7bbfd939cddeb47d500a53437b8_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_JURISDICTION_STATE_OR_PROVINCE_NAME", mod_consts.const_str_plain_JURISDICTION_STATE_OR_PROVINCE_NAME);
+mod_consts_hash[131] = DEEP_HASH(tstate, mod_consts.const_str_plain_JURISDICTION_STATE_OR_PROVINCE_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_43752e38edbd8a4cc26d98a0eaea7118_tuple", mod_consts.const_tuple_str_digest_43752e38edbd8a4cc26d98a0eaea7118_tuple);
+mod_consts_hash[132] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_43752e38edbd8a4cc26d98a0eaea7118_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_BUSINESS_CATEGORY", mod_consts.const_str_plain_BUSINESS_CATEGORY);
+mod_consts_hash[133] = DEEP_HASH(tstate, mod_consts.const_str_plain_BUSINESS_CATEGORY);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_9593fac7fba92df6a4af11a09356bc08_tuple", mod_consts.const_tuple_str_digest_9593fac7fba92df6a4af11a09356bc08_tuple);
+mod_consts_hash[134] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_9593fac7fba92df6a4af11a09356bc08_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_POSTAL_ADDRESS", mod_consts.const_str_plain_POSTAL_ADDRESS);
+mod_consts_hash[135] = DEEP_HASH(tstate, mod_consts.const_str_plain_POSTAL_ADDRESS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_4d1eecda490e15d970f849aecc70bec4_tuple", mod_consts.const_tuple_str_digest_4d1eecda490e15d970f849aecc70bec4_tuple);
+mod_consts_hash[136] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_4d1eecda490e15d970f849aecc70bec4_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_POSTAL_CODE", mod_consts.const_str_plain_POSTAL_CODE);
+mod_consts_hash[137] = DEEP_HASH(tstate, mod_consts.const_str_plain_POSTAL_CODE);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_ab9d7539750cd028eb33bbcbb7ee79ef_tuple", mod_consts.const_tuple_str_digest_ab9d7539750cd028eb33bbcbb7ee79ef_tuple);
+mod_consts_hash[138] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_ab9d7539750cd028eb33bbcbb7ee79ef_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_INN", mod_consts.const_str_plain_INN);
+mod_consts_hash[139] = DEEP_HASH(tstate, mod_consts.const_str_plain_INN);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_b146b7df831df69e003af30211afd1b5_tuple", mod_consts.const_tuple_str_digest_b146b7df831df69e003af30211afd1b5_tuple);
+mod_consts_hash[140] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_b146b7df831df69e003af30211afd1b5_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OGRN", mod_consts.const_str_plain_OGRN);
+mod_consts_hash[141] = DEEP_HASH(tstate, mod_consts.const_str_plain_OGRN);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_a2b091b732cd267eeb03812ab7752b2a_tuple", mod_consts.const_tuple_str_digest_a2b091b732cd267eeb03812ab7752b2a_tuple);
+mod_consts_hash[142] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_a2b091b732cd267eeb03812ab7752b2a_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SNILS", mod_consts.const_str_plain_SNILS);
+mod_consts_hash[143] = DEEP_HASH(tstate, mod_consts.const_str_plain_SNILS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d69ccf3d05e6659c8b3ce486a9cce8b0_tuple", mod_consts.const_tuple_str_digest_d69ccf3d05e6659c8b3ce486a9cce8b0_tuple);
+mod_consts_hash[144] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d69ccf3d05e6659c8b3ce486a9cce8b0_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_UNSTRUCTURED_NAME", mod_consts.const_str_plain_UNSTRUCTURED_NAME);
+mod_consts_hash[145] = DEEP_HASH(tstate, mod_consts.const_str_plain_UNSTRUCTURED_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_fdb578797261104103247aa2de285428_tuple", mod_consts.const_tuple_str_digest_fdb578797261104103247aa2de285428_tuple);
+mod_consts_hash[146] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_fdb578797261104103247aa2de285428_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_UNSIGNED", mod_consts.const_str_plain_UNSIGNED);
+mod_consts_hash[147] = DEEP_HASH(tstate, mod_consts.const_str_plain_UNSIGNED);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SignatureAlgorithmOID", mod_consts.const_str_plain_SignatureAlgorithmOID);
+mod_consts_hash[148] = DEEP_HASH(tstate, mod_consts.const_str_plain_SignatureAlgorithmOID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_93", mod_consts.const_int_pos_93);
+mod_consts_hash[149] = DEEP_HASH(tstate, mod_consts.const_int_pos_93);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d766128dd3b188cb31a47f2b60d4f03b_tuple", mod_consts.const_tuple_str_digest_d766128dd3b188cb31a47f2b60d4f03b_tuple);
+mod_consts_hash[150] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d766128dd3b188cb31a47f2b60d4f03b_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_MD5", mod_consts.const_str_plain_RSA_WITH_MD5);
+mod_consts_hash[151] = DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_MD5);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_b84a8ae3bdd5ed5249d61bfca24aa504_tuple", mod_consts.const_tuple_str_digest_b84a8ae3bdd5ed5249d61bfca24aa504_tuple);
+mod_consts_hash[152] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_b84a8ae3bdd5ed5249d61bfca24aa504_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA1", mod_consts.const_str_plain_RSA_WITH_SHA1);
+mod_consts_hash[153] = DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA1);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_592f2dc8660724fc191cd3b965719e17_tuple", mod_consts.const_tuple_str_digest_592f2dc8660724fc191cd3b965719e17_tuple);
+mod_consts_hash[154] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_592f2dc8660724fc191cd3b965719e17_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain__RSA_WITH_SHA1", mod_consts.const_str_plain__RSA_WITH_SHA1);
+mod_consts_hash[155] = DEEP_HASH(tstate, mod_consts.const_str_plain__RSA_WITH_SHA1);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_777dc680c1db5aad08fab2430d7c4782_tuple", mod_consts.const_tuple_str_digest_777dc680c1db5aad08fab2430d7c4782_tuple);
+mod_consts_hash[156] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_777dc680c1db5aad08fab2430d7c4782_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA224", mod_consts.const_str_plain_RSA_WITH_SHA224);
+mod_consts_hash[157] = DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA224);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_bf7a54fbdb0b05505b05e9611f5ae528_tuple", mod_consts.const_tuple_str_digest_bf7a54fbdb0b05505b05e9611f5ae528_tuple);
+mod_consts_hash[158] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_bf7a54fbdb0b05505b05e9611f5ae528_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA256", mod_consts.const_str_plain_RSA_WITH_SHA256);
+mod_consts_hash[159] = DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA256);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_175c6aa0dbff49caa0d29fca6c1fdbb2_tuple", mod_consts.const_tuple_str_digest_175c6aa0dbff49caa0d29fca6c1fdbb2_tuple);
+mod_consts_hash[160] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_175c6aa0dbff49caa0d29fca6c1fdbb2_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA384", mod_consts.const_str_plain_RSA_WITH_SHA384);
+mod_consts_hash[161] = DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA384);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_cbb358e95676acbda1a7cec77811a76a_tuple", mod_consts.const_tuple_str_digest_cbb358e95676acbda1a7cec77811a76a_tuple);
+mod_consts_hash[162] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_cbb358e95676acbda1a7cec77811a76a_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA512", mod_consts.const_str_plain_RSA_WITH_SHA512);
+mod_consts_hash[163] = DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA512);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_11e69c90017408487dc7480de77c2b57_tuple", mod_consts.const_tuple_str_digest_11e69c90017408487dc7480de77c2b57_tuple);
+mod_consts_hash[164] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_11e69c90017408487dc7480de77c2b57_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA3_224", mod_consts.const_str_plain_RSA_WITH_SHA3_224);
+mod_consts_hash[165] = DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA3_224);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_628d634092584d6d3de9449f35ac7201_tuple", mod_consts.const_tuple_str_digest_628d634092584d6d3de9449f35ac7201_tuple);
+mod_consts_hash[166] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_628d634092584d6d3de9449f35ac7201_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA3_256", mod_consts.const_str_plain_RSA_WITH_SHA3_256);
+mod_consts_hash[167] = DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA3_256);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0ecbc77378a42af013cc368d21739033_tuple", mod_consts.const_tuple_str_digest_0ecbc77378a42af013cc368d21739033_tuple);
+mod_consts_hash[168] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0ecbc77378a42af013cc368d21739033_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA3_384", mod_consts.const_str_plain_RSA_WITH_SHA3_384);
+mod_consts_hash[169] = DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA3_384);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_6c80dee87c72a9908a70836c96727588_tuple", mod_consts.const_tuple_str_digest_6c80dee87c72a9908a70836c96727588_tuple);
+mod_consts_hash[170] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_6c80dee87c72a9908a70836c96727588_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA3_512", mod_consts.const_str_plain_RSA_WITH_SHA3_512);
+mod_consts_hash[171] = DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA3_512);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0f59f576526d1d0c3e712a7f737c95cb_tuple", mod_consts.const_tuple_str_digest_0f59f576526d1d0c3e712a7f737c95cb_tuple);
+mod_consts_hash[172] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0f59f576526d1d0c3e712a7f737c95cb_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSASSA_PSS", mod_consts.const_str_plain_RSASSA_PSS);
+mod_consts_hash[173] = DEEP_HASH(tstate, mod_consts.const_str_plain_RSASSA_PSS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_35eb25ced2ccdf6bcc44b71ddad61958_tuple", mod_consts.const_tuple_str_digest_35eb25ced2ccdf6bcc44b71ddad61958_tuple);
+mod_consts_hash[174] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_35eb25ced2ccdf6bcc44b71ddad61958_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA1", mod_consts.const_str_plain_ECDSA_WITH_SHA1);
+mod_consts_hash[175] = DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA1);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_c3b73ca09086726c1f01ebb5162d733b_tuple", mod_consts.const_tuple_str_digest_c3b73ca09086726c1f01ebb5162d733b_tuple);
+mod_consts_hash[176] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_c3b73ca09086726c1f01ebb5162d733b_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA224", mod_consts.const_str_plain_ECDSA_WITH_SHA224);
+mod_consts_hash[177] = DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA224);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_c65f30c441db755c29a6af4980e8b725_tuple", mod_consts.const_tuple_str_digest_c65f30c441db755c29a6af4980e8b725_tuple);
+mod_consts_hash[178] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_c65f30c441db755c29a6af4980e8b725_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA256", mod_consts.const_str_plain_ECDSA_WITH_SHA256);
+mod_consts_hash[179] = DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA256);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_851be9911219ad6068e49143d3248889_tuple", mod_consts.const_tuple_str_digest_851be9911219ad6068e49143d3248889_tuple);
+mod_consts_hash[180] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_851be9911219ad6068e49143d3248889_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA384", mod_consts.const_str_plain_ECDSA_WITH_SHA384);
+mod_consts_hash[181] = DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA384);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_8cf8f3c54a257961a23b52b084d86cec_tuple", mod_consts.const_tuple_str_digest_8cf8f3c54a257961a23b52b084d86cec_tuple);
+mod_consts_hash[182] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_8cf8f3c54a257961a23b52b084d86cec_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA512", mod_consts.const_str_plain_ECDSA_WITH_SHA512);
+mod_consts_hash[183] = DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA512);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_ea5f32e18190c861edbb3f7f35293d3d_tuple", mod_consts.const_tuple_str_digest_ea5f32e18190c861edbb3f7f35293d3d_tuple);
+mod_consts_hash[184] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_ea5f32e18190c861edbb3f7f35293d3d_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA3_224", mod_consts.const_str_plain_ECDSA_WITH_SHA3_224);
+mod_consts_hash[185] = DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA3_224);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_956aa86e408a6adabaa354462473dbe2_tuple", mod_consts.const_tuple_str_digest_956aa86e408a6adabaa354462473dbe2_tuple);
+mod_consts_hash[186] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_956aa86e408a6adabaa354462473dbe2_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA3_256", mod_consts.const_str_plain_ECDSA_WITH_SHA3_256);
+mod_consts_hash[187] = DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA3_256);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0762aff50fbcc07d7063cee18aef8393_tuple", mod_consts.const_tuple_str_digest_0762aff50fbcc07d7063cee18aef8393_tuple);
+mod_consts_hash[188] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0762aff50fbcc07d7063cee18aef8393_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA3_384", mod_consts.const_str_plain_ECDSA_WITH_SHA3_384);
+mod_consts_hash[189] = DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA3_384);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_09f9ec1bd9bc636d40a3b5dd215393b8_tuple", mod_consts.const_tuple_str_digest_09f9ec1bd9bc636d40a3b5dd215393b8_tuple);
+mod_consts_hash[190] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_09f9ec1bd9bc636d40a3b5dd215393b8_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA3_512", mod_consts.const_str_plain_ECDSA_WITH_SHA3_512);
+mod_consts_hash[191] = DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA3_512);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_65069b4fb9aa28cf3d80a60f2197040c_tuple", mod_consts.const_tuple_str_digest_65069b4fb9aa28cf3d80a60f2197040c_tuple);
+mod_consts_hash[192] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_65069b4fb9aa28cf3d80a60f2197040c_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DSA_WITH_SHA1", mod_consts.const_str_plain_DSA_WITH_SHA1);
+mod_consts_hash[193] = DEEP_HASH(tstate, mod_consts.const_str_plain_DSA_WITH_SHA1);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_649afc4ad6dae06148c7e2d99bb38960_tuple", mod_consts.const_tuple_str_digest_649afc4ad6dae06148c7e2d99bb38960_tuple);
+mod_consts_hash[194] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_649afc4ad6dae06148c7e2d99bb38960_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DSA_WITH_SHA224", mod_consts.const_str_plain_DSA_WITH_SHA224);
+mod_consts_hash[195] = DEEP_HASH(tstate, mod_consts.const_str_plain_DSA_WITH_SHA224);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d276e487e55b7f956e2f735a941b29b1_tuple", mod_consts.const_tuple_str_digest_d276e487e55b7f956e2f735a941b29b1_tuple);
+mod_consts_hash[196] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d276e487e55b7f956e2f735a941b29b1_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DSA_WITH_SHA256", mod_consts.const_str_plain_DSA_WITH_SHA256);
+mod_consts_hash[197] = DEEP_HASH(tstate, mod_consts.const_str_plain_DSA_WITH_SHA256);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_b81cf544dd27893f3ce51207857ab827_tuple", mod_consts.const_tuple_str_digest_b81cf544dd27893f3ce51207857ab827_tuple);
+mod_consts_hash[198] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_b81cf544dd27893f3ce51207857ab827_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DSA_WITH_SHA384", mod_consts.const_str_plain_DSA_WITH_SHA384);
+mod_consts_hash[199] = DEEP_HASH(tstate, mod_consts.const_str_plain_DSA_WITH_SHA384);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_91091cfdfbf4c6eb6dd34f078c43c4a2_tuple", mod_consts.const_tuple_str_digest_91091cfdfbf4c6eb6dd34f078c43c4a2_tuple);
+mod_consts_hash[200] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_91091cfdfbf4c6eb6dd34f078c43c4a2_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DSA_WITH_SHA512", mod_consts.const_str_plain_DSA_WITH_SHA512);
+mod_consts_hash[201] = DEEP_HASH(tstate, mod_consts.const_str_plain_DSA_WITH_SHA512);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_06987cfccee49a896525bf927684c3f1_tuple", mod_consts.const_tuple_str_digest_06987cfccee49a896525bf927684c3f1_tuple);
+mod_consts_hash[202] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_06987cfccee49a896525bf927684c3f1_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ED25519", mod_consts.const_str_plain_ED25519);
+mod_consts_hash[203] = DEEP_HASH(tstate, mod_consts.const_str_plain_ED25519);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d2aa151b2525d178415599466b9d6aee_tuple", mod_consts.const_tuple_str_digest_d2aa151b2525d178415599466b9d6aee_tuple);
+mod_consts_hash[204] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d2aa151b2525d178415599466b9d6aee_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ED448", mod_consts.const_str_plain_ED448);
+mod_consts_hash[205] = DEEP_HASH(tstate, mod_consts.const_str_plain_ED448);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d4276f73f9fe48e814299ea9f5bc68fc_tuple", mod_consts.const_tuple_str_digest_d4276f73f9fe48e814299ea9f5bc68fc_tuple);
+mod_consts_hash[206] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d4276f73f9fe48e814299ea9f5bc68fc_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ML_DSA_44", mod_consts.const_str_plain_ML_DSA_44);
+mod_consts_hash[207] = DEEP_HASH(tstate, mod_consts.const_str_plain_ML_DSA_44);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_80fd62f760f87e5b9cae90470f25d9ee_tuple", mod_consts.const_tuple_str_digest_80fd62f760f87e5b9cae90470f25d9ee_tuple);
+mod_consts_hash[208] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_80fd62f760f87e5b9cae90470f25d9ee_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ML_DSA_65", mod_consts.const_str_plain_ML_DSA_65);
+mod_consts_hash[209] = DEEP_HASH(tstate, mod_consts.const_str_plain_ML_DSA_65);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_46cdbf8ef9851e9a5311c55efee786ac_tuple", mod_consts.const_tuple_str_digest_46cdbf8ef9851e9a5311c55efee786ac_tuple);
+mod_consts_hash[210] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_46cdbf8ef9851e9a5311c55efee786ac_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ML_DSA_87", mod_consts.const_str_plain_ML_DSA_87);
+mod_consts_hash[211] = DEEP_HASH(tstate, mod_consts.const_str_plain_ML_DSA_87);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_398193cc178d9ec2885c1b3ed5bbb391_tuple", mod_consts.const_tuple_str_digest_398193cc178d9ec2885c1b3ed5bbb391_tuple);
+mod_consts_hash[212] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_398193cc178d9ec2885c1b3ed5bbb391_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_GOSTR3411_94_WITH_3410_2001", mod_consts.const_str_plain_GOSTR3411_94_WITH_3410_2001);
+mod_consts_hash[213] = DEEP_HASH(tstate, mod_consts.const_str_plain_GOSTR3411_94_WITH_3410_2001);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_9c4343dcf24c6c6afaf10f9c2e7d1b23_tuple", mod_consts.const_tuple_str_digest_9c4343dcf24c6c6afaf10f9c2e7d1b23_tuple);
+mod_consts_hash[214] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_9c4343dcf24c6c6afaf10f9c2e7d1b23_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_256", mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_256);
+mod_consts_hash[215] = DEEP_HASH(tstate, mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_256);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_71ea0d189efc2f5cfcdfff6ec29064f1_tuple", mod_consts.const_tuple_str_digest_71ea0d189efc2f5cfcdfff6ec29064f1_tuple);
+mod_consts_hash[216] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_71ea0d189efc2f5cfcdfff6ec29064f1_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_512", mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_512);
+mod_consts_hash[217] = DEEP_HASH(tstate, mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_512);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_22189de6b6ba8121c08a004aeca07ada_tuple", mod_consts.const_tuple_str_digest_22189de6b6ba8121c08a004aeca07ada_tuple);
+mod_consts_hash[218] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_22189de6b6ba8121c08a004aeca07ada_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_MD5", mod_consts.const_str_plain_MD5);
+mod_consts_hash[219] = DEEP_HASH(tstate, mod_consts.const_str_plain_MD5);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA1", mod_consts.const_str_plain_SHA1);
+mod_consts_hash[220] = DEEP_HASH(tstate, mod_consts.const_str_plain_SHA1);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA224", mod_consts.const_str_plain_SHA224);
+mod_consts_hash[221] = DEEP_HASH(tstate, mod_consts.const_str_plain_SHA224);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA256", mod_consts.const_str_plain_SHA256);
+mod_consts_hash[222] = DEEP_HASH(tstate, mod_consts.const_str_plain_SHA256);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA384", mod_consts.const_str_plain_SHA384);
+mod_consts_hash[223] = DEEP_HASH(tstate, mod_consts.const_str_plain_SHA384);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA512", mod_consts.const_str_plain_SHA512);
+mod_consts_hash[224] = DEEP_HASH(tstate, mod_consts.const_str_plain_SHA512);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_224", mod_consts.const_str_plain_SHA3_224);
+mod_consts_hash[225] = DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_224);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_256", mod_consts.const_str_plain_SHA3_256);
+mod_consts_hash[226] = DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_256);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_384", mod_consts.const_str_plain_SHA3_384);
+mod_consts_hash[227] = DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_384);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_512", mod_consts.const_str_plain_SHA3_512);
+mod_consts_hash[228] = DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_512);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain__SIG_OIDS_TO_HASH", mod_consts.const_str_plain__SIG_OIDS_TO_HASH);
+mod_consts_hash[229] = DEEP_HASH(tstate, mod_consts.const_str_plain__SIG_OIDS_TO_HASH);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_cbb2bfe8244766c544b16c66aa754e76", mod_consts.const_str_digest_cbb2bfe8244766c544b16c66aa754e76);
+mod_consts_hash[230] = DEEP_HASH(tstate, mod_consts.const_str_digest_cbb2bfe8244766c544b16c66aa754e76);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_HashAlgorithmOID", mod_consts.const_str_plain_HashAlgorithmOID);
+mod_consts_hash[231] = DEEP_HASH(tstate, mod_consts.const_str_plain_HashAlgorithmOID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_168", mod_consts.const_int_pos_168);
+mod_consts_hash[232] = DEEP_HASH(tstate, mod_consts.const_int_pos_168);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_97841e0407a21a46fa17b8ec8f246b28_tuple", mod_consts.const_tuple_str_digest_97841e0407a21a46fa17b8ec8f246b28_tuple);
+mod_consts_hash[233] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_97841e0407a21a46fa17b8ec8f246b28_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0803e6568131d3ace6a97c0848babbec_tuple", mod_consts.const_tuple_str_digest_0803e6568131d3ace6a97c0848babbec_tuple);
+mod_consts_hash[234] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0803e6568131d3ace6a97c0848babbec_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d5501c4718b7c887f0d053e467278836_tuple", mod_consts.const_tuple_str_digest_d5501c4718b7c887f0d053e467278836_tuple);
+mod_consts_hash[235] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d5501c4718b7c887f0d053e467278836_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_b748c93313cc612300dbdce6bc0417b9_tuple", mod_consts.const_tuple_str_digest_b748c93313cc612300dbdce6bc0417b9_tuple);
+mod_consts_hash[236] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_b748c93313cc612300dbdce6bc0417b9_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_173e1f5936576e525a4ec0c436e18865_tuple", mod_consts.const_tuple_str_digest_173e1f5936576e525a4ec0c436e18865_tuple);
+mod_consts_hash[237] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_173e1f5936576e525a4ec0c436e18865_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_906c3950c6c1dc08322b82663c1fc8e8_tuple", mod_consts.const_tuple_str_digest_906c3950c6c1dc08322b82663c1fc8e8_tuple);
+mod_consts_hash[238] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_906c3950c6c1dc08322b82663c1fc8e8_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_e825111c73dff949ac80a4a801f56561_tuple", mod_consts.const_tuple_str_digest_e825111c73dff949ac80a4a801f56561_tuple);
+mod_consts_hash[239] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_e825111c73dff949ac80a4a801f56561_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_bdd932b526deab6bfed3fccaed0a98ae_tuple", mod_consts.const_tuple_str_digest_bdd932b526deab6bfed3fccaed0a98ae_tuple);
+mod_consts_hash[240] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_bdd932b526deab6bfed3fccaed0a98ae_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_7c53876e9249a68626a9bf31a04dbc0e_tuple", mod_consts.const_tuple_str_digest_7c53876e9249a68626a9bf31a04dbc0e_tuple);
+mod_consts_hash[241] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_7c53876e9249a68626a9bf31a04dbc0e_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_3f94b1ccc08959c5a038201c7395f15b_tuple", mod_consts.const_tuple_str_digest_3f94b1ccc08959c5a038201c7395f15b_tuple);
+mod_consts_hash[242] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_3f94b1ccc08959c5a038201c7395f15b_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_224_NIST", mod_consts.const_str_plain_SHA3_224_NIST);
+mod_consts_hash[243] = DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_224_NIST);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_ccb09a632f9eb719746617c0e595a99d_tuple", mod_consts.const_tuple_str_digest_ccb09a632f9eb719746617c0e595a99d_tuple);
+mod_consts_hash[244] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_ccb09a632f9eb719746617c0e595a99d_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_256_NIST", mod_consts.const_str_plain_SHA3_256_NIST);
+mod_consts_hash[245] = DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_256_NIST);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_5921bc034a1c5618bc6f626253269d85_tuple", mod_consts.const_tuple_str_digest_5921bc034a1c5618bc6f626253269d85_tuple);
+mod_consts_hash[246] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_5921bc034a1c5618bc6f626253269d85_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_384_NIST", mod_consts.const_str_plain_SHA3_384_NIST);
+mod_consts_hash[247] = DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_384_NIST);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_f0a5bfe234e75f0a3713ef5a4472914c_tuple", mod_consts.const_tuple_str_digest_f0a5bfe234e75f0a3713ef5a4472914c_tuple);
+mod_consts_hash[248] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_f0a5bfe234e75f0a3713ef5a4472914c_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_512_NIST", mod_consts.const_str_plain_SHA3_512_NIST);
+mod_consts_hash[249] = DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_512_NIST);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_PublicKeyAlgorithmOID", mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+mod_consts_hash[250] = DEEP_HASH(tstate, mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_184", mod_consts.const_int_pos_184);
+mod_consts_hash[251] = DEEP_HASH(tstate, mod_consts.const_int_pos_184);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_4c2472c460bb1ae8b5b00c225545ade0_tuple", mod_consts.const_tuple_str_digest_4c2472c460bb1ae8b5b00c225545ade0_tuple);
+mod_consts_hash[252] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_4c2472c460bb1ae8b5b00c225545ade0_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DSA", mod_consts.const_str_plain_DSA);
+mod_consts_hash[253] = DEEP_HASH(tstate, mod_consts.const_str_plain_DSA);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_67526efcdb60c6051d3c4d632ef450e4_tuple", mod_consts.const_tuple_str_digest_67526efcdb60c6051d3c4d632ef450e4_tuple);
+mod_consts_hash[254] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_67526efcdb60c6051d3c4d632ef450e4_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_EC_PUBLIC_KEY", mod_consts.const_str_plain_EC_PUBLIC_KEY);
+mod_consts_hash[255] = DEEP_HASH(tstate, mod_consts.const_str_plain_EC_PUBLIC_KEY);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_8610103a8657fcf057847084d4917365_tuple", mod_consts.const_tuple_str_digest_8610103a8657fcf057847084d4917365_tuple);
+mod_consts_hash[256] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_8610103a8657fcf057847084d4917365_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSAES_PKCS1_v1_5", mod_consts.const_str_plain_RSAES_PKCS1_v1_5);
+mod_consts_hash[257] = DEEP_HASH(tstate, mod_consts.const_str_plain_RSAES_PKCS1_v1_5);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_55d27838969947e85f4df1d34421d15e_tuple", mod_consts.const_tuple_str_digest_55d27838969947e85f4df1d34421d15e_tuple);
+mod_consts_hash[258] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_55d27838969947e85f4df1d34421d15e_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_X25519", mod_consts.const_str_plain_X25519);
+mod_consts_hash[259] = DEEP_HASH(tstate, mod_consts.const_str_plain_X25519);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2bd272bb44927c0f33a3c332ad7c81ac_tuple", mod_consts.const_tuple_str_digest_2bd272bb44927c0f33a3c332ad7c81ac_tuple);
+mod_consts_hash[260] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2bd272bb44927c0f33a3c332ad7c81ac_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_X448", mod_consts.const_str_plain_X448);
+mod_consts_hash[261] = DEEP_HASH(tstate, mod_consts.const_str_plain_X448);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_5122c43aaeb33bb235c3c4afc6aef2cc_tuple", mod_consts.const_tuple_str_digest_5122c43aaeb33bb235c3c4afc6aef2cc_tuple);
+mod_consts_hash[262] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_5122c43aaeb33bb235c3c4afc6aef2cc_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ML_KEM_768", mod_consts.const_str_plain_ML_KEM_768);
+mod_consts_hash[263] = DEEP_HASH(tstate, mod_consts.const_str_plain_ML_KEM_768);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_c400104f335b965b7faf2c8e62cee0e5_tuple", mod_consts.const_tuple_str_digest_c400104f335b965b7faf2c8e62cee0e5_tuple);
+mod_consts_hash[264] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_c400104f335b965b7faf2c8e62cee0e5_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ML_KEM_1024", mod_consts.const_str_plain_ML_KEM_1024);
+mod_consts_hash[265] = DEEP_HASH(tstate, mod_consts.const_str_plain_ML_KEM_1024);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ExtendedKeyUsageOID", mod_consts.const_str_plain_ExtendedKeyUsageOID);
+mod_consts_hash[266] = DEEP_HASH(tstate, mod_consts.const_str_plain_ExtendedKeyUsageOID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_200", mod_consts.const_int_pos_200);
+mod_consts_hash[267] = DEEP_HASH(tstate, mod_consts.const_int_pos_200);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0376a15beee26a285b06cab589a6a7cd_tuple", mod_consts.const_tuple_str_digest_0376a15beee26a285b06cab589a6a7cd_tuple);
+mod_consts_hash[268] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0376a15beee26a285b06cab589a6a7cd_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SERVER_AUTH", mod_consts.const_str_plain_SERVER_AUTH);
+mod_consts_hash[269] = DEEP_HASH(tstate, mod_consts.const_str_plain_SERVER_AUTH);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_87cdc7b3da2a01efa67fc002f5f9e93d_tuple", mod_consts.const_tuple_str_digest_87cdc7b3da2a01efa67fc002f5f9e93d_tuple);
+mod_consts_hash[270] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_87cdc7b3da2a01efa67fc002f5f9e93d_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CLIENT_AUTH", mod_consts.const_str_plain_CLIENT_AUTH);
+mod_consts_hash[271] = DEEP_HASH(tstate, mod_consts.const_str_plain_CLIENT_AUTH);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_ced7dfea6e2ba0f172c63b367fc544eb_tuple", mod_consts.const_tuple_str_digest_ced7dfea6e2ba0f172c63b367fc544eb_tuple);
+mod_consts_hash[272] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_ced7dfea6e2ba0f172c63b367fc544eb_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CODE_SIGNING", mod_consts.const_str_plain_CODE_SIGNING);
+mod_consts_hash[273] = DEEP_HASH(tstate, mod_consts.const_str_plain_CODE_SIGNING);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_3d2ee337e9731ea21bdde6fb3248081f_tuple", mod_consts.const_tuple_str_digest_3d2ee337e9731ea21bdde6fb3248081f_tuple);
+mod_consts_hash[274] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_3d2ee337e9731ea21bdde6fb3248081f_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_EMAIL_PROTECTION", mod_consts.const_str_plain_EMAIL_PROTECTION);
+mod_consts_hash[275] = DEEP_HASH(tstate, mod_consts.const_str_plain_EMAIL_PROTECTION);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_abe352de3ffbaa69a49d347e2acd1e80_tuple", mod_consts.const_tuple_str_digest_abe352de3ffbaa69a49d347e2acd1e80_tuple);
+mod_consts_hash[276] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_abe352de3ffbaa69a49d347e2acd1e80_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_TIME_STAMPING", mod_consts.const_str_plain_TIME_STAMPING);
+mod_consts_hash[277] = DEEP_HASH(tstate, mod_consts.const_str_plain_TIME_STAMPING);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_bfabc35e33098bc3bd4a248a68700379_tuple", mod_consts.const_tuple_str_digest_bfabc35e33098bc3bd4a248a68700379_tuple);
+mod_consts_hash[278] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_bfabc35e33098bc3bd4a248a68700379_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSP_SIGNING", mod_consts.const_str_plain_OCSP_SIGNING);
+mod_consts_hash[279] = DEEP_HASH(tstate, mod_consts.const_str_plain_OCSP_SIGNING);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_42920d8d1815b6383c6613f7be148048_tuple", mod_consts.const_tuple_str_digest_42920d8d1815b6383c6613f7be148048_tuple);
+mod_consts_hash[280] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_42920d8d1815b6383c6613f7be148048_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ANY_EXTENDED_KEY_USAGE", mod_consts.const_str_plain_ANY_EXTENDED_KEY_USAGE);
+mod_consts_hash[281] = DEEP_HASH(tstate, mod_consts.const_str_plain_ANY_EXTENDED_KEY_USAGE);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_b1f486d61430aa578028f269cd120ebf_tuple", mod_consts.const_tuple_str_digest_b1f486d61430aa578028f269cd120ebf_tuple);
+mod_consts_hash[282] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_b1f486d61430aa578028f269cd120ebf_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SMARTCARD_LOGON", mod_consts.const_str_plain_SMARTCARD_LOGON);
+mod_consts_hash[283] = DEEP_HASH(tstate, mod_consts.const_str_plain_SMARTCARD_LOGON);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_293ce32998aa7267f364392b869fabe6_tuple", mod_consts.const_tuple_str_digest_293ce32998aa7267f364392b869fabe6_tuple);
+mod_consts_hash[284] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_293ce32998aa7267f364392b869fabe6_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_KERBEROS_PKINIT_KDC", mod_consts.const_str_plain_KERBEROS_PKINIT_KDC);
+mod_consts_hash[285] = DEEP_HASH(tstate, mod_consts.const_str_plain_KERBEROS_PKINIT_KDC);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_af8183ec75e29900eedf72665526f56f_tuple", mod_consts.const_tuple_str_digest_af8183ec75e29900eedf72665526f56f_tuple);
+mod_consts_hash[286] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_af8183ec75e29900eedf72665526f56f_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_IPSEC_IKE", mod_consts.const_str_plain_IPSEC_IKE);
+mod_consts_hash[287] = DEEP_HASH(tstate, mod_consts.const_str_plain_IPSEC_IKE);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_5496e4ee75db5775d3d9a502efd647bd_tuple", mod_consts.const_tuple_str_digest_5496e4ee75db5775d3d9a502efd647bd_tuple);
+mod_consts_hash[288] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_5496e4ee75db5775d3d9a502efd647bd_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_BUNDLE_SECURITY", mod_consts.const_str_plain_BUNDLE_SECURITY);
+mod_consts_hash[289] = DEEP_HASH(tstate, mod_consts.const_str_plain_BUNDLE_SECURITY);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_ccea41f396a418a256fc15419f5a5555_tuple", mod_consts.const_tuple_str_digest_ccea41f396a418a256fc15419f5a5555_tuple);
+mod_consts_hash[290] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_ccea41f396a418a256fc15419f5a5555_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CERTIFICATE_TRANSPARENCY", mod_consts.const_str_plain_CERTIFICATE_TRANSPARENCY);
+mod_consts_hash[291] = DEEP_HASH(tstate, mod_consts.const_str_plain_CERTIFICATE_TRANSPARENCY);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OtherNameFormOID", mod_consts.const_str_plain_OtherNameFormOID);
+mod_consts_hash[292] = DEEP_HASH(tstate, mod_consts.const_str_plain_OtherNameFormOID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_215", mod_consts.const_int_pos_215);
+mod_consts_hash[293] = DEEP_HASH(tstate, mod_consts.const_int_pos_215);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_54731fe62fc1aa88853437677be0f551_tuple", mod_consts.const_tuple_str_digest_54731fe62fc1aa88853437677be0f551_tuple);
+mod_consts_hash[294] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_54731fe62fc1aa88853437677be0f551_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_PERMANENT_IDENTIFIER", mod_consts.const_str_plain_PERMANENT_IDENTIFIER);
+mod_consts_hash[295] = DEEP_HASH(tstate, mod_consts.const_str_plain_PERMANENT_IDENTIFIER);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_119861f2139b2f03ce565c8597226b29_tuple", mod_consts.const_tuple_str_digest_119861f2139b2f03ce565c8597226b29_tuple);
+mod_consts_hash[296] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_119861f2139b2f03ce565c8597226b29_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_HW_MODULE_NAME", mod_consts.const_str_plain_HW_MODULE_NAME);
+mod_consts_hash[297] = DEEP_HASH(tstate, mod_consts.const_str_plain_HW_MODULE_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_4ed534afb123635a182f7c580306d5f8_tuple", mod_consts.const_tuple_str_digest_4ed534afb123635a182f7c580306d5f8_tuple);
+mod_consts_hash[298] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_4ed534afb123635a182f7c580306d5f8_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DNS_SRV", mod_consts.const_str_plain_DNS_SRV);
+mod_consts_hash[299] = DEEP_HASH(tstate, mod_consts.const_str_plain_DNS_SRV);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_a85bb3a108037fcb412e96c090ba22cd_tuple", mod_consts.const_tuple_str_digest_a85bb3a108037fcb412e96c090ba22cd_tuple);
+mod_consts_hash[300] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_a85bb3a108037fcb412e96c090ba22cd_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_NAI_REALM", mod_consts.const_str_plain_NAI_REALM);
+mod_consts_hash[301] = DEEP_HASH(tstate, mod_consts.const_str_plain_NAI_REALM);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_e5d892ec6de39d023c8f539b6763bcbf_tuple", mod_consts.const_tuple_str_digest_e5d892ec6de39d023c8f539b6763bcbf_tuple);
+mod_consts_hash[302] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_e5d892ec6de39d023c8f539b6763bcbf_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SMTP_UTF8_MAILBOX", mod_consts.const_str_plain_SMTP_UTF8_MAILBOX);
+mod_consts_hash[303] = DEEP_HASH(tstate, mod_consts.const_str_plain_SMTP_UTF8_MAILBOX);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_7371190d099cbe3ab89fcdaec1d4094c_tuple", mod_consts.const_tuple_str_digest_7371190d099cbe3ab89fcdaec1d4094c_tuple);
+mod_consts_hash[304] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_7371190d099cbe3ab89fcdaec1d4094c_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ACP_NODE_NAME", mod_consts.const_str_plain_ACP_NODE_NAME);
+mod_consts_hash[305] = DEEP_HASH(tstate, mod_consts.const_str_plain_ACP_NODE_NAME);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_8c0b077da28a1a6e1d53d45441f26ef6_tuple", mod_consts.const_tuple_str_digest_8c0b077da28a1a6e1d53d45441f26ef6_tuple);
+mod_consts_hash[306] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_8c0b077da28a1a6e1d53d45441f26ef6_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_BUNDLE_EID", mod_consts.const_str_plain_BUNDLE_EID);
+mod_consts_hash[307] = DEEP_HASH(tstate, mod_consts.const_str_plain_BUNDLE_EID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_AuthorityInformationAccessOID", mod_consts.const_str_plain_AuthorityInformationAccessOID);
+mod_consts_hash[308] = DEEP_HASH(tstate, mod_consts.const_str_plain_AuthorityInformationAccessOID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_225", mod_consts.const_int_pos_225);
+mod_consts_hash[309] = DEEP_HASH(tstate, mod_consts.const_int_pos_225);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_07bbedf6f84f3fc5867dc620be5e095a_tuple", mod_consts.const_tuple_str_digest_07bbedf6f84f3fc5867dc620be5e095a_tuple);
+mod_consts_hash[310] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_07bbedf6f84f3fc5867dc620be5e095a_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CA_ISSUERS", mod_consts.const_str_plain_CA_ISSUERS);
+mod_consts_hash[311] = DEEP_HASH(tstate, mod_consts.const_str_plain_CA_ISSUERS);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2b4acfbf018aa94fa2c4d751377b67ba_tuple", mod_consts.const_tuple_str_digest_2b4acfbf018aa94fa2c4d751377b67ba_tuple);
+mod_consts_hash[312] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2b4acfbf018aa94fa2c4d751377b67ba_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSP", mod_consts.const_str_plain_OCSP);
+mod_consts_hash[313] = DEEP_HASH(tstate, mod_consts.const_str_plain_OCSP);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SubjectInformationAccessOID", mod_consts.const_str_plain_SubjectInformationAccessOID);
+mod_consts_hash[314] = DEEP_HASH(tstate, mod_consts.const_str_plain_SubjectInformationAccessOID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_230", mod_consts.const_int_pos_230);
+mod_consts_hash[315] = DEEP_HASH(tstate, mod_consts.const_int_pos_230);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_66e93f786830774b3f20fac3289ad8b4_tuple", mod_consts.const_tuple_str_digest_66e93f786830774b3f20fac3289ad8b4_tuple);
+mod_consts_hash[316] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_66e93f786830774b3f20fac3289ad8b4_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CA_REPOSITORY", mod_consts.const_str_plain_CA_REPOSITORY);
+mod_consts_hash[317] = DEEP_HASH(tstate, mod_consts.const_str_plain_CA_REPOSITORY);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CertificatePoliciesOID", mod_consts.const_str_plain_CertificatePoliciesOID);
+mod_consts_hash[318] = DEEP_HASH(tstate, mod_consts.const_str_plain_CertificatePoliciesOID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_234", mod_consts.const_int_pos_234);
+mod_consts_hash[319] = DEEP_HASH(tstate, mod_consts.const_int_pos_234);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_50321ff2fccee4024d98999f9c8d9feb_tuple", mod_consts.const_tuple_str_digest_50321ff2fccee4024d98999f9c8d9feb_tuple);
+mod_consts_hash[320] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_50321ff2fccee4024d98999f9c8d9feb_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CPS_QUALIFIER", mod_consts.const_str_plain_CPS_QUALIFIER);
+mod_consts_hash[321] = DEEP_HASH(tstate, mod_consts.const_str_plain_CPS_QUALIFIER);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_03e57fcfeaffac79e0551f43c9be177f_tuple", mod_consts.const_tuple_str_digest_03e57fcfeaffac79e0551f43c9be177f_tuple);
+mod_consts_hash[322] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_03e57fcfeaffac79e0551f43c9be177f_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CPS_USER_NOTICE", mod_consts.const_str_plain_CPS_USER_NOTICE);
+mod_consts_hash[323] = DEEP_HASH(tstate, mod_consts.const_str_plain_CPS_USER_NOTICE);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_fbb6e1cc86dd0b99c46a7f9000416d62_tuple", mod_consts.const_tuple_str_digest_fbb6e1cc86dd0b99c46a7f9000416d62_tuple);
+mod_consts_hash[324] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_fbb6e1cc86dd0b99c46a7f9000416d62_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ANY_POLICY", mod_consts.const_str_plain_ANY_POLICY);
+mod_consts_hash[325] = DEEP_HASH(tstate, mod_consts.const_str_plain_ANY_POLICY);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_AttributeOID", mod_consts.const_str_plain_AttributeOID);
+mod_consts_hash[326] = DEEP_HASH(tstate, mod_consts.const_str_plain_AttributeOID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_240", mod_consts.const_int_pos_240);
+mod_consts_hash[327] = DEEP_HASH(tstate, mod_consts.const_int_pos_240);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_a9cf6de721f933fda642f0879f2a9fc9_tuple", mod_consts.const_tuple_str_digest_a9cf6de721f933fda642f0879f2a9fc9_tuple);
+mod_consts_hash[328] = DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_a9cf6de721f933fda642f0879f2a9fc9_tuple);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CHALLENGE_PASSWORD", mod_consts.const_str_plain_CHALLENGE_PASSWORD);
+mod_consts_hash[329] = DEEP_HASH(tstate, mod_consts.const_str_plain_CHALLENGE_PASSWORD);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_commonName", mod_consts.const_str_plain_commonName);
+mod_consts_hash[330] = DEEP_HASH(tstate, mod_consts.const_str_plain_commonName);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_countryName", mod_consts.const_str_plain_countryName);
+mod_consts_hash[331] = DEEP_HASH(tstate, mod_consts.const_str_plain_countryName);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_localityName", mod_consts.const_str_plain_localityName);
+mod_consts_hash[332] = DEEP_HASH(tstate, mod_consts.const_str_plain_localityName);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_stateOrProvinceName", mod_consts.const_str_plain_stateOrProvinceName);
+mod_consts_hash[333] = DEEP_HASH(tstate, mod_consts.const_str_plain_stateOrProvinceName);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_streetAddress", mod_consts.const_str_plain_streetAddress);
+mod_consts_hash[334] = DEEP_HASH(tstate, mod_consts.const_str_plain_streetAddress);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_organizationName", mod_consts.const_str_plain_organizationName);
+mod_consts_hash[335] = DEEP_HASH(tstate, mod_consts.const_str_plain_organizationName);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_organizationalUnitName", mod_consts.const_str_plain_organizationalUnitName);
+mod_consts_hash[336] = DEEP_HASH(tstate, mod_consts.const_str_plain_organizationalUnitName);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_serialNumber", mod_consts.const_str_plain_serialNumber);
+mod_consts_hash[337] = DEEP_HASH(tstate, mod_consts.const_str_plain_serialNumber);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_surname", mod_consts.const_str_plain_surname);
+mod_consts_hash[338] = DEEP_HASH(tstate, mod_consts.const_str_plain_surname);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_givenName", mod_consts.const_str_plain_givenName);
+mod_consts_hash[339] = DEEP_HASH(tstate, mod_consts.const_str_plain_givenName);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_title", mod_consts.const_str_plain_title);
+mod_consts_hash[340] = DEEP_HASH(tstate, mod_consts.const_str_plain_title);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_generationQualifier", mod_consts.const_str_plain_generationQualifier);
+mod_consts_hash[341] = DEEP_HASH(tstate, mod_consts.const_str_plain_generationQualifier);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_x500UniqueIdentifier", mod_consts.const_str_plain_x500UniqueIdentifier);
+mod_consts_hash[342] = DEEP_HASH(tstate, mod_consts.const_str_plain_x500UniqueIdentifier);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_dnQualifier", mod_consts.const_str_plain_dnQualifier);
+mod_consts_hash[343] = DEEP_HASH(tstate, mod_consts.const_str_plain_dnQualifier);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_pseudonym", mod_consts.const_str_plain_pseudonym);
+mod_consts_hash[344] = DEEP_HASH(tstate, mod_consts.const_str_plain_pseudonym);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_userID", mod_consts.const_str_plain_userID);
+mod_consts_hash[345] = DEEP_HASH(tstate, mod_consts.const_str_plain_userID);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_domainComponent", mod_consts.const_str_plain_domainComponent);
+mod_consts_hash[346] = DEEP_HASH(tstate, mod_consts.const_str_plain_domainComponent);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_emailAddress", mod_consts.const_str_plain_emailAddress);
+mod_consts_hash[347] = DEEP_HASH(tstate, mod_consts.const_str_plain_emailAddress);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_jurisdictionCountryName", mod_consts.const_str_plain_jurisdictionCountryName);
+mod_consts_hash[348] = DEEP_HASH(tstate, mod_consts.const_str_plain_jurisdictionCountryName);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_jurisdictionLocalityName", mod_consts.const_str_plain_jurisdictionLocalityName);
+mod_consts_hash[349] = DEEP_HASH(tstate, mod_consts.const_str_plain_jurisdictionLocalityName);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_jurisdictionStateOrProvinceName", mod_consts.const_str_plain_jurisdictionStateOrProvinceName);
+mod_consts_hash[350] = DEEP_HASH(tstate, mod_consts.const_str_plain_jurisdictionStateOrProvinceName);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_businessCategory", mod_consts.const_str_plain_businessCategory);
+mod_consts_hash[351] = DEEP_HASH(tstate, mod_consts.const_str_plain_businessCategory);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_postalAddress", mod_consts.const_str_plain_postalAddress);
+mod_consts_hash[352] = DEEP_HASH(tstate, mod_consts.const_str_plain_postalAddress);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_postalCode", mod_consts.const_str_plain_postalCode);
+mod_consts_hash[353] = DEEP_HASH(tstate, mod_consts.const_str_plain_postalCode);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_unstructuredName", mod_consts.const_str_plain_unstructuredName);
+mod_consts_hash[354] = DEEP_HASH(tstate, mod_consts.const_str_plain_unstructuredName);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_md5WithRSAEncryption", mod_consts.const_str_plain_md5WithRSAEncryption);
+mod_consts_hash[355] = DEEP_HASH(tstate, mod_consts.const_str_plain_md5WithRSAEncryption);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha1WithRSAEncryption", mod_consts.const_str_plain_sha1WithRSAEncryption);
+mod_consts_hash[356] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha1WithRSAEncryption);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha224WithRSAEncryption", mod_consts.const_str_plain_sha224WithRSAEncryption);
+mod_consts_hash[357] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha224WithRSAEncryption);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha256WithRSAEncryption", mod_consts.const_str_plain_sha256WithRSAEncryption);
+mod_consts_hash[358] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha256WithRSAEncryption);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha384WithRSAEncryption", mod_consts.const_str_plain_sha384WithRSAEncryption);
+mod_consts_hash[359] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha384WithRSAEncryption);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha512WithRSAEncryption", mod_consts.const_str_plain_sha512WithRSAEncryption);
+mod_consts_hash[360] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha512WithRSAEncryption);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_rsassaPss", mod_consts.const_str_plain_rsassaPss);
+mod_consts_hash[361] = DEEP_HASH(tstate, mod_consts.const_str_plain_rsassaPss);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_c2fb55a1f09e586fc82a97de6fc73acc", mod_consts.const_str_digest_c2fb55a1f09e586fc82a97de6fc73acc);
+mod_consts_hash[362] = DEEP_HASH(tstate, mod_consts.const_str_digest_c2fb55a1f09e586fc82a97de6fc73acc);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_557b29feaadb5ada1ad965906e5d1dd3", mod_consts.const_str_digest_557b29feaadb5ada1ad965906e5d1dd3);
+mod_consts_hash[363] = DEEP_HASH(tstate, mod_consts.const_str_digest_557b29feaadb5ada1ad965906e5d1dd3);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_ad3c682658ab1bc2f4342a30cc4996e2", mod_consts.const_str_digest_ad3c682658ab1bc2f4342a30cc4996e2);
+mod_consts_hash[364] = DEEP_HASH(tstate, mod_consts.const_str_digest_ad3c682658ab1bc2f4342a30cc4996e2);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_ff3f390793cb3f7a65e3ba0d8b30034e", mod_consts.const_str_digest_ff3f390793cb3f7a65e3ba0d8b30034e);
+mod_consts_hash[365] = DEEP_HASH(tstate, mod_consts.const_str_digest_ff3f390793cb3f7a65e3ba0d8b30034e);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_8c168ca0bdafd4e71f4b6bf87eb46ded", mod_consts.const_str_digest_8c168ca0bdafd4e71f4b6bf87eb46ded);
+mod_consts_hash[366] = DEEP_HASH(tstate, mod_consts.const_str_digest_8c168ca0bdafd4e71f4b6bf87eb46ded);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_17ca6fd46f3d026f6114676b663f8acd", mod_consts.const_str_digest_17ca6fd46f3d026f6114676b663f8acd);
+mod_consts_hash[367] = DEEP_HASH(tstate, mod_consts.const_str_digest_17ca6fd46f3d026f6114676b663f8acd);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_3df3ca64dd8761c027ed0ba43961e89a", mod_consts.const_str_digest_3df3ca64dd8761c027ed0ba43961e89a);
+mod_consts_hash[368] = DEEP_HASH(tstate, mod_consts.const_str_digest_3df3ca64dd8761c027ed0ba43961e89a);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_a0b774c3e9788e9c20a69f9b798eb899", mod_consts.const_str_digest_a0b774c3e9788e9c20a69f9b798eb899);
+mod_consts_hash[369] = DEEP_HASH(tstate, mod_consts.const_str_digest_a0b774c3e9788e9c20a69f9b798eb899);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ed25519", mod_consts.const_str_plain_ed25519);
+mod_consts_hash[370] = DEEP_HASH(tstate, mod_consts.const_str_plain_ed25519);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ed448", mod_consts.const_str_plain_ed448);
+mod_consts_hash[371] = DEEP_HASH(tstate, mod_consts.const_str_plain_ed448);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_45c372b4d789ac400c2ec357e6d8652d", mod_consts.const_str_digest_45c372b4d789ac400c2ec357e6d8652d);
+mod_consts_hash[372] = DEEP_HASH(tstate, mod_consts.const_str_digest_45c372b4d789ac400c2ec357e6d8652d);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_474b62c6824a77bfb15ce78ce7281094", mod_consts.const_str_digest_474b62c6824a77bfb15ce78ce7281094);
+mod_consts_hash[373] = DEEP_HASH(tstate, mod_consts.const_str_digest_474b62c6824a77bfb15ce78ce7281094);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_a0fd9643bd77b0727228b4f0b7764d68", mod_consts.const_str_digest_a0fd9643bd77b0727228b4f0b7764d68);
+mod_consts_hash[374] = DEEP_HASH(tstate, mod_consts.const_str_digest_a0fd9643bd77b0727228b4f0b7764d68);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_0fb317ec863119cbf9cf939b5b971c2c", mod_consts.const_str_digest_0fb317ec863119cbf9cf939b5b971c2c);
+mod_consts_hash[375] = DEEP_HASH(tstate, mod_consts.const_str_digest_0fb317ec863119cbf9cf939b5b971c2c);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_4df1fd561ce0921b6184b8e7367dd223", mod_consts.const_str_digest_4df1fd561ce0921b6184b8e7367dd223);
+mod_consts_hash[376] = DEEP_HASH(tstate, mod_consts.const_str_digest_4df1fd561ce0921b6184b8e7367dd223);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_93703fb7c432dffdd6c487fa17fb7868", mod_consts.const_str_digest_93703fb7c432dffdd6c487fa17fb7868);
+mod_consts_hash[377] = DEEP_HASH(tstate, mod_consts.const_str_digest_93703fb7c432dffdd6c487fa17fb7868);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha1", mod_consts.const_str_plain_sha1);
+mod_consts_hash[378] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha1);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha224", mod_consts.const_str_plain_sha224);
+mod_consts_hash[379] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha224);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha256", mod_consts.const_str_plain_sha256);
+mod_consts_hash[380] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha256);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha384", mod_consts.const_str_plain_sha384);
+mod_consts_hash[381] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha384);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha512", mod_consts.const_str_plain_sha512);
+mod_consts_hash[382] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha512);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha3_224", mod_consts.const_str_plain_sha3_224);
+mod_consts_hash[383] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha3_224);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha3_256", mod_consts.const_str_plain_sha3_256);
+mod_consts_hash[384] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha3_256);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha3_384", mod_consts.const_str_plain_sha3_384);
+mod_consts_hash[385] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha3_384);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha3_512", mod_consts.const_str_plain_sha3_512);
+mod_consts_hash[386] = DEEP_HASH(tstate, mod_consts.const_str_plain_sha3_512);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_dsaEncryption", mod_consts.const_str_plain_dsaEncryption);
+mod_consts_hash[387] = DEEP_HASH(tstate, mod_consts.const_str_plain_dsaEncryption);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_7dfac6622a641613bdb887174c606fe6", mod_consts.const_str_digest_7dfac6622a641613bdb887174c606fe6);
+mod_consts_hash[388] = DEEP_HASH(tstate, mod_consts.const_str_digest_7dfac6622a641613bdb887174c606fe6);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_rsaEncryption", mod_consts.const_str_plain_rsaEncryption);
+mod_consts_hash[389] = DEEP_HASH(tstate, mod_consts.const_str_plain_rsaEncryption);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_serverAuth", mod_consts.const_str_plain_serverAuth);
+mod_consts_hash[390] = DEEP_HASH(tstate, mod_consts.const_str_plain_serverAuth);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_clientAuth", mod_consts.const_str_plain_clientAuth);
+mod_consts_hash[391] = DEEP_HASH(tstate, mod_consts.const_str_plain_clientAuth);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_codeSigning", mod_consts.const_str_plain_codeSigning);
+mod_consts_hash[392] = DEEP_HASH(tstate, mod_consts.const_str_plain_codeSigning);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_emailProtection", mod_consts.const_str_plain_emailProtection);
+mod_consts_hash[393] = DEEP_HASH(tstate, mod_consts.const_str_plain_emailProtection);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_timeStamping", mod_consts.const_str_plain_timeStamping);
+mod_consts_hash[394] = DEEP_HASH(tstate, mod_consts.const_str_plain_timeStamping);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSPSigning", mod_consts.const_str_plain_OCSPSigning);
+mod_consts_hash[395] = DEEP_HASH(tstate, mod_consts.const_str_plain_OCSPSigning);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_msSmartcardLogin", mod_consts.const_str_plain_msSmartcardLogin);
+mod_consts_hash[396] = DEEP_HASH(tstate, mod_consts.const_str_plain_msSmartcardLogin);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_pkInitKDC", mod_consts.const_str_plain_pkInitKDC);
+mod_consts_hash[397] = DEEP_HASH(tstate, mod_consts.const_str_plain_pkInitKDC);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_subjectDirectoryAttributes", mod_consts.const_str_plain_subjectDirectoryAttributes);
+mod_consts_hash[398] = DEEP_HASH(tstate, mod_consts.const_str_plain_subjectDirectoryAttributes);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_subjectKeyIdentifier", mod_consts.const_str_plain_subjectKeyIdentifier);
+mod_consts_hash[399] = DEEP_HASH(tstate, mod_consts.const_str_plain_subjectKeyIdentifier);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_keyUsage", mod_consts.const_str_plain_keyUsage);
+mod_consts_hash[400] = DEEP_HASH(tstate, mod_consts.const_str_plain_keyUsage);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_privateKeyUsagePeriod", mod_consts.const_str_plain_privateKeyUsagePeriod);
+mod_consts_hash[401] = DEEP_HASH(tstate, mod_consts.const_str_plain_privateKeyUsagePeriod);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_subjectAltName", mod_consts.const_str_plain_subjectAltName);
+mod_consts_hash[402] = DEEP_HASH(tstate, mod_consts.const_str_plain_subjectAltName);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_issuerAltName", mod_consts.const_str_plain_issuerAltName);
+mod_consts_hash[403] = DEEP_HASH(tstate, mod_consts.const_str_plain_issuerAltName);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_basicConstraints", mod_consts.const_str_plain_basicConstraints);
+mod_consts_hash[404] = DEEP_HASH(tstate, mod_consts.const_str_plain_basicConstraints);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_signedCertificateTimestampList", mod_consts.const_str_plain_signedCertificateTimestampList);
+mod_consts_hash[405] = DEEP_HASH(tstate, mod_consts.const_str_plain_signedCertificateTimestampList);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ctPoison", mod_consts.const_str_plain_ctPoison);
+mod_consts_hash[406] = DEEP_HASH(tstate, mod_consts.const_str_plain_ctPoison);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_msCertificateTemplate", mod_consts.const_str_plain_msCertificateTemplate);
+mod_consts_hash[407] = DEEP_HASH(tstate, mod_consts.const_str_plain_msCertificateTemplate);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_Admissions", mod_consts.const_str_plain_Admissions);
+mod_consts_hash[408] = DEEP_HASH(tstate, mod_consts.const_str_plain_Admissions);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_cRLReason", mod_consts.const_str_plain_cRLReason);
+mod_consts_hash[409] = DEEP_HASH(tstate, mod_consts.const_str_plain_cRLReason);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_invalidityDate", mod_consts.const_str_plain_invalidityDate);
+mod_consts_hash[410] = DEEP_HASH(tstate, mod_consts.const_str_plain_invalidityDate);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_certificateIssuer", mod_consts.const_str_plain_certificateIssuer);
+mod_consts_hash[411] = DEEP_HASH(tstate, mod_consts.const_str_plain_certificateIssuer);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_nameConstraints", mod_consts.const_str_plain_nameConstraints);
+mod_consts_hash[412] = DEEP_HASH(tstate, mod_consts.const_str_plain_nameConstraints);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_cRLDistributionPoints", mod_consts.const_str_plain_cRLDistributionPoints);
+mod_consts_hash[413] = DEEP_HASH(tstate, mod_consts.const_str_plain_cRLDistributionPoints);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_certificatePolicies", mod_consts.const_str_plain_certificatePolicies);
+mod_consts_hash[414] = DEEP_HASH(tstate, mod_consts.const_str_plain_certificatePolicies);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_policyMappings", mod_consts.const_str_plain_policyMappings);
+mod_consts_hash[415] = DEEP_HASH(tstate, mod_consts.const_str_plain_policyMappings);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_authorityKeyIdentifier", mod_consts.const_str_plain_authorityKeyIdentifier);
+mod_consts_hash[416] = DEEP_HASH(tstate, mod_consts.const_str_plain_authorityKeyIdentifier);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_policyConstraints", mod_consts.const_str_plain_policyConstraints);
+mod_consts_hash[417] = DEEP_HASH(tstate, mod_consts.const_str_plain_policyConstraints);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_extendedKeyUsage", mod_consts.const_str_plain_extendedKeyUsage);
+mod_consts_hash[418] = DEEP_HASH(tstate, mod_consts.const_str_plain_extendedKeyUsage);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_freshestCRL", mod_consts.const_str_plain_freshestCRL);
+mod_consts_hash[419] = DEEP_HASH(tstate, mod_consts.const_str_plain_freshestCRL);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_inhibitAnyPolicy", mod_consts.const_str_plain_inhibitAnyPolicy);
+mod_consts_hash[420] = DEEP_HASH(tstate, mod_consts.const_str_plain_inhibitAnyPolicy);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_issuingDistributionPoint", mod_consts.const_str_plain_issuingDistributionPoint);
+mod_consts_hash[421] = DEEP_HASH(tstate, mod_consts.const_str_plain_issuingDistributionPoint);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_authorityInfoAccess", mod_consts.const_str_plain_authorityInfoAccess);
+mod_consts_hash[422] = DEEP_HASH(tstate, mod_consts.const_str_plain_authorityInfoAccess);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_subjectInfoAccess", mod_consts.const_str_plain_subjectInfoAccess);
+mod_consts_hash[423] = DEEP_HASH(tstate, mod_consts.const_str_plain_subjectInfoAccess);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSPNoCheck", mod_consts.const_str_plain_OCSPNoCheck);
+mod_consts_hash[424] = DEEP_HASH(tstate, mod_consts.const_str_plain_OCSPNoCheck);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_cRLNumber", mod_consts.const_str_plain_cRLNumber);
+mod_consts_hash[425] = DEEP_HASH(tstate, mod_consts.const_str_plain_cRLNumber);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_deltaCRLIndicator", mod_consts.const_str_plain_deltaCRLIndicator);
+mod_consts_hash[426] = DEEP_HASH(tstate, mod_consts.const_str_plain_deltaCRLIndicator);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_TLSFeature", mod_consts.const_str_plain_TLSFeature);
+mod_consts_hash[427] = DEEP_HASH(tstate, mod_consts.const_str_plain_TLSFeature);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_caIssuers", mod_consts.const_str_plain_caIssuers);
+mod_consts_hash[428] = DEEP_HASH(tstate, mod_consts.const_str_plain_caIssuers);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_caRepository", mod_consts.const_str_plain_caRepository);
+mod_consts_hash[429] = DEEP_HASH(tstate, mod_consts.const_str_plain_caRepository);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_f452289eeaecab0c5424fd5ec7db97f7", mod_consts.const_str_digest_f452289eeaecab0c5424fd5ec7db97f7);
+mod_consts_hash[430] = DEEP_HASH(tstate, mod_consts.const_str_digest_f452289eeaecab0c5424fd5ec7db97f7);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_e13ae27d769f6d1d70b1707fbd3f347b", mod_consts.const_str_digest_e13ae27d769f6d1d70b1707fbd3f347b);
+mod_consts_hash[431] = DEEP_HASH(tstate, mod_consts.const_str_digest_e13ae27d769f6d1d70b1707fbd3f347b);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSPNonce", mod_consts.const_str_plain_OCSPNonce);
+mod_consts_hash[432] = DEEP_HASH(tstate, mod_consts.const_str_plain_OCSPNonce);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_challengePassword", mod_consts.const_str_plain_challengePassword);
+mod_consts_hash[433] = DEEP_HASH(tstate, mod_consts.const_str_plain_challengePassword);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain__OID_NAMES", mod_consts.const_str_plain__OID_NAMES);
+mod_consts_hash[434] = DEEP_HASH(tstate, mod_consts.const_str_plain__OID_NAMES);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_9bfb757ef0eb1fe95bd31200bb78fbbe", mod_consts.const_str_digest_9bfb757ef0eb1fe95bd31200bb78fbbe);
+mod_consts_hash[435] = DEEP_HASH(tstate, mod_consts.const_str_digest_9bfb757ef0eb1fe95bd31200bb78fbbe);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_3ffa24faa77efc825ad10e1c5c210bf0", mod_consts.const_str_digest_3ffa24faa77efc825ad10e1c5c210bf0);
+mod_consts_hash[436] = DEEP_HASH(tstate, mod_consts.const_str_digest_3ffa24faa77efc825ad10e1c5c210bf0);
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_plain___class___tuple", mod_consts.const_tuple_str_plain___class___tuple);
+mod_consts_hash[437] = DEEP_HASH(tstate, mod_consts.const_tuple_str_plain___class___tuple);
+#endif
+    }
+}
+
+// We want to be able to initialize the "__main__" constants in any case.
+#if 0
+void createMainModuleConstants(PyThreadState *tstate) {
+    createModuleConstants(tstate);
+}
+#endif
+
+/* Function to verify module private constants for non-corruption. */
+#ifndef __NUITKA_NO_ASSERT__
+void checkModuleConstants_cryptography$hazmat$_oid(PyThreadState *tstate) {
+    // The module may not have been used at all, then ignore this.
+    if (constants_created == false) return;
+
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_origin", mod_consts.const_str_plain_origin);
+assert(mod_consts_hash[0] == DEEP_HASH(tstate, mod_consts.const_str_plain_origin) && "mod_consts.const_str_plain_origin");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_has_location", mod_consts.const_str_plain_has_location);
+assert(mod_consts_hash[1] == DEEP_HASH(tstate, mod_consts.const_str_plain_has_location) && "mod_consts.const_str_plain_has_location");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_annotations", mod_consts.const_str_plain_annotations);
+assert(mod_consts_hash[2] == DEEP_HASH(tstate, mod_consts.const_str_plain_annotations) && "mod_consts.const_str_plain_annotations");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_8079781454ad481b13cb6caedf4dbb9e", mod_consts.const_str_digest_8079781454ad481b13cb6caedf4dbb9e);
+assert(mod_consts_hash[3] == DEEP_HASH(tstate, mod_consts.const_str_digest_8079781454ad481b13cb6caedf4dbb9e) && "mod_consts.const_str_digest_8079781454ad481b13cb6caedf4dbb9e");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_plain_ObjectIdentifier_tuple", mod_consts.const_tuple_str_plain_ObjectIdentifier_tuple);
+assert(mod_consts_hash[4] == DEEP_HASH(tstate, mod_consts.const_tuple_str_plain_ObjectIdentifier_tuple) && "mod_consts.const_tuple_str_plain_ObjectIdentifier_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ObjectIdentifier", mod_consts.const_str_plain_ObjectIdentifier);
+assert(mod_consts_hash[5] == DEEP_HASH(tstate, mod_consts.const_str_plain_ObjectIdentifier) && "mod_consts.const_str_plain_ObjectIdentifier");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_9db3cdd3cd765463b4eec6754eb8e087", mod_consts.const_str_digest_9db3cdd3cd765463b4eec6754eb8e087);
+assert(mod_consts_hash[6] == DEEP_HASH(tstate, mod_consts.const_str_digest_9db3cdd3cd765463b4eec6754eb8e087) && "mod_consts.const_str_digest_9db3cdd3cd765463b4eec6754eb8e087");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_plain_hashes_tuple", mod_consts.const_tuple_str_plain_hashes_tuple);
+assert(mod_consts_hash[7] == DEEP_HASH(tstate, mod_consts.const_tuple_str_plain_hashes_tuple) && "mod_consts.const_tuple_str_plain_hashes_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_hashes", mod_consts.const_str_plain_hashes);
+assert(mod_consts_hash[8] == DEEP_HASH(tstate, mod_consts.const_str_plain_hashes) && "mod_consts.const_str_plain_hashes");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891", mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891);
+assert(mod_consts_hash[9] == DEEP_HASH(tstate, mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891) && "mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ExtensionOID", mod_consts.const_str_plain_ExtensionOID);
+assert(mod_consts_hash[10] == DEEP_HASH(tstate, mod_consts.const_str_plain_ExtensionOID) && "mod_consts.const_str_plain_ExtensionOID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_13", mod_consts.const_int_pos_13);
+assert(mod_consts_hash[11] == DEEP_HASH(tstate, mod_consts.const_int_pos_13) && "mod_consts.const_int_pos_13");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain___firstlineno__", mod_consts.const_str_plain___firstlineno__);
+assert(mod_consts_hash[12] == DEEP_HASH(tstate, mod_consts.const_str_plain___firstlineno__) && "mod_consts.const_str_plain___firstlineno__");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_aa35b543e4cc4067ce2da705a47d19ca_tuple", mod_consts.const_tuple_str_digest_aa35b543e4cc4067ce2da705a47d19ca_tuple);
+assert(mod_consts_hash[13] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_aa35b543e4cc4067ce2da705a47d19ca_tuple) && "mod_consts.const_tuple_str_digest_aa35b543e4cc4067ce2da705a47d19ca_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SUBJECT_DIRECTORY_ATTRIBUTES", mod_consts.const_str_plain_SUBJECT_DIRECTORY_ATTRIBUTES);
+assert(mod_consts_hash[14] == DEEP_HASH(tstate, mod_consts.const_str_plain_SUBJECT_DIRECTORY_ATTRIBUTES) && "mod_consts.const_str_plain_SUBJECT_DIRECTORY_ATTRIBUTES");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_402231cec73b599b9bdec4daf7775016_tuple", mod_consts.const_tuple_str_digest_402231cec73b599b9bdec4daf7775016_tuple);
+assert(mod_consts_hash[15] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_402231cec73b599b9bdec4daf7775016_tuple) && "mod_consts.const_tuple_str_digest_402231cec73b599b9bdec4daf7775016_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SUBJECT_KEY_IDENTIFIER", mod_consts.const_str_plain_SUBJECT_KEY_IDENTIFIER);
+assert(mod_consts_hash[16] == DEEP_HASH(tstate, mod_consts.const_str_plain_SUBJECT_KEY_IDENTIFIER) && "mod_consts.const_str_plain_SUBJECT_KEY_IDENTIFIER");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_bdfb3765c1e356e48168ea62bfdbf9a4_tuple", mod_consts.const_tuple_str_digest_bdfb3765c1e356e48168ea62bfdbf9a4_tuple);
+assert(mod_consts_hash[17] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_bdfb3765c1e356e48168ea62bfdbf9a4_tuple) && "mod_consts.const_tuple_str_digest_bdfb3765c1e356e48168ea62bfdbf9a4_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_KEY_USAGE", mod_consts.const_str_plain_KEY_USAGE);
+assert(mod_consts_hash[18] == DEEP_HASH(tstate, mod_consts.const_str_plain_KEY_USAGE) && "mod_consts.const_str_plain_KEY_USAGE");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2cc3298792196f3c99df7d4dd8d2c887_tuple", mod_consts.const_tuple_str_digest_2cc3298792196f3c99df7d4dd8d2c887_tuple);
+assert(mod_consts_hash[19] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2cc3298792196f3c99df7d4dd8d2c887_tuple) && "mod_consts.const_tuple_str_digest_2cc3298792196f3c99df7d4dd8d2c887_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_PRIVATE_KEY_USAGE_PERIOD", mod_consts.const_str_plain_PRIVATE_KEY_USAGE_PERIOD);
+assert(mod_consts_hash[20] == DEEP_HASH(tstate, mod_consts.const_str_plain_PRIVATE_KEY_USAGE_PERIOD) && "mod_consts.const_str_plain_PRIVATE_KEY_USAGE_PERIOD");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_767d9ff9e747b20f9b2a62cdf04da0de_tuple", mod_consts.const_tuple_str_digest_767d9ff9e747b20f9b2a62cdf04da0de_tuple);
+assert(mod_consts_hash[21] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_767d9ff9e747b20f9b2a62cdf04da0de_tuple) && "mod_consts.const_tuple_str_digest_767d9ff9e747b20f9b2a62cdf04da0de_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SUBJECT_ALTERNATIVE_NAME", mod_consts.const_str_plain_SUBJECT_ALTERNATIVE_NAME);
+assert(mod_consts_hash[22] == DEEP_HASH(tstate, mod_consts.const_str_plain_SUBJECT_ALTERNATIVE_NAME) && "mod_consts.const_str_plain_SUBJECT_ALTERNATIVE_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_5f81f25c17be8379db8d57e313b947b2_tuple", mod_consts.const_tuple_str_digest_5f81f25c17be8379db8d57e313b947b2_tuple);
+assert(mod_consts_hash[23] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_5f81f25c17be8379db8d57e313b947b2_tuple) && "mod_consts.const_tuple_str_digest_5f81f25c17be8379db8d57e313b947b2_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ISSUER_ALTERNATIVE_NAME", mod_consts.const_str_plain_ISSUER_ALTERNATIVE_NAME);
+assert(mod_consts_hash[24] == DEEP_HASH(tstate, mod_consts.const_str_plain_ISSUER_ALTERNATIVE_NAME) && "mod_consts.const_str_plain_ISSUER_ALTERNATIVE_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_91f2c2e6a76ab0257b7afd78a7d8444b_tuple", mod_consts.const_tuple_str_digest_91f2c2e6a76ab0257b7afd78a7d8444b_tuple);
+assert(mod_consts_hash[25] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_91f2c2e6a76ab0257b7afd78a7d8444b_tuple) && "mod_consts.const_tuple_str_digest_91f2c2e6a76ab0257b7afd78a7d8444b_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_BASIC_CONSTRAINTS", mod_consts.const_str_plain_BASIC_CONSTRAINTS);
+assert(mod_consts_hash[26] == DEEP_HASH(tstate, mod_consts.const_str_plain_BASIC_CONSTRAINTS) && "mod_consts.const_str_plain_BASIC_CONSTRAINTS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2958a1ef6593e1758ab759e3a2c573e0_tuple", mod_consts.const_tuple_str_digest_2958a1ef6593e1758ab759e3a2c573e0_tuple);
+assert(mod_consts_hash[27] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2958a1ef6593e1758ab759e3a2c573e0_tuple) && "mod_consts.const_tuple_str_digest_2958a1ef6593e1758ab759e3a2c573e0_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_NAME_CONSTRAINTS", mod_consts.const_str_plain_NAME_CONSTRAINTS);
+assert(mod_consts_hash[28] == DEEP_HASH(tstate, mod_consts.const_str_plain_NAME_CONSTRAINTS) && "mod_consts.const_str_plain_NAME_CONSTRAINTS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_32f8ab72218c1518444529b9839bc60e_tuple", mod_consts.const_tuple_str_digest_32f8ab72218c1518444529b9839bc60e_tuple);
+assert(mod_consts_hash[29] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_32f8ab72218c1518444529b9839bc60e_tuple) && "mod_consts.const_tuple_str_digest_32f8ab72218c1518444529b9839bc60e_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CRL_DISTRIBUTION_POINTS", mod_consts.const_str_plain_CRL_DISTRIBUTION_POINTS);
+assert(mod_consts_hash[30] == DEEP_HASH(tstate, mod_consts.const_str_plain_CRL_DISTRIBUTION_POINTS) && "mod_consts.const_str_plain_CRL_DISTRIBUTION_POINTS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_ddbc81b7b0b155d69df8105b5cff8140_tuple", mod_consts.const_tuple_str_digest_ddbc81b7b0b155d69df8105b5cff8140_tuple);
+assert(mod_consts_hash[31] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_ddbc81b7b0b155d69df8105b5cff8140_tuple) && "mod_consts.const_tuple_str_digest_ddbc81b7b0b155d69df8105b5cff8140_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CERTIFICATE_POLICIES", mod_consts.const_str_plain_CERTIFICATE_POLICIES);
+assert(mod_consts_hash[32] == DEEP_HASH(tstate, mod_consts.const_str_plain_CERTIFICATE_POLICIES) && "mod_consts.const_str_plain_CERTIFICATE_POLICIES");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d2f818cdf8c42e2d6390ddd53b016587_tuple", mod_consts.const_tuple_str_digest_d2f818cdf8c42e2d6390ddd53b016587_tuple);
+assert(mod_consts_hash[33] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d2f818cdf8c42e2d6390ddd53b016587_tuple) && "mod_consts.const_tuple_str_digest_d2f818cdf8c42e2d6390ddd53b016587_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_POLICY_MAPPINGS", mod_consts.const_str_plain_POLICY_MAPPINGS);
+assert(mod_consts_hash[34] == DEEP_HASH(tstate, mod_consts.const_str_plain_POLICY_MAPPINGS) && "mod_consts.const_str_plain_POLICY_MAPPINGS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_178f043eb8a7ce81b9dfbff61f4c5f19_tuple", mod_consts.const_tuple_str_digest_178f043eb8a7ce81b9dfbff61f4c5f19_tuple);
+assert(mod_consts_hash[35] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_178f043eb8a7ce81b9dfbff61f4c5f19_tuple) && "mod_consts.const_tuple_str_digest_178f043eb8a7ce81b9dfbff61f4c5f19_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_AUTHORITY_KEY_IDENTIFIER", mod_consts.const_str_plain_AUTHORITY_KEY_IDENTIFIER);
+assert(mod_consts_hash[36] == DEEP_HASH(tstate, mod_consts.const_str_plain_AUTHORITY_KEY_IDENTIFIER) && "mod_consts.const_str_plain_AUTHORITY_KEY_IDENTIFIER");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_b0abccc6631aa6b85de08f4a664daadd_tuple", mod_consts.const_tuple_str_digest_b0abccc6631aa6b85de08f4a664daadd_tuple);
+assert(mod_consts_hash[37] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_b0abccc6631aa6b85de08f4a664daadd_tuple) && "mod_consts.const_tuple_str_digest_b0abccc6631aa6b85de08f4a664daadd_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_POLICY_CONSTRAINTS", mod_consts.const_str_plain_POLICY_CONSTRAINTS);
+assert(mod_consts_hash[38] == DEEP_HASH(tstate, mod_consts.const_str_plain_POLICY_CONSTRAINTS) && "mod_consts.const_str_plain_POLICY_CONSTRAINTS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_a690942c66e69d63578daefd13197ae2_tuple", mod_consts.const_tuple_str_digest_a690942c66e69d63578daefd13197ae2_tuple);
+assert(mod_consts_hash[39] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_a690942c66e69d63578daefd13197ae2_tuple) && "mod_consts.const_tuple_str_digest_a690942c66e69d63578daefd13197ae2_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_EXTENDED_KEY_USAGE", mod_consts.const_str_plain_EXTENDED_KEY_USAGE);
+assert(mod_consts_hash[40] == DEEP_HASH(tstate, mod_consts.const_str_plain_EXTENDED_KEY_USAGE) && "mod_consts.const_str_plain_EXTENDED_KEY_USAGE");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_017b3818c501a0f2bbf7f46bc35fb8d6_tuple", mod_consts.const_tuple_str_digest_017b3818c501a0f2bbf7f46bc35fb8d6_tuple);
+assert(mod_consts_hash[41] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_017b3818c501a0f2bbf7f46bc35fb8d6_tuple) && "mod_consts.const_tuple_str_digest_017b3818c501a0f2bbf7f46bc35fb8d6_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_FRESHEST_CRL", mod_consts.const_str_plain_FRESHEST_CRL);
+assert(mod_consts_hash[42] == DEEP_HASH(tstate, mod_consts.const_str_plain_FRESHEST_CRL) && "mod_consts.const_str_plain_FRESHEST_CRL");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0779a69d82c4a51e4fdc8382116baf07_tuple", mod_consts.const_tuple_str_digest_0779a69d82c4a51e4fdc8382116baf07_tuple);
+assert(mod_consts_hash[43] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0779a69d82c4a51e4fdc8382116baf07_tuple) && "mod_consts.const_tuple_str_digest_0779a69d82c4a51e4fdc8382116baf07_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_INHIBIT_ANY_POLICY", mod_consts.const_str_plain_INHIBIT_ANY_POLICY);
+assert(mod_consts_hash[44] == DEEP_HASH(tstate, mod_consts.const_str_plain_INHIBIT_ANY_POLICY) && "mod_consts.const_str_plain_INHIBIT_ANY_POLICY");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_6e7f6354f6003472110f38ebbe423636_tuple", mod_consts.const_tuple_str_digest_6e7f6354f6003472110f38ebbe423636_tuple);
+assert(mod_consts_hash[45] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_6e7f6354f6003472110f38ebbe423636_tuple) && "mod_consts.const_tuple_str_digest_6e7f6354f6003472110f38ebbe423636_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ISSUING_DISTRIBUTION_POINT", mod_consts.const_str_plain_ISSUING_DISTRIBUTION_POINT);
+assert(mod_consts_hash[46] == DEEP_HASH(tstate, mod_consts.const_str_plain_ISSUING_DISTRIBUTION_POINT) && "mod_consts.const_str_plain_ISSUING_DISTRIBUTION_POINT");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_36815fa72b8e26b8a0343e58e525a6b8_tuple", mod_consts.const_tuple_str_digest_36815fa72b8e26b8a0343e58e525a6b8_tuple);
+assert(mod_consts_hash[47] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_36815fa72b8e26b8a0343e58e525a6b8_tuple) && "mod_consts.const_tuple_str_digest_36815fa72b8e26b8a0343e58e525a6b8_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_AUTHORITY_INFORMATION_ACCESS", mod_consts.const_str_plain_AUTHORITY_INFORMATION_ACCESS);
+assert(mod_consts_hash[48] == DEEP_HASH(tstate, mod_consts.const_str_plain_AUTHORITY_INFORMATION_ACCESS) && "mod_consts.const_str_plain_AUTHORITY_INFORMATION_ACCESS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2bb014389d4aa5909b80bc2e19c3df8a_tuple", mod_consts.const_tuple_str_digest_2bb014389d4aa5909b80bc2e19c3df8a_tuple);
+assert(mod_consts_hash[49] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2bb014389d4aa5909b80bc2e19c3df8a_tuple) && "mod_consts.const_tuple_str_digest_2bb014389d4aa5909b80bc2e19c3df8a_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SUBJECT_INFORMATION_ACCESS", mod_consts.const_str_plain_SUBJECT_INFORMATION_ACCESS);
+assert(mod_consts_hash[50] == DEEP_HASH(tstate, mod_consts.const_str_plain_SUBJECT_INFORMATION_ACCESS) && "mod_consts.const_str_plain_SUBJECT_INFORMATION_ACCESS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_1135dc3548cae245667224b61d063e8f_tuple", mod_consts.const_tuple_str_digest_1135dc3548cae245667224b61d063e8f_tuple);
+assert(mod_consts_hash[51] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_1135dc3548cae245667224b61d063e8f_tuple) && "mod_consts.const_tuple_str_digest_1135dc3548cae245667224b61d063e8f_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSP_NO_CHECK", mod_consts.const_str_plain_OCSP_NO_CHECK);
+assert(mod_consts_hash[52] == DEEP_HASH(tstate, mod_consts.const_str_plain_OCSP_NO_CHECK) && "mod_consts.const_str_plain_OCSP_NO_CHECK");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_c721cd011be8e0f6c97e5d0f5ec94d60_tuple", mod_consts.const_tuple_str_digest_c721cd011be8e0f6c97e5d0f5ec94d60_tuple);
+assert(mod_consts_hash[53] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_c721cd011be8e0f6c97e5d0f5ec94d60_tuple) && "mod_consts.const_tuple_str_digest_c721cd011be8e0f6c97e5d0f5ec94d60_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_TLS_FEATURE", mod_consts.const_str_plain_TLS_FEATURE);
+assert(mod_consts_hash[54] == DEEP_HASH(tstate, mod_consts.const_str_plain_TLS_FEATURE) && "mod_consts.const_str_plain_TLS_FEATURE");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_48bb56d35289ac7c69544408e253d64a_tuple", mod_consts.const_tuple_str_digest_48bb56d35289ac7c69544408e253d64a_tuple);
+assert(mod_consts_hash[55] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_48bb56d35289ac7c69544408e253d64a_tuple) && "mod_consts.const_tuple_str_digest_48bb56d35289ac7c69544408e253d64a_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CRL_NUMBER", mod_consts.const_str_plain_CRL_NUMBER);
+assert(mod_consts_hash[56] == DEEP_HASH(tstate, mod_consts.const_str_plain_CRL_NUMBER) && "mod_consts.const_str_plain_CRL_NUMBER");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_8004dc93b6b3bd5578dfd84dda8defdc_tuple", mod_consts.const_tuple_str_digest_8004dc93b6b3bd5578dfd84dda8defdc_tuple);
+assert(mod_consts_hash[57] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_8004dc93b6b3bd5578dfd84dda8defdc_tuple) && "mod_consts.const_tuple_str_digest_8004dc93b6b3bd5578dfd84dda8defdc_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DELTA_CRL_INDICATOR", mod_consts.const_str_plain_DELTA_CRL_INDICATOR);
+assert(mod_consts_hash[58] == DEEP_HASH(tstate, mod_consts.const_str_plain_DELTA_CRL_INDICATOR) && "mod_consts.const_str_plain_DELTA_CRL_INDICATOR");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_9f975f715f271ffc97cba117d4ed2c89_tuple", mod_consts.const_tuple_str_digest_9f975f715f271ffc97cba117d4ed2c89_tuple);
+assert(mod_consts_hash[59] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_9f975f715f271ffc97cba117d4ed2c89_tuple) && "mod_consts.const_tuple_str_digest_9f975f715f271ffc97cba117d4ed2c89_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_PRECERT_SIGNED_CERTIFICATE_TIMESTAMPS", mod_consts.const_str_plain_PRECERT_SIGNED_CERTIFICATE_TIMESTAMPS);
+assert(mod_consts_hash[60] == DEEP_HASH(tstate, mod_consts.const_str_plain_PRECERT_SIGNED_CERTIFICATE_TIMESTAMPS) && "mod_consts.const_str_plain_PRECERT_SIGNED_CERTIFICATE_TIMESTAMPS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_58def565d1c890c8595c3d29f979b69c_tuple", mod_consts.const_tuple_str_digest_58def565d1c890c8595c3d29f979b69c_tuple);
+assert(mod_consts_hash[61] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_58def565d1c890c8595c3d29f979b69c_tuple) && "mod_consts.const_tuple_str_digest_58def565d1c890c8595c3d29f979b69c_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_PRECERT_POISON", mod_consts.const_str_plain_PRECERT_POISON);
+assert(mod_consts_hash[62] == DEEP_HASH(tstate, mod_consts.const_str_plain_PRECERT_POISON) && "mod_consts.const_str_plain_PRECERT_POISON");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0bc61e2a46f54116dde3282ae3fd330c_tuple", mod_consts.const_tuple_str_digest_0bc61e2a46f54116dde3282ae3fd330c_tuple);
+assert(mod_consts_hash[63] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0bc61e2a46f54116dde3282ae3fd330c_tuple) && "mod_consts.const_tuple_str_digest_0bc61e2a46f54116dde3282ae3fd330c_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SIGNED_CERTIFICATE_TIMESTAMPS", mod_consts.const_str_plain_SIGNED_CERTIFICATE_TIMESTAMPS);
+assert(mod_consts_hash[64] == DEEP_HASH(tstate, mod_consts.const_str_plain_SIGNED_CERTIFICATE_TIMESTAMPS) && "mod_consts.const_str_plain_SIGNED_CERTIFICATE_TIMESTAMPS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2c7ebdd8a3a2a6a23be4034d7a9d649a_tuple", mod_consts.const_tuple_str_digest_2c7ebdd8a3a2a6a23be4034d7a9d649a_tuple);
+assert(mod_consts_hash[65] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2c7ebdd8a3a2a6a23be4034d7a9d649a_tuple) && "mod_consts.const_tuple_str_digest_2c7ebdd8a3a2a6a23be4034d7a9d649a_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_MS_CERTIFICATE_TEMPLATE", mod_consts.const_str_plain_MS_CERTIFICATE_TEMPLATE);
+assert(mod_consts_hash[66] == DEEP_HASH(tstate, mod_consts.const_str_plain_MS_CERTIFICATE_TEMPLATE) && "mod_consts.const_str_plain_MS_CERTIFICATE_TEMPLATE");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_572c2add736d08c741ab2bf07a73317e_tuple", mod_consts.const_tuple_str_digest_572c2add736d08c741ab2bf07a73317e_tuple);
+assert(mod_consts_hash[67] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_572c2add736d08c741ab2bf07a73317e_tuple) && "mod_consts.const_tuple_str_digest_572c2add736d08c741ab2bf07a73317e_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ADMISSIONS", mod_consts.const_str_plain_ADMISSIONS);
+assert(mod_consts_hash[68] == DEEP_HASH(tstate, mod_consts.const_str_plain_ADMISSIONS) && "mod_consts.const_str_plain_ADMISSIONS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain___static_attributes__", mod_consts.const_str_plain___static_attributes__);
+assert(mod_consts_hash[69] == DEEP_HASH(tstate, mod_consts.const_str_plain___static_attributes__) && "mod_consts.const_str_plain___static_attributes__");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSPExtensionOID", mod_consts.const_str_plain_OCSPExtensionOID);
+assert(mod_consts_hash[70] == DEEP_HASH(tstate, mod_consts.const_str_plain_OCSPExtensionOID) && "mod_consts.const_str_plain_OCSPExtensionOID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_46", mod_consts.const_int_pos_46);
+assert(mod_consts_hash[71] == DEEP_HASH(tstate, mod_consts.const_int_pos_46) && "mod_consts.const_int_pos_46");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_3a31f74521397441560a47f988d779a3_tuple", mod_consts.const_tuple_str_digest_3a31f74521397441560a47f988d779a3_tuple);
+assert(mod_consts_hash[72] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_3a31f74521397441560a47f988d779a3_tuple) && "mod_consts.const_tuple_str_digest_3a31f74521397441560a47f988d779a3_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_NONCE", mod_consts.const_str_plain_NONCE);
+assert(mod_consts_hash[73] == DEEP_HASH(tstate, mod_consts.const_str_plain_NONCE) && "mod_consts.const_str_plain_NONCE");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_25229aac06a4bd428e500cd82fef6bcc_tuple", mod_consts.const_tuple_str_digest_25229aac06a4bd428e500cd82fef6bcc_tuple);
+assert(mod_consts_hash[74] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_25229aac06a4bd428e500cd82fef6bcc_tuple) && "mod_consts.const_tuple_str_digest_25229aac06a4bd428e500cd82fef6bcc_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ACCEPTABLE_RESPONSES", mod_consts.const_str_plain_ACCEPTABLE_RESPONSES);
+assert(mod_consts_hash[75] == DEEP_HASH(tstate, mod_consts.const_str_plain_ACCEPTABLE_RESPONSES) && "mod_consts.const_str_plain_ACCEPTABLE_RESPONSES");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CRLEntryExtensionOID", mod_consts.const_str_plain_CRLEntryExtensionOID);
+assert(mod_consts_hash[76] == DEEP_HASH(tstate, mod_consts.const_str_plain_CRLEntryExtensionOID) && "mod_consts.const_str_plain_CRLEntryExtensionOID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_51", mod_consts.const_int_pos_51);
+assert(mod_consts_hash[77] == DEEP_HASH(tstate, mod_consts.const_int_pos_51) && "mod_consts.const_int_pos_51");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_9cd8ba296cec323cf723a82cc76d4826_tuple", mod_consts.const_tuple_str_digest_9cd8ba296cec323cf723a82cc76d4826_tuple);
+assert(mod_consts_hash[78] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_9cd8ba296cec323cf723a82cc76d4826_tuple) && "mod_consts.const_tuple_str_digest_9cd8ba296cec323cf723a82cc76d4826_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CERTIFICATE_ISSUER", mod_consts.const_str_plain_CERTIFICATE_ISSUER);
+assert(mod_consts_hash[79] == DEEP_HASH(tstate, mod_consts.const_str_plain_CERTIFICATE_ISSUER) && "mod_consts.const_str_plain_CERTIFICATE_ISSUER");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0289302dc46017fd66759aa38355e887_tuple", mod_consts.const_tuple_str_digest_0289302dc46017fd66759aa38355e887_tuple);
+assert(mod_consts_hash[80] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0289302dc46017fd66759aa38355e887_tuple) && "mod_consts.const_tuple_str_digest_0289302dc46017fd66759aa38355e887_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CRL_REASON", mod_consts.const_str_plain_CRL_REASON);
+assert(mod_consts_hash[81] == DEEP_HASH(tstate, mod_consts.const_str_plain_CRL_REASON) && "mod_consts.const_str_plain_CRL_REASON");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_7aeeff5313ae33015bc6068c49b2834d_tuple", mod_consts.const_tuple_str_digest_7aeeff5313ae33015bc6068c49b2834d_tuple);
+assert(mod_consts_hash[82] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_7aeeff5313ae33015bc6068c49b2834d_tuple) && "mod_consts.const_tuple_str_digest_7aeeff5313ae33015bc6068c49b2834d_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_INVALIDITY_DATE", mod_consts.const_str_plain_INVALIDITY_DATE);
+assert(mod_consts_hash[83] == DEEP_HASH(tstate, mod_consts.const_str_plain_INVALIDITY_DATE) && "mod_consts.const_str_plain_INVALIDITY_DATE");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_NameOID", mod_consts.const_str_plain_NameOID);
+assert(mod_consts_hash[84] == DEEP_HASH(tstate, mod_consts.const_str_plain_NameOID) && "mod_consts.const_str_plain_NameOID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_57", mod_consts.const_int_pos_57);
+assert(mod_consts_hash[85] == DEEP_HASH(tstate, mod_consts.const_int_pos_57) && "mod_consts.const_int_pos_57");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_f57d825cad34aac5809c155ba8a3ebb1_tuple", mod_consts.const_tuple_str_digest_f57d825cad34aac5809c155ba8a3ebb1_tuple);
+assert(mod_consts_hash[86] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_f57d825cad34aac5809c155ba8a3ebb1_tuple) && "mod_consts.const_tuple_str_digest_f57d825cad34aac5809c155ba8a3ebb1_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_COMMON_NAME", mod_consts.const_str_plain_COMMON_NAME);
+assert(mod_consts_hash[87] == DEEP_HASH(tstate, mod_consts.const_str_plain_COMMON_NAME) && "mod_consts.const_str_plain_COMMON_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_aa13593fc87e4f4e4b2b52fd048b3e8a_tuple", mod_consts.const_tuple_str_digest_aa13593fc87e4f4e4b2b52fd048b3e8a_tuple);
+assert(mod_consts_hash[88] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_aa13593fc87e4f4e4b2b52fd048b3e8a_tuple) && "mod_consts.const_tuple_str_digest_aa13593fc87e4f4e4b2b52fd048b3e8a_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_COUNTRY_NAME", mod_consts.const_str_plain_COUNTRY_NAME);
+assert(mod_consts_hash[89] == DEEP_HASH(tstate, mod_consts.const_str_plain_COUNTRY_NAME) && "mod_consts.const_str_plain_COUNTRY_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_6cf4c807f183a057576c391d9f7c4e24_tuple", mod_consts.const_tuple_str_digest_6cf4c807f183a057576c391d9f7c4e24_tuple);
+assert(mod_consts_hash[90] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_6cf4c807f183a057576c391d9f7c4e24_tuple) && "mod_consts.const_tuple_str_digest_6cf4c807f183a057576c391d9f7c4e24_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_LOCALITY_NAME", mod_consts.const_str_plain_LOCALITY_NAME);
+assert(mod_consts_hash[91] == DEEP_HASH(tstate, mod_consts.const_str_plain_LOCALITY_NAME) && "mod_consts.const_str_plain_LOCALITY_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_57dccc3876eef2cf5cfce321a32febb5_tuple", mod_consts.const_tuple_str_digest_57dccc3876eef2cf5cfce321a32febb5_tuple);
+assert(mod_consts_hash[92] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_57dccc3876eef2cf5cfce321a32febb5_tuple) && "mod_consts.const_tuple_str_digest_57dccc3876eef2cf5cfce321a32febb5_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_STATE_OR_PROVINCE_NAME", mod_consts.const_str_plain_STATE_OR_PROVINCE_NAME);
+assert(mod_consts_hash[93] == DEEP_HASH(tstate, mod_consts.const_str_plain_STATE_OR_PROVINCE_NAME) && "mod_consts.const_str_plain_STATE_OR_PROVINCE_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_e69bc10a8fca5202a28e2cd518549779_tuple", mod_consts.const_tuple_str_digest_e69bc10a8fca5202a28e2cd518549779_tuple);
+assert(mod_consts_hash[94] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_e69bc10a8fca5202a28e2cd518549779_tuple) && "mod_consts.const_tuple_str_digest_e69bc10a8fca5202a28e2cd518549779_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_STREET_ADDRESS", mod_consts.const_str_plain_STREET_ADDRESS);
+assert(mod_consts_hash[95] == DEEP_HASH(tstate, mod_consts.const_str_plain_STREET_ADDRESS) && "mod_consts.const_str_plain_STREET_ADDRESS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_3c60b257fb1dc5e6210b01a214ad1396_tuple", mod_consts.const_tuple_str_digest_3c60b257fb1dc5e6210b01a214ad1396_tuple);
+assert(mod_consts_hash[96] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_3c60b257fb1dc5e6210b01a214ad1396_tuple) && "mod_consts.const_tuple_str_digest_3c60b257fb1dc5e6210b01a214ad1396_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ORGANIZATION_IDENTIFIER", mod_consts.const_str_plain_ORGANIZATION_IDENTIFIER);
+assert(mod_consts_hash[97] == DEEP_HASH(tstate, mod_consts.const_str_plain_ORGANIZATION_IDENTIFIER) && "mod_consts.const_str_plain_ORGANIZATION_IDENTIFIER");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_76c946398dd022b7261d46aa6240716f_tuple", mod_consts.const_tuple_str_digest_76c946398dd022b7261d46aa6240716f_tuple);
+assert(mod_consts_hash[98] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_76c946398dd022b7261d46aa6240716f_tuple) && "mod_consts.const_tuple_str_digest_76c946398dd022b7261d46aa6240716f_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ORGANIZATION_NAME", mod_consts.const_str_plain_ORGANIZATION_NAME);
+assert(mod_consts_hash[99] == DEEP_HASH(tstate, mod_consts.const_str_plain_ORGANIZATION_NAME) && "mod_consts.const_str_plain_ORGANIZATION_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_43626b342da00ed10ddfece11d183700_tuple", mod_consts.const_tuple_str_digest_43626b342da00ed10ddfece11d183700_tuple);
+assert(mod_consts_hash[100] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_43626b342da00ed10ddfece11d183700_tuple) && "mod_consts.const_tuple_str_digest_43626b342da00ed10ddfece11d183700_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ORGANIZATIONAL_UNIT_NAME", mod_consts.const_str_plain_ORGANIZATIONAL_UNIT_NAME);
+assert(mod_consts_hash[101] == DEEP_HASH(tstate, mod_consts.const_str_plain_ORGANIZATIONAL_UNIT_NAME) && "mod_consts.const_str_plain_ORGANIZATIONAL_UNIT_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_4e0fd9298619640af3a4dad2f13d8f89_tuple", mod_consts.const_tuple_str_digest_4e0fd9298619640af3a4dad2f13d8f89_tuple);
+assert(mod_consts_hash[102] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_4e0fd9298619640af3a4dad2f13d8f89_tuple) && "mod_consts.const_tuple_str_digest_4e0fd9298619640af3a4dad2f13d8f89_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SERIAL_NUMBER", mod_consts.const_str_plain_SERIAL_NUMBER);
+assert(mod_consts_hash[103] == DEEP_HASH(tstate, mod_consts.const_str_plain_SERIAL_NUMBER) && "mod_consts.const_str_plain_SERIAL_NUMBER");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_e4fbe04d850088683fca472ae668e3e8_tuple", mod_consts.const_tuple_str_digest_e4fbe04d850088683fca472ae668e3e8_tuple);
+assert(mod_consts_hash[104] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_e4fbe04d850088683fca472ae668e3e8_tuple) && "mod_consts.const_tuple_str_digest_e4fbe04d850088683fca472ae668e3e8_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SURNAME", mod_consts.const_str_plain_SURNAME);
+assert(mod_consts_hash[105] == DEEP_HASH(tstate, mod_consts.const_str_plain_SURNAME) && "mod_consts.const_str_plain_SURNAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2998224fa424af08b3f684a1be17945c_tuple", mod_consts.const_tuple_str_digest_2998224fa424af08b3f684a1be17945c_tuple);
+assert(mod_consts_hash[106] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2998224fa424af08b3f684a1be17945c_tuple) && "mod_consts.const_tuple_str_digest_2998224fa424af08b3f684a1be17945c_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_GIVEN_NAME", mod_consts.const_str_plain_GIVEN_NAME);
+assert(mod_consts_hash[107] == DEEP_HASH(tstate, mod_consts.const_str_plain_GIVEN_NAME) && "mod_consts.const_str_plain_GIVEN_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_e00b2e9d0b3aff0d7f1215741c8caf4c_tuple", mod_consts.const_tuple_str_digest_e00b2e9d0b3aff0d7f1215741c8caf4c_tuple);
+assert(mod_consts_hash[108] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_e00b2e9d0b3aff0d7f1215741c8caf4c_tuple) && "mod_consts.const_tuple_str_digest_e00b2e9d0b3aff0d7f1215741c8caf4c_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_TITLE", mod_consts.const_str_plain_TITLE);
+assert(mod_consts_hash[109] == DEEP_HASH(tstate, mod_consts.const_str_plain_TITLE) && "mod_consts.const_str_plain_TITLE");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_60bbb67da5f07f7a5fc75db42854c2f3_tuple", mod_consts.const_tuple_str_digest_60bbb67da5f07f7a5fc75db42854c2f3_tuple);
+assert(mod_consts_hash[110] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_60bbb67da5f07f7a5fc75db42854c2f3_tuple) && "mod_consts.const_tuple_str_digest_60bbb67da5f07f7a5fc75db42854c2f3_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_INITIALS", mod_consts.const_str_plain_INITIALS);
+assert(mod_consts_hash[111] == DEEP_HASH(tstate, mod_consts.const_str_plain_INITIALS) && "mod_consts.const_str_plain_INITIALS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_43872ccea6747842372df8a1c4656683_tuple", mod_consts.const_tuple_str_digest_43872ccea6747842372df8a1c4656683_tuple);
+assert(mod_consts_hash[112] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_43872ccea6747842372df8a1c4656683_tuple) && "mod_consts.const_tuple_str_digest_43872ccea6747842372df8a1c4656683_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_GENERATION_QUALIFIER", mod_consts.const_str_plain_GENERATION_QUALIFIER);
+assert(mod_consts_hash[113] == DEEP_HASH(tstate, mod_consts.const_str_plain_GENERATION_QUALIFIER) && "mod_consts.const_str_plain_GENERATION_QUALIFIER");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_e8435c09f6f8bb5530cfada92d890563_tuple", mod_consts.const_tuple_str_digest_e8435c09f6f8bb5530cfada92d890563_tuple);
+assert(mod_consts_hash[114] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_e8435c09f6f8bb5530cfada92d890563_tuple) && "mod_consts.const_tuple_str_digest_e8435c09f6f8bb5530cfada92d890563_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_X500_UNIQUE_IDENTIFIER", mod_consts.const_str_plain_X500_UNIQUE_IDENTIFIER);
+assert(mod_consts_hash[115] == DEEP_HASH(tstate, mod_consts.const_str_plain_X500_UNIQUE_IDENTIFIER) && "mod_consts.const_str_plain_X500_UNIQUE_IDENTIFIER");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_60aaecf634db9b67af6a393dcf6de000_tuple", mod_consts.const_tuple_str_digest_60aaecf634db9b67af6a393dcf6de000_tuple);
+assert(mod_consts_hash[116] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_60aaecf634db9b67af6a393dcf6de000_tuple) && "mod_consts.const_tuple_str_digest_60aaecf634db9b67af6a393dcf6de000_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DN_QUALIFIER", mod_consts.const_str_plain_DN_QUALIFIER);
+assert(mod_consts_hash[117] == DEEP_HASH(tstate, mod_consts.const_str_plain_DN_QUALIFIER) && "mod_consts.const_str_plain_DN_QUALIFIER");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_c0c0b06f4a096cb9cc1becef6ebea806_tuple", mod_consts.const_tuple_str_digest_c0c0b06f4a096cb9cc1becef6ebea806_tuple);
+assert(mod_consts_hash[118] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_c0c0b06f4a096cb9cc1becef6ebea806_tuple) && "mod_consts.const_tuple_str_digest_c0c0b06f4a096cb9cc1becef6ebea806_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_PSEUDONYM", mod_consts.const_str_plain_PSEUDONYM);
+assert(mod_consts_hash[119] == DEEP_HASH(tstate, mod_consts.const_str_plain_PSEUDONYM) && "mod_consts.const_str_plain_PSEUDONYM");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d987020246f2d9f737862dd92bc63eef_tuple", mod_consts.const_tuple_str_digest_d987020246f2d9f737862dd92bc63eef_tuple);
+assert(mod_consts_hash[120] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d987020246f2d9f737862dd92bc63eef_tuple) && "mod_consts.const_tuple_str_digest_d987020246f2d9f737862dd92bc63eef_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_USER_ID", mod_consts.const_str_plain_USER_ID);
+assert(mod_consts_hash[121] == DEEP_HASH(tstate, mod_consts.const_str_plain_USER_ID) && "mod_consts.const_str_plain_USER_ID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_1ca6abdf9952a7d39297c45ba720642a_tuple", mod_consts.const_tuple_str_digest_1ca6abdf9952a7d39297c45ba720642a_tuple);
+assert(mod_consts_hash[122] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_1ca6abdf9952a7d39297c45ba720642a_tuple) && "mod_consts.const_tuple_str_digest_1ca6abdf9952a7d39297c45ba720642a_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DOMAIN_COMPONENT", mod_consts.const_str_plain_DOMAIN_COMPONENT);
+assert(mod_consts_hash[123] == DEEP_HASH(tstate, mod_consts.const_str_plain_DOMAIN_COMPONENT) && "mod_consts.const_str_plain_DOMAIN_COMPONENT");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_7f9fa75ff292bac6aecf30cc58bc9469_tuple", mod_consts.const_tuple_str_digest_7f9fa75ff292bac6aecf30cc58bc9469_tuple);
+assert(mod_consts_hash[124] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_7f9fa75ff292bac6aecf30cc58bc9469_tuple) && "mod_consts.const_tuple_str_digest_7f9fa75ff292bac6aecf30cc58bc9469_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_EMAIL_ADDRESS", mod_consts.const_str_plain_EMAIL_ADDRESS);
+assert(mod_consts_hash[125] == DEEP_HASH(tstate, mod_consts.const_str_plain_EMAIL_ADDRESS) && "mod_consts.const_str_plain_EMAIL_ADDRESS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_8c8a2a5fe21909055ee3a38044fbeaa0_tuple", mod_consts.const_tuple_str_digest_8c8a2a5fe21909055ee3a38044fbeaa0_tuple);
+assert(mod_consts_hash[126] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_8c8a2a5fe21909055ee3a38044fbeaa0_tuple) && "mod_consts.const_tuple_str_digest_8c8a2a5fe21909055ee3a38044fbeaa0_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_JURISDICTION_COUNTRY_NAME", mod_consts.const_str_plain_JURISDICTION_COUNTRY_NAME);
+assert(mod_consts_hash[127] == DEEP_HASH(tstate, mod_consts.const_str_plain_JURISDICTION_COUNTRY_NAME) && "mod_consts.const_str_plain_JURISDICTION_COUNTRY_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_163cafdc0ed554748c9a4b5a8c664335_tuple", mod_consts.const_tuple_str_digest_163cafdc0ed554748c9a4b5a8c664335_tuple);
+assert(mod_consts_hash[128] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_163cafdc0ed554748c9a4b5a8c664335_tuple) && "mod_consts.const_tuple_str_digest_163cafdc0ed554748c9a4b5a8c664335_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_JURISDICTION_LOCALITY_NAME", mod_consts.const_str_plain_JURISDICTION_LOCALITY_NAME);
+assert(mod_consts_hash[129] == DEEP_HASH(tstate, mod_consts.const_str_plain_JURISDICTION_LOCALITY_NAME) && "mod_consts.const_str_plain_JURISDICTION_LOCALITY_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_81ded7bbfd939cddeb47d500a53437b8_tuple", mod_consts.const_tuple_str_digest_81ded7bbfd939cddeb47d500a53437b8_tuple);
+assert(mod_consts_hash[130] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_81ded7bbfd939cddeb47d500a53437b8_tuple) && "mod_consts.const_tuple_str_digest_81ded7bbfd939cddeb47d500a53437b8_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_JURISDICTION_STATE_OR_PROVINCE_NAME", mod_consts.const_str_plain_JURISDICTION_STATE_OR_PROVINCE_NAME);
+assert(mod_consts_hash[131] == DEEP_HASH(tstate, mod_consts.const_str_plain_JURISDICTION_STATE_OR_PROVINCE_NAME) && "mod_consts.const_str_plain_JURISDICTION_STATE_OR_PROVINCE_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_43752e38edbd8a4cc26d98a0eaea7118_tuple", mod_consts.const_tuple_str_digest_43752e38edbd8a4cc26d98a0eaea7118_tuple);
+assert(mod_consts_hash[132] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_43752e38edbd8a4cc26d98a0eaea7118_tuple) && "mod_consts.const_tuple_str_digest_43752e38edbd8a4cc26d98a0eaea7118_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_BUSINESS_CATEGORY", mod_consts.const_str_plain_BUSINESS_CATEGORY);
+assert(mod_consts_hash[133] == DEEP_HASH(tstate, mod_consts.const_str_plain_BUSINESS_CATEGORY) && "mod_consts.const_str_plain_BUSINESS_CATEGORY");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_9593fac7fba92df6a4af11a09356bc08_tuple", mod_consts.const_tuple_str_digest_9593fac7fba92df6a4af11a09356bc08_tuple);
+assert(mod_consts_hash[134] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_9593fac7fba92df6a4af11a09356bc08_tuple) && "mod_consts.const_tuple_str_digest_9593fac7fba92df6a4af11a09356bc08_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_POSTAL_ADDRESS", mod_consts.const_str_plain_POSTAL_ADDRESS);
+assert(mod_consts_hash[135] == DEEP_HASH(tstate, mod_consts.const_str_plain_POSTAL_ADDRESS) && "mod_consts.const_str_plain_POSTAL_ADDRESS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_4d1eecda490e15d970f849aecc70bec4_tuple", mod_consts.const_tuple_str_digest_4d1eecda490e15d970f849aecc70bec4_tuple);
+assert(mod_consts_hash[136] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_4d1eecda490e15d970f849aecc70bec4_tuple) && "mod_consts.const_tuple_str_digest_4d1eecda490e15d970f849aecc70bec4_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_POSTAL_CODE", mod_consts.const_str_plain_POSTAL_CODE);
+assert(mod_consts_hash[137] == DEEP_HASH(tstate, mod_consts.const_str_plain_POSTAL_CODE) && "mod_consts.const_str_plain_POSTAL_CODE");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_ab9d7539750cd028eb33bbcbb7ee79ef_tuple", mod_consts.const_tuple_str_digest_ab9d7539750cd028eb33bbcbb7ee79ef_tuple);
+assert(mod_consts_hash[138] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_ab9d7539750cd028eb33bbcbb7ee79ef_tuple) && "mod_consts.const_tuple_str_digest_ab9d7539750cd028eb33bbcbb7ee79ef_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_INN", mod_consts.const_str_plain_INN);
+assert(mod_consts_hash[139] == DEEP_HASH(tstate, mod_consts.const_str_plain_INN) && "mod_consts.const_str_plain_INN");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_b146b7df831df69e003af30211afd1b5_tuple", mod_consts.const_tuple_str_digest_b146b7df831df69e003af30211afd1b5_tuple);
+assert(mod_consts_hash[140] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_b146b7df831df69e003af30211afd1b5_tuple) && "mod_consts.const_tuple_str_digest_b146b7df831df69e003af30211afd1b5_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OGRN", mod_consts.const_str_plain_OGRN);
+assert(mod_consts_hash[141] == DEEP_HASH(tstate, mod_consts.const_str_plain_OGRN) && "mod_consts.const_str_plain_OGRN");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_a2b091b732cd267eeb03812ab7752b2a_tuple", mod_consts.const_tuple_str_digest_a2b091b732cd267eeb03812ab7752b2a_tuple);
+assert(mod_consts_hash[142] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_a2b091b732cd267eeb03812ab7752b2a_tuple) && "mod_consts.const_tuple_str_digest_a2b091b732cd267eeb03812ab7752b2a_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SNILS", mod_consts.const_str_plain_SNILS);
+assert(mod_consts_hash[143] == DEEP_HASH(tstate, mod_consts.const_str_plain_SNILS) && "mod_consts.const_str_plain_SNILS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d69ccf3d05e6659c8b3ce486a9cce8b0_tuple", mod_consts.const_tuple_str_digest_d69ccf3d05e6659c8b3ce486a9cce8b0_tuple);
+assert(mod_consts_hash[144] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d69ccf3d05e6659c8b3ce486a9cce8b0_tuple) && "mod_consts.const_tuple_str_digest_d69ccf3d05e6659c8b3ce486a9cce8b0_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_UNSTRUCTURED_NAME", mod_consts.const_str_plain_UNSTRUCTURED_NAME);
+assert(mod_consts_hash[145] == DEEP_HASH(tstate, mod_consts.const_str_plain_UNSTRUCTURED_NAME) && "mod_consts.const_str_plain_UNSTRUCTURED_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_fdb578797261104103247aa2de285428_tuple", mod_consts.const_tuple_str_digest_fdb578797261104103247aa2de285428_tuple);
+assert(mod_consts_hash[146] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_fdb578797261104103247aa2de285428_tuple) && "mod_consts.const_tuple_str_digest_fdb578797261104103247aa2de285428_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_UNSIGNED", mod_consts.const_str_plain_UNSIGNED);
+assert(mod_consts_hash[147] == DEEP_HASH(tstate, mod_consts.const_str_plain_UNSIGNED) && "mod_consts.const_str_plain_UNSIGNED");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SignatureAlgorithmOID", mod_consts.const_str_plain_SignatureAlgorithmOID);
+assert(mod_consts_hash[148] == DEEP_HASH(tstate, mod_consts.const_str_plain_SignatureAlgorithmOID) && "mod_consts.const_str_plain_SignatureAlgorithmOID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_93", mod_consts.const_int_pos_93);
+assert(mod_consts_hash[149] == DEEP_HASH(tstate, mod_consts.const_int_pos_93) && "mod_consts.const_int_pos_93");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d766128dd3b188cb31a47f2b60d4f03b_tuple", mod_consts.const_tuple_str_digest_d766128dd3b188cb31a47f2b60d4f03b_tuple);
+assert(mod_consts_hash[150] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d766128dd3b188cb31a47f2b60d4f03b_tuple) && "mod_consts.const_tuple_str_digest_d766128dd3b188cb31a47f2b60d4f03b_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_MD5", mod_consts.const_str_plain_RSA_WITH_MD5);
+assert(mod_consts_hash[151] == DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_MD5) && "mod_consts.const_str_plain_RSA_WITH_MD5");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_b84a8ae3bdd5ed5249d61bfca24aa504_tuple", mod_consts.const_tuple_str_digest_b84a8ae3bdd5ed5249d61bfca24aa504_tuple);
+assert(mod_consts_hash[152] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_b84a8ae3bdd5ed5249d61bfca24aa504_tuple) && "mod_consts.const_tuple_str_digest_b84a8ae3bdd5ed5249d61bfca24aa504_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA1", mod_consts.const_str_plain_RSA_WITH_SHA1);
+assert(mod_consts_hash[153] == DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA1) && "mod_consts.const_str_plain_RSA_WITH_SHA1");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_592f2dc8660724fc191cd3b965719e17_tuple", mod_consts.const_tuple_str_digest_592f2dc8660724fc191cd3b965719e17_tuple);
+assert(mod_consts_hash[154] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_592f2dc8660724fc191cd3b965719e17_tuple) && "mod_consts.const_tuple_str_digest_592f2dc8660724fc191cd3b965719e17_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain__RSA_WITH_SHA1", mod_consts.const_str_plain__RSA_WITH_SHA1);
+assert(mod_consts_hash[155] == DEEP_HASH(tstate, mod_consts.const_str_plain__RSA_WITH_SHA1) && "mod_consts.const_str_plain__RSA_WITH_SHA1");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_777dc680c1db5aad08fab2430d7c4782_tuple", mod_consts.const_tuple_str_digest_777dc680c1db5aad08fab2430d7c4782_tuple);
+assert(mod_consts_hash[156] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_777dc680c1db5aad08fab2430d7c4782_tuple) && "mod_consts.const_tuple_str_digest_777dc680c1db5aad08fab2430d7c4782_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA224", mod_consts.const_str_plain_RSA_WITH_SHA224);
+assert(mod_consts_hash[157] == DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA224) && "mod_consts.const_str_plain_RSA_WITH_SHA224");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_bf7a54fbdb0b05505b05e9611f5ae528_tuple", mod_consts.const_tuple_str_digest_bf7a54fbdb0b05505b05e9611f5ae528_tuple);
+assert(mod_consts_hash[158] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_bf7a54fbdb0b05505b05e9611f5ae528_tuple) && "mod_consts.const_tuple_str_digest_bf7a54fbdb0b05505b05e9611f5ae528_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA256", mod_consts.const_str_plain_RSA_WITH_SHA256);
+assert(mod_consts_hash[159] == DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA256) && "mod_consts.const_str_plain_RSA_WITH_SHA256");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_175c6aa0dbff49caa0d29fca6c1fdbb2_tuple", mod_consts.const_tuple_str_digest_175c6aa0dbff49caa0d29fca6c1fdbb2_tuple);
+assert(mod_consts_hash[160] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_175c6aa0dbff49caa0d29fca6c1fdbb2_tuple) && "mod_consts.const_tuple_str_digest_175c6aa0dbff49caa0d29fca6c1fdbb2_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA384", mod_consts.const_str_plain_RSA_WITH_SHA384);
+assert(mod_consts_hash[161] == DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA384) && "mod_consts.const_str_plain_RSA_WITH_SHA384");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_cbb358e95676acbda1a7cec77811a76a_tuple", mod_consts.const_tuple_str_digest_cbb358e95676acbda1a7cec77811a76a_tuple);
+assert(mod_consts_hash[162] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_cbb358e95676acbda1a7cec77811a76a_tuple) && "mod_consts.const_tuple_str_digest_cbb358e95676acbda1a7cec77811a76a_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA512", mod_consts.const_str_plain_RSA_WITH_SHA512);
+assert(mod_consts_hash[163] == DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA512) && "mod_consts.const_str_plain_RSA_WITH_SHA512");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_11e69c90017408487dc7480de77c2b57_tuple", mod_consts.const_tuple_str_digest_11e69c90017408487dc7480de77c2b57_tuple);
+assert(mod_consts_hash[164] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_11e69c90017408487dc7480de77c2b57_tuple) && "mod_consts.const_tuple_str_digest_11e69c90017408487dc7480de77c2b57_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA3_224", mod_consts.const_str_plain_RSA_WITH_SHA3_224);
+assert(mod_consts_hash[165] == DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA3_224) && "mod_consts.const_str_plain_RSA_WITH_SHA3_224");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_628d634092584d6d3de9449f35ac7201_tuple", mod_consts.const_tuple_str_digest_628d634092584d6d3de9449f35ac7201_tuple);
+assert(mod_consts_hash[166] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_628d634092584d6d3de9449f35ac7201_tuple) && "mod_consts.const_tuple_str_digest_628d634092584d6d3de9449f35ac7201_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA3_256", mod_consts.const_str_plain_RSA_WITH_SHA3_256);
+assert(mod_consts_hash[167] == DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA3_256) && "mod_consts.const_str_plain_RSA_WITH_SHA3_256");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0ecbc77378a42af013cc368d21739033_tuple", mod_consts.const_tuple_str_digest_0ecbc77378a42af013cc368d21739033_tuple);
+assert(mod_consts_hash[168] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0ecbc77378a42af013cc368d21739033_tuple) && "mod_consts.const_tuple_str_digest_0ecbc77378a42af013cc368d21739033_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA3_384", mod_consts.const_str_plain_RSA_WITH_SHA3_384);
+assert(mod_consts_hash[169] == DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA3_384) && "mod_consts.const_str_plain_RSA_WITH_SHA3_384");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_6c80dee87c72a9908a70836c96727588_tuple", mod_consts.const_tuple_str_digest_6c80dee87c72a9908a70836c96727588_tuple);
+assert(mod_consts_hash[170] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_6c80dee87c72a9908a70836c96727588_tuple) && "mod_consts.const_tuple_str_digest_6c80dee87c72a9908a70836c96727588_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSA_WITH_SHA3_512", mod_consts.const_str_plain_RSA_WITH_SHA3_512);
+assert(mod_consts_hash[171] == DEEP_HASH(tstate, mod_consts.const_str_plain_RSA_WITH_SHA3_512) && "mod_consts.const_str_plain_RSA_WITH_SHA3_512");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0f59f576526d1d0c3e712a7f737c95cb_tuple", mod_consts.const_tuple_str_digest_0f59f576526d1d0c3e712a7f737c95cb_tuple);
+assert(mod_consts_hash[172] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0f59f576526d1d0c3e712a7f737c95cb_tuple) && "mod_consts.const_tuple_str_digest_0f59f576526d1d0c3e712a7f737c95cb_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSASSA_PSS", mod_consts.const_str_plain_RSASSA_PSS);
+assert(mod_consts_hash[173] == DEEP_HASH(tstate, mod_consts.const_str_plain_RSASSA_PSS) && "mod_consts.const_str_plain_RSASSA_PSS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_35eb25ced2ccdf6bcc44b71ddad61958_tuple", mod_consts.const_tuple_str_digest_35eb25ced2ccdf6bcc44b71ddad61958_tuple);
+assert(mod_consts_hash[174] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_35eb25ced2ccdf6bcc44b71ddad61958_tuple) && "mod_consts.const_tuple_str_digest_35eb25ced2ccdf6bcc44b71ddad61958_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA1", mod_consts.const_str_plain_ECDSA_WITH_SHA1);
+assert(mod_consts_hash[175] == DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA1) && "mod_consts.const_str_plain_ECDSA_WITH_SHA1");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_c3b73ca09086726c1f01ebb5162d733b_tuple", mod_consts.const_tuple_str_digest_c3b73ca09086726c1f01ebb5162d733b_tuple);
+assert(mod_consts_hash[176] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_c3b73ca09086726c1f01ebb5162d733b_tuple) && "mod_consts.const_tuple_str_digest_c3b73ca09086726c1f01ebb5162d733b_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA224", mod_consts.const_str_plain_ECDSA_WITH_SHA224);
+assert(mod_consts_hash[177] == DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA224) && "mod_consts.const_str_plain_ECDSA_WITH_SHA224");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_c65f30c441db755c29a6af4980e8b725_tuple", mod_consts.const_tuple_str_digest_c65f30c441db755c29a6af4980e8b725_tuple);
+assert(mod_consts_hash[178] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_c65f30c441db755c29a6af4980e8b725_tuple) && "mod_consts.const_tuple_str_digest_c65f30c441db755c29a6af4980e8b725_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA256", mod_consts.const_str_plain_ECDSA_WITH_SHA256);
+assert(mod_consts_hash[179] == DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA256) && "mod_consts.const_str_plain_ECDSA_WITH_SHA256");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_851be9911219ad6068e49143d3248889_tuple", mod_consts.const_tuple_str_digest_851be9911219ad6068e49143d3248889_tuple);
+assert(mod_consts_hash[180] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_851be9911219ad6068e49143d3248889_tuple) && "mod_consts.const_tuple_str_digest_851be9911219ad6068e49143d3248889_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA384", mod_consts.const_str_plain_ECDSA_WITH_SHA384);
+assert(mod_consts_hash[181] == DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA384) && "mod_consts.const_str_plain_ECDSA_WITH_SHA384");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_8cf8f3c54a257961a23b52b084d86cec_tuple", mod_consts.const_tuple_str_digest_8cf8f3c54a257961a23b52b084d86cec_tuple);
+assert(mod_consts_hash[182] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_8cf8f3c54a257961a23b52b084d86cec_tuple) && "mod_consts.const_tuple_str_digest_8cf8f3c54a257961a23b52b084d86cec_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA512", mod_consts.const_str_plain_ECDSA_WITH_SHA512);
+assert(mod_consts_hash[183] == DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA512) && "mod_consts.const_str_plain_ECDSA_WITH_SHA512");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_ea5f32e18190c861edbb3f7f35293d3d_tuple", mod_consts.const_tuple_str_digest_ea5f32e18190c861edbb3f7f35293d3d_tuple);
+assert(mod_consts_hash[184] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_ea5f32e18190c861edbb3f7f35293d3d_tuple) && "mod_consts.const_tuple_str_digest_ea5f32e18190c861edbb3f7f35293d3d_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA3_224", mod_consts.const_str_plain_ECDSA_WITH_SHA3_224);
+assert(mod_consts_hash[185] == DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA3_224) && "mod_consts.const_str_plain_ECDSA_WITH_SHA3_224");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_956aa86e408a6adabaa354462473dbe2_tuple", mod_consts.const_tuple_str_digest_956aa86e408a6adabaa354462473dbe2_tuple);
+assert(mod_consts_hash[186] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_956aa86e408a6adabaa354462473dbe2_tuple) && "mod_consts.const_tuple_str_digest_956aa86e408a6adabaa354462473dbe2_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA3_256", mod_consts.const_str_plain_ECDSA_WITH_SHA3_256);
+assert(mod_consts_hash[187] == DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA3_256) && "mod_consts.const_str_plain_ECDSA_WITH_SHA3_256");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0762aff50fbcc07d7063cee18aef8393_tuple", mod_consts.const_tuple_str_digest_0762aff50fbcc07d7063cee18aef8393_tuple);
+assert(mod_consts_hash[188] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0762aff50fbcc07d7063cee18aef8393_tuple) && "mod_consts.const_tuple_str_digest_0762aff50fbcc07d7063cee18aef8393_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA3_384", mod_consts.const_str_plain_ECDSA_WITH_SHA3_384);
+assert(mod_consts_hash[189] == DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA3_384) && "mod_consts.const_str_plain_ECDSA_WITH_SHA3_384");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_09f9ec1bd9bc636d40a3b5dd215393b8_tuple", mod_consts.const_tuple_str_digest_09f9ec1bd9bc636d40a3b5dd215393b8_tuple);
+assert(mod_consts_hash[190] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_09f9ec1bd9bc636d40a3b5dd215393b8_tuple) && "mod_consts.const_tuple_str_digest_09f9ec1bd9bc636d40a3b5dd215393b8_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ECDSA_WITH_SHA3_512", mod_consts.const_str_plain_ECDSA_WITH_SHA3_512);
+assert(mod_consts_hash[191] == DEEP_HASH(tstate, mod_consts.const_str_plain_ECDSA_WITH_SHA3_512) && "mod_consts.const_str_plain_ECDSA_WITH_SHA3_512");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_65069b4fb9aa28cf3d80a60f2197040c_tuple", mod_consts.const_tuple_str_digest_65069b4fb9aa28cf3d80a60f2197040c_tuple);
+assert(mod_consts_hash[192] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_65069b4fb9aa28cf3d80a60f2197040c_tuple) && "mod_consts.const_tuple_str_digest_65069b4fb9aa28cf3d80a60f2197040c_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DSA_WITH_SHA1", mod_consts.const_str_plain_DSA_WITH_SHA1);
+assert(mod_consts_hash[193] == DEEP_HASH(tstate, mod_consts.const_str_plain_DSA_WITH_SHA1) && "mod_consts.const_str_plain_DSA_WITH_SHA1");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_649afc4ad6dae06148c7e2d99bb38960_tuple", mod_consts.const_tuple_str_digest_649afc4ad6dae06148c7e2d99bb38960_tuple);
+assert(mod_consts_hash[194] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_649afc4ad6dae06148c7e2d99bb38960_tuple) && "mod_consts.const_tuple_str_digest_649afc4ad6dae06148c7e2d99bb38960_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DSA_WITH_SHA224", mod_consts.const_str_plain_DSA_WITH_SHA224);
+assert(mod_consts_hash[195] == DEEP_HASH(tstate, mod_consts.const_str_plain_DSA_WITH_SHA224) && "mod_consts.const_str_plain_DSA_WITH_SHA224");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d276e487e55b7f956e2f735a941b29b1_tuple", mod_consts.const_tuple_str_digest_d276e487e55b7f956e2f735a941b29b1_tuple);
+assert(mod_consts_hash[196] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d276e487e55b7f956e2f735a941b29b1_tuple) && "mod_consts.const_tuple_str_digest_d276e487e55b7f956e2f735a941b29b1_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DSA_WITH_SHA256", mod_consts.const_str_plain_DSA_WITH_SHA256);
+assert(mod_consts_hash[197] == DEEP_HASH(tstate, mod_consts.const_str_plain_DSA_WITH_SHA256) && "mod_consts.const_str_plain_DSA_WITH_SHA256");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_b81cf544dd27893f3ce51207857ab827_tuple", mod_consts.const_tuple_str_digest_b81cf544dd27893f3ce51207857ab827_tuple);
+assert(mod_consts_hash[198] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_b81cf544dd27893f3ce51207857ab827_tuple) && "mod_consts.const_tuple_str_digest_b81cf544dd27893f3ce51207857ab827_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DSA_WITH_SHA384", mod_consts.const_str_plain_DSA_WITH_SHA384);
+assert(mod_consts_hash[199] == DEEP_HASH(tstate, mod_consts.const_str_plain_DSA_WITH_SHA384) && "mod_consts.const_str_plain_DSA_WITH_SHA384");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_91091cfdfbf4c6eb6dd34f078c43c4a2_tuple", mod_consts.const_tuple_str_digest_91091cfdfbf4c6eb6dd34f078c43c4a2_tuple);
+assert(mod_consts_hash[200] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_91091cfdfbf4c6eb6dd34f078c43c4a2_tuple) && "mod_consts.const_tuple_str_digest_91091cfdfbf4c6eb6dd34f078c43c4a2_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DSA_WITH_SHA512", mod_consts.const_str_plain_DSA_WITH_SHA512);
+assert(mod_consts_hash[201] == DEEP_HASH(tstate, mod_consts.const_str_plain_DSA_WITH_SHA512) && "mod_consts.const_str_plain_DSA_WITH_SHA512");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_06987cfccee49a896525bf927684c3f1_tuple", mod_consts.const_tuple_str_digest_06987cfccee49a896525bf927684c3f1_tuple);
+assert(mod_consts_hash[202] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_06987cfccee49a896525bf927684c3f1_tuple) && "mod_consts.const_tuple_str_digest_06987cfccee49a896525bf927684c3f1_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ED25519", mod_consts.const_str_plain_ED25519);
+assert(mod_consts_hash[203] == DEEP_HASH(tstate, mod_consts.const_str_plain_ED25519) && "mod_consts.const_str_plain_ED25519");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d2aa151b2525d178415599466b9d6aee_tuple", mod_consts.const_tuple_str_digest_d2aa151b2525d178415599466b9d6aee_tuple);
+assert(mod_consts_hash[204] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d2aa151b2525d178415599466b9d6aee_tuple) && "mod_consts.const_tuple_str_digest_d2aa151b2525d178415599466b9d6aee_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ED448", mod_consts.const_str_plain_ED448);
+assert(mod_consts_hash[205] == DEEP_HASH(tstate, mod_consts.const_str_plain_ED448) && "mod_consts.const_str_plain_ED448");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d4276f73f9fe48e814299ea9f5bc68fc_tuple", mod_consts.const_tuple_str_digest_d4276f73f9fe48e814299ea9f5bc68fc_tuple);
+assert(mod_consts_hash[206] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d4276f73f9fe48e814299ea9f5bc68fc_tuple) && "mod_consts.const_tuple_str_digest_d4276f73f9fe48e814299ea9f5bc68fc_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ML_DSA_44", mod_consts.const_str_plain_ML_DSA_44);
+assert(mod_consts_hash[207] == DEEP_HASH(tstate, mod_consts.const_str_plain_ML_DSA_44) && "mod_consts.const_str_plain_ML_DSA_44");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_80fd62f760f87e5b9cae90470f25d9ee_tuple", mod_consts.const_tuple_str_digest_80fd62f760f87e5b9cae90470f25d9ee_tuple);
+assert(mod_consts_hash[208] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_80fd62f760f87e5b9cae90470f25d9ee_tuple) && "mod_consts.const_tuple_str_digest_80fd62f760f87e5b9cae90470f25d9ee_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ML_DSA_65", mod_consts.const_str_plain_ML_DSA_65);
+assert(mod_consts_hash[209] == DEEP_HASH(tstate, mod_consts.const_str_plain_ML_DSA_65) && "mod_consts.const_str_plain_ML_DSA_65");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_46cdbf8ef9851e9a5311c55efee786ac_tuple", mod_consts.const_tuple_str_digest_46cdbf8ef9851e9a5311c55efee786ac_tuple);
+assert(mod_consts_hash[210] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_46cdbf8ef9851e9a5311c55efee786ac_tuple) && "mod_consts.const_tuple_str_digest_46cdbf8ef9851e9a5311c55efee786ac_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ML_DSA_87", mod_consts.const_str_plain_ML_DSA_87);
+assert(mod_consts_hash[211] == DEEP_HASH(tstate, mod_consts.const_str_plain_ML_DSA_87) && "mod_consts.const_str_plain_ML_DSA_87");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_398193cc178d9ec2885c1b3ed5bbb391_tuple", mod_consts.const_tuple_str_digest_398193cc178d9ec2885c1b3ed5bbb391_tuple);
+assert(mod_consts_hash[212] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_398193cc178d9ec2885c1b3ed5bbb391_tuple) && "mod_consts.const_tuple_str_digest_398193cc178d9ec2885c1b3ed5bbb391_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_GOSTR3411_94_WITH_3410_2001", mod_consts.const_str_plain_GOSTR3411_94_WITH_3410_2001);
+assert(mod_consts_hash[213] == DEEP_HASH(tstate, mod_consts.const_str_plain_GOSTR3411_94_WITH_3410_2001) && "mod_consts.const_str_plain_GOSTR3411_94_WITH_3410_2001");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_9c4343dcf24c6c6afaf10f9c2e7d1b23_tuple", mod_consts.const_tuple_str_digest_9c4343dcf24c6c6afaf10f9c2e7d1b23_tuple);
+assert(mod_consts_hash[214] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_9c4343dcf24c6c6afaf10f9c2e7d1b23_tuple) && "mod_consts.const_tuple_str_digest_9c4343dcf24c6c6afaf10f9c2e7d1b23_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_256", mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_256);
+assert(mod_consts_hash[215] == DEEP_HASH(tstate, mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_256) && "mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_256");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_71ea0d189efc2f5cfcdfff6ec29064f1_tuple", mod_consts.const_tuple_str_digest_71ea0d189efc2f5cfcdfff6ec29064f1_tuple);
+assert(mod_consts_hash[216] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_71ea0d189efc2f5cfcdfff6ec29064f1_tuple) && "mod_consts.const_tuple_str_digest_71ea0d189efc2f5cfcdfff6ec29064f1_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_512", mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_512);
+assert(mod_consts_hash[217] == DEEP_HASH(tstate, mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_512) && "mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_512");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_22189de6b6ba8121c08a004aeca07ada_tuple", mod_consts.const_tuple_str_digest_22189de6b6ba8121c08a004aeca07ada_tuple);
+assert(mod_consts_hash[218] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_22189de6b6ba8121c08a004aeca07ada_tuple) && "mod_consts.const_tuple_str_digest_22189de6b6ba8121c08a004aeca07ada_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_MD5", mod_consts.const_str_plain_MD5);
+assert(mod_consts_hash[219] == DEEP_HASH(tstate, mod_consts.const_str_plain_MD5) && "mod_consts.const_str_plain_MD5");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA1", mod_consts.const_str_plain_SHA1);
+assert(mod_consts_hash[220] == DEEP_HASH(tstate, mod_consts.const_str_plain_SHA1) && "mod_consts.const_str_plain_SHA1");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA224", mod_consts.const_str_plain_SHA224);
+assert(mod_consts_hash[221] == DEEP_HASH(tstate, mod_consts.const_str_plain_SHA224) && "mod_consts.const_str_plain_SHA224");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA256", mod_consts.const_str_plain_SHA256);
+assert(mod_consts_hash[222] == DEEP_HASH(tstate, mod_consts.const_str_plain_SHA256) && "mod_consts.const_str_plain_SHA256");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA384", mod_consts.const_str_plain_SHA384);
+assert(mod_consts_hash[223] == DEEP_HASH(tstate, mod_consts.const_str_plain_SHA384) && "mod_consts.const_str_plain_SHA384");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA512", mod_consts.const_str_plain_SHA512);
+assert(mod_consts_hash[224] == DEEP_HASH(tstate, mod_consts.const_str_plain_SHA512) && "mod_consts.const_str_plain_SHA512");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_224", mod_consts.const_str_plain_SHA3_224);
+assert(mod_consts_hash[225] == DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_224) && "mod_consts.const_str_plain_SHA3_224");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_256", mod_consts.const_str_plain_SHA3_256);
+assert(mod_consts_hash[226] == DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_256) && "mod_consts.const_str_plain_SHA3_256");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_384", mod_consts.const_str_plain_SHA3_384);
+assert(mod_consts_hash[227] == DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_384) && "mod_consts.const_str_plain_SHA3_384");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_512", mod_consts.const_str_plain_SHA3_512);
+assert(mod_consts_hash[228] == DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_512) && "mod_consts.const_str_plain_SHA3_512");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain__SIG_OIDS_TO_HASH", mod_consts.const_str_plain__SIG_OIDS_TO_HASH);
+assert(mod_consts_hash[229] == DEEP_HASH(tstate, mod_consts.const_str_plain__SIG_OIDS_TO_HASH) && "mod_consts.const_str_plain__SIG_OIDS_TO_HASH");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_cbb2bfe8244766c544b16c66aa754e76", mod_consts.const_str_digest_cbb2bfe8244766c544b16c66aa754e76);
+assert(mod_consts_hash[230] == DEEP_HASH(tstate, mod_consts.const_str_digest_cbb2bfe8244766c544b16c66aa754e76) && "mod_consts.const_str_digest_cbb2bfe8244766c544b16c66aa754e76");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_HashAlgorithmOID", mod_consts.const_str_plain_HashAlgorithmOID);
+assert(mod_consts_hash[231] == DEEP_HASH(tstate, mod_consts.const_str_plain_HashAlgorithmOID) && "mod_consts.const_str_plain_HashAlgorithmOID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_168", mod_consts.const_int_pos_168);
+assert(mod_consts_hash[232] == DEEP_HASH(tstate, mod_consts.const_int_pos_168) && "mod_consts.const_int_pos_168");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_97841e0407a21a46fa17b8ec8f246b28_tuple", mod_consts.const_tuple_str_digest_97841e0407a21a46fa17b8ec8f246b28_tuple);
+assert(mod_consts_hash[233] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_97841e0407a21a46fa17b8ec8f246b28_tuple) && "mod_consts.const_tuple_str_digest_97841e0407a21a46fa17b8ec8f246b28_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0803e6568131d3ace6a97c0848babbec_tuple", mod_consts.const_tuple_str_digest_0803e6568131d3ace6a97c0848babbec_tuple);
+assert(mod_consts_hash[234] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0803e6568131d3ace6a97c0848babbec_tuple) && "mod_consts.const_tuple_str_digest_0803e6568131d3ace6a97c0848babbec_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_d5501c4718b7c887f0d053e467278836_tuple", mod_consts.const_tuple_str_digest_d5501c4718b7c887f0d053e467278836_tuple);
+assert(mod_consts_hash[235] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_d5501c4718b7c887f0d053e467278836_tuple) && "mod_consts.const_tuple_str_digest_d5501c4718b7c887f0d053e467278836_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_b748c93313cc612300dbdce6bc0417b9_tuple", mod_consts.const_tuple_str_digest_b748c93313cc612300dbdce6bc0417b9_tuple);
+assert(mod_consts_hash[236] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_b748c93313cc612300dbdce6bc0417b9_tuple) && "mod_consts.const_tuple_str_digest_b748c93313cc612300dbdce6bc0417b9_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_173e1f5936576e525a4ec0c436e18865_tuple", mod_consts.const_tuple_str_digest_173e1f5936576e525a4ec0c436e18865_tuple);
+assert(mod_consts_hash[237] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_173e1f5936576e525a4ec0c436e18865_tuple) && "mod_consts.const_tuple_str_digest_173e1f5936576e525a4ec0c436e18865_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_906c3950c6c1dc08322b82663c1fc8e8_tuple", mod_consts.const_tuple_str_digest_906c3950c6c1dc08322b82663c1fc8e8_tuple);
+assert(mod_consts_hash[238] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_906c3950c6c1dc08322b82663c1fc8e8_tuple) && "mod_consts.const_tuple_str_digest_906c3950c6c1dc08322b82663c1fc8e8_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_e825111c73dff949ac80a4a801f56561_tuple", mod_consts.const_tuple_str_digest_e825111c73dff949ac80a4a801f56561_tuple);
+assert(mod_consts_hash[239] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_e825111c73dff949ac80a4a801f56561_tuple) && "mod_consts.const_tuple_str_digest_e825111c73dff949ac80a4a801f56561_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_bdd932b526deab6bfed3fccaed0a98ae_tuple", mod_consts.const_tuple_str_digest_bdd932b526deab6bfed3fccaed0a98ae_tuple);
+assert(mod_consts_hash[240] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_bdd932b526deab6bfed3fccaed0a98ae_tuple) && "mod_consts.const_tuple_str_digest_bdd932b526deab6bfed3fccaed0a98ae_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_7c53876e9249a68626a9bf31a04dbc0e_tuple", mod_consts.const_tuple_str_digest_7c53876e9249a68626a9bf31a04dbc0e_tuple);
+assert(mod_consts_hash[241] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_7c53876e9249a68626a9bf31a04dbc0e_tuple) && "mod_consts.const_tuple_str_digest_7c53876e9249a68626a9bf31a04dbc0e_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_3f94b1ccc08959c5a038201c7395f15b_tuple", mod_consts.const_tuple_str_digest_3f94b1ccc08959c5a038201c7395f15b_tuple);
+assert(mod_consts_hash[242] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_3f94b1ccc08959c5a038201c7395f15b_tuple) && "mod_consts.const_tuple_str_digest_3f94b1ccc08959c5a038201c7395f15b_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_224_NIST", mod_consts.const_str_plain_SHA3_224_NIST);
+assert(mod_consts_hash[243] == DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_224_NIST) && "mod_consts.const_str_plain_SHA3_224_NIST");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_ccb09a632f9eb719746617c0e595a99d_tuple", mod_consts.const_tuple_str_digest_ccb09a632f9eb719746617c0e595a99d_tuple);
+assert(mod_consts_hash[244] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_ccb09a632f9eb719746617c0e595a99d_tuple) && "mod_consts.const_tuple_str_digest_ccb09a632f9eb719746617c0e595a99d_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_256_NIST", mod_consts.const_str_plain_SHA3_256_NIST);
+assert(mod_consts_hash[245] == DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_256_NIST) && "mod_consts.const_str_plain_SHA3_256_NIST");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_5921bc034a1c5618bc6f626253269d85_tuple", mod_consts.const_tuple_str_digest_5921bc034a1c5618bc6f626253269d85_tuple);
+assert(mod_consts_hash[246] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_5921bc034a1c5618bc6f626253269d85_tuple) && "mod_consts.const_tuple_str_digest_5921bc034a1c5618bc6f626253269d85_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_384_NIST", mod_consts.const_str_plain_SHA3_384_NIST);
+assert(mod_consts_hash[247] == DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_384_NIST) && "mod_consts.const_str_plain_SHA3_384_NIST");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_f0a5bfe234e75f0a3713ef5a4472914c_tuple", mod_consts.const_tuple_str_digest_f0a5bfe234e75f0a3713ef5a4472914c_tuple);
+assert(mod_consts_hash[248] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_f0a5bfe234e75f0a3713ef5a4472914c_tuple) && "mod_consts.const_tuple_str_digest_f0a5bfe234e75f0a3713ef5a4472914c_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SHA3_512_NIST", mod_consts.const_str_plain_SHA3_512_NIST);
+assert(mod_consts_hash[249] == DEEP_HASH(tstate, mod_consts.const_str_plain_SHA3_512_NIST) && "mod_consts.const_str_plain_SHA3_512_NIST");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_PublicKeyAlgorithmOID", mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+assert(mod_consts_hash[250] == DEEP_HASH(tstate, mod_consts.const_str_plain_PublicKeyAlgorithmOID) && "mod_consts.const_str_plain_PublicKeyAlgorithmOID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_184", mod_consts.const_int_pos_184);
+assert(mod_consts_hash[251] == DEEP_HASH(tstate, mod_consts.const_int_pos_184) && "mod_consts.const_int_pos_184");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_4c2472c460bb1ae8b5b00c225545ade0_tuple", mod_consts.const_tuple_str_digest_4c2472c460bb1ae8b5b00c225545ade0_tuple);
+assert(mod_consts_hash[252] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_4c2472c460bb1ae8b5b00c225545ade0_tuple) && "mod_consts.const_tuple_str_digest_4c2472c460bb1ae8b5b00c225545ade0_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DSA", mod_consts.const_str_plain_DSA);
+assert(mod_consts_hash[253] == DEEP_HASH(tstate, mod_consts.const_str_plain_DSA) && "mod_consts.const_str_plain_DSA");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_67526efcdb60c6051d3c4d632ef450e4_tuple", mod_consts.const_tuple_str_digest_67526efcdb60c6051d3c4d632ef450e4_tuple);
+assert(mod_consts_hash[254] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_67526efcdb60c6051d3c4d632ef450e4_tuple) && "mod_consts.const_tuple_str_digest_67526efcdb60c6051d3c4d632ef450e4_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_EC_PUBLIC_KEY", mod_consts.const_str_plain_EC_PUBLIC_KEY);
+assert(mod_consts_hash[255] == DEEP_HASH(tstate, mod_consts.const_str_plain_EC_PUBLIC_KEY) && "mod_consts.const_str_plain_EC_PUBLIC_KEY");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_8610103a8657fcf057847084d4917365_tuple", mod_consts.const_tuple_str_digest_8610103a8657fcf057847084d4917365_tuple);
+assert(mod_consts_hash[256] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_8610103a8657fcf057847084d4917365_tuple) && "mod_consts.const_tuple_str_digest_8610103a8657fcf057847084d4917365_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_RSAES_PKCS1_v1_5", mod_consts.const_str_plain_RSAES_PKCS1_v1_5);
+assert(mod_consts_hash[257] == DEEP_HASH(tstate, mod_consts.const_str_plain_RSAES_PKCS1_v1_5) && "mod_consts.const_str_plain_RSAES_PKCS1_v1_5");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_55d27838969947e85f4df1d34421d15e_tuple", mod_consts.const_tuple_str_digest_55d27838969947e85f4df1d34421d15e_tuple);
+assert(mod_consts_hash[258] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_55d27838969947e85f4df1d34421d15e_tuple) && "mod_consts.const_tuple_str_digest_55d27838969947e85f4df1d34421d15e_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_X25519", mod_consts.const_str_plain_X25519);
+assert(mod_consts_hash[259] == DEEP_HASH(tstate, mod_consts.const_str_plain_X25519) && "mod_consts.const_str_plain_X25519");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2bd272bb44927c0f33a3c332ad7c81ac_tuple", mod_consts.const_tuple_str_digest_2bd272bb44927c0f33a3c332ad7c81ac_tuple);
+assert(mod_consts_hash[260] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2bd272bb44927c0f33a3c332ad7c81ac_tuple) && "mod_consts.const_tuple_str_digest_2bd272bb44927c0f33a3c332ad7c81ac_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_X448", mod_consts.const_str_plain_X448);
+assert(mod_consts_hash[261] == DEEP_HASH(tstate, mod_consts.const_str_plain_X448) && "mod_consts.const_str_plain_X448");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_5122c43aaeb33bb235c3c4afc6aef2cc_tuple", mod_consts.const_tuple_str_digest_5122c43aaeb33bb235c3c4afc6aef2cc_tuple);
+assert(mod_consts_hash[262] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_5122c43aaeb33bb235c3c4afc6aef2cc_tuple) && "mod_consts.const_tuple_str_digest_5122c43aaeb33bb235c3c4afc6aef2cc_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ML_KEM_768", mod_consts.const_str_plain_ML_KEM_768);
+assert(mod_consts_hash[263] == DEEP_HASH(tstate, mod_consts.const_str_plain_ML_KEM_768) && "mod_consts.const_str_plain_ML_KEM_768");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_c400104f335b965b7faf2c8e62cee0e5_tuple", mod_consts.const_tuple_str_digest_c400104f335b965b7faf2c8e62cee0e5_tuple);
+assert(mod_consts_hash[264] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_c400104f335b965b7faf2c8e62cee0e5_tuple) && "mod_consts.const_tuple_str_digest_c400104f335b965b7faf2c8e62cee0e5_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ML_KEM_1024", mod_consts.const_str_plain_ML_KEM_1024);
+assert(mod_consts_hash[265] == DEEP_HASH(tstate, mod_consts.const_str_plain_ML_KEM_1024) && "mod_consts.const_str_plain_ML_KEM_1024");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ExtendedKeyUsageOID", mod_consts.const_str_plain_ExtendedKeyUsageOID);
+assert(mod_consts_hash[266] == DEEP_HASH(tstate, mod_consts.const_str_plain_ExtendedKeyUsageOID) && "mod_consts.const_str_plain_ExtendedKeyUsageOID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_200", mod_consts.const_int_pos_200);
+assert(mod_consts_hash[267] == DEEP_HASH(tstate, mod_consts.const_int_pos_200) && "mod_consts.const_int_pos_200");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_0376a15beee26a285b06cab589a6a7cd_tuple", mod_consts.const_tuple_str_digest_0376a15beee26a285b06cab589a6a7cd_tuple);
+assert(mod_consts_hash[268] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_0376a15beee26a285b06cab589a6a7cd_tuple) && "mod_consts.const_tuple_str_digest_0376a15beee26a285b06cab589a6a7cd_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SERVER_AUTH", mod_consts.const_str_plain_SERVER_AUTH);
+assert(mod_consts_hash[269] == DEEP_HASH(tstate, mod_consts.const_str_plain_SERVER_AUTH) && "mod_consts.const_str_plain_SERVER_AUTH");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_87cdc7b3da2a01efa67fc002f5f9e93d_tuple", mod_consts.const_tuple_str_digest_87cdc7b3da2a01efa67fc002f5f9e93d_tuple);
+assert(mod_consts_hash[270] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_87cdc7b3da2a01efa67fc002f5f9e93d_tuple) && "mod_consts.const_tuple_str_digest_87cdc7b3da2a01efa67fc002f5f9e93d_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CLIENT_AUTH", mod_consts.const_str_plain_CLIENT_AUTH);
+assert(mod_consts_hash[271] == DEEP_HASH(tstate, mod_consts.const_str_plain_CLIENT_AUTH) && "mod_consts.const_str_plain_CLIENT_AUTH");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_ced7dfea6e2ba0f172c63b367fc544eb_tuple", mod_consts.const_tuple_str_digest_ced7dfea6e2ba0f172c63b367fc544eb_tuple);
+assert(mod_consts_hash[272] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_ced7dfea6e2ba0f172c63b367fc544eb_tuple) && "mod_consts.const_tuple_str_digest_ced7dfea6e2ba0f172c63b367fc544eb_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CODE_SIGNING", mod_consts.const_str_plain_CODE_SIGNING);
+assert(mod_consts_hash[273] == DEEP_HASH(tstate, mod_consts.const_str_plain_CODE_SIGNING) && "mod_consts.const_str_plain_CODE_SIGNING");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_3d2ee337e9731ea21bdde6fb3248081f_tuple", mod_consts.const_tuple_str_digest_3d2ee337e9731ea21bdde6fb3248081f_tuple);
+assert(mod_consts_hash[274] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_3d2ee337e9731ea21bdde6fb3248081f_tuple) && "mod_consts.const_tuple_str_digest_3d2ee337e9731ea21bdde6fb3248081f_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_EMAIL_PROTECTION", mod_consts.const_str_plain_EMAIL_PROTECTION);
+assert(mod_consts_hash[275] == DEEP_HASH(tstate, mod_consts.const_str_plain_EMAIL_PROTECTION) && "mod_consts.const_str_plain_EMAIL_PROTECTION");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_abe352de3ffbaa69a49d347e2acd1e80_tuple", mod_consts.const_tuple_str_digest_abe352de3ffbaa69a49d347e2acd1e80_tuple);
+assert(mod_consts_hash[276] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_abe352de3ffbaa69a49d347e2acd1e80_tuple) && "mod_consts.const_tuple_str_digest_abe352de3ffbaa69a49d347e2acd1e80_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_TIME_STAMPING", mod_consts.const_str_plain_TIME_STAMPING);
+assert(mod_consts_hash[277] == DEEP_HASH(tstate, mod_consts.const_str_plain_TIME_STAMPING) && "mod_consts.const_str_plain_TIME_STAMPING");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_bfabc35e33098bc3bd4a248a68700379_tuple", mod_consts.const_tuple_str_digest_bfabc35e33098bc3bd4a248a68700379_tuple);
+assert(mod_consts_hash[278] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_bfabc35e33098bc3bd4a248a68700379_tuple) && "mod_consts.const_tuple_str_digest_bfabc35e33098bc3bd4a248a68700379_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSP_SIGNING", mod_consts.const_str_plain_OCSP_SIGNING);
+assert(mod_consts_hash[279] == DEEP_HASH(tstate, mod_consts.const_str_plain_OCSP_SIGNING) && "mod_consts.const_str_plain_OCSP_SIGNING");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_42920d8d1815b6383c6613f7be148048_tuple", mod_consts.const_tuple_str_digest_42920d8d1815b6383c6613f7be148048_tuple);
+assert(mod_consts_hash[280] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_42920d8d1815b6383c6613f7be148048_tuple) && "mod_consts.const_tuple_str_digest_42920d8d1815b6383c6613f7be148048_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ANY_EXTENDED_KEY_USAGE", mod_consts.const_str_plain_ANY_EXTENDED_KEY_USAGE);
+assert(mod_consts_hash[281] == DEEP_HASH(tstate, mod_consts.const_str_plain_ANY_EXTENDED_KEY_USAGE) && "mod_consts.const_str_plain_ANY_EXTENDED_KEY_USAGE");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_b1f486d61430aa578028f269cd120ebf_tuple", mod_consts.const_tuple_str_digest_b1f486d61430aa578028f269cd120ebf_tuple);
+assert(mod_consts_hash[282] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_b1f486d61430aa578028f269cd120ebf_tuple) && "mod_consts.const_tuple_str_digest_b1f486d61430aa578028f269cd120ebf_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SMARTCARD_LOGON", mod_consts.const_str_plain_SMARTCARD_LOGON);
+assert(mod_consts_hash[283] == DEEP_HASH(tstate, mod_consts.const_str_plain_SMARTCARD_LOGON) && "mod_consts.const_str_plain_SMARTCARD_LOGON");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_293ce32998aa7267f364392b869fabe6_tuple", mod_consts.const_tuple_str_digest_293ce32998aa7267f364392b869fabe6_tuple);
+assert(mod_consts_hash[284] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_293ce32998aa7267f364392b869fabe6_tuple) && "mod_consts.const_tuple_str_digest_293ce32998aa7267f364392b869fabe6_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_KERBEROS_PKINIT_KDC", mod_consts.const_str_plain_KERBEROS_PKINIT_KDC);
+assert(mod_consts_hash[285] == DEEP_HASH(tstate, mod_consts.const_str_plain_KERBEROS_PKINIT_KDC) && "mod_consts.const_str_plain_KERBEROS_PKINIT_KDC");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_af8183ec75e29900eedf72665526f56f_tuple", mod_consts.const_tuple_str_digest_af8183ec75e29900eedf72665526f56f_tuple);
+assert(mod_consts_hash[286] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_af8183ec75e29900eedf72665526f56f_tuple) && "mod_consts.const_tuple_str_digest_af8183ec75e29900eedf72665526f56f_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_IPSEC_IKE", mod_consts.const_str_plain_IPSEC_IKE);
+assert(mod_consts_hash[287] == DEEP_HASH(tstate, mod_consts.const_str_plain_IPSEC_IKE) && "mod_consts.const_str_plain_IPSEC_IKE");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_5496e4ee75db5775d3d9a502efd647bd_tuple", mod_consts.const_tuple_str_digest_5496e4ee75db5775d3d9a502efd647bd_tuple);
+assert(mod_consts_hash[288] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_5496e4ee75db5775d3d9a502efd647bd_tuple) && "mod_consts.const_tuple_str_digest_5496e4ee75db5775d3d9a502efd647bd_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_BUNDLE_SECURITY", mod_consts.const_str_plain_BUNDLE_SECURITY);
+assert(mod_consts_hash[289] == DEEP_HASH(tstate, mod_consts.const_str_plain_BUNDLE_SECURITY) && "mod_consts.const_str_plain_BUNDLE_SECURITY");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_ccea41f396a418a256fc15419f5a5555_tuple", mod_consts.const_tuple_str_digest_ccea41f396a418a256fc15419f5a5555_tuple);
+assert(mod_consts_hash[290] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_ccea41f396a418a256fc15419f5a5555_tuple) && "mod_consts.const_tuple_str_digest_ccea41f396a418a256fc15419f5a5555_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CERTIFICATE_TRANSPARENCY", mod_consts.const_str_plain_CERTIFICATE_TRANSPARENCY);
+assert(mod_consts_hash[291] == DEEP_HASH(tstate, mod_consts.const_str_plain_CERTIFICATE_TRANSPARENCY) && "mod_consts.const_str_plain_CERTIFICATE_TRANSPARENCY");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OtherNameFormOID", mod_consts.const_str_plain_OtherNameFormOID);
+assert(mod_consts_hash[292] == DEEP_HASH(tstate, mod_consts.const_str_plain_OtherNameFormOID) && "mod_consts.const_str_plain_OtherNameFormOID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_215", mod_consts.const_int_pos_215);
+assert(mod_consts_hash[293] == DEEP_HASH(tstate, mod_consts.const_int_pos_215) && "mod_consts.const_int_pos_215");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_54731fe62fc1aa88853437677be0f551_tuple", mod_consts.const_tuple_str_digest_54731fe62fc1aa88853437677be0f551_tuple);
+assert(mod_consts_hash[294] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_54731fe62fc1aa88853437677be0f551_tuple) && "mod_consts.const_tuple_str_digest_54731fe62fc1aa88853437677be0f551_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_PERMANENT_IDENTIFIER", mod_consts.const_str_plain_PERMANENT_IDENTIFIER);
+assert(mod_consts_hash[295] == DEEP_HASH(tstate, mod_consts.const_str_plain_PERMANENT_IDENTIFIER) && "mod_consts.const_str_plain_PERMANENT_IDENTIFIER");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_119861f2139b2f03ce565c8597226b29_tuple", mod_consts.const_tuple_str_digest_119861f2139b2f03ce565c8597226b29_tuple);
+assert(mod_consts_hash[296] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_119861f2139b2f03ce565c8597226b29_tuple) && "mod_consts.const_tuple_str_digest_119861f2139b2f03ce565c8597226b29_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_HW_MODULE_NAME", mod_consts.const_str_plain_HW_MODULE_NAME);
+assert(mod_consts_hash[297] == DEEP_HASH(tstate, mod_consts.const_str_plain_HW_MODULE_NAME) && "mod_consts.const_str_plain_HW_MODULE_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_4ed534afb123635a182f7c580306d5f8_tuple", mod_consts.const_tuple_str_digest_4ed534afb123635a182f7c580306d5f8_tuple);
+assert(mod_consts_hash[298] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_4ed534afb123635a182f7c580306d5f8_tuple) && "mod_consts.const_tuple_str_digest_4ed534afb123635a182f7c580306d5f8_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_DNS_SRV", mod_consts.const_str_plain_DNS_SRV);
+assert(mod_consts_hash[299] == DEEP_HASH(tstate, mod_consts.const_str_plain_DNS_SRV) && "mod_consts.const_str_plain_DNS_SRV");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_a85bb3a108037fcb412e96c090ba22cd_tuple", mod_consts.const_tuple_str_digest_a85bb3a108037fcb412e96c090ba22cd_tuple);
+assert(mod_consts_hash[300] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_a85bb3a108037fcb412e96c090ba22cd_tuple) && "mod_consts.const_tuple_str_digest_a85bb3a108037fcb412e96c090ba22cd_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_NAI_REALM", mod_consts.const_str_plain_NAI_REALM);
+assert(mod_consts_hash[301] == DEEP_HASH(tstate, mod_consts.const_str_plain_NAI_REALM) && "mod_consts.const_str_plain_NAI_REALM");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_e5d892ec6de39d023c8f539b6763bcbf_tuple", mod_consts.const_tuple_str_digest_e5d892ec6de39d023c8f539b6763bcbf_tuple);
+assert(mod_consts_hash[302] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_e5d892ec6de39d023c8f539b6763bcbf_tuple) && "mod_consts.const_tuple_str_digest_e5d892ec6de39d023c8f539b6763bcbf_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SMTP_UTF8_MAILBOX", mod_consts.const_str_plain_SMTP_UTF8_MAILBOX);
+assert(mod_consts_hash[303] == DEEP_HASH(tstate, mod_consts.const_str_plain_SMTP_UTF8_MAILBOX) && "mod_consts.const_str_plain_SMTP_UTF8_MAILBOX");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_7371190d099cbe3ab89fcdaec1d4094c_tuple", mod_consts.const_tuple_str_digest_7371190d099cbe3ab89fcdaec1d4094c_tuple);
+assert(mod_consts_hash[304] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_7371190d099cbe3ab89fcdaec1d4094c_tuple) && "mod_consts.const_tuple_str_digest_7371190d099cbe3ab89fcdaec1d4094c_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ACP_NODE_NAME", mod_consts.const_str_plain_ACP_NODE_NAME);
+assert(mod_consts_hash[305] == DEEP_HASH(tstate, mod_consts.const_str_plain_ACP_NODE_NAME) && "mod_consts.const_str_plain_ACP_NODE_NAME");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_8c0b077da28a1a6e1d53d45441f26ef6_tuple", mod_consts.const_tuple_str_digest_8c0b077da28a1a6e1d53d45441f26ef6_tuple);
+assert(mod_consts_hash[306] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_8c0b077da28a1a6e1d53d45441f26ef6_tuple) && "mod_consts.const_tuple_str_digest_8c0b077da28a1a6e1d53d45441f26ef6_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_BUNDLE_EID", mod_consts.const_str_plain_BUNDLE_EID);
+assert(mod_consts_hash[307] == DEEP_HASH(tstate, mod_consts.const_str_plain_BUNDLE_EID) && "mod_consts.const_str_plain_BUNDLE_EID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_AuthorityInformationAccessOID", mod_consts.const_str_plain_AuthorityInformationAccessOID);
+assert(mod_consts_hash[308] == DEEP_HASH(tstate, mod_consts.const_str_plain_AuthorityInformationAccessOID) && "mod_consts.const_str_plain_AuthorityInformationAccessOID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_225", mod_consts.const_int_pos_225);
+assert(mod_consts_hash[309] == DEEP_HASH(tstate, mod_consts.const_int_pos_225) && "mod_consts.const_int_pos_225");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_07bbedf6f84f3fc5867dc620be5e095a_tuple", mod_consts.const_tuple_str_digest_07bbedf6f84f3fc5867dc620be5e095a_tuple);
+assert(mod_consts_hash[310] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_07bbedf6f84f3fc5867dc620be5e095a_tuple) && "mod_consts.const_tuple_str_digest_07bbedf6f84f3fc5867dc620be5e095a_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CA_ISSUERS", mod_consts.const_str_plain_CA_ISSUERS);
+assert(mod_consts_hash[311] == DEEP_HASH(tstate, mod_consts.const_str_plain_CA_ISSUERS) && "mod_consts.const_str_plain_CA_ISSUERS");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_2b4acfbf018aa94fa2c4d751377b67ba_tuple", mod_consts.const_tuple_str_digest_2b4acfbf018aa94fa2c4d751377b67ba_tuple);
+assert(mod_consts_hash[312] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_2b4acfbf018aa94fa2c4d751377b67ba_tuple) && "mod_consts.const_tuple_str_digest_2b4acfbf018aa94fa2c4d751377b67ba_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSP", mod_consts.const_str_plain_OCSP);
+assert(mod_consts_hash[313] == DEEP_HASH(tstate, mod_consts.const_str_plain_OCSP) && "mod_consts.const_str_plain_OCSP");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_SubjectInformationAccessOID", mod_consts.const_str_plain_SubjectInformationAccessOID);
+assert(mod_consts_hash[314] == DEEP_HASH(tstate, mod_consts.const_str_plain_SubjectInformationAccessOID) && "mod_consts.const_str_plain_SubjectInformationAccessOID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_230", mod_consts.const_int_pos_230);
+assert(mod_consts_hash[315] == DEEP_HASH(tstate, mod_consts.const_int_pos_230) && "mod_consts.const_int_pos_230");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_66e93f786830774b3f20fac3289ad8b4_tuple", mod_consts.const_tuple_str_digest_66e93f786830774b3f20fac3289ad8b4_tuple);
+assert(mod_consts_hash[316] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_66e93f786830774b3f20fac3289ad8b4_tuple) && "mod_consts.const_tuple_str_digest_66e93f786830774b3f20fac3289ad8b4_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CA_REPOSITORY", mod_consts.const_str_plain_CA_REPOSITORY);
+assert(mod_consts_hash[317] == DEEP_HASH(tstate, mod_consts.const_str_plain_CA_REPOSITORY) && "mod_consts.const_str_plain_CA_REPOSITORY");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CertificatePoliciesOID", mod_consts.const_str_plain_CertificatePoliciesOID);
+assert(mod_consts_hash[318] == DEEP_HASH(tstate, mod_consts.const_str_plain_CertificatePoliciesOID) && "mod_consts.const_str_plain_CertificatePoliciesOID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_234", mod_consts.const_int_pos_234);
+assert(mod_consts_hash[319] == DEEP_HASH(tstate, mod_consts.const_int_pos_234) && "mod_consts.const_int_pos_234");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_50321ff2fccee4024d98999f9c8d9feb_tuple", mod_consts.const_tuple_str_digest_50321ff2fccee4024d98999f9c8d9feb_tuple);
+assert(mod_consts_hash[320] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_50321ff2fccee4024d98999f9c8d9feb_tuple) && "mod_consts.const_tuple_str_digest_50321ff2fccee4024d98999f9c8d9feb_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CPS_QUALIFIER", mod_consts.const_str_plain_CPS_QUALIFIER);
+assert(mod_consts_hash[321] == DEEP_HASH(tstate, mod_consts.const_str_plain_CPS_QUALIFIER) && "mod_consts.const_str_plain_CPS_QUALIFIER");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_03e57fcfeaffac79e0551f43c9be177f_tuple", mod_consts.const_tuple_str_digest_03e57fcfeaffac79e0551f43c9be177f_tuple);
+assert(mod_consts_hash[322] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_03e57fcfeaffac79e0551f43c9be177f_tuple) && "mod_consts.const_tuple_str_digest_03e57fcfeaffac79e0551f43c9be177f_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CPS_USER_NOTICE", mod_consts.const_str_plain_CPS_USER_NOTICE);
+assert(mod_consts_hash[323] == DEEP_HASH(tstate, mod_consts.const_str_plain_CPS_USER_NOTICE) && "mod_consts.const_str_plain_CPS_USER_NOTICE");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_fbb6e1cc86dd0b99c46a7f9000416d62_tuple", mod_consts.const_tuple_str_digest_fbb6e1cc86dd0b99c46a7f9000416d62_tuple);
+assert(mod_consts_hash[324] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_fbb6e1cc86dd0b99c46a7f9000416d62_tuple) && "mod_consts.const_tuple_str_digest_fbb6e1cc86dd0b99c46a7f9000416d62_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ANY_POLICY", mod_consts.const_str_plain_ANY_POLICY);
+assert(mod_consts_hash[325] == DEEP_HASH(tstate, mod_consts.const_str_plain_ANY_POLICY) && "mod_consts.const_str_plain_ANY_POLICY");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_AttributeOID", mod_consts.const_str_plain_AttributeOID);
+assert(mod_consts_hash[326] == DEEP_HASH(tstate, mod_consts.const_str_plain_AttributeOID) && "mod_consts.const_str_plain_AttributeOID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_int_pos_240", mod_consts.const_int_pos_240);
+assert(mod_consts_hash[327] == DEEP_HASH(tstate, mod_consts.const_int_pos_240) && "mod_consts.const_int_pos_240");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_digest_a9cf6de721f933fda642f0879f2a9fc9_tuple", mod_consts.const_tuple_str_digest_a9cf6de721f933fda642f0879f2a9fc9_tuple);
+assert(mod_consts_hash[328] == DEEP_HASH(tstate, mod_consts.const_tuple_str_digest_a9cf6de721f933fda642f0879f2a9fc9_tuple) && "mod_consts.const_tuple_str_digest_a9cf6de721f933fda642f0879f2a9fc9_tuple");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_CHALLENGE_PASSWORD", mod_consts.const_str_plain_CHALLENGE_PASSWORD);
+assert(mod_consts_hash[329] == DEEP_HASH(tstate, mod_consts.const_str_plain_CHALLENGE_PASSWORD) && "mod_consts.const_str_plain_CHALLENGE_PASSWORD");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_commonName", mod_consts.const_str_plain_commonName);
+assert(mod_consts_hash[330] == DEEP_HASH(tstate, mod_consts.const_str_plain_commonName) && "mod_consts.const_str_plain_commonName");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_countryName", mod_consts.const_str_plain_countryName);
+assert(mod_consts_hash[331] == DEEP_HASH(tstate, mod_consts.const_str_plain_countryName) && "mod_consts.const_str_plain_countryName");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_localityName", mod_consts.const_str_plain_localityName);
+assert(mod_consts_hash[332] == DEEP_HASH(tstate, mod_consts.const_str_plain_localityName) && "mod_consts.const_str_plain_localityName");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_stateOrProvinceName", mod_consts.const_str_plain_stateOrProvinceName);
+assert(mod_consts_hash[333] == DEEP_HASH(tstate, mod_consts.const_str_plain_stateOrProvinceName) && "mod_consts.const_str_plain_stateOrProvinceName");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_streetAddress", mod_consts.const_str_plain_streetAddress);
+assert(mod_consts_hash[334] == DEEP_HASH(tstate, mod_consts.const_str_plain_streetAddress) && "mod_consts.const_str_plain_streetAddress");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_organizationName", mod_consts.const_str_plain_organizationName);
+assert(mod_consts_hash[335] == DEEP_HASH(tstate, mod_consts.const_str_plain_organizationName) && "mod_consts.const_str_plain_organizationName");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_organizationalUnitName", mod_consts.const_str_plain_organizationalUnitName);
+assert(mod_consts_hash[336] == DEEP_HASH(tstate, mod_consts.const_str_plain_organizationalUnitName) && "mod_consts.const_str_plain_organizationalUnitName");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_serialNumber", mod_consts.const_str_plain_serialNumber);
+assert(mod_consts_hash[337] == DEEP_HASH(tstate, mod_consts.const_str_plain_serialNumber) && "mod_consts.const_str_plain_serialNumber");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_surname", mod_consts.const_str_plain_surname);
+assert(mod_consts_hash[338] == DEEP_HASH(tstate, mod_consts.const_str_plain_surname) && "mod_consts.const_str_plain_surname");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_givenName", mod_consts.const_str_plain_givenName);
+assert(mod_consts_hash[339] == DEEP_HASH(tstate, mod_consts.const_str_plain_givenName) && "mod_consts.const_str_plain_givenName");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_title", mod_consts.const_str_plain_title);
+assert(mod_consts_hash[340] == DEEP_HASH(tstate, mod_consts.const_str_plain_title) && "mod_consts.const_str_plain_title");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_generationQualifier", mod_consts.const_str_plain_generationQualifier);
+assert(mod_consts_hash[341] == DEEP_HASH(tstate, mod_consts.const_str_plain_generationQualifier) && "mod_consts.const_str_plain_generationQualifier");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_x500UniqueIdentifier", mod_consts.const_str_plain_x500UniqueIdentifier);
+assert(mod_consts_hash[342] == DEEP_HASH(tstate, mod_consts.const_str_plain_x500UniqueIdentifier) && "mod_consts.const_str_plain_x500UniqueIdentifier");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_dnQualifier", mod_consts.const_str_plain_dnQualifier);
+assert(mod_consts_hash[343] == DEEP_HASH(tstate, mod_consts.const_str_plain_dnQualifier) && "mod_consts.const_str_plain_dnQualifier");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_pseudonym", mod_consts.const_str_plain_pseudonym);
+assert(mod_consts_hash[344] == DEEP_HASH(tstate, mod_consts.const_str_plain_pseudonym) && "mod_consts.const_str_plain_pseudonym");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_userID", mod_consts.const_str_plain_userID);
+assert(mod_consts_hash[345] == DEEP_HASH(tstate, mod_consts.const_str_plain_userID) && "mod_consts.const_str_plain_userID");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_domainComponent", mod_consts.const_str_plain_domainComponent);
+assert(mod_consts_hash[346] == DEEP_HASH(tstate, mod_consts.const_str_plain_domainComponent) && "mod_consts.const_str_plain_domainComponent");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_emailAddress", mod_consts.const_str_plain_emailAddress);
+assert(mod_consts_hash[347] == DEEP_HASH(tstate, mod_consts.const_str_plain_emailAddress) && "mod_consts.const_str_plain_emailAddress");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_jurisdictionCountryName", mod_consts.const_str_plain_jurisdictionCountryName);
+assert(mod_consts_hash[348] == DEEP_HASH(tstate, mod_consts.const_str_plain_jurisdictionCountryName) && "mod_consts.const_str_plain_jurisdictionCountryName");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_jurisdictionLocalityName", mod_consts.const_str_plain_jurisdictionLocalityName);
+assert(mod_consts_hash[349] == DEEP_HASH(tstate, mod_consts.const_str_plain_jurisdictionLocalityName) && "mod_consts.const_str_plain_jurisdictionLocalityName");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_jurisdictionStateOrProvinceName", mod_consts.const_str_plain_jurisdictionStateOrProvinceName);
+assert(mod_consts_hash[350] == DEEP_HASH(tstate, mod_consts.const_str_plain_jurisdictionStateOrProvinceName) && "mod_consts.const_str_plain_jurisdictionStateOrProvinceName");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_businessCategory", mod_consts.const_str_plain_businessCategory);
+assert(mod_consts_hash[351] == DEEP_HASH(tstate, mod_consts.const_str_plain_businessCategory) && "mod_consts.const_str_plain_businessCategory");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_postalAddress", mod_consts.const_str_plain_postalAddress);
+assert(mod_consts_hash[352] == DEEP_HASH(tstate, mod_consts.const_str_plain_postalAddress) && "mod_consts.const_str_plain_postalAddress");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_postalCode", mod_consts.const_str_plain_postalCode);
+assert(mod_consts_hash[353] == DEEP_HASH(tstate, mod_consts.const_str_plain_postalCode) && "mod_consts.const_str_plain_postalCode");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_unstructuredName", mod_consts.const_str_plain_unstructuredName);
+assert(mod_consts_hash[354] == DEEP_HASH(tstate, mod_consts.const_str_plain_unstructuredName) && "mod_consts.const_str_plain_unstructuredName");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_md5WithRSAEncryption", mod_consts.const_str_plain_md5WithRSAEncryption);
+assert(mod_consts_hash[355] == DEEP_HASH(tstate, mod_consts.const_str_plain_md5WithRSAEncryption) && "mod_consts.const_str_plain_md5WithRSAEncryption");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha1WithRSAEncryption", mod_consts.const_str_plain_sha1WithRSAEncryption);
+assert(mod_consts_hash[356] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha1WithRSAEncryption) && "mod_consts.const_str_plain_sha1WithRSAEncryption");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha224WithRSAEncryption", mod_consts.const_str_plain_sha224WithRSAEncryption);
+assert(mod_consts_hash[357] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha224WithRSAEncryption) && "mod_consts.const_str_plain_sha224WithRSAEncryption");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha256WithRSAEncryption", mod_consts.const_str_plain_sha256WithRSAEncryption);
+assert(mod_consts_hash[358] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha256WithRSAEncryption) && "mod_consts.const_str_plain_sha256WithRSAEncryption");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha384WithRSAEncryption", mod_consts.const_str_plain_sha384WithRSAEncryption);
+assert(mod_consts_hash[359] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha384WithRSAEncryption) && "mod_consts.const_str_plain_sha384WithRSAEncryption");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha512WithRSAEncryption", mod_consts.const_str_plain_sha512WithRSAEncryption);
+assert(mod_consts_hash[360] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha512WithRSAEncryption) && "mod_consts.const_str_plain_sha512WithRSAEncryption");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_rsassaPss", mod_consts.const_str_plain_rsassaPss);
+assert(mod_consts_hash[361] == DEEP_HASH(tstate, mod_consts.const_str_plain_rsassaPss) && "mod_consts.const_str_plain_rsassaPss");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_c2fb55a1f09e586fc82a97de6fc73acc", mod_consts.const_str_digest_c2fb55a1f09e586fc82a97de6fc73acc);
+assert(mod_consts_hash[362] == DEEP_HASH(tstate, mod_consts.const_str_digest_c2fb55a1f09e586fc82a97de6fc73acc) && "mod_consts.const_str_digest_c2fb55a1f09e586fc82a97de6fc73acc");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_557b29feaadb5ada1ad965906e5d1dd3", mod_consts.const_str_digest_557b29feaadb5ada1ad965906e5d1dd3);
+assert(mod_consts_hash[363] == DEEP_HASH(tstate, mod_consts.const_str_digest_557b29feaadb5ada1ad965906e5d1dd3) && "mod_consts.const_str_digest_557b29feaadb5ada1ad965906e5d1dd3");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_ad3c682658ab1bc2f4342a30cc4996e2", mod_consts.const_str_digest_ad3c682658ab1bc2f4342a30cc4996e2);
+assert(mod_consts_hash[364] == DEEP_HASH(tstate, mod_consts.const_str_digest_ad3c682658ab1bc2f4342a30cc4996e2) && "mod_consts.const_str_digest_ad3c682658ab1bc2f4342a30cc4996e2");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_ff3f390793cb3f7a65e3ba0d8b30034e", mod_consts.const_str_digest_ff3f390793cb3f7a65e3ba0d8b30034e);
+assert(mod_consts_hash[365] == DEEP_HASH(tstate, mod_consts.const_str_digest_ff3f390793cb3f7a65e3ba0d8b30034e) && "mod_consts.const_str_digest_ff3f390793cb3f7a65e3ba0d8b30034e");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_8c168ca0bdafd4e71f4b6bf87eb46ded", mod_consts.const_str_digest_8c168ca0bdafd4e71f4b6bf87eb46ded);
+assert(mod_consts_hash[366] == DEEP_HASH(tstate, mod_consts.const_str_digest_8c168ca0bdafd4e71f4b6bf87eb46ded) && "mod_consts.const_str_digest_8c168ca0bdafd4e71f4b6bf87eb46ded");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_17ca6fd46f3d026f6114676b663f8acd", mod_consts.const_str_digest_17ca6fd46f3d026f6114676b663f8acd);
+assert(mod_consts_hash[367] == DEEP_HASH(tstate, mod_consts.const_str_digest_17ca6fd46f3d026f6114676b663f8acd) && "mod_consts.const_str_digest_17ca6fd46f3d026f6114676b663f8acd");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_3df3ca64dd8761c027ed0ba43961e89a", mod_consts.const_str_digest_3df3ca64dd8761c027ed0ba43961e89a);
+assert(mod_consts_hash[368] == DEEP_HASH(tstate, mod_consts.const_str_digest_3df3ca64dd8761c027ed0ba43961e89a) && "mod_consts.const_str_digest_3df3ca64dd8761c027ed0ba43961e89a");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_a0b774c3e9788e9c20a69f9b798eb899", mod_consts.const_str_digest_a0b774c3e9788e9c20a69f9b798eb899);
+assert(mod_consts_hash[369] == DEEP_HASH(tstate, mod_consts.const_str_digest_a0b774c3e9788e9c20a69f9b798eb899) && "mod_consts.const_str_digest_a0b774c3e9788e9c20a69f9b798eb899");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ed25519", mod_consts.const_str_plain_ed25519);
+assert(mod_consts_hash[370] == DEEP_HASH(tstate, mod_consts.const_str_plain_ed25519) && "mod_consts.const_str_plain_ed25519");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ed448", mod_consts.const_str_plain_ed448);
+assert(mod_consts_hash[371] == DEEP_HASH(tstate, mod_consts.const_str_plain_ed448) && "mod_consts.const_str_plain_ed448");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_45c372b4d789ac400c2ec357e6d8652d", mod_consts.const_str_digest_45c372b4d789ac400c2ec357e6d8652d);
+assert(mod_consts_hash[372] == DEEP_HASH(tstate, mod_consts.const_str_digest_45c372b4d789ac400c2ec357e6d8652d) && "mod_consts.const_str_digest_45c372b4d789ac400c2ec357e6d8652d");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_474b62c6824a77bfb15ce78ce7281094", mod_consts.const_str_digest_474b62c6824a77bfb15ce78ce7281094);
+assert(mod_consts_hash[373] == DEEP_HASH(tstate, mod_consts.const_str_digest_474b62c6824a77bfb15ce78ce7281094) && "mod_consts.const_str_digest_474b62c6824a77bfb15ce78ce7281094");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_a0fd9643bd77b0727228b4f0b7764d68", mod_consts.const_str_digest_a0fd9643bd77b0727228b4f0b7764d68);
+assert(mod_consts_hash[374] == DEEP_HASH(tstate, mod_consts.const_str_digest_a0fd9643bd77b0727228b4f0b7764d68) && "mod_consts.const_str_digest_a0fd9643bd77b0727228b4f0b7764d68");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_0fb317ec863119cbf9cf939b5b971c2c", mod_consts.const_str_digest_0fb317ec863119cbf9cf939b5b971c2c);
+assert(mod_consts_hash[375] == DEEP_HASH(tstate, mod_consts.const_str_digest_0fb317ec863119cbf9cf939b5b971c2c) && "mod_consts.const_str_digest_0fb317ec863119cbf9cf939b5b971c2c");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_4df1fd561ce0921b6184b8e7367dd223", mod_consts.const_str_digest_4df1fd561ce0921b6184b8e7367dd223);
+assert(mod_consts_hash[376] == DEEP_HASH(tstate, mod_consts.const_str_digest_4df1fd561ce0921b6184b8e7367dd223) && "mod_consts.const_str_digest_4df1fd561ce0921b6184b8e7367dd223");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_93703fb7c432dffdd6c487fa17fb7868", mod_consts.const_str_digest_93703fb7c432dffdd6c487fa17fb7868);
+assert(mod_consts_hash[377] == DEEP_HASH(tstate, mod_consts.const_str_digest_93703fb7c432dffdd6c487fa17fb7868) && "mod_consts.const_str_digest_93703fb7c432dffdd6c487fa17fb7868");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha1", mod_consts.const_str_plain_sha1);
+assert(mod_consts_hash[378] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha1) && "mod_consts.const_str_plain_sha1");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha224", mod_consts.const_str_plain_sha224);
+assert(mod_consts_hash[379] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha224) && "mod_consts.const_str_plain_sha224");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha256", mod_consts.const_str_plain_sha256);
+assert(mod_consts_hash[380] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha256) && "mod_consts.const_str_plain_sha256");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha384", mod_consts.const_str_plain_sha384);
+assert(mod_consts_hash[381] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha384) && "mod_consts.const_str_plain_sha384");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha512", mod_consts.const_str_plain_sha512);
+assert(mod_consts_hash[382] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha512) && "mod_consts.const_str_plain_sha512");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha3_224", mod_consts.const_str_plain_sha3_224);
+assert(mod_consts_hash[383] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha3_224) && "mod_consts.const_str_plain_sha3_224");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha3_256", mod_consts.const_str_plain_sha3_256);
+assert(mod_consts_hash[384] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha3_256) && "mod_consts.const_str_plain_sha3_256");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha3_384", mod_consts.const_str_plain_sha3_384);
+assert(mod_consts_hash[385] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha3_384) && "mod_consts.const_str_plain_sha3_384");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_sha3_512", mod_consts.const_str_plain_sha3_512);
+assert(mod_consts_hash[386] == DEEP_HASH(tstate, mod_consts.const_str_plain_sha3_512) && "mod_consts.const_str_plain_sha3_512");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_dsaEncryption", mod_consts.const_str_plain_dsaEncryption);
+assert(mod_consts_hash[387] == DEEP_HASH(tstate, mod_consts.const_str_plain_dsaEncryption) && "mod_consts.const_str_plain_dsaEncryption");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_7dfac6622a641613bdb887174c606fe6", mod_consts.const_str_digest_7dfac6622a641613bdb887174c606fe6);
+assert(mod_consts_hash[388] == DEEP_HASH(tstate, mod_consts.const_str_digest_7dfac6622a641613bdb887174c606fe6) && "mod_consts.const_str_digest_7dfac6622a641613bdb887174c606fe6");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_rsaEncryption", mod_consts.const_str_plain_rsaEncryption);
+assert(mod_consts_hash[389] == DEEP_HASH(tstate, mod_consts.const_str_plain_rsaEncryption) && "mod_consts.const_str_plain_rsaEncryption");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_serverAuth", mod_consts.const_str_plain_serverAuth);
+assert(mod_consts_hash[390] == DEEP_HASH(tstate, mod_consts.const_str_plain_serverAuth) && "mod_consts.const_str_plain_serverAuth");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_clientAuth", mod_consts.const_str_plain_clientAuth);
+assert(mod_consts_hash[391] == DEEP_HASH(tstate, mod_consts.const_str_plain_clientAuth) && "mod_consts.const_str_plain_clientAuth");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_codeSigning", mod_consts.const_str_plain_codeSigning);
+assert(mod_consts_hash[392] == DEEP_HASH(tstate, mod_consts.const_str_plain_codeSigning) && "mod_consts.const_str_plain_codeSigning");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_emailProtection", mod_consts.const_str_plain_emailProtection);
+assert(mod_consts_hash[393] == DEEP_HASH(tstate, mod_consts.const_str_plain_emailProtection) && "mod_consts.const_str_plain_emailProtection");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_timeStamping", mod_consts.const_str_plain_timeStamping);
+assert(mod_consts_hash[394] == DEEP_HASH(tstate, mod_consts.const_str_plain_timeStamping) && "mod_consts.const_str_plain_timeStamping");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSPSigning", mod_consts.const_str_plain_OCSPSigning);
+assert(mod_consts_hash[395] == DEEP_HASH(tstate, mod_consts.const_str_plain_OCSPSigning) && "mod_consts.const_str_plain_OCSPSigning");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_msSmartcardLogin", mod_consts.const_str_plain_msSmartcardLogin);
+assert(mod_consts_hash[396] == DEEP_HASH(tstate, mod_consts.const_str_plain_msSmartcardLogin) && "mod_consts.const_str_plain_msSmartcardLogin");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_pkInitKDC", mod_consts.const_str_plain_pkInitKDC);
+assert(mod_consts_hash[397] == DEEP_HASH(tstate, mod_consts.const_str_plain_pkInitKDC) && "mod_consts.const_str_plain_pkInitKDC");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_subjectDirectoryAttributes", mod_consts.const_str_plain_subjectDirectoryAttributes);
+assert(mod_consts_hash[398] == DEEP_HASH(tstate, mod_consts.const_str_plain_subjectDirectoryAttributes) && "mod_consts.const_str_plain_subjectDirectoryAttributes");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_subjectKeyIdentifier", mod_consts.const_str_plain_subjectKeyIdentifier);
+assert(mod_consts_hash[399] == DEEP_HASH(tstate, mod_consts.const_str_plain_subjectKeyIdentifier) && "mod_consts.const_str_plain_subjectKeyIdentifier");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_keyUsage", mod_consts.const_str_plain_keyUsage);
+assert(mod_consts_hash[400] == DEEP_HASH(tstate, mod_consts.const_str_plain_keyUsage) && "mod_consts.const_str_plain_keyUsage");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_privateKeyUsagePeriod", mod_consts.const_str_plain_privateKeyUsagePeriod);
+assert(mod_consts_hash[401] == DEEP_HASH(tstate, mod_consts.const_str_plain_privateKeyUsagePeriod) && "mod_consts.const_str_plain_privateKeyUsagePeriod");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_subjectAltName", mod_consts.const_str_plain_subjectAltName);
+assert(mod_consts_hash[402] == DEEP_HASH(tstate, mod_consts.const_str_plain_subjectAltName) && "mod_consts.const_str_plain_subjectAltName");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_issuerAltName", mod_consts.const_str_plain_issuerAltName);
+assert(mod_consts_hash[403] == DEEP_HASH(tstate, mod_consts.const_str_plain_issuerAltName) && "mod_consts.const_str_plain_issuerAltName");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_basicConstraints", mod_consts.const_str_plain_basicConstraints);
+assert(mod_consts_hash[404] == DEEP_HASH(tstate, mod_consts.const_str_plain_basicConstraints) && "mod_consts.const_str_plain_basicConstraints");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_signedCertificateTimestampList", mod_consts.const_str_plain_signedCertificateTimestampList);
+assert(mod_consts_hash[405] == DEEP_HASH(tstate, mod_consts.const_str_plain_signedCertificateTimestampList) && "mod_consts.const_str_plain_signedCertificateTimestampList");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_ctPoison", mod_consts.const_str_plain_ctPoison);
+assert(mod_consts_hash[406] == DEEP_HASH(tstate, mod_consts.const_str_plain_ctPoison) && "mod_consts.const_str_plain_ctPoison");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_msCertificateTemplate", mod_consts.const_str_plain_msCertificateTemplate);
+assert(mod_consts_hash[407] == DEEP_HASH(tstate, mod_consts.const_str_plain_msCertificateTemplate) && "mod_consts.const_str_plain_msCertificateTemplate");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_Admissions", mod_consts.const_str_plain_Admissions);
+assert(mod_consts_hash[408] == DEEP_HASH(tstate, mod_consts.const_str_plain_Admissions) && "mod_consts.const_str_plain_Admissions");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_cRLReason", mod_consts.const_str_plain_cRLReason);
+assert(mod_consts_hash[409] == DEEP_HASH(tstate, mod_consts.const_str_plain_cRLReason) && "mod_consts.const_str_plain_cRLReason");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_invalidityDate", mod_consts.const_str_plain_invalidityDate);
+assert(mod_consts_hash[410] == DEEP_HASH(tstate, mod_consts.const_str_plain_invalidityDate) && "mod_consts.const_str_plain_invalidityDate");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_certificateIssuer", mod_consts.const_str_plain_certificateIssuer);
+assert(mod_consts_hash[411] == DEEP_HASH(tstate, mod_consts.const_str_plain_certificateIssuer) && "mod_consts.const_str_plain_certificateIssuer");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_nameConstraints", mod_consts.const_str_plain_nameConstraints);
+assert(mod_consts_hash[412] == DEEP_HASH(tstate, mod_consts.const_str_plain_nameConstraints) && "mod_consts.const_str_plain_nameConstraints");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_cRLDistributionPoints", mod_consts.const_str_plain_cRLDistributionPoints);
+assert(mod_consts_hash[413] == DEEP_HASH(tstate, mod_consts.const_str_plain_cRLDistributionPoints) && "mod_consts.const_str_plain_cRLDistributionPoints");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_certificatePolicies", mod_consts.const_str_plain_certificatePolicies);
+assert(mod_consts_hash[414] == DEEP_HASH(tstate, mod_consts.const_str_plain_certificatePolicies) && "mod_consts.const_str_plain_certificatePolicies");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_policyMappings", mod_consts.const_str_plain_policyMappings);
+assert(mod_consts_hash[415] == DEEP_HASH(tstate, mod_consts.const_str_plain_policyMappings) && "mod_consts.const_str_plain_policyMappings");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_authorityKeyIdentifier", mod_consts.const_str_plain_authorityKeyIdentifier);
+assert(mod_consts_hash[416] == DEEP_HASH(tstate, mod_consts.const_str_plain_authorityKeyIdentifier) && "mod_consts.const_str_plain_authorityKeyIdentifier");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_policyConstraints", mod_consts.const_str_plain_policyConstraints);
+assert(mod_consts_hash[417] == DEEP_HASH(tstate, mod_consts.const_str_plain_policyConstraints) && "mod_consts.const_str_plain_policyConstraints");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_extendedKeyUsage", mod_consts.const_str_plain_extendedKeyUsage);
+assert(mod_consts_hash[418] == DEEP_HASH(tstate, mod_consts.const_str_plain_extendedKeyUsage) && "mod_consts.const_str_plain_extendedKeyUsage");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_freshestCRL", mod_consts.const_str_plain_freshestCRL);
+assert(mod_consts_hash[419] == DEEP_HASH(tstate, mod_consts.const_str_plain_freshestCRL) && "mod_consts.const_str_plain_freshestCRL");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_inhibitAnyPolicy", mod_consts.const_str_plain_inhibitAnyPolicy);
+assert(mod_consts_hash[420] == DEEP_HASH(tstate, mod_consts.const_str_plain_inhibitAnyPolicy) && "mod_consts.const_str_plain_inhibitAnyPolicy");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_issuingDistributionPoint", mod_consts.const_str_plain_issuingDistributionPoint);
+assert(mod_consts_hash[421] == DEEP_HASH(tstate, mod_consts.const_str_plain_issuingDistributionPoint) && "mod_consts.const_str_plain_issuingDistributionPoint");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_authorityInfoAccess", mod_consts.const_str_plain_authorityInfoAccess);
+assert(mod_consts_hash[422] == DEEP_HASH(tstate, mod_consts.const_str_plain_authorityInfoAccess) && "mod_consts.const_str_plain_authorityInfoAccess");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_subjectInfoAccess", mod_consts.const_str_plain_subjectInfoAccess);
+assert(mod_consts_hash[423] == DEEP_HASH(tstate, mod_consts.const_str_plain_subjectInfoAccess) && "mod_consts.const_str_plain_subjectInfoAccess");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSPNoCheck", mod_consts.const_str_plain_OCSPNoCheck);
+assert(mod_consts_hash[424] == DEEP_HASH(tstate, mod_consts.const_str_plain_OCSPNoCheck) && "mod_consts.const_str_plain_OCSPNoCheck");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_cRLNumber", mod_consts.const_str_plain_cRLNumber);
+assert(mod_consts_hash[425] == DEEP_HASH(tstate, mod_consts.const_str_plain_cRLNumber) && "mod_consts.const_str_plain_cRLNumber");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_deltaCRLIndicator", mod_consts.const_str_plain_deltaCRLIndicator);
+assert(mod_consts_hash[426] == DEEP_HASH(tstate, mod_consts.const_str_plain_deltaCRLIndicator) && "mod_consts.const_str_plain_deltaCRLIndicator");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_TLSFeature", mod_consts.const_str_plain_TLSFeature);
+assert(mod_consts_hash[427] == DEEP_HASH(tstate, mod_consts.const_str_plain_TLSFeature) && "mod_consts.const_str_plain_TLSFeature");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_caIssuers", mod_consts.const_str_plain_caIssuers);
+assert(mod_consts_hash[428] == DEEP_HASH(tstate, mod_consts.const_str_plain_caIssuers) && "mod_consts.const_str_plain_caIssuers");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_caRepository", mod_consts.const_str_plain_caRepository);
+assert(mod_consts_hash[429] == DEEP_HASH(tstate, mod_consts.const_str_plain_caRepository) && "mod_consts.const_str_plain_caRepository");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_f452289eeaecab0c5424fd5ec7db97f7", mod_consts.const_str_digest_f452289eeaecab0c5424fd5ec7db97f7);
+assert(mod_consts_hash[430] == DEEP_HASH(tstate, mod_consts.const_str_digest_f452289eeaecab0c5424fd5ec7db97f7) && "mod_consts.const_str_digest_f452289eeaecab0c5424fd5ec7db97f7");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_e13ae27d769f6d1d70b1707fbd3f347b", mod_consts.const_str_digest_e13ae27d769f6d1d70b1707fbd3f347b);
+assert(mod_consts_hash[431] == DEEP_HASH(tstate, mod_consts.const_str_digest_e13ae27d769f6d1d70b1707fbd3f347b) && "mod_consts.const_str_digest_e13ae27d769f6d1d70b1707fbd3f347b");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_OCSPNonce", mod_consts.const_str_plain_OCSPNonce);
+assert(mod_consts_hash[432] == DEEP_HASH(tstate, mod_consts.const_str_plain_OCSPNonce) && "mod_consts.const_str_plain_OCSPNonce");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain_challengePassword", mod_consts.const_str_plain_challengePassword);
+assert(mod_consts_hash[433] == DEEP_HASH(tstate, mod_consts.const_str_plain_challengePassword) && "mod_consts.const_str_plain_challengePassword");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_plain__OID_NAMES", mod_consts.const_str_plain__OID_NAMES);
+assert(mod_consts_hash[434] == DEEP_HASH(tstate, mod_consts.const_str_plain__OID_NAMES) && "mod_consts.const_str_plain__OID_NAMES");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_9bfb757ef0eb1fe95bd31200bb78fbbe", mod_consts.const_str_digest_9bfb757ef0eb1fe95bd31200bb78fbbe);
+assert(mod_consts_hash[435] == DEEP_HASH(tstate, mod_consts.const_str_digest_9bfb757ef0eb1fe95bd31200bb78fbbe) && "mod_consts.const_str_digest_9bfb757ef0eb1fe95bd31200bb78fbbe");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_str_digest_3ffa24faa77efc825ad10e1c5c210bf0", mod_consts.const_str_digest_3ffa24faa77efc825ad10e1c5c210bf0);
+assert(mod_consts_hash[436] == DEEP_HASH(tstate, mod_consts.const_str_digest_3ffa24faa77efc825ad10e1c5c210bf0) && "mod_consts.const_str_digest_3ffa24faa77efc825ad10e1c5c210bf0");
+CHECK_OBJECT_DEEP_NAMED("mod_consts.const_tuple_str_plain___class___tuple", mod_consts.const_tuple_str_plain___class___tuple);
+assert(mod_consts_hash[437] == DEEP_HASH(tstate, mod_consts.const_tuple_str_plain___class___tuple) && "mod_consts.const_tuple_str_plain___class___tuple");
+}
+#endif
+
+// Helper to preserving module variables for Python3.11+
+#if 16
+#if PYTHON_VERSION >= 0x3c0
+NUITKA_MAY_BE_UNUSED static uint32_t _Nuitka_PyDictKeys_GetVersionForCurrentState(PyInterpreterState *interp, PyDictKeysObject *dk)
+{
+    if (dk->dk_version != 0) {
+        return dk->dk_version;
+    }
+    uint32_t result = Nuitka_PyInterpreterState_GetDictState(interp)->next_keys_version++;
+    dk->dk_version = result;
+    return result;
+}
+#elif PYTHON_VERSION >= 0x3b0
+static uint32_t _Nuitka_next_dict_keys_version = 2;
+
+NUITKA_MAY_BE_UNUSED static uint32_t _Nuitka_PyDictKeys_GetVersionForCurrentState(PyDictKeysObject *dk)
+{
+    if (dk->dk_version != 0) {
+        return dk->dk_version;
+    }
+    uint32_t result = _Nuitka_next_dict_keys_version++;
+    dk->dk_version = result;
+    return result;
+}
+#endif
+#endif
+
+// Accessors to module variables.
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$AttributeOID(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_AttributeOID);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_AttributeOID);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_AttributeOID, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_AttributeOID);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_AttributeOID, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_AttributeOID);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_AttributeOID);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_AttributeOID);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$AuthorityInformationAccessOID(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_AuthorityInformationAccessOID);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_AuthorityInformationAccessOID);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_AuthorityInformationAccessOID, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_AuthorityInformationAccessOID);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_AuthorityInformationAccessOID, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_AuthorityInformationAccessOID);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_AuthorityInformationAccessOID);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_AuthorityInformationAccessOID);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$CRLEntryExtensionOID(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_CRLEntryExtensionOID);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_CRLEntryExtensionOID);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_CRLEntryExtensionOID, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_CRLEntryExtensionOID);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_CRLEntryExtensionOID, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_CRLEntryExtensionOID);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_CRLEntryExtensionOID);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_CRLEntryExtensionOID);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$CertificatePoliciesOID(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_CertificatePoliciesOID);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_CertificatePoliciesOID);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_CertificatePoliciesOID, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_CertificatePoliciesOID);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_CertificatePoliciesOID, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_CertificatePoliciesOID);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_CertificatePoliciesOID);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_CertificatePoliciesOID);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$ExtendedKeyUsageOID(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_ExtendedKeyUsageOID);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_ExtendedKeyUsageOID);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_ExtendedKeyUsageOID, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_ExtendedKeyUsageOID);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_ExtendedKeyUsageOID, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_ExtendedKeyUsageOID);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_ExtendedKeyUsageOID);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_ExtendedKeyUsageOID);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_ExtensionOID);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_ExtensionOID);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_ExtensionOID, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_ExtensionOID);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_ExtensionOID, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_ExtensionOID);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_ExtensionOID);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_ExtensionOID);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_HashAlgorithmOID);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_HashAlgorithmOID);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_HashAlgorithmOID, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_HashAlgorithmOID);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_HashAlgorithmOID, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_HashAlgorithmOID);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_HashAlgorithmOID);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_HashAlgorithmOID);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$NameOID(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_NameOID);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_NameOID);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_NameOID, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_NameOID);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_NameOID, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_NameOID);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_NameOID);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_NameOID);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$OCSPExtensionOID(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_OCSPExtensionOID);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_OCSPExtensionOID);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_OCSPExtensionOID, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_OCSPExtensionOID);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_OCSPExtensionOID, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_OCSPExtensionOID);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_OCSPExtensionOID);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_OCSPExtensionOID);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(PyThreadState *tstate) {
+#if 1
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_ObjectIdentifier);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_ObjectIdentifier);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_ObjectIdentifier, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_ObjectIdentifier);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_ObjectIdentifier, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_ObjectIdentifier);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_ObjectIdentifier);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_ObjectIdentifier);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$PublicKeyAlgorithmOID(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_PublicKeyAlgorithmOID, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_PublicKeyAlgorithmOID, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_SignatureAlgorithmOID);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_SignatureAlgorithmOID);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_SignatureAlgorithmOID, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_SignatureAlgorithmOID);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_SignatureAlgorithmOID, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_SignatureAlgorithmOID);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_SignatureAlgorithmOID);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_SignatureAlgorithmOID);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$SubjectInformationAccessOID(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_SubjectInformationAccessOID);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_SubjectInformationAccessOID);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_SubjectInformationAccessOID, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_SubjectInformationAccessOID);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_SubjectInformationAccessOID, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_SubjectInformationAccessOID);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_SubjectInformationAccessOID);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_SubjectInformationAccessOID);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$__annotations__(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___annotations__);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(const_str_plain___annotations__);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, const_str_plain___annotations__, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(const_str_plain___annotations__);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, const_str_plain___annotations__, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___annotations__);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___annotations__);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)const_str_plain___annotations__);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$__spec__(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___spec__);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(const_str_plain___spec__);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, const_str_plain___spec__, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(const_str_plain___spec__);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, const_str_plain___spec__, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___spec__);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___spec__);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)const_str_plain___spec__);
+    }
+
+    return result;
+}
+
+static PyObject *module_var_accessor_cryptography$hazmat$_oid$hashes(PyThreadState *tstate) {
+#if 0
+    PyObject *result;
+
+#if PYTHON_VERSION < 0x3b0
+    static uint64_t dict_version = 0;
+    static PyObject *cache_value = NULL;
+
+    if (moduledict_cryptography$hazmat$_oid->ma_version_tag == dict_version) {
+        CHECK_OBJECT_X(cache_value);
+        result = cache_value;
+    } else {
+        dict_version = moduledict_cryptography$hazmat$_oid->ma_version_tag;
+
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_hashes);
+        cache_value = result;
+    }
+#else
+    static uint32_t dict_keys_version = 0xFFFFFFFF;
+    static Py_ssize_t cache_dk_index = 0;
+
+    PyDictKeysObject *dk = moduledict_cryptography$hazmat$_oid->ma_keys;
+    if (likely(DK_IS_UNICODE(dk))) {
+
+#if PYTHON_VERSION >= 0x3c0
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(tstate->interp, dk);
+#else
+        uint32_t current_dk_version = _Nuitka_PyDictKeys_GetVersionForCurrentState(dk);
+#endif
+
+        if (current_dk_version != dict_keys_version) {
+            dict_keys_version = current_dk_version;
+            Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_hashes);
+            assert(hash != -1);
+
+            cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_hashes, hash);
+        }
+
+        if (cache_dk_index >= 0) {
+            assert(dk->dk_kind != DICT_KEYS_SPLIT);
+
+            PyDictUnicodeEntry *entries = DK_UNICODE_ENTRIES(dk);
+
+            result = entries[cache_dk_index].me_value;
+
+            if (unlikely(result == NULL)) {
+                Py_hash_t hash = Nuitka_Py_unicode_get_hash(mod_consts.const_str_plain_hashes);
+                assert(hash != -1);
+
+                cache_dk_index = Nuitka_Py_unicodekeys_lookup_unicode(dk, mod_consts.const_str_plain_hashes, hash);
+
+                if (cache_dk_index >= 0) {
+                    result = entries[cache_dk_index].me_value;
+                }
+            }
+        } else {
+            result = NULL;
+        }
+    } else {
+        result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_hashes);
+    }
+#endif
+
+#else
+    PyObject *result = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_hashes);
+#endif
+
+    if (unlikely(result == NULL)) {
+        result = GET_STRING_DICT_VALUE(dict_builtin, (Nuitka_StringObject *)mod_consts.const_str_plain_hashes);
+    }
+
+    return result;
+}
+
+
+#if !defined(_NUITKA_EXPERIMENTAL_NEW_CODE_OBJECTS)
+// The module code objects.
+static PyCodeObject *code_objects_4e00b485682b408fe95da0d2c00ca417;
+static PyCodeObject *code_objects_746e94169481cefee2899e233b5ab9b5;
+static PyCodeObject *code_objects_5a9b2b48863d40ec40f687f768417fa5;
+static PyCodeObject *code_objects_0f6d42d9d12fb3ae0e3f74a94a36103e;
+static PyCodeObject *code_objects_1964df5e42678b99ca34d02d71d1541e;
+static PyCodeObject *code_objects_3808ab962fd1d277c6507a4cdb95c636;
+static PyCodeObject *code_objects_535aab140b93f5c94d74570fe68cbc2f;
+static PyCodeObject *code_objects_221fac815c36646b13cdd413b7a11f5b;
+static PyCodeObject *code_objects_a44f32cef3060b5b580e7f019708dda9;
+static PyCodeObject *code_objects_ebdd394ac228cd15a9c40b7d66cf5723;
+static PyCodeObject *code_objects_65aba59f9200df8e9138bd8a6b9c9d42;
+static PyCodeObject *code_objects_dc04d3337311aaaa9f96dbfe1cb8eb6a;
+static PyCodeObject *code_objects_9f15910631fa9d45442bf36bd436942d;
+static PyCodeObject *code_objects_296b24e3a409b2f459fa0aeacf37e58c;
+
+static void createModuleCodeObjects(void) {
+module_filename_obj = MAKE_RELATIVE_PATH(mod_consts.const_str_digest_9bfb757ef0eb1fe95bd31200bb78fbbe); CHECK_OBJECT(module_filename_obj);
+code_objects_4e00b485682b408fe95da0d2c00ca417 = MAKE_CODE_OBJECT(module_filename_obj, 1, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_digest_3ffa24faa77efc825ad10e1c5c210bf0, mod_consts.const_str_digest_3ffa24faa77efc825ad10e1c5c210bf0, NULL, NULL, 0, 0, 0);
+code_objects_746e94169481cefee2899e233b5ab9b5 = MAKE_CODE_OBJECT(module_filename_obj, 240, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_plain_AttributeOID, mod_consts.const_str_plain_AttributeOID, mod_consts.const_tuple_str_plain___class___tuple, NULL, 0, 0, 0);
+code_objects_5a9b2b48863d40ec40f687f768417fa5 = MAKE_CODE_OBJECT(module_filename_obj, 225, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_plain_AuthorityInformationAccessOID, mod_consts.const_str_plain_AuthorityInformationAccessOID, mod_consts.const_tuple_str_plain___class___tuple, NULL, 0, 0, 0);
+code_objects_0f6d42d9d12fb3ae0e3f74a94a36103e = MAKE_CODE_OBJECT(module_filename_obj, 51, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_plain_CRLEntryExtensionOID, mod_consts.const_str_plain_CRLEntryExtensionOID, mod_consts.const_tuple_str_plain___class___tuple, NULL, 0, 0, 0);
+code_objects_1964df5e42678b99ca34d02d71d1541e = MAKE_CODE_OBJECT(module_filename_obj, 234, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_plain_CertificatePoliciesOID, mod_consts.const_str_plain_CertificatePoliciesOID, mod_consts.const_tuple_str_plain___class___tuple, NULL, 0, 0, 0);
+code_objects_3808ab962fd1d277c6507a4cdb95c636 = MAKE_CODE_OBJECT(module_filename_obj, 200, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_plain_ExtendedKeyUsageOID, mod_consts.const_str_plain_ExtendedKeyUsageOID, mod_consts.const_tuple_str_plain___class___tuple, NULL, 0, 0, 0);
+code_objects_535aab140b93f5c94d74570fe68cbc2f = MAKE_CODE_OBJECT(module_filename_obj, 13, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_plain_ExtensionOID, mod_consts.const_str_plain_ExtensionOID, mod_consts.const_tuple_str_plain___class___tuple, NULL, 0, 0, 0);
+code_objects_221fac815c36646b13cdd413b7a11f5b = MAKE_CODE_OBJECT(module_filename_obj, 168, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_plain_HashAlgorithmOID, mod_consts.const_str_plain_HashAlgorithmOID, mod_consts.const_tuple_str_plain___class___tuple, NULL, 0, 0, 0);
+code_objects_a44f32cef3060b5b580e7f019708dda9 = MAKE_CODE_OBJECT(module_filename_obj, 57, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_plain_NameOID, mod_consts.const_str_plain_NameOID, mod_consts.const_tuple_str_plain___class___tuple, NULL, 0, 0, 0);
+code_objects_ebdd394ac228cd15a9c40b7d66cf5723 = MAKE_CODE_OBJECT(module_filename_obj, 46, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_plain_OCSPExtensionOID, mod_consts.const_str_plain_OCSPExtensionOID, mod_consts.const_tuple_str_plain___class___tuple, NULL, 0, 0, 0);
+code_objects_65aba59f9200df8e9138bd8a6b9c9d42 = MAKE_CODE_OBJECT(module_filename_obj, 215, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_plain_OtherNameFormOID, mod_consts.const_str_plain_OtherNameFormOID, mod_consts.const_tuple_str_plain___class___tuple, NULL, 0, 0, 0);
+code_objects_dc04d3337311aaaa9f96dbfe1cb8eb6a = MAKE_CODE_OBJECT(module_filename_obj, 184, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_plain_PublicKeyAlgorithmOID, mod_consts.const_str_plain_PublicKeyAlgorithmOID, mod_consts.const_tuple_str_plain___class___tuple, NULL, 0, 0, 0);
+code_objects_9f15910631fa9d45442bf36bd436942d = MAKE_CODE_OBJECT(module_filename_obj, 93, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_plain_SignatureAlgorithmOID, mod_consts.const_str_plain_SignatureAlgorithmOID, mod_consts.const_tuple_str_plain___class___tuple, NULL, 0, 0, 0);
+code_objects_296b24e3a409b2f459fa0aeacf37e58c = MAKE_CODE_OBJECT(module_filename_obj, 230, CO_FUTURE_ANNOTATIONS, mod_consts.const_str_plain_SubjectInformationAccessOID, mod_consts.const_str_plain_SubjectInformationAccessOID, mod_consts.const_tuple_str_plain___class___tuple, NULL, 0, 0, 0);
+}
+#endif
+
+// The module function declarations.
+
+
+// The module function definitions.
+
+
+extern void _initCompiledCellType();
+extern void _initCompiledGeneratorType();
+extern void _initCompiledFunctionType();
+extern void _initCompiledMethodType();
+extern void _initCompiledFrameType();
+
+extern PyTypeObject Nuitka_Loader_Type;
+
+#ifdef _NUITKA_PLUGIN_DILL_ENABLED
+// Provide a way to create find a function via its C code and create it back
+// in another process, useful for multiprocessing extensions like dill
+extern void registerDillPluginTables(PyThreadState *tstate, char const *module_name, PyMethodDef *reduce_compiled_function, PyMethodDef *create_compiled_function);
+
+static function_impl_code const function_table_cryptography$hazmat$_oid[] = {
+
+    NULL
+};
+
+static PyObject *_reduce_compiled_function(PyObject *self, PyObject *args, PyObject *kwds) {
+    PyObject *func;
+
+    if (!PyArg_ParseTuple(args, "O:reduce_compiled_function", &func, NULL)) {
+        return NULL;
+    }
+
+    if (Nuitka_Function_Check(func) == false) {
+        PyThreadState *tstate = PyThreadState_GET();
+
+        SET_CURRENT_EXCEPTION_TYPE0_STR(tstate, PyExc_TypeError, "not a compiled function");
+        return NULL;
+    }
+
+    struct Nuitka_FunctionObject *function = (struct Nuitka_FunctionObject *)func;
+
+    return Nuitka_Function_GetFunctionState(function, function_table_cryptography$hazmat$_oid);
+}
+
+static PyMethodDef _method_def_reduce_compiled_function = {"reduce_compiled_function", (PyCFunction)_reduce_compiled_function,
+                                                           METH_VARARGS, NULL};
+
+
+static PyObject *_create_compiled_function(PyObject *self, PyObject *args, PyObject *kwds) {
+    CHECK_OBJECT_DEEP(args);
+
+    PyObject *function_index;
+    PyObject *code_object_desc;
+    PyObject *defaults;
+    PyObject *kw_defaults;
+    PyObject *doc;
+    PyObject *constant_return_value;
+    PyObject *function_qualname;
+    PyObject *closure;
+    PyObject *annotations;
+    PyObject *func_dict;
+
+    if (!PyArg_ParseTuple(args, "OOOOOOOOOO:create_compiled_function", &function_index, &code_object_desc, &defaults, &kw_defaults, &doc, &constant_return_value, &function_qualname, &closure, &annotations, &func_dict, NULL)) {
+        return NULL;
+    }
+
+    return (PyObject *)Nuitka_Function_CreateFunctionViaCodeIndex(
+        module_cryptography$hazmat$_oid,
+        function_qualname,
+        function_index,
+        code_object_desc,
+        constant_return_value,
+        defaults,
+        kw_defaults,
+        doc,
+        closure,
+        annotations,
+        func_dict,
+        function_table_cryptography$hazmat$_oid,
+        sizeof(function_table_cryptography$hazmat$_oid) / sizeof(function_impl_code)
+    );
+}
+
+static PyMethodDef _method_def_create_compiled_function = {
+    "create_compiled_function",
+    (PyCFunction)_create_compiled_function,
+    METH_VARARGS, NULL
+};
+
+
+#endif
+
+// Actual name might be different when loaded as a package.
+#if _NUITKA_MODULE_MODE && 0
+static char const *module_full_name = "cryptography.hazmat._oid";
+#endif
+
+// Internal entry point for module code.
+PyObject *module_code_cryptography$hazmat$_oid(PyThreadState *tstate, PyObject *module, struct Nuitka_MetaPathBasedLoaderEntry const *loader_entry) {
+    // Report entry to PGO.
+    PGO_onModuleEntered("cryptography$hazmat$_oid");
+
+    // Store the module for future use.
+    module_cryptography$hazmat$_oid = module;
+
+    moduledict_cryptography$hazmat$_oid = MODULE_DICT(module_cryptography$hazmat$_oid);
+
+    // Modules can be loaded again in case of errors, avoid the init being done again.
+    static bool init_done = false;
+
+    if (init_done == false) {
+#if _NUITKA_MODULE_MODE && 0
+        // In case of an extension module loaded into a process, we need to call
+        // initialization here because that's the first and potentially only time
+        // we are going called.
+#if PYTHON_VERSION > 0x350 && !defined(_NUITKA_EXPERIMENTAL_DISABLE_ALLOCATORS)
+        initNuitkaAllocators();
+#endif
+        // Initialize the constant values used.
+        _initBuiltinModule(tstate);
+
+        PyObject *real_module_name = PyObject_GetAttrString(module, "__name__");
+        CHECK_OBJECT(real_module_name);
+        module_full_name = strdup(Nuitka_String_AsString(real_module_name));
+
+        createGlobalConstants(tstate, real_module_name);
+
+        /* Initialize the compiled types of Nuitka. */
+        _initCompiledCellType();
+        _initCompiledGeneratorType();
+        _initCompiledFunctionType();
+        _initCompiledMethodType();
+        _initCompiledFrameType();
+
+        _initSlotCompare();
+#if PYTHON_VERSION >= 0x270
+        _initSlotIterNext();
+#endif
+
+        patchTypeComparison();
+
+        // Enable meta path based loader if not already done.
+#ifdef _NUITKA_TRACE
+        PRINT_STRING("cryptography$hazmat$_oid: Calling setupMetaPathBasedLoader().\n");
+#endif
+        setupMetaPathBasedLoader(tstate);
+#if 0 >= 0
+#ifdef _NUITKA_TRACE
+        PRINT_STRING("cryptography$hazmat$_oid: Calling updateMetaPathBasedLoaderModuleRoot().\n");
+#endif
+        updateMetaPathBasedLoaderModuleRoot(module_full_name);
+#endif
+
+
+#if PYTHON_VERSION >= 0x300
+        patchInspectModule(tstate);
+#endif
+
+#endif
+
+        /* The constants only used by this module are created now. */
+        NUITKA_PRINT_TRACE("cryptography$hazmat$_oid: Calling createModuleConstants().\n");
+        createModuleConstants(tstate);
+
+#if !defined(_NUITKA_EXPERIMENTAL_NEW_CODE_OBJECTS)
+        createModuleCodeObjects();
+#endif
+        init_done = true;
+    }
+
+#if _NUITKA_MODULE_MODE && 0
+    PyObject *pre_load = IMPORT_EMBEDDED_MODULE(tstate, "cryptography.hazmat._oid" "-preLoad");
+    if (pre_load == NULL) {
+        return NULL;
+    }
+#endif
+
+    // PRINT_STRING("in initcryptography$hazmat$_oid\n");
+
+#ifdef _NUITKA_PLUGIN_DILL_ENABLED
+    {
+        char const *module_name_c;
+        if (loader_entry != NULL) {
+            module_name_c = loader_entry->name;
+        } else {
+            PyObject *module_name = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___name__);
+            module_name_c = Nuitka_String_AsString(module_name);
+        }
+
+        registerDillPluginTables(tstate, module_name_c, &_method_def_reduce_compiled_function, &_method_def_create_compiled_function);
+    }
+#endif
+
+    // For Python 3.11 standalone modules, package "__path__" is inserted by the
+    // loader before module code runs. Pre-seed "__compiled__" for non-packages
+    // to keep their dangerous dict slots aligned with packages.
+#if PYTHON_VERSION >= 0x3b0 && PYTHON_VERSION < 0x3c0 && _NUITKA_STANDALONE_MODE && !0
+    UPDATE_STRING_DICT0(
+        moduledict_cryptography$hazmat$_oid,
+        (Nuitka_StringObject *)const_str_plain___compiled__,
+        Nuitka_dunder_compiled_value
+    );
+#endif
+
+    // Update "__package__" value to what it ought to be.
+    {
+#if 0
+        UPDATE_STRING_DICT0(
+            moduledict_cryptography$hazmat$_oid,
+            (Nuitka_StringObject *)const_str_plain___package__,
+            const_str_empty
+        );
+#elif 0
+        PyObject *module_name = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___name__);
+
+        UPDATE_STRING_DICT0(
+            moduledict_cryptography$hazmat$_oid,
+            (Nuitka_StringObject *)const_str_plain___package__,
+            module_name
+        );
+#else
+
+#if PYTHON_VERSION < 0x300
+        PyObject *module_name = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___name__);
+        char const *module_name_cstr = PyString_AS_STRING(module_name);
+
+        char const *last_dot = strrchr(module_name_cstr, '.');
+
+        if (last_dot != NULL) {
+            UPDATE_STRING_DICT1(
+                moduledict_cryptography$hazmat$_oid,
+                (Nuitka_StringObject *)const_str_plain___package__,
+                PyString_FromStringAndSize(module_name_cstr, last_dot - module_name_cstr)
+            );
+        }
+#else
+        PyObject *module_name = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___name__);
+        Py_ssize_t dot_index = PyUnicode_Find(module_name, const_str_dot, 0, PyUnicode_GetLength(module_name), -1);
+
+        if (dot_index != -1) {
+            UPDATE_STRING_DICT1(
+                moduledict_cryptography$hazmat$_oid,
+                (Nuitka_StringObject *)const_str_plain___package__,
+                PyUnicode_Substring(module_name, 0, dot_index)
+            );
+        }
+#endif
+#endif
+    }
+
+    CHECK_OBJECT(module_cryptography$hazmat$_oid);
+
+    // For deep importing of a module we need to have "__builtins__", so we set
+    // it ourselves in the same way than CPython does. Note: This must be done
+    // before the frame object is allocated, or else it may fail.
+
+    if (GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___builtins__) == NULL) {
+        PyObject *value = (PyObject *)builtin_module;
+
+        // Check if main module, not a dict then but the module itself.
+#if _NUITKA_MODULE_MODE || !0
+        value = PyModule_GetDict(value);
+#endif
+
+        UPDATE_STRING_DICT0(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___builtins__, value);
+    }
+
+    PyObject *module_loader = Nuitka_Loader_New(loader_entry);
+    UPDATE_STRING_DICT0(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___loader__, module_loader);
+
+#if PYTHON_VERSION >= 0x300
+// Set the "__spec__" value
+
+#if 0
+    // Main modules just get "None" as spec.
+    UPDATE_STRING_DICT0(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___spec__, Py_None);
+#else
+    // Other modules get a "ModuleSpec" from the standard mechanism.
+    {
+        PyObject *bootstrap_module = getImportLibBootstrapModule();
+        CHECK_OBJECT(bootstrap_module);
+
+        PyObject *_spec_from_module = PyObject_GetAttrString(bootstrap_module, "_spec_from_module");
+        CHECK_OBJECT(_spec_from_module);
+
+        PyObject *spec_value = CALL_FUNCTION_WITH_SINGLE_ARG(tstate, _spec_from_module, module_cryptography$hazmat$_oid);
+        Py_DECREF(_spec_from_module);
+
+        // We can assume this to never fail, or else we are in trouble anyway.
+        // CHECK_OBJECT(spec_value);
+
+        if (spec_value == NULL) {
+            PyErr_PrintEx(0);
+            abort();
+        }
+
+        // Mark the execution in the "__spec__" value.
+        SET_ATTRIBUTE(tstate, spec_value, const_str_plain__initializing, Py_True);
+
+#if _NUITKA_MODULE_MODE && 0 && 0 >= 0
+        // Set our loader object in the "__spec__" value.
+        SET_ATTRIBUTE(tstate, spec_value, const_str_plain_loader, module_loader);
+#endif
+
+        UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___spec__, spec_value);
+    }
+#endif
+#endif
+
+    // Temp variables if any
+PyObject *outline_0_var___class__ = NULL;
+PyObject *outline_1_var___class__ = NULL;
+PyObject *outline_2_var___class__ = NULL;
+PyObject *outline_3_var___class__ = NULL;
+PyObject *outline_4_var___class__ = NULL;
+PyObject *outline_5_var___class__ = NULL;
+PyObject *outline_6_var___class__ = NULL;
+PyObject *outline_7_var___class__ = NULL;
+PyObject *outline_8_var___class__ = NULL;
+PyObject *outline_9_var___class__ = NULL;
+PyObject *outline_10_var___class__ = NULL;
+PyObject *outline_11_var___class__ = NULL;
+PyObject *outline_12_var___class__ = NULL;
+PyObject *tmp_class_container$class_creation_10__class_decl_dict = NULL;
+PyObject *tmp_class_container$class_creation_10__prepared = NULL;
+PyObject *tmp_class_container$class_creation_11__class_decl_dict = NULL;
+PyObject *tmp_class_container$class_creation_11__prepared = NULL;
+PyObject *tmp_class_container$class_creation_12__class_decl_dict = NULL;
+PyObject *tmp_class_container$class_creation_12__prepared = NULL;
+PyObject *tmp_class_container$class_creation_13__class_decl_dict = NULL;
+PyObject *tmp_class_container$class_creation_13__prepared = NULL;
+PyObject *tmp_class_container$class_creation_1__class_decl_dict = NULL;
+PyObject *tmp_class_container$class_creation_1__prepared = NULL;
+PyObject *tmp_class_container$class_creation_2__class_decl_dict = NULL;
+PyObject *tmp_class_container$class_creation_2__prepared = NULL;
+PyObject *tmp_class_container$class_creation_3__class_decl_dict = NULL;
+PyObject *tmp_class_container$class_creation_3__prepared = NULL;
+PyObject *tmp_class_container$class_creation_4__class_decl_dict = NULL;
+PyObject *tmp_class_container$class_creation_4__prepared = NULL;
+PyObject *tmp_class_container$class_creation_5__class_decl_dict = NULL;
+PyObject *tmp_class_container$class_creation_5__prepared = NULL;
+PyObject *tmp_class_container$class_creation_6__class_decl_dict = NULL;
+PyObject *tmp_class_container$class_creation_6__prepared = NULL;
+PyObject *tmp_class_container$class_creation_7__class_decl_dict = NULL;
+PyObject *tmp_class_container$class_creation_7__prepared = NULL;
+PyObject *tmp_class_container$class_creation_8__class_decl_dict = NULL;
+PyObject *tmp_class_container$class_creation_8__prepared = NULL;
+PyObject *tmp_class_container$class_creation_9__class_decl_dict = NULL;
+PyObject *tmp_class_container$class_creation_9__prepared = NULL;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid;
+NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
+bool tmp_result;
+struct Nuitka_ExceptionPreservationItem exception_state = Empty_Nuitka_ExceptionPreservationItem;
+NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
+NUITKA_MAY_BE_UNUSED nuitka_void tmp_unused;
+PyObject *locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13 = NULL;
+PyObject *tmp_dictset_value;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2;
+NUITKA_MAY_BE_UNUSED char const *type_description_2 = NULL;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_1;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_1;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_2;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_2;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_3;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_3;
+PyObject *locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46 = NULL;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3;
+NUITKA_MAY_BE_UNUSED char const *type_description_3 = NULL;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_4;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_4;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_5;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_5;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_6;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_6;
+PyObject *locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51 = NULL;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4;
+NUITKA_MAY_BE_UNUSED char const *type_description_4 = NULL;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_7;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_7;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_8;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_8;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_9;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_9;
+PyObject *locals_cryptography$hazmat$_oid$$$class__4_NameOID_57 = NULL;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5;
+NUITKA_MAY_BE_UNUSED char const *type_description_5 = NULL;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_10;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_10;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_11;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_11;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_12;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_12;
+PyObject *locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93 = NULL;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6;
+NUITKA_MAY_BE_UNUSED char const *type_description_6 = NULL;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_13;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_13;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_14;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_14;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_15;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_15;
+int tmp_res;
+PyObject *locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168 = NULL;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7;
+NUITKA_MAY_BE_UNUSED char const *type_description_7 = NULL;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_16;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_16;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_17;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_17;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_18;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_18;
+PyObject *locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184 = NULL;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8;
+NUITKA_MAY_BE_UNUSED char const *type_description_8 = NULL;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_19;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_19;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_20;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_20;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_21;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_21;
+PyObject *locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200 = NULL;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9;
+NUITKA_MAY_BE_UNUSED char const *type_description_9 = NULL;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_22;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_22;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_23;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_23;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_24;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_24;
+PyObject *locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215 = NULL;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10;
+NUITKA_MAY_BE_UNUSED char const *type_description_10 = NULL;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_25;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_25;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_26;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_26;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_27;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_27;
+PyObject *locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225 = NULL;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11;
+NUITKA_MAY_BE_UNUSED char const *type_description_11 = NULL;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_28;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_28;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_29;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_29;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_30;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_30;
+PyObject *locals_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_230 = NULL;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_12;
+NUITKA_MAY_BE_UNUSED char const *type_description_12 = NULL;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_31;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_31;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_32;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_32;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_33;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_33;
+PyObject *locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234 = NULL;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13;
+NUITKA_MAY_BE_UNUSED char const *type_description_13 = NULL;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_34;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_34;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_35;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_35;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_36;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_36;
+PyObject *locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240 = NULL;
+struct Nuitka_FrameObject *frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14;
+NUITKA_MAY_BE_UNUSED char const *type_description_14 = NULL;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_37;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_37;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_38;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_38;
+struct Nuitka_ExceptionPreservationItem exception_keeper_name_39;
+NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_39;
+
+    // Module init code if any
+
+
+    // Module code.
+{
+PyObject *tmp_assign_source_1;
+tmp_assign_source_1 = Py_None;
+UPDATE_STRING_DICT0(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___doc__, tmp_assign_source_1);
+}
+{
+PyObject *tmp_assign_source_2;
+tmp_assign_source_2 = module_filename_obj;
+UPDATE_STRING_DICT0(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___file__, tmp_assign_source_2);
+}
+frame_frame_cryptography$hazmat$_oid = MAKE_MODULE_FRAME(code_objects_4e00b485682b408fe95da0d2c00ca417, module_cryptography$hazmat$_oid);
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid) == 2);
+
+// Framed code:
+{
+PyObject *tmp_ass_attr_value_1;
+PyObject *tmp_ass_attr_target_1;
+tmp_ass_attr_value_1 = module_filename_obj;
+tmp_ass_attr_target_1 = module_var_accessor_cryptography$hazmat$_oid$__spec__(tstate);
+assert(!(tmp_ass_attr_target_1 == NULL));
+tmp_result = SET_ATTRIBUTE(tstate, tmp_ass_attr_target_1, mod_consts.const_str_plain_origin, tmp_ass_attr_value_1);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 1;
+
+    goto frame_exception_exit_1;
+}
+}
+{
+PyObject *tmp_ass_attr_value_2;
+PyObject *tmp_ass_attr_target_2;
+tmp_ass_attr_value_2 = Py_True;
+tmp_ass_attr_target_2 = module_var_accessor_cryptography$hazmat$_oid$__spec__(tstate);
+assert(!(tmp_ass_attr_target_2 == NULL));
+tmp_result = SET_ATTRIBUTE(tstate, tmp_ass_attr_target_2, mod_consts.const_str_plain_has_location, tmp_ass_attr_value_2);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 1;
+
+    goto frame_exception_exit_1;
+}
+}
+{
+PyObject *tmp_assign_source_3;
+tmp_assign_source_3 = Py_None;
+UPDATE_STRING_DICT0(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___cached__, tmp_assign_source_3);
+}
+{
+PyObject *tmp_assign_source_4;
+tmp_assign_source_4 = Nuitka_dunder_compiled_value;
+UPDATE_STRING_DICT0(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___compiled__, tmp_assign_source_4);
+}
+{
+PyObject *tmp_assign_source_5;
+tmp_assign_source_5 = MAKE_DICT_EMPTY(tstate);
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___annotations__, tmp_assign_source_5);
+}
+{
+PyObject *tmp_assign_source_6;
+{
+    PyObject *hard_module = IMPORT_HARD___FUTURE__();
+    tmp_assign_source_6 = LOOKUP_ATTRIBUTE(tstate, hard_module, mod_consts.const_str_plain_annotations);
+}
+assert(!(tmp_assign_source_6 == NULL));
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_annotations, tmp_assign_source_6);
+}
+{
+PyObject *tmp_assign_source_7;
+PyObject *tmp_import_name_from_1;
+PyObject *tmp_name_value_1;
+PyObject *tmp_globals_arg_value_1;
+PyObject *tmp_locals_arg_value_1;
+PyObject *tmp_fromlist_value_1;
+PyObject *tmp_level_value_1;
+tmp_name_value_1 = mod_consts.const_str_digest_8079781454ad481b13cb6caedf4dbb9e;
+tmp_globals_arg_value_1 = (PyObject *)moduledict_cryptography$hazmat$_oid;
+tmp_locals_arg_value_1 = Py_None;
+tmp_fromlist_value_1 = mod_consts.const_tuple_str_plain_ObjectIdentifier_tuple;
+tmp_level_value_1 = const_int_0;
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 7;
+tmp_import_name_from_1 = IMPORT_MODULE5(tstate, tmp_name_value_1, tmp_globals_arg_value_1, tmp_locals_arg_value_1, tmp_fromlist_value_1, tmp_level_value_1);
+if (tmp_import_name_from_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 7;
+
+    goto frame_exception_exit_1;
+}
+if (PyModule_Check(tmp_import_name_from_1)) {
+    tmp_assign_source_7 = IMPORT_NAME_OR_MODULE(
+        tstate,
+        tmp_import_name_from_1,
+        (PyObject *)moduledict_cryptography$hazmat$_oid,
+        mod_consts.const_str_plain_ObjectIdentifier,
+        const_int_0
+    );
+} else {
+    tmp_assign_source_7 = IMPORT_NAME_FROM_MODULE(tstate, tmp_import_name_from_1, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+CHECK_OBJECT(tmp_import_name_from_1);
+Py_DECREF(tmp_import_name_from_1);
+if (tmp_assign_source_7 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 7;
+
+    goto frame_exception_exit_1;
+}
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_ObjectIdentifier, tmp_assign_source_7);
+}
+{
+PyObject *tmp_assign_source_8;
+PyObject *tmp_import_name_from_2;
+PyObject *tmp_name_value_2;
+PyObject *tmp_globals_arg_value_2;
+PyObject *tmp_locals_arg_value_2;
+PyObject *tmp_fromlist_value_2;
+PyObject *tmp_level_value_2;
+tmp_name_value_2 = mod_consts.const_str_digest_9db3cdd3cd765463b4eec6754eb8e087;
+tmp_globals_arg_value_2 = (PyObject *)moduledict_cryptography$hazmat$_oid;
+tmp_locals_arg_value_2 = Py_None;
+tmp_fromlist_value_2 = mod_consts.const_tuple_str_plain_hashes_tuple;
+tmp_level_value_2 = const_int_0;
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 10;
+tmp_import_name_from_2 = IMPORT_MODULE5(tstate, tmp_name_value_2, tmp_globals_arg_value_2, tmp_locals_arg_value_2, tmp_fromlist_value_2, tmp_level_value_2);
+if (tmp_import_name_from_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 10;
+
+    goto frame_exception_exit_1;
+}
+if (PyModule_Check(tmp_import_name_from_2)) {
+    tmp_assign_source_8 = IMPORT_NAME_OR_MODULE(
+        tstate,
+        tmp_import_name_from_2,
+        (PyObject *)moduledict_cryptography$hazmat$_oid,
+        mod_consts.const_str_plain_hashes,
+        const_int_0
+    );
+} else {
+    tmp_assign_source_8 = IMPORT_NAME_FROM_MODULE(tstate, tmp_import_name_from_2, mod_consts.const_str_plain_hashes);
+}
+
+CHECK_OBJECT(tmp_import_name_from_2);
+Py_DECREF(tmp_import_name_from_2);
+if (tmp_assign_source_8 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 10;
+
+    goto frame_exception_exit_1;
+}
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_hashes, tmp_assign_source_8);
+}
+{
+PyObject *tmp_outline_return_value_1;
+{
+PyObject *tmp_assign_source_9;
+tmp_assign_source_9 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_1__class_decl_dict == NULL);
+tmp_class_container$class_creation_1__class_decl_dict = tmp_assign_source_9;
+}
+{
+PyObject *tmp_assign_source_10;
+tmp_assign_source_10 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_1__prepared == NULL);
+tmp_class_container$class_creation_1__prepared = tmp_assign_source_10;
+}
+// Tried code:
+{
+PyObject *tmp_assign_source_11;
+{
+PyObject *tmp_set_locals_1;
+CHECK_OBJECT(tmp_class_container$class_creation_1__prepared);
+tmp_set_locals_1 = tmp_class_container$class_creation_1__prepared;
+locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13 = tmp_set_locals_1;
+Py_INCREF(tmp_set_locals_1);
+}
+tmp_dictset_value = mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, const_str_plain___module__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_str_plain_ExtensionOID;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, const_str_plain___qualname__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_int_pos_13;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain___firstlineno__, tmp_dictset_value);
+assert(!(tmp_result == false));
+// Tried code:
+// Tried code:
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2 = MAKE_CLASS_FRAME(tstate, code_objects_535aab140b93f5c94d74570fe68cbc2f, module_cryptography$hazmat$_oid, NULL, sizeof(void *));
+Nuitka_Frame_AssignLocals(frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2, locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13);
+
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2) == 2);
+
+// Framed code:
+{
+PyObject *tmp_called_value_1;
+tmp_called_value_1 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_1 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_1 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 14;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 14;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_1, mod_consts.const_tuple_str_digest_aa35b543e4cc4067ce2da705a47d19ca_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 14;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_SUBJECT_DIRECTORY_ATTRIBUTES, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 14;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_2;
+tmp_called_value_2 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_2 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_2 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 15;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 15;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_2, mod_consts.const_tuple_str_digest_402231cec73b599b9bdec4daf7775016_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 15;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_SUBJECT_KEY_IDENTIFIER, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 15;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_3;
+tmp_called_value_3 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_3 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_3 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 16;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 16;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_3, mod_consts.const_tuple_str_digest_bdfb3765c1e356e48168ea62bfdbf9a4_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 16;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_KEY_USAGE, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 16;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_4;
+tmp_called_value_4 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_4 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_4 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 17;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 17;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_4, mod_consts.const_tuple_str_digest_2cc3298792196f3c99df7d4dd8d2c887_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 17;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_PRIVATE_KEY_USAGE_PERIOD, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 17;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_5;
+tmp_called_value_5 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_5 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_5 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 18;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 18;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_5, mod_consts.const_tuple_str_digest_767d9ff9e747b20f9b2a62cdf04da0de_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 18;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_SUBJECT_ALTERNATIVE_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 18;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_6;
+tmp_called_value_6 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_6 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_6 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 19;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 19;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_6, mod_consts.const_tuple_str_digest_5f81f25c17be8379db8d57e313b947b2_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 19;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_ISSUER_ALTERNATIVE_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 19;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_7;
+tmp_called_value_7 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_7 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_7 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 20;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 20;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_7, mod_consts.const_tuple_str_digest_91f2c2e6a76ab0257b7afd78a7d8444b_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 20;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_BASIC_CONSTRAINTS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 20;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_8;
+tmp_called_value_8 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_8 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_8 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 21;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 21;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_8, mod_consts.const_tuple_str_digest_2958a1ef6593e1758ab759e3a2c573e0_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 21;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_NAME_CONSTRAINTS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 21;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_9;
+tmp_called_value_9 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_9 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_9 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 22;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 22;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_9, mod_consts.const_tuple_str_digest_32f8ab72218c1518444529b9839bc60e_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 22;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_CRL_DISTRIBUTION_POINTS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 22;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_10;
+tmp_called_value_10 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_10 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_10 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 23;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 23;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_10, mod_consts.const_tuple_str_digest_ddbc81b7b0b155d69df8105b5cff8140_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 23;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_CERTIFICATE_POLICIES, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 23;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_11;
+tmp_called_value_11 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_11 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_11 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 24;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 24;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_11, mod_consts.const_tuple_str_digest_d2f818cdf8c42e2d6390ddd53b016587_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 24;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_POLICY_MAPPINGS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 24;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_12;
+tmp_called_value_12 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_12 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_12 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 25;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 25;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_12, mod_consts.const_tuple_str_digest_178f043eb8a7ce81b9dfbff61f4c5f19_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 25;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_AUTHORITY_KEY_IDENTIFIER, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 25;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_13;
+tmp_called_value_13 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_13 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_13 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 26;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 26;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_13, mod_consts.const_tuple_str_digest_b0abccc6631aa6b85de08f4a664daadd_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 26;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_POLICY_CONSTRAINTS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 26;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_14;
+tmp_called_value_14 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_14 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_14 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 27;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 27;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_14, mod_consts.const_tuple_str_digest_a690942c66e69d63578daefd13197ae2_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 27;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_EXTENDED_KEY_USAGE, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 27;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_15;
+tmp_called_value_15 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_15 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_15 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 28;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 28;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_15, mod_consts.const_tuple_str_digest_017b3818c501a0f2bbf7f46bc35fb8d6_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 28;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_FRESHEST_CRL, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 28;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_16;
+tmp_called_value_16 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_16 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_16 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 29;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 29;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_16, mod_consts.const_tuple_str_digest_0779a69d82c4a51e4fdc8382116baf07_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 29;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_INHIBIT_ANY_POLICY, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 29;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_17;
+tmp_called_value_17 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_17 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_17 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 30;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 30;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_17, mod_consts.const_tuple_str_digest_6e7f6354f6003472110f38ebbe423636_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 30;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_ISSUING_DISTRIBUTION_POINT, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 30;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_18;
+tmp_called_value_18 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_18 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_18 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 31;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 31;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_18, mod_consts.const_tuple_str_digest_36815fa72b8e26b8a0343e58e525a6b8_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 31;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_AUTHORITY_INFORMATION_ACCESS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 31;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_19;
+tmp_called_value_19 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_19 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_19 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 32;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 32;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_19, mod_consts.const_tuple_str_digest_2bb014389d4aa5909b80bc2e19c3df8a_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 32;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_SUBJECT_INFORMATION_ACCESS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 32;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_20;
+tmp_called_value_20 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_20 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_20 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 33;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 33;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_20, mod_consts.const_tuple_str_digest_1135dc3548cae245667224b61d063e8f_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 33;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_OCSP_NO_CHECK, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 33;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_21;
+tmp_called_value_21 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_21 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_21 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 34;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 34;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_21, mod_consts.const_tuple_str_digest_c721cd011be8e0f6c97e5d0f5ec94d60_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 34;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_TLS_FEATURE, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 34;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_22;
+tmp_called_value_22 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_22 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_22 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 35;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 35;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_22, mod_consts.const_tuple_str_digest_48bb56d35289ac7c69544408e253d64a_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 35;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_CRL_NUMBER, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 35;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_23;
+tmp_called_value_23 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_23 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_23 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 36;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 36;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_23, mod_consts.const_tuple_str_digest_8004dc93b6b3bd5578dfd84dda8defdc_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 36;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_DELTA_CRL_INDICATOR, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 36;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_24;
+tmp_called_value_24 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_24 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_24 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 37;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 37;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_24, mod_consts.const_tuple_str_digest_9f975f715f271ffc97cba117d4ed2c89_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 37;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_PRECERT_SIGNED_CERTIFICATE_TIMESTAMPS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 37;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_25;
+tmp_called_value_25 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_25 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_25 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 40;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 40;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_25, mod_consts.const_tuple_str_digest_58def565d1c890c8595c3d29f979b69c_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 40;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_PRECERT_POISON, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 40;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_26;
+tmp_called_value_26 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_26 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_26 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 41;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 41;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_26, mod_consts.const_tuple_str_digest_0bc61e2a46f54116dde3282ae3fd330c_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 41;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_SIGNED_CERTIFICATE_TIMESTAMPS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 41;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_27;
+tmp_called_value_27 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_27 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_27 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 42;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 42;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_27, mod_consts.const_tuple_str_digest_2c7ebdd8a3a2a6a23be4034d7a9d649a_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 42;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_MS_CERTIFICATE_TEMPLATE, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 42;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+{
+PyObject *tmp_called_value_28;
+tmp_called_value_28 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_28 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_28 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 43;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame.f_lineno = 43;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_28, mod_consts.const_tuple_str_digest_572c2add736d08c741ab2bf07a73317e_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 43;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain_ADMISSIONS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 43;
+type_description_2 = "o";
+    goto frame_exception_exit_2;
+}
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2);
+
+
+goto frame_no_exception_1;
+frame_exception_exit_2:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+// Attaches locals to frame if any.
+Nuitka_Frame_AttachLocals(
+    frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2,
+    type_description_2,
+    outline_0_var___class__
+);
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__1_ExtensionOID_2);
+
+
+// Return the error.
+goto nested_frame_exit_1;
+frame_no_exception_1:;
+goto skip_nested_handling_1;
+nested_frame_exit_1:;
+
+goto try_except_handler_3;
+skip_nested_handling_1:;
+tmp_dictset_value = const_tuple_empty;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13, mod_consts.const_str_plain___static_attributes__, tmp_dictset_value);
+assert(!(tmp_result == false));
+{
+PyObject *tmp_assign_source_12;
+PyObject *tmp_metaclass_value_1;
+PyObject *tmp_name_value_3;
+PyObject *tmp_bases_value_1;
+PyObject *tmp_dict_arg_value_1;
+PyObject *tmp_class_decl_dict_value_1;
+PyObject *tmp_metaclass_args_1;
+tmp_metaclass_value_1 = (PyObject *)&PyType_Type;
+tmp_name_value_3 = mod_consts.const_str_plain_ExtensionOID;
+tmp_bases_value_1 = const_tuple_empty;
+tmp_dict_arg_value_1 = locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13;
+CHECK_OBJECT(tmp_class_container$class_creation_1__class_decl_dict);
+tmp_class_decl_dict_value_1 = tmp_class_container$class_creation_1__class_decl_dict;
+tmp_metaclass_args_1 = MAKE_TUPLE3(tstate, tmp_name_value_3, tmp_bases_value_1, tmp_dict_arg_value_1);
+tmp_assign_source_12 = CALL_FUNCTION(tstate, tmp_metaclass_value_1, tmp_metaclass_args_1, tmp_class_decl_dict_value_1);
+CHECK_OBJECT(tmp_metaclass_args_1);
+Py_DECREF(tmp_metaclass_args_1);
+if (tmp_assign_source_12 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 13;
+
+    goto try_except_handler_3;
+}
+{
+    PyObject *old = outline_0_var___class__;
+    outline_0_var___class__ = tmp_assign_source_12;
+    Py_XDECREF(old);
+}
+
+}
+CHECK_OBJECT(outline_0_var___class__);
+tmp_assign_source_11 = outline_0_var___class__;
+Py_INCREF(tmp_assign_source_11);
+goto try_return_handler_3;
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_3:;
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13);
+locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13 = NULL;
+goto try_return_handler_2;
+// Exception handler code:
+try_except_handler_3:;
+exception_keeper_lineno_1 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_1 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13);
+locals_cryptography$hazmat$_oid$$$class__1_ExtensionOID_13 = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_1;
+exception_lineno = exception_keeper_lineno_1;
+
+goto try_except_handler_2;
+// End of try:
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_2:;
+CHECK_OBJECT(outline_0_var___class__);
+CHECK_OBJECT(outline_0_var___class__);
+Py_DECREF(outline_0_var___class__);
+outline_0_var___class__ = NULL;
+goto outline_result_2;
+// Exception handler code:
+try_except_handler_2:;
+exception_keeper_lineno_2 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_2 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+// Re-raise.
+exception_state = exception_keeper_name_2;
+exception_lineno = exception_keeper_lineno_2;
+
+goto outline_exception_1;
+// End of try:
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_exception_1:;
+exception_lineno = 13;
+goto try_except_handler_1;
+outline_result_2:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_ExtensionOID, tmp_assign_source_11);
+}
+goto try_end_1;
+// Exception handler code:
+try_except_handler_1:;
+exception_keeper_lineno_3 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_3 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+CHECK_OBJECT(tmp_class_container$class_creation_1__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_1__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_1__class_decl_dict);
+tmp_class_container$class_creation_1__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_1__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_1__prepared);
+Py_DECREF(tmp_class_container$class_creation_1__prepared);
+tmp_class_container$class_creation_1__prepared = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_3;
+exception_lineno = exception_keeper_lineno_3;
+
+goto frame_exception_exit_1;
+// End of try:
+try_end_1:;
+CHECK_OBJECT(tmp_class_container$class_creation_1__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_1__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_1__class_decl_dict);
+tmp_class_container$class_creation_1__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_1__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_1__prepared);
+Py_DECREF(tmp_class_container$class_creation_1__prepared);
+tmp_class_container$class_creation_1__prepared = NULL;
+tmp_outline_return_value_1 = Py_None;
+Py_INCREF_IMMORTAL(tmp_outline_return_value_1);
+goto outline_result_1;
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_result_1:;
+CHECK_OBJECT(tmp_outline_return_value_1);
+Py_DECREF(tmp_outline_return_value_1);
+}
+{
+PyObject *tmp_outline_return_value_2;
+{
+PyObject *tmp_assign_source_13;
+tmp_assign_source_13 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_2__class_decl_dict == NULL);
+tmp_class_container$class_creation_2__class_decl_dict = tmp_assign_source_13;
+}
+{
+PyObject *tmp_assign_source_14;
+tmp_assign_source_14 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_2__prepared == NULL);
+tmp_class_container$class_creation_2__prepared = tmp_assign_source_14;
+}
+// Tried code:
+{
+PyObject *tmp_assign_source_15;
+{
+PyObject *tmp_set_locals_2;
+CHECK_OBJECT(tmp_class_container$class_creation_2__prepared);
+tmp_set_locals_2 = tmp_class_container$class_creation_2__prepared;
+locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46 = tmp_set_locals_2;
+Py_INCREF(tmp_set_locals_2);
+}
+tmp_dictset_value = mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46, const_str_plain___module__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_str_plain_OCSPExtensionOID;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46, const_str_plain___qualname__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_int_pos_46;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46, mod_consts.const_str_plain___firstlineno__, tmp_dictset_value);
+assert(!(tmp_result == false));
+// Tried code:
+// Tried code:
+frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3 = MAKE_CLASS_FRAME(tstate, code_objects_ebdd394ac228cd15a9c40b7d66cf5723, module_cryptography$hazmat$_oid, NULL, sizeof(void *));
+Nuitka_Frame_AssignLocals(frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3, locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46);
+
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3) == 2);
+
+// Framed code:
+{
+PyObject *tmp_called_value_29;
+tmp_called_value_29 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_29 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_29 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 47;
+type_description_2 = "o";
+    goto frame_exception_exit_3;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3->m_frame.f_lineno = 47;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_29, mod_consts.const_tuple_str_digest_3a31f74521397441560a47f988d779a3_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 47;
+type_description_2 = "o";
+    goto frame_exception_exit_3;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46, mod_consts.const_str_plain_NONCE, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 47;
+type_description_2 = "o";
+    goto frame_exception_exit_3;
+}
+}
+{
+PyObject *tmp_called_value_30;
+tmp_called_value_30 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_30 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_30 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 48;
+type_description_2 = "o";
+    goto frame_exception_exit_3;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3->m_frame.f_lineno = 48;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_30, mod_consts.const_tuple_str_digest_25229aac06a4bd428e500cd82fef6bcc_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 48;
+type_description_2 = "o";
+    goto frame_exception_exit_3;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46, mod_consts.const_str_plain_ACCEPTABLE_RESPONSES, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 48;
+type_description_2 = "o";
+    goto frame_exception_exit_3;
+}
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3);
+
+
+goto frame_no_exception_2;
+frame_exception_exit_3:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+// Attaches locals to frame if any.
+Nuitka_Frame_AttachLocals(
+    frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3,
+    type_description_2,
+    outline_1_var___class__
+);
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_3);
+
+
+// Return the error.
+goto nested_frame_exit_2;
+frame_no_exception_2:;
+goto skip_nested_handling_2;
+nested_frame_exit_2:;
+
+goto try_except_handler_6;
+skip_nested_handling_2:;
+tmp_dictset_value = const_tuple_empty;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46, mod_consts.const_str_plain___static_attributes__, tmp_dictset_value);
+assert(!(tmp_result == false));
+{
+PyObject *tmp_assign_source_16;
+PyObject *tmp_metaclass_value_2;
+PyObject *tmp_name_value_4;
+PyObject *tmp_bases_value_2;
+PyObject *tmp_dict_arg_value_2;
+PyObject *tmp_class_decl_dict_value_2;
+PyObject *tmp_metaclass_args_2;
+tmp_metaclass_value_2 = (PyObject *)&PyType_Type;
+tmp_name_value_4 = mod_consts.const_str_plain_OCSPExtensionOID;
+tmp_bases_value_2 = const_tuple_empty;
+tmp_dict_arg_value_2 = locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46;
+CHECK_OBJECT(tmp_class_container$class_creation_2__class_decl_dict);
+tmp_class_decl_dict_value_2 = tmp_class_container$class_creation_2__class_decl_dict;
+tmp_metaclass_args_2 = MAKE_TUPLE3(tstate, tmp_name_value_4, tmp_bases_value_2, tmp_dict_arg_value_2);
+tmp_assign_source_16 = CALL_FUNCTION(tstate, tmp_metaclass_value_2, tmp_metaclass_args_2, tmp_class_decl_dict_value_2);
+CHECK_OBJECT(tmp_metaclass_args_2);
+Py_DECREF(tmp_metaclass_args_2);
+if (tmp_assign_source_16 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 46;
+
+    goto try_except_handler_6;
+}
+{
+    PyObject *old = outline_1_var___class__;
+    outline_1_var___class__ = tmp_assign_source_16;
+    Py_XDECREF(old);
+}
+
+}
+CHECK_OBJECT(outline_1_var___class__);
+tmp_assign_source_15 = outline_1_var___class__;
+Py_INCREF(tmp_assign_source_15);
+goto try_return_handler_6;
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_6:;
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46);
+locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46 = NULL;
+goto try_return_handler_5;
+// Exception handler code:
+try_except_handler_6:;
+exception_keeper_lineno_4 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_4 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46);
+locals_cryptography$hazmat$_oid$$$class__2_OCSPExtensionOID_46 = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_4;
+exception_lineno = exception_keeper_lineno_4;
+
+goto try_except_handler_5;
+// End of try:
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_5:;
+CHECK_OBJECT(outline_1_var___class__);
+CHECK_OBJECT(outline_1_var___class__);
+Py_DECREF(outline_1_var___class__);
+outline_1_var___class__ = NULL;
+goto outline_result_4;
+// Exception handler code:
+try_except_handler_5:;
+exception_keeper_lineno_5 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_5 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+// Re-raise.
+exception_state = exception_keeper_name_5;
+exception_lineno = exception_keeper_lineno_5;
+
+goto outline_exception_2;
+// End of try:
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_exception_2:;
+exception_lineno = 46;
+goto try_except_handler_4;
+outline_result_4:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_OCSPExtensionOID, tmp_assign_source_15);
+}
+goto try_end_2;
+// Exception handler code:
+try_except_handler_4:;
+exception_keeper_lineno_6 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_6 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+CHECK_OBJECT(tmp_class_container$class_creation_2__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_2__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_2__class_decl_dict);
+tmp_class_container$class_creation_2__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_2__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_2__prepared);
+Py_DECREF(tmp_class_container$class_creation_2__prepared);
+tmp_class_container$class_creation_2__prepared = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_6;
+exception_lineno = exception_keeper_lineno_6;
+
+goto frame_exception_exit_1;
+// End of try:
+try_end_2:;
+CHECK_OBJECT(tmp_class_container$class_creation_2__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_2__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_2__class_decl_dict);
+tmp_class_container$class_creation_2__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_2__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_2__prepared);
+Py_DECREF(tmp_class_container$class_creation_2__prepared);
+tmp_class_container$class_creation_2__prepared = NULL;
+tmp_outline_return_value_2 = Py_None;
+Py_INCREF_IMMORTAL(tmp_outline_return_value_2);
+goto outline_result_3;
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_result_3:;
+CHECK_OBJECT(tmp_outline_return_value_2);
+Py_DECREF(tmp_outline_return_value_2);
+}
+{
+PyObject *tmp_outline_return_value_3;
+{
+PyObject *tmp_assign_source_17;
+tmp_assign_source_17 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_3__class_decl_dict == NULL);
+tmp_class_container$class_creation_3__class_decl_dict = tmp_assign_source_17;
+}
+{
+PyObject *tmp_assign_source_18;
+tmp_assign_source_18 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_3__prepared == NULL);
+tmp_class_container$class_creation_3__prepared = tmp_assign_source_18;
+}
+// Tried code:
+{
+PyObject *tmp_assign_source_19;
+{
+PyObject *tmp_set_locals_3;
+CHECK_OBJECT(tmp_class_container$class_creation_3__prepared);
+tmp_set_locals_3 = tmp_class_container$class_creation_3__prepared;
+locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51 = tmp_set_locals_3;
+Py_INCREF(tmp_set_locals_3);
+}
+tmp_dictset_value = mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51, const_str_plain___module__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_str_plain_CRLEntryExtensionOID;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51, const_str_plain___qualname__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_int_pos_51;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51, mod_consts.const_str_plain___firstlineno__, tmp_dictset_value);
+assert(!(tmp_result == false));
+// Tried code:
+// Tried code:
+frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4 = MAKE_CLASS_FRAME(tstate, code_objects_0f6d42d9d12fb3ae0e3f74a94a36103e, module_cryptography$hazmat$_oid, NULL, sizeof(void *));
+Nuitka_Frame_AssignLocals(frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4, locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51);
+
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4) == 2);
+
+// Framed code:
+{
+PyObject *tmp_called_value_31;
+tmp_called_value_31 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_31 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_31 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 52;
+type_description_2 = "o";
+    goto frame_exception_exit_4;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4->m_frame.f_lineno = 52;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_31, mod_consts.const_tuple_str_digest_9cd8ba296cec323cf723a82cc76d4826_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 52;
+type_description_2 = "o";
+    goto frame_exception_exit_4;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51, mod_consts.const_str_plain_CERTIFICATE_ISSUER, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 52;
+type_description_2 = "o";
+    goto frame_exception_exit_4;
+}
+}
+{
+PyObject *tmp_called_value_32;
+tmp_called_value_32 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_32 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_32 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 53;
+type_description_2 = "o";
+    goto frame_exception_exit_4;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4->m_frame.f_lineno = 53;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_32, mod_consts.const_tuple_str_digest_0289302dc46017fd66759aa38355e887_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 53;
+type_description_2 = "o";
+    goto frame_exception_exit_4;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51, mod_consts.const_str_plain_CRL_REASON, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 53;
+type_description_2 = "o";
+    goto frame_exception_exit_4;
+}
+}
+{
+PyObject *tmp_called_value_33;
+tmp_called_value_33 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_33 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_33 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 54;
+type_description_2 = "o";
+    goto frame_exception_exit_4;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4->m_frame.f_lineno = 54;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_33, mod_consts.const_tuple_str_digest_7aeeff5313ae33015bc6068c49b2834d_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 54;
+type_description_2 = "o";
+    goto frame_exception_exit_4;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51, mod_consts.const_str_plain_INVALIDITY_DATE, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 54;
+type_description_2 = "o";
+    goto frame_exception_exit_4;
+}
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4);
+
+
+goto frame_no_exception_3;
+frame_exception_exit_4:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+// Attaches locals to frame if any.
+Nuitka_Frame_AttachLocals(
+    frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4,
+    type_description_2,
+    outline_2_var___class__
+);
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_4);
+
+
+// Return the error.
+goto nested_frame_exit_3;
+frame_no_exception_3:;
+goto skip_nested_handling_3;
+nested_frame_exit_3:;
+
+goto try_except_handler_9;
+skip_nested_handling_3:;
+tmp_dictset_value = const_tuple_empty;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51, mod_consts.const_str_plain___static_attributes__, tmp_dictset_value);
+assert(!(tmp_result == false));
+{
+PyObject *tmp_assign_source_20;
+PyObject *tmp_metaclass_value_3;
+PyObject *tmp_name_value_5;
+PyObject *tmp_bases_value_3;
+PyObject *tmp_dict_arg_value_3;
+PyObject *tmp_class_decl_dict_value_3;
+PyObject *tmp_metaclass_args_3;
+tmp_metaclass_value_3 = (PyObject *)&PyType_Type;
+tmp_name_value_5 = mod_consts.const_str_plain_CRLEntryExtensionOID;
+tmp_bases_value_3 = const_tuple_empty;
+tmp_dict_arg_value_3 = locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51;
+CHECK_OBJECT(tmp_class_container$class_creation_3__class_decl_dict);
+tmp_class_decl_dict_value_3 = tmp_class_container$class_creation_3__class_decl_dict;
+tmp_metaclass_args_3 = MAKE_TUPLE3(tstate, tmp_name_value_5, tmp_bases_value_3, tmp_dict_arg_value_3);
+tmp_assign_source_20 = CALL_FUNCTION(tstate, tmp_metaclass_value_3, tmp_metaclass_args_3, tmp_class_decl_dict_value_3);
+CHECK_OBJECT(tmp_metaclass_args_3);
+Py_DECREF(tmp_metaclass_args_3);
+if (tmp_assign_source_20 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 51;
+
+    goto try_except_handler_9;
+}
+{
+    PyObject *old = outline_2_var___class__;
+    outline_2_var___class__ = tmp_assign_source_20;
+    Py_XDECREF(old);
+}
+
+}
+CHECK_OBJECT(outline_2_var___class__);
+tmp_assign_source_19 = outline_2_var___class__;
+Py_INCREF(tmp_assign_source_19);
+goto try_return_handler_9;
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_9:;
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51);
+locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51 = NULL;
+goto try_return_handler_8;
+// Exception handler code:
+try_except_handler_9:;
+exception_keeper_lineno_7 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_7 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51);
+locals_cryptography$hazmat$_oid$$$class__3_CRLEntryExtensionOID_51 = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_7;
+exception_lineno = exception_keeper_lineno_7;
+
+goto try_except_handler_8;
+// End of try:
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_8:;
+CHECK_OBJECT(outline_2_var___class__);
+CHECK_OBJECT(outline_2_var___class__);
+Py_DECREF(outline_2_var___class__);
+outline_2_var___class__ = NULL;
+goto outline_result_6;
+// Exception handler code:
+try_except_handler_8:;
+exception_keeper_lineno_8 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_8 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+// Re-raise.
+exception_state = exception_keeper_name_8;
+exception_lineno = exception_keeper_lineno_8;
+
+goto outline_exception_3;
+// End of try:
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_exception_3:;
+exception_lineno = 51;
+goto try_except_handler_7;
+outline_result_6:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_CRLEntryExtensionOID, tmp_assign_source_19);
+}
+goto try_end_3;
+// Exception handler code:
+try_except_handler_7:;
+exception_keeper_lineno_9 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_9 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+CHECK_OBJECT(tmp_class_container$class_creation_3__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_3__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_3__class_decl_dict);
+tmp_class_container$class_creation_3__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_3__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_3__prepared);
+Py_DECREF(tmp_class_container$class_creation_3__prepared);
+tmp_class_container$class_creation_3__prepared = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_9;
+exception_lineno = exception_keeper_lineno_9;
+
+goto frame_exception_exit_1;
+// End of try:
+try_end_3:;
+CHECK_OBJECT(tmp_class_container$class_creation_3__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_3__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_3__class_decl_dict);
+tmp_class_container$class_creation_3__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_3__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_3__prepared);
+Py_DECREF(tmp_class_container$class_creation_3__prepared);
+tmp_class_container$class_creation_3__prepared = NULL;
+tmp_outline_return_value_3 = Py_None;
+Py_INCREF_IMMORTAL(tmp_outline_return_value_3);
+goto outline_result_5;
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_result_5:;
+CHECK_OBJECT(tmp_outline_return_value_3);
+Py_DECREF(tmp_outline_return_value_3);
+}
+{
+PyObject *tmp_outline_return_value_4;
+{
+PyObject *tmp_assign_source_21;
+tmp_assign_source_21 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_4__class_decl_dict == NULL);
+tmp_class_container$class_creation_4__class_decl_dict = tmp_assign_source_21;
+}
+{
+PyObject *tmp_assign_source_22;
+tmp_assign_source_22 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_4__prepared == NULL);
+tmp_class_container$class_creation_4__prepared = tmp_assign_source_22;
+}
+// Tried code:
+{
+PyObject *tmp_assign_source_23;
+{
+PyObject *tmp_set_locals_4;
+CHECK_OBJECT(tmp_class_container$class_creation_4__prepared);
+tmp_set_locals_4 = tmp_class_container$class_creation_4__prepared;
+locals_cryptography$hazmat$_oid$$$class__4_NameOID_57 = tmp_set_locals_4;
+Py_INCREF(tmp_set_locals_4);
+}
+tmp_dictset_value = mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, const_str_plain___module__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_str_plain_NameOID;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, const_str_plain___qualname__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_int_pos_57;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain___firstlineno__, tmp_dictset_value);
+assert(!(tmp_result == false));
+// Tried code:
+// Tried code:
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5 = MAKE_CLASS_FRAME(tstate, code_objects_a44f32cef3060b5b580e7f019708dda9, module_cryptography$hazmat$_oid, NULL, sizeof(void *));
+Nuitka_Frame_AssignLocals(frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5, locals_cryptography$hazmat$_oid$$$class__4_NameOID_57);
+
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5) == 2);
+
+// Framed code:
+{
+PyObject *tmp_called_value_34;
+tmp_called_value_34 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_34 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_34 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 58;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 58;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_34, mod_consts.const_tuple_str_digest_f57d825cad34aac5809c155ba8a3ebb1_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 58;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_COMMON_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 58;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_35;
+tmp_called_value_35 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_35 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_35 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 59;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 59;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_35, mod_consts.const_tuple_str_digest_aa13593fc87e4f4e4b2b52fd048b3e8a_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 59;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_COUNTRY_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 59;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_36;
+tmp_called_value_36 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_36 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_36 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 60;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 60;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_36, mod_consts.const_tuple_str_digest_6cf4c807f183a057576c391d9f7c4e24_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 60;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_LOCALITY_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 60;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_37;
+tmp_called_value_37 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_37 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_37 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 61;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 61;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_37, mod_consts.const_tuple_str_digest_57dccc3876eef2cf5cfce321a32febb5_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 61;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_STATE_OR_PROVINCE_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 61;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_38;
+tmp_called_value_38 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_38 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_38 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 62;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 62;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_38, mod_consts.const_tuple_str_digest_e69bc10a8fca5202a28e2cd518549779_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 62;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_STREET_ADDRESS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 62;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_39;
+tmp_called_value_39 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_39 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_39 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 63;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 63;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_39, mod_consts.const_tuple_str_digest_3c60b257fb1dc5e6210b01a214ad1396_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 63;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_ORGANIZATION_IDENTIFIER, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 63;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_40;
+tmp_called_value_40 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_40 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_40 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 64;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 64;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_40, mod_consts.const_tuple_str_digest_76c946398dd022b7261d46aa6240716f_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 64;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_ORGANIZATION_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 64;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_41;
+tmp_called_value_41 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_41 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_41 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 65;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 65;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_41, mod_consts.const_tuple_str_digest_43626b342da00ed10ddfece11d183700_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 65;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_ORGANIZATIONAL_UNIT_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 65;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_42;
+tmp_called_value_42 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_42 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_42 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 66;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 66;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_42, mod_consts.const_tuple_str_digest_4e0fd9298619640af3a4dad2f13d8f89_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 66;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_SERIAL_NUMBER, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 66;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_43;
+tmp_called_value_43 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_43 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_43 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 67;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 67;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_43, mod_consts.const_tuple_str_digest_e4fbe04d850088683fca472ae668e3e8_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 67;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_SURNAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 67;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_44;
+tmp_called_value_44 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_44 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_44 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 68;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 68;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_44, mod_consts.const_tuple_str_digest_2998224fa424af08b3f684a1be17945c_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 68;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_GIVEN_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 68;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_45;
+tmp_called_value_45 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_45 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_45 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 69;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 69;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_45, mod_consts.const_tuple_str_digest_e00b2e9d0b3aff0d7f1215741c8caf4c_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 69;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_TITLE, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 69;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_46;
+tmp_called_value_46 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_46 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_46 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 70;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 70;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_46, mod_consts.const_tuple_str_digest_60bbb67da5f07f7a5fc75db42854c2f3_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 70;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_INITIALS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 70;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_47;
+tmp_called_value_47 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_47 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_47 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 71;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 71;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_47, mod_consts.const_tuple_str_digest_43872ccea6747842372df8a1c4656683_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 71;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_GENERATION_QUALIFIER, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 71;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_48;
+tmp_called_value_48 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_48 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_48 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 72;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 72;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_48, mod_consts.const_tuple_str_digest_e8435c09f6f8bb5530cfada92d890563_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 72;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_X500_UNIQUE_IDENTIFIER, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 72;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_49;
+tmp_called_value_49 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_49 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_49 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 73;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 73;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_49, mod_consts.const_tuple_str_digest_60aaecf634db9b67af6a393dcf6de000_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 73;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_DN_QUALIFIER, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 73;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_50;
+tmp_called_value_50 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_50 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_50 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 74;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 74;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_50, mod_consts.const_tuple_str_digest_c0c0b06f4a096cb9cc1becef6ebea806_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 74;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_PSEUDONYM, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 74;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_51;
+tmp_called_value_51 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_51 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_51 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 75;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 75;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_51, mod_consts.const_tuple_str_digest_d987020246f2d9f737862dd92bc63eef_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 75;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_USER_ID, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 75;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_52;
+tmp_called_value_52 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_52 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_52 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 76;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 76;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_52, mod_consts.const_tuple_str_digest_1ca6abdf9952a7d39297c45ba720642a_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 76;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_DOMAIN_COMPONENT, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 76;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_53;
+tmp_called_value_53 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_53 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_53 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 77;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 77;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_53, mod_consts.const_tuple_str_digest_7f9fa75ff292bac6aecf30cc58bc9469_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 77;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_EMAIL_ADDRESS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 77;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_54;
+tmp_called_value_54 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_54 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_54 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 78;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 78;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_54, mod_consts.const_tuple_str_digest_8c8a2a5fe21909055ee3a38044fbeaa0_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 78;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_JURISDICTION_COUNTRY_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 78;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_55;
+tmp_called_value_55 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_55 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_55 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 79;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 79;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_55, mod_consts.const_tuple_str_digest_163cafdc0ed554748c9a4b5a8c664335_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 79;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_JURISDICTION_LOCALITY_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 79;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_56;
+tmp_called_value_56 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_56 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_56 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 80;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 80;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_56, mod_consts.const_tuple_str_digest_81ded7bbfd939cddeb47d500a53437b8_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 80;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_JURISDICTION_STATE_OR_PROVINCE_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 80;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_57;
+tmp_called_value_57 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_57 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_57 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 83;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 83;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_57, mod_consts.const_tuple_str_digest_43752e38edbd8a4cc26d98a0eaea7118_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 83;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_BUSINESS_CATEGORY, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 83;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_58;
+tmp_called_value_58 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_58 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_58 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 84;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 84;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_58, mod_consts.const_tuple_str_digest_9593fac7fba92df6a4af11a09356bc08_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 84;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_POSTAL_ADDRESS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 84;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_59;
+tmp_called_value_59 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_59 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_59 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 85;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 85;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_59, mod_consts.const_tuple_str_digest_4d1eecda490e15d970f849aecc70bec4_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 85;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_POSTAL_CODE, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 85;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_60;
+tmp_called_value_60 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_60 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_60 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 86;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 86;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_60, mod_consts.const_tuple_str_digest_ab9d7539750cd028eb33bbcbb7ee79ef_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 86;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_INN, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 86;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_61;
+tmp_called_value_61 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_61 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_61 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 87;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 87;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_61, mod_consts.const_tuple_str_digest_b146b7df831df69e003af30211afd1b5_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 87;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_OGRN, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 87;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_62;
+tmp_called_value_62 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_62 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_62 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 88;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 88;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_62, mod_consts.const_tuple_str_digest_a2b091b732cd267eeb03812ab7752b2a_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 88;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_SNILS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 88;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_63;
+tmp_called_value_63 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_63 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_63 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 89;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 89;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_63, mod_consts.const_tuple_str_digest_d69ccf3d05e6659c8b3ce486a9cce8b0_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 89;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_UNSTRUCTURED_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 89;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+{
+PyObject *tmp_called_value_64;
+tmp_called_value_64 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_64 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_64 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 90;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame.f_lineno = 90;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_64, mod_consts.const_tuple_str_digest_fdb578797261104103247aa2de285428_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 90;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain_UNSIGNED, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 90;
+type_description_2 = "o";
+    goto frame_exception_exit_5;
+}
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5);
+
+
+goto frame_no_exception_4;
+frame_exception_exit_5:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+// Attaches locals to frame if any.
+Nuitka_Frame_AttachLocals(
+    frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5,
+    type_description_2,
+    outline_3_var___class__
+);
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__4_NameOID_5);
+
+
+// Return the error.
+goto nested_frame_exit_4;
+frame_no_exception_4:;
+goto skip_nested_handling_4;
+nested_frame_exit_4:;
+
+goto try_except_handler_12;
+skip_nested_handling_4:;
+tmp_dictset_value = const_tuple_empty;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57, mod_consts.const_str_plain___static_attributes__, tmp_dictset_value);
+assert(!(tmp_result == false));
+{
+PyObject *tmp_assign_source_24;
+PyObject *tmp_metaclass_value_4;
+PyObject *tmp_name_value_6;
+PyObject *tmp_bases_value_4;
+PyObject *tmp_dict_arg_value_4;
+PyObject *tmp_class_decl_dict_value_4;
+PyObject *tmp_metaclass_args_4;
+tmp_metaclass_value_4 = (PyObject *)&PyType_Type;
+tmp_name_value_6 = mod_consts.const_str_plain_NameOID;
+tmp_bases_value_4 = const_tuple_empty;
+tmp_dict_arg_value_4 = locals_cryptography$hazmat$_oid$$$class__4_NameOID_57;
+CHECK_OBJECT(tmp_class_container$class_creation_4__class_decl_dict);
+tmp_class_decl_dict_value_4 = tmp_class_container$class_creation_4__class_decl_dict;
+tmp_metaclass_args_4 = MAKE_TUPLE3(tstate, tmp_name_value_6, tmp_bases_value_4, tmp_dict_arg_value_4);
+tmp_assign_source_24 = CALL_FUNCTION(tstate, tmp_metaclass_value_4, tmp_metaclass_args_4, tmp_class_decl_dict_value_4);
+CHECK_OBJECT(tmp_metaclass_args_4);
+Py_DECREF(tmp_metaclass_args_4);
+if (tmp_assign_source_24 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 57;
+
+    goto try_except_handler_12;
+}
+{
+    PyObject *old = outline_3_var___class__;
+    outline_3_var___class__ = tmp_assign_source_24;
+    Py_XDECREF(old);
+}
+
+}
+CHECK_OBJECT(outline_3_var___class__);
+tmp_assign_source_23 = outline_3_var___class__;
+Py_INCREF(tmp_assign_source_23);
+goto try_return_handler_12;
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_12:;
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57);
+locals_cryptography$hazmat$_oid$$$class__4_NameOID_57 = NULL;
+goto try_return_handler_11;
+// Exception handler code:
+try_except_handler_12:;
+exception_keeper_lineno_10 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_10 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__4_NameOID_57);
+locals_cryptography$hazmat$_oid$$$class__4_NameOID_57 = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_10;
+exception_lineno = exception_keeper_lineno_10;
+
+goto try_except_handler_11;
+// End of try:
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_11:;
+CHECK_OBJECT(outline_3_var___class__);
+CHECK_OBJECT(outline_3_var___class__);
+Py_DECREF(outline_3_var___class__);
+outline_3_var___class__ = NULL;
+goto outline_result_8;
+// Exception handler code:
+try_except_handler_11:;
+exception_keeper_lineno_11 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_11 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+// Re-raise.
+exception_state = exception_keeper_name_11;
+exception_lineno = exception_keeper_lineno_11;
+
+goto outline_exception_4;
+// End of try:
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_exception_4:;
+exception_lineno = 57;
+goto try_except_handler_10;
+outline_result_8:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_NameOID, tmp_assign_source_23);
+}
+goto try_end_4;
+// Exception handler code:
+try_except_handler_10:;
+exception_keeper_lineno_12 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_12 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+CHECK_OBJECT(tmp_class_container$class_creation_4__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_4__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_4__class_decl_dict);
+tmp_class_container$class_creation_4__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_4__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_4__prepared);
+Py_DECREF(tmp_class_container$class_creation_4__prepared);
+tmp_class_container$class_creation_4__prepared = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_12;
+exception_lineno = exception_keeper_lineno_12;
+
+goto frame_exception_exit_1;
+// End of try:
+try_end_4:;
+CHECK_OBJECT(tmp_class_container$class_creation_4__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_4__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_4__class_decl_dict);
+tmp_class_container$class_creation_4__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_4__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_4__prepared);
+Py_DECREF(tmp_class_container$class_creation_4__prepared);
+tmp_class_container$class_creation_4__prepared = NULL;
+tmp_outline_return_value_4 = Py_None;
+Py_INCREF_IMMORTAL(tmp_outline_return_value_4);
+goto outline_result_7;
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_result_7:;
+CHECK_OBJECT(tmp_outline_return_value_4);
+Py_DECREF(tmp_outline_return_value_4);
+}
+{
+PyObject *tmp_outline_return_value_5;
+{
+PyObject *tmp_assign_source_25;
+tmp_assign_source_25 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_5__class_decl_dict == NULL);
+tmp_class_container$class_creation_5__class_decl_dict = tmp_assign_source_25;
+}
+{
+PyObject *tmp_assign_source_26;
+tmp_assign_source_26 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_5__prepared == NULL);
+tmp_class_container$class_creation_5__prepared = tmp_assign_source_26;
+}
+// Tried code:
+{
+PyObject *tmp_assign_source_27;
+{
+PyObject *tmp_set_locals_5;
+CHECK_OBJECT(tmp_class_container$class_creation_5__prepared);
+tmp_set_locals_5 = tmp_class_container$class_creation_5__prepared;
+locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93 = tmp_set_locals_5;
+Py_INCREF(tmp_set_locals_5);
+}
+tmp_dictset_value = mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, const_str_plain___module__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_str_plain_SignatureAlgorithmOID;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, const_str_plain___qualname__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_int_pos_93;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain___firstlineno__, tmp_dictset_value);
+assert(!(tmp_result == false));
+// Tried code:
+// Tried code:
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6 = MAKE_CLASS_FRAME(tstate, code_objects_9f15910631fa9d45442bf36bd436942d, module_cryptography$hazmat$_oid, NULL, sizeof(void *));
+Nuitka_Frame_AssignLocals(frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6, locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93);
+
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6) == 2);
+
+// Framed code:
+{
+PyObject *tmp_called_value_65;
+tmp_called_value_65 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_65 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_65 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 94;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 94;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_65, mod_consts.const_tuple_str_digest_d766128dd3b188cb31a47f2b60d4f03b_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 94;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_RSA_WITH_MD5, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 94;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_66;
+tmp_called_value_66 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_66 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_66 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 95;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 95;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_66, mod_consts.const_tuple_str_digest_b84a8ae3bdd5ed5249d61bfca24aa504_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 95;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_RSA_WITH_SHA1, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 95;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_67;
+tmp_called_value_67 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_67 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_67 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 97;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 97;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_67, mod_consts.const_tuple_str_digest_592f2dc8660724fc191cd3b965719e17_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 97;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain__RSA_WITH_SHA1, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 97;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_68;
+tmp_called_value_68 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_68 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_68 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 98;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 98;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_68, mod_consts.const_tuple_str_digest_777dc680c1db5aad08fab2430d7c4782_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 98;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_RSA_WITH_SHA224, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 98;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_69;
+tmp_called_value_69 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_69 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_69 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 99;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 99;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_69, mod_consts.const_tuple_str_digest_bf7a54fbdb0b05505b05e9611f5ae528_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 99;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_RSA_WITH_SHA256, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 99;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_70;
+tmp_called_value_70 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_70 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_70 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 100;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 100;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_70, mod_consts.const_tuple_str_digest_175c6aa0dbff49caa0d29fca6c1fdbb2_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 100;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_RSA_WITH_SHA384, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 100;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_71;
+tmp_called_value_71 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_71 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_71 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 101;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 101;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_71, mod_consts.const_tuple_str_digest_cbb358e95676acbda1a7cec77811a76a_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 101;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_RSA_WITH_SHA512, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 101;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_72;
+tmp_called_value_72 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_72 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_72 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 102;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 102;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_72, mod_consts.const_tuple_str_digest_11e69c90017408487dc7480de77c2b57_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 102;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_RSA_WITH_SHA3_224, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 102;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_73;
+tmp_called_value_73 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_73 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_73 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 103;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 103;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_73, mod_consts.const_tuple_str_digest_628d634092584d6d3de9449f35ac7201_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 103;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_RSA_WITH_SHA3_256, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 103;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_74;
+tmp_called_value_74 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_74 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_74 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 104;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 104;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_74, mod_consts.const_tuple_str_digest_0ecbc77378a42af013cc368d21739033_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 104;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_RSA_WITH_SHA3_384, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 104;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_75;
+tmp_called_value_75 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_75 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_75 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 105;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 105;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_75, mod_consts.const_tuple_str_digest_6c80dee87c72a9908a70836c96727588_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 105;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_RSA_WITH_SHA3_512, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 105;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_76;
+tmp_called_value_76 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_76 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_76 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 106;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 106;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_76, mod_consts.const_tuple_str_digest_0f59f576526d1d0c3e712a7f737c95cb_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 106;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_RSASSA_PSS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 106;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_77;
+tmp_called_value_77 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_77 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_77 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 107;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 107;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_77, mod_consts.const_tuple_str_digest_35eb25ced2ccdf6bcc44b71ddad61958_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 107;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ECDSA_WITH_SHA1, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 107;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_78;
+tmp_called_value_78 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_78 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_78 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 108;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 108;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_78, mod_consts.const_tuple_str_digest_c3b73ca09086726c1f01ebb5162d733b_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 108;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ECDSA_WITH_SHA224, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 108;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_79;
+tmp_called_value_79 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_79 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_79 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 109;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 109;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_79, mod_consts.const_tuple_str_digest_c65f30c441db755c29a6af4980e8b725_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 109;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ECDSA_WITH_SHA256, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 109;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_80;
+tmp_called_value_80 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_80 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_80 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 110;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 110;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_80, mod_consts.const_tuple_str_digest_851be9911219ad6068e49143d3248889_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 110;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ECDSA_WITH_SHA384, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 110;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_81;
+tmp_called_value_81 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_81 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_81 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 111;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 111;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_81, mod_consts.const_tuple_str_digest_8cf8f3c54a257961a23b52b084d86cec_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 111;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ECDSA_WITH_SHA512, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 111;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_82;
+tmp_called_value_82 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_82 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_82 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 112;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 112;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_82, mod_consts.const_tuple_str_digest_ea5f32e18190c861edbb3f7f35293d3d_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 112;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ECDSA_WITH_SHA3_224, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 112;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_83;
+tmp_called_value_83 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_83 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_83 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 113;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 113;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_83, mod_consts.const_tuple_str_digest_956aa86e408a6adabaa354462473dbe2_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 113;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ECDSA_WITH_SHA3_256, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 113;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_84;
+tmp_called_value_84 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_84 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_84 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 114;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 114;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_84, mod_consts.const_tuple_str_digest_0762aff50fbcc07d7063cee18aef8393_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 114;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ECDSA_WITH_SHA3_384, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 114;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_85;
+tmp_called_value_85 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_85 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_85 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 115;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 115;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_85, mod_consts.const_tuple_str_digest_09f9ec1bd9bc636d40a3b5dd215393b8_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 115;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ECDSA_WITH_SHA3_512, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 115;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_86;
+tmp_called_value_86 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_86 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_86 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 116;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 116;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_86, mod_consts.const_tuple_str_digest_65069b4fb9aa28cf3d80a60f2197040c_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 116;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_DSA_WITH_SHA1, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 116;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_87;
+tmp_called_value_87 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_87 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_87 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 117;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 117;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_87, mod_consts.const_tuple_str_digest_649afc4ad6dae06148c7e2d99bb38960_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 117;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_DSA_WITH_SHA224, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 117;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_88;
+tmp_called_value_88 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_88 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_88 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 118;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 118;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_88, mod_consts.const_tuple_str_digest_d276e487e55b7f956e2f735a941b29b1_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 118;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_DSA_WITH_SHA256, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 118;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_89;
+tmp_called_value_89 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_89 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_89 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 119;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 119;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_89, mod_consts.const_tuple_str_digest_b81cf544dd27893f3ce51207857ab827_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 119;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_DSA_WITH_SHA384, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 119;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_90;
+tmp_called_value_90 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_90 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_90 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 120;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 120;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_90, mod_consts.const_tuple_str_digest_91091cfdfbf4c6eb6dd34f078c43c4a2_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 120;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_DSA_WITH_SHA512, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 120;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_91;
+tmp_called_value_91 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_91 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_91 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 121;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 121;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_91, mod_consts.const_tuple_str_digest_06987cfccee49a896525bf927684c3f1_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 121;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ED25519, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 121;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_92;
+tmp_called_value_92 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_92 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_92 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 122;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 122;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_92, mod_consts.const_tuple_str_digest_d2aa151b2525d178415599466b9d6aee_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 122;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ED448, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 122;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_93;
+tmp_called_value_93 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_93 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_93 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 123;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 123;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_93, mod_consts.const_tuple_str_digest_d4276f73f9fe48e814299ea9f5bc68fc_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 123;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ML_DSA_44, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 123;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_94;
+tmp_called_value_94 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_94 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_94 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 124;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 124;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_94, mod_consts.const_tuple_str_digest_80fd62f760f87e5b9cae90470f25d9ee_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 124;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ML_DSA_65, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 124;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_95;
+tmp_called_value_95 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_95 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_95 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 125;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 125;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_95, mod_consts.const_tuple_str_digest_46cdbf8ef9851e9a5311c55efee786ac_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 125;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_ML_DSA_87, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 125;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_96;
+tmp_called_value_96 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_96 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_96 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 126;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 126;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_96, mod_consts.const_tuple_str_digest_398193cc178d9ec2885c1b3ed5bbb391_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 126;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_GOSTR3411_94_WITH_3410_2001, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 126;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_97;
+tmp_called_value_97 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_97 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_97 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 127;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 127;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_97, mod_consts.const_tuple_str_digest_9c4343dcf24c6c6afaf10f9c2e7d1b23_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 127;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_256, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 127;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_98;
+tmp_called_value_98 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_98 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_98 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 128;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 128;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_98, mod_consts.const_tuple_str_digest_71ea0d189efc2f5cfcdfff6ec29064f1_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 128;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_512, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 128;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+{
+PyObject *tmp_called_value_99;
+tmp_called_value_99 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_99 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_99 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 129;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame.f_lineno = 129;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_99, mod_consts.const_tuple_str_digest_22189de6b6ba8121c08a004aeca07ada_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 129;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain_UNSIGNED, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 129;
+type_description_2 = "o";
+    goto frame_exception_exit_6;
+}
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6);
+
+
+goto frame_no_exception_5;
+frame_exception_exit_6:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+// Attaches locals to frame if any.
+Nuitka_Frame_AttachLocals(
+    frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6,
+    type_description_2,
+    outline_4_var___class__
+);
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_6);
+
+
+// Return the error.
+goto nested_frame_exit_5;
+frame_no_exception_5:;
+goto skip_nested_handling_5;
+nested_frame_exit_5:;
+
+goto try_except_handler_15;
+skip_nested_handling_5:;
+tmp_dictset_value = const_tuple_empty;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93, mod_consts.const_str_plain___static_attributes__, tmp_dictset_value);
+assert(!(tmp_result == false));
+{
+PyObject *tmp_assign_source_28;
+PyObject *tmp_metaclass_value_5;
+PyObject *tmp_name_value_7;
+PyObject *tmp_bases_value_5;
+PyObject *tmp_dict_arg_value_5;
+PyObject *tmp_class_decl_dict_value_5;
+PyObject *tmp_metaclass_args_5;
+tmp_metaclass_value_5 = (PyObject *)&PyType_Type;
+tmp_name_value_7 = mod_consts.const_str_plain_SignatureAlgorithmOID;
+tmp_bases_value_5 = const_tuple_empty;
+tmp_dict_arg_value_5 = locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93;
+CHECK_OBJECT(tmp_class_container$class_creation_5__class_decl_dict);
+tmp_class_decl_dict_value_5 = tmp_class_container$class_creation_5__class_decl_dict;
+tmp_metaclass_args_5 = MAKE_TUPLE3(tstate, tmp_name_value_7, tmp_bases_value_5, tmp_dict_arg_value_5);
+tmp_assign_source_28 = CALL_FUNCTION(tstate, tmp_metaclass_value_5, tmp_metaclass_args_5, tmp_class_decl_dict_value_5);
+CHECK_OBJECT(tmp_metaclass_args_5);
+Py_DECREF(tmp_metaclass_args_5);
+if (tmp_assign_source_28 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 93;
+
+    goto try_except_handler_15;
+}
+{
+    PyObject *old = outline_4_var___class__;
+    outline_4_var___class__ = tmp_assign_source_28;
+    Py_XDECREF(old);
+}
+
+}
+CHECK_OBJECT(outline_4_var___class__);
+tmp_assign_source_27 = outline_4_var___class__;
+Py_INCREF(tmp_assign_source_27);
+goto try_return_handler_15;
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_15:;
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93);
+locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93 = NULL;
+goto try_return_handler_14;
+// Exception handler code:
+try_except_handler_15:;
+exception_keeper_lineno_13 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_13 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93);
+locals_cryptography$hazmat$_oid$$$class__5_SignatureAlgorithmOID_93 = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_13;
+exception_lineno = exception_keeper_lineno_13;
+
+goto try_except_handler_14;
+// End of try:
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_14:;
+CHECK_OBJECT(outline_4_var___class__);
+CHECK_OBJECT(outline_4_var___class__);
+Py_DECREF(outline_4_var___class__);
+outline_4_var___class__ = NULL;
+goto outline_result_10;
+// Exception handler code:
+try_except_handler_14:;
+exception_keeper_lineno_14 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_14 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+// Re-raise.
+exception_state = exception_keeper_name_14;
+exception_lineno = exception_keeper_lineno_14;
+
+goto outline_exception_5;
+// End of try:
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_exception_5:;
+exception_lineno = 93;
+goto try_except_handler_13;
+outline_result_10:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_SignatureAlgorithmOID, tmp_assign_source_27);
+}
+goto try_end_5;
+// Exception handler code:
+try_except_handler_13:;
+exception_keeper_lineno_15 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_15 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+CHECK_OBJECT(tmp_class_container$class_creation_5__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_5__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_5__class_decl_dict);
+tmp_class_container$class_creation_5__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_5__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_5__prepared);
+Py_DECREF(tmp_class_container$class_creation_5__prepared);
+tmp_class_container$class_creation_5__prepared = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_15;
+exception_lineno = exception_keeper_lineno_15;
+
+goto frame_exception_exit_1;
+// End of try:
+try_end_5:;
+CHECK_OBJECT(tmp_class_container$class_creation_5__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_5__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_5__class_decl_dict);
+tmp_class_container$class_creation_5__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_5__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_5__prepared);
+Py_DECREF(tmp_class_container$class_creation_5__prepared);
+tmp_class_container$class_creation_5__prepared = NULL;
+tmp_outline_return_value_5 = Py_None;
+Py_INCREF_IMMORTAL(tmp_outline_return_value_5);
+goto outline_result_9;
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_result_9:;
+CHECK_OBJECT(tmp_outline_return_value_5);
+Py_DECREF(tmp_outline_return_value_5);
+}
+{
+PyObject *tmp_assign_source_29;
+PyObject *tmp_dict_key_1;
+PyObject *tmp_dict_value_1;
+PyObject *tmp_expression_value_1;
+PyObject *tmp_called_instance_1;
+tmp_expression_value_1 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+assert(!(tmp_expression_value_1 == NULL));
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_1, mod_consts.const_str_plain_RSA_WITH_MD5);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 133;
+
+    goto frame_exception_exit_1;
+}
+tmp_called_instance_1 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_1 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_1 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 133;
+
+    goto frame_exception_exit_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 133;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_1, mod_consts.const_str_plain_MD5);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 133;
+
+    goto frame_exception_exit_1;
+}
+tmp_assign_source_29 = _PyDict_NewPresized( 32 );
+{
+PyObject *tmp_expression_value_2;
+PyObject *tmp_called_instance_2;
+PyObject *tmp_expression_value_3;
+PyObject *tmp_called_instance_3;
+PyObject *tmp_expression_value_4;
+PyObject *tmp_called_instance_4;
+PyObject *tmp_expression_value_5;
+PyObject *tmp_called_instance_5;
+PyObject *tmp_expression_value_6;
+PyObject *tmp_called_instance_6;
+PyObject *tmp_expression_value_7;
+PyObject *tmp_called_instance_7;
+PyObject *tmp_expression_value_8;
+PyObject *tmp_called_instance_8;
+PyObject *tmp_expression_value_9;
+PyObject *tmp_called_instance_9;
+PyObject *tmp_expression_value_10;
+PyObject *tmp_called_instance_10;
+PyObject *tmp_expression_value_11;
+PyObject *tmp_called_instance_11;
+PyObject *tmp_expression_value_12;
+PyObject *tmp_called_instance_12;
+PyObject *tmp_expression_value_13;
+PyObject *tmp_called_instance_13;
+PyObject *tmp_expression_value_14;
+PyObject *tmp_called_instance_14;
+PyObject *tmp_expression_value_15;
+PyObject *tmp_called_instance_15;
+PyObject *tmp_expression_value_16;
+PyObject *tmp_called_instance_16;
+PyObject *tmp_expression_value_17;
+PyObject *tmp_called_instance_17;
+PyObject *tmp_expression_value_18;
+PyObject *tmp_called_instance_18;
+PyObject *tmp_expression_value_19;
+PyObject *tmp_called_instance_19;
+PyObject *tmp_expression_value_20;
+PyObject *tmp_called_instance_20;
+PyObject *tmp_expression_value_21;
+PyObject *tmp_called_instance_21;
+PyObject *tmp_expression_value_22;
+PyObject *tmp_called_instance_22;
+PyObject *tmp_expression_value_23;
+PyObject *tmp_called_instance_23;
+PyObject *tmp_expression_value_24;
+PyObject *tmp_expression_value_25;
+PyObject *tmp_expression_value_26;
+PyObject *tmp_expression_value_27;
+PyObject *tmp_expression_value_28;
+PyObject *tmp_expression_value_29;
+PyObject *tmp_expression_value_30;
+PyObject *tmp_expression_value_31;
+PyObject *tmp_expression_value_32;
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 133;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_2 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_2 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_2 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 134;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_2, mod_consts.const_str_plain_RSA_WITH_SHA1);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 134;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_2 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_2 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_2 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 134;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 134;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_2, mod_consts.const_str_plain_SHA1);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 134;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 134;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_3 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_3 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_3 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 135;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_3, mod_consts.const_str_plain__RSA_WITH_SHA1);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 135;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_3 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_3 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_3 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 135;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 135;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_3, mod_consts.const_str_plain_SHA1);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 135;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 135;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_4 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_4 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_4 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 136;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_4, mod_consts.const_str_plain_RSA_WITH_SHA224);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 136;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_4 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_4 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_4 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 136;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 136;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_4, mod_consts.const_str_plain_SHA224);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 136;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 136;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_5 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_5 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_5 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 137;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_5, mod_consts.const_str_plain_RSA_WITH_SHA256);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 137;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_5 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_5 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_5 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 137;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 137;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_5, mod_consts.const_str_plain_SHA256);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 137;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 137;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_6 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_6 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_6 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 138;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_6, mod_consts.const_str_plain_RSA_WITH_SHA384);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 138;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_6 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_6 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_6 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 138;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 138;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_6, mod_consts.const_str_plain_SHA384);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 138;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 138;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_7 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_7 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_7 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 139;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_7, mod_consts.const_str_plain_RSA_WITH_SHA512);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 139;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_7 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_7 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_7 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 139;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 139;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_7, mod_consts.const_str_plain_SHA512);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 139;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 139;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_8 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_8 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_8 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 140;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_8, mod_consts.const_str_plain_RSA_WITH_SHA3_224);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 140;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_8 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_8 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_8 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 140;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 140;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_8, mod_consts.const_str_plain_SHA3_224);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 140;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 140;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_9 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_9 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_9 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 141;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_9, mod_consts.const_str_plain_RSA_WITH_SHA3_256);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 141;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_9 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_9 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_9 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 141;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 141;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_9, mod_consts.const_str_plain_SHA3_256);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 141;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 141;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_10 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_10 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_10 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 142;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_10, mod_consts.const_str_plain_RSA_WITH_SHA3_384);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 142;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_10 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_10 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_10 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 142;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 142;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_10, mod_consts.const_str_plain_SHA3_384);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 142;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 142;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_11 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_11 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_11 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 143;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_11, mod_consts.const_str_plain_RSA_WITH_SHA3_512);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 143;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_11 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_11 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_11 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 143;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 143;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_11, mod_consts.const_str_plain_SHA3_512);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 143;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 143;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_12 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_12 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_12 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 144;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_12, mod_consts.const_str_plain_ECDSA_WITH_SHA1);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 144;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_12 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_12 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_12 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 144;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 144;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_12, mod_consts.const_str_plain_SHA1);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 144;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 144;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_13 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_13 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_13 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 145;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_13, mod_consts.const_str_plain_ECDSA_WITH_SHA224);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 145;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_13 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_13 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_13 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 145;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 145;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_13, mod_consts.const_str_plain_SHA224);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 145;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 145;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_14 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_14 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_14 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 146;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_14, mod_consts.const_str_plain_ECDSA_WITH_SHA256);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 146;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_14 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_14 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_14 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 146;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 146;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_14, mod_consts.const_str_plain_SHA256);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 146;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 146;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_15 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_15 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_15 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 147;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_15, mod_consts.const_str_plain_ECDSA_WITH_SHA384);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 147;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_15 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_15 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_15 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 147;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 147;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_15, mod_consts.const_str_plain_SHA384);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 147;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 147;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_16 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_16 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_16 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 148;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_16, mod_consts.const_str_plain_ECDSA_WITH_SHA512);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 148;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_16 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_16 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_16 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 148;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 148;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_16, mod_consts.const_str_plain_SHA512);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 148;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 148;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_17 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_17 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_17 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 149;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_17, mod_consts.const_str_plain_ECDSA_WITH_SHA3_224);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 149;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_17 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_17 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_17 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 149;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 149;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_17, mod_consts.const_str_plain_SHA3_224);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 149;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 149;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_18 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_18 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_18 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 150;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_18, mod_consts.const_str_plain_ECDSA_WITH_SHA3_256);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 150;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_18 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_18 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_18 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 150;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 150;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_18, mod_consts.const_str_plain_SHA3_256);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 150;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 150;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_19 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_19 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_19 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 151;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_19, mod_consts.const_str_plain_ECDSA_WITH_SHA3_384);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 151;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_19 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_19 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_19 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 151;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 151;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_19, mod_consts.const_str_plain_SHA3_384);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 151;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 151;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_20 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_20 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_20 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 152;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_20, mod_consts.const_str_plain_ECDSA_WITH_SHA3_512);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 152;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_20 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_20 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_20 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 152;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 152;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_20, mod_consts.const_str_plain_SHA3_512);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 152;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 152;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_21 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_21 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_21 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 153;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_21, mod_consts.const_str_plain_DSA_WITH_SHA1);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 153;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_21 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_21 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_21 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 153;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 153;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_21, mod_consts.const_str_plain_SHA1);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 153;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 153;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_22 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_22 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_22 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 154;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_22, mod_consts.const_str_plain_DSA_WITH_SHA224);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 154;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_22 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_22 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_22 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 154;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 154;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_22, mod_consts.const_str_plain_SHA224);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 154;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 154;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_23 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_23 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_23 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 155;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_23, mod_consts.const_str_plain_DSA_WITH_SHA256);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 155;
+
+    goto dict_build_exception_1;
+}
+tmp_called_instance_23 = module_var_accessor_cryptography$hazmat$_oid$hashes(tstate);
+if (unlikely(tmp_called_instance_23 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_hashes);
+}
+
+if (tmp_called_instance_23 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 155;
+
+    goto dict_build_exception_1;
+}
+frame_frame_cryptography$hazmat$_oid->m_frame.f_lineno = 155;
+tmp_dict_value_1 = CALL_METHOD_NO_ARGS(tstate, tmp_called_instance_23, mod_consts.const_str_plain_SHA256);
+if (tmp_dict_value_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+Py_DECREF(tmp_dict_key_1);
+
+exception_lineno = 155;
+
+    goto dict_build_exception_1;
+}
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 155;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_24 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_24 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_24 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 156;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_24, mod_consts.const_str_plain_ED25519);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 156;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_value_1 = Py_None;
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 156;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_25 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_25 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_25 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 157;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_25, mod_consts.const_str_plain_ED448);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 157;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_value_1 = Py_None;
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 157;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_26 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_26 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_26 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 158;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_26, mod_consts.const_str_plain_ML_DSA_44);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 158;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_value_1 = Py_None;
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 158;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_27 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_27 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_27 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 159;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_27, mod_consts.const_str_plain_ML_DSA_65);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 159;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_value_1 = Py_None;
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 159;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_28 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_28 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_28 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 160;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_28, mod_consts.const_str_plain_ML_DSA_87);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 160;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_value_1 = Py_None;
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 160;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_29 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_29 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_29 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 161;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_29, mod_consts.const_str_plain_GOSTR3411_94_WITH_3410_2001);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 161;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_value_1 = Py_None;
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 161;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_30 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_30 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_30 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 162;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_30, mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_256);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 162;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_value_1 = Py_None;
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 162;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_31 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_31 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_31 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 163;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_31, mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_512);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 163;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_value_1 = Py_None;
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 163;
+
+    goto dict_build_exception_1;
+}
+tmp_expression_value_32 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_32 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_32 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 164;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_key_1 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_32, mod_consts.const_str_plain_UNSIGNED);
+if (tmp_dict_key_1 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 164;
+
+    goto dict_build_exception_1;
+}
+tmp_dict_value_1 = Py_None;
+tmp_res = PyDict_SetItem(tmp_assign_source_29, tmp_dict_key_1, tmp_dict_value_1);
+Py_DECREF(tmp_dict_key_1);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 164;
+
+    goto dict_build_exception_1;
+}
+}
+goto dict_build_no_exception_1;
+// Exception handling pass through code for dict_build:
+dict_build_exception_1:;
+Py_DECREF(tmp_assign_source_29);
+goto frame_exception_exit_1;
+// Finished with no exception for dict_build:
+dict_build_no_exception_1:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain__SIG_OIDS_TO_HASH, tmp_assign_source_29);
+}
+{
+PyObject *tmp_ass_subvalue_1;
+PyObject *tmp_ass_subscribed_1;
+PyObject *tmp_ass_subscript_1;
+tmp_ass_subvalue_1 = mod_consts.const_str_digest_cbb2bfe8244766c544b16c66aa754e76;
+tmp_ass_subscribed_1 = module_var_accessor_cryptography$hazmat$_oid$__annotations__(tstate);
+if (unlikely(tmp_ass_subscribed_1 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, const_str_plain___annotations__);
+}
+
+if (tmp_ass_subscribed_1 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 132;
+
+    goto frame_exception_exit_1;
+}
+tmp_ass_subscript_1 = mod_consts.const_str_plain__SIG_OIDS_TO_HASH;
+tmp_result = SET_SUBSCRIPT(tstate, tmp_ass_subscribed_1, tmp_ass_subscript_1, tmp_ass_subvalue_1);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 132;
+
+    goto frame_exception_exit_1;
+}
+}
+{
+PyObject *tmp_outline_return_value_6;
+{
+PyObject *tmp_assign_source_30;
+tmp_assign_source_30 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_6__class_decl_dict == NULL);
+tmp_class_container$class_creation_6__class_decl_dict = tmp_assign_source_30;
+}
+{
+PyObject *tmp_assign_source_31;
+tmp_assign_source_31 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_6__prepared == NULL);
+tmp_class_container$class_creation_6__prepared = tmp_assign_source_31;
+}
+// Tried code:
+{
+PyObject *tmp_assign_source_32;
+{
+PyObject *tmp_set_locals_6;
+CHECK_OBJECT(tmp_class_container$class_creation_6__prepared);
+tmp_set_locals_6 = tmp_class_container$class_creation_6__prepared;
+locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168 = tmp_set_locals_6;
+Py_INCREF(tmp_set_locals_6);
+}
+tmp_dictset_value = mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, const_str_plain___module__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_str_plain_HashAlgorithmOID;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, const_str_plain___qualname__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_int_pos_168;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain___firstlineno__, tmp_dictset_value);
+assert(!(tmp_result == false));
+// Tried code:
+// Tried code:
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7 = MAKE_CLASS_FRAME(tstate, code_objects_221fac815c36646b13cdd413b7a11f5b, module_cryptography$hazmat$_oid, NULL, sizeof(void *));
+Nuitka_Frame_AssignLocals(frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7, locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168);
+
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7) == 2);
+
+// Framed code:
+{
+PyObject *tmp_called_value_100;
+tmp_called_value_100 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_100 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_100 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 169;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame.f_lineno = 169;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_100, mod_consts.const_tuple_str_digest_97841e0407a21a46fa17b8ec8f246b28_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 169;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain_SHA1, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 169;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+}
+{
+PyObject *tmp_called_value_101;
+tmp_called_value_101 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_101 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_101 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 170;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame.f_lineno = 170;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_101, mod_consts.const_tuple_str_digest_0803e6568131d3ace6a97c0848babbec_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 170;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain_SHA224, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 170;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+}
+{
+PyObject *tmp_called_value_102;
+tmp_called_value_102 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_102 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_102 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 171;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame.f_lineno = 171;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_102, mod_consts.const_tuple_str_digest_d5501c4718b7c887f0d053e467278836_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 171;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain_SHA256, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 171;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+}
+{
+PyObject *tmp_called_value_103;
+tmp_called_value_103 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_103 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_103 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 172;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame.f_lineno = 172;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_103, mod_consts.const_tuple_str_digest_b748c93313cc612300dbdce6bc0417b9_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 172;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain_SHA384, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 172;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+}
+{
+PyObject *tmp_called_value_104;
+tmp_called_value_104 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_104 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_104 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 173;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame.f_lineno = 173;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_104, mod_consts.const_tuple_str_digest_173e1f5936576e525a4ec0c436e18865_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 173;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain_SHA512, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 173;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+}
+{
+PyObject *tmp_called_value_105;
+tmp_called_value_105 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_105 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_105 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 174;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame.f_lineno = 174;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_105, mod_consts.const_tuple_str_digest_906c3950c6c1dc08322b82663c1fc8e8_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 174;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain_SHA3_224, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 174;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+}
+{
+PyObject *tmp_called_value_106;
+tmp_called_value_106 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_106 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_106 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 175;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame.f_lineno = 175;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_106, mod_consts.const_tuple_str_digest_e825111c73dff949ac80a4a801f56561_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 175;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain_SHA3_256, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 175;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+}
+{
+PyObject *tmp_called_value_107;
+tmp_called_value_107 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_107 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_107 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 176;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame.f_lineno = 176;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_107, mod_consts.const_tuple_str_digest_bdd932b526deab6bfed3fccaed0a98ae_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 176;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain_SHA3_384, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 176;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+}
+{
+PyObject *tmp_called_value_108;
+tmp_called_value_108 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_108 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_108 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 177;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame.f_lineno = 177;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_108, mod_consts.const_tuple_str_digest_7c53876e9249a68626a9bf31a04dbc0e_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 177;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain_SHA3_512, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 177;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+}
+{
+PyObject *tmp_called_value_109;
+tmp_called_value_109 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_109 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_109 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 178;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame.f_lineno = 178;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_109, mod_consts.const_tuple_str_digest_3f94b1ccc08959c5a038201c7395f15b_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 178;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain_SHA3_224_NIST, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 178;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+}
+{
+PyObject *tmp_called_value_110;
+tmp_called_value_110 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_110 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_110 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 179;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame.f_lineno = 179;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_110, mod_consts.const_tuple_str_digest_ccb09a632f9eb719746617c0e595a99d_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 179;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain_SHA3_256_NIST, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 179;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+}
+{
+PyObject *tmp_called_value_111;
+tmp_called_value_111 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_111 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_111 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 180;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame.f_lineno = 180;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_111, mod_consts.const_tuple_str_digest_5921bc034a1c5618bc6f626253269d85_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 180;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain_SHA3_384_NIST, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 180;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+}
+{
+PyObject *tmp_called_value_112;
+tmp_called_value_112 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_112 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_112 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 181;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame.f_lineno = 181;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_112, mod_consts.const_tuple_str_digest_f0a5bfe234e75f0a3713ef5a4472914c_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 181;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain_SHA3_512_NIST, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 181;
+type_description_2 = "o";
+    goto frame_exception_exit_7;
+}
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7);
+
+
+goto frame_no_exception_6;
+frame_exception_exit_7:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+// Attaches locals to frame if any.
+Nuitka_Frame_AttachLocals(
+    frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7,
+    type_description_2,
+    outline_5_var___class__
+);
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_7);
+
+
+// Return the error.
+goto nested_frame_exit_6;
+frame_no_exception_6:;
+goto skip_nested_handling_6;
+nested_frame_exit_6:;
+
+goto try_except_handler_18;
+skip_nested_handling_6:;
+tmp_dictset_value = const_tuple_empty;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168, mod_consts.const_str_plain___static_attributes__, tmp_dictset_value);
+assert(!(tmp_result == false));
+{
+PyObject *tmp_assign_source_33;
+PyObject *tmp_metaclass_value_6;
+PyObject *tmp_name_value_8;
+PyObject *tmp_bases_value_6;
+PyObject *tmp_dict_arg_value_6;
+PyObject *tmp_class_decl_dict_value_6;
+PyObject *tmp_metaclass_args_6;
+tmp_metaclass_value_6 = (PyObject *)&PyType_Type;
+tmp_name_value_8 = mod_consts.const_str_plain_HashAlgorithmOID;
+tmp_bases_value_6 = const_tuple_empty;
+tmp_dict_arg_value_6 = locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168;
+CHECK_OBJECT(tmp_class_container$class_creation_6__class_decl_dict);
+tmp_class_decl_dict_value_6 = tmp_class_container$class_creation_6__class_decl_dict;
+tmp_metaclass_args_6 = MAKE_TUPLE3(tstate, tmp_name_value_8, tmp_bases_value_6, tmp_dict_arg_value_6);
+tmp_assign_source_33 = CALL_FUNCTION(tstate, tmp_metaclass_value_6, tmp_metaclass_args_6, tmp_class_decl_dict_value_6);
+CHECK_OBJECT(tmp_metaclass_args_6);
+Py_DECREF(tmp_metaclass_args_6);
+if (tmp_assign_source_33 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 168;
+
+    goto try_except_handler_18;
+}
+{
+    PyObject *old = outline_5_var___class__;
+    outline_5_var___class__ = tmp_assign_source_33;
+    Py_XDECREF(old);
+}
+
+}
+CHECK_OBJECT(outline_5_var___class__);
+tmp_assign_source_32 = outline_5_var___class__;
+Py_INCREF(tmp_assign_source_32);
+goto try_return_handler_18;
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_18:;
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168);
+locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168 = NULL;
+goto try_return_handler_17;
+// Exception handler code:
+try_except_handler_18:;
+exception_keeper_lineno_16 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_16 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168);
+locals_cryptography$hazmat$_oid$$$class__6_HashAlgorithmOID_168 = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_16;
+exception_lineno = exception_keeper_lineno_16;
+
+goto try_except_handler_17;
+// End of try:
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_17:;
+CHECK_OBJECT(outline_5_var___class__);
+CHECK_OBJECT(outline_5_var___class__);
+Py_DECREF(outline_5_var___class__);
+outline_5_var___class__ = NULL;
+goto outline_result_12;
+// Exception handler code:
+try_except_handler_17:;
+exception_keeper_lineno_17 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_17 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+// Re-raise.
+exception_state = exception_keeper_name_17;
+exception_lineno = exception_keeper_lineno_17;
+
+goto outline_exception_6;
+// End of try:
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_exception_6:;
+exception_lineno = 168;
+goto try_except_handler_16;
+outline_result_12:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_HashAlgorithmOID, tmp_assign_source_32);
+}
+goto try_end_6;
+// Exception handler code:
+try_except_handler_16:;
+exception_keeper_lineno_18 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_18 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+CHECK_OBJECT(tmp_class_container$class_creation_6__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_6__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_6__class_decl_dict);
+tmp_class_container$class_creation_6__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_6__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_6__prepared);
+Py_DECREF(tmp_class_container$class_creation_6__prepared);
+tmp_class_container$class_creation_6__prepared = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_18;
+exception_lineno = exception_keeper_lineno_18;
+
+goto frame_exception_exit_1;
+// End of try:
+try_end_6:;
+CHECK_OBJECT(tmp_class_container$class_creation_6__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_6__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_6__class_decl_dict);
+tmp_class_container$class_creation_6__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_6__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_6__prepared);
+Py_DECREF(tmp_class_container$class_creation_6__prepared);
+tmp_class_container$class_creation_6__prepared = NULL;
+tmp_outline_return_value_6 = Py_None;
+Py_INCREF_IMMORTAL(tmp_outline_return_value_6);
+goto outline_result_11;
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_result_11:;
+CHECK_OBJECT(tmp_outline_return_value_6);
+Py_DECREF(tmp_outline_return_value_6);
+}
+{
+PyObject *tmp_outline_return_value_7;
+{
+PyObject *tmp_assign_source_34;
+tmp_assign_source_34 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_7__class_decl_dict == NULL);
+tmp_class_container$class_creation_7__class_decl_dict = tmp_assign_source_34;
+}
+{
+PyObject *tmp_assign_source_35;
+tmp_assign_source_35 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_7__prepared == NULL);
+tmp_class_container$class_creation_7__prepared = tmp_assign_source_35;
+}
+// Tried code:
+{
+PyObject *tmp_assign_source_36;
+{
+PyObject *tmp_set_locals_7;
+CHECK_OBJECT(tmp_class_container$class_creation_7__prepared);
+tmp_set_locals_7 = tmp_class_container$class_creation_7__prepared;
+locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184 = tmp_set_locals_7;
+Py_INCREF(tmp_set_locals_7);
+}
+tmp_dictset_value = mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, const_str_plain___module__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_str_plain_PublicKeyAlgorithmOID;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, const_str_plain___qualname__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_int_pos_184;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain___firstlineno__, tmp_dictset_value);
+assert(!(tmp_result == false));
+// Tried code:
+// Tried code:
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8 = MAKE_CLASS_FRAME(tstate, code_objects_dc04d3337311aaaa9f96dbfe1cb8eb6a, module_cryptography$hazmat$_oid, NULL, sizeof(void *));
+Nuitka_Frame_AssignLocals(frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8, locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184);
+
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8) == 2);
+
+// Framed code:
+{
+PyObject *tmp_called_value_113;
+tmp_called_value_113 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_113 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_113 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 185;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame.f_lineno = 185;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_113, mod_consts.const_tuple_str_digest_4c2472c460bb1ae8b5b00c225545ade0_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 185;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain_DSA, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 185;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+}
+{
+PyObject *tmp_called_value_114;
+tmp_called_value_114 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_114 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_114 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 186;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame.f_lineno = 186;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_114, mod_consts.const_tuple_str_digest_67526efcdb60c6051d3c4d632ef450e4_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 186;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain_EC_PUBLIC_KEY, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 186;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+}
+{
+PyObject *tmp_called_value_115;
+tmp_called_value_115 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_115 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_115 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 187;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame.f_lineno = 187;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_115, mod_consts.const_tuple_str_digest_8610103a8657fcf057847084d4917365_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 187;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain_RSAES_PKCS1_v1_5, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 187;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+}
+{
+PyObject *tmp_called_value_116;
+tmp_called_value_116 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_116 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_116 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 188;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame.f_lineno = 188;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_116, mod_consts.const_tuple_str_digest_0f59f576526d1d0c3e712a7f737c95cb_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 188;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain_RSASSA_PSS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 188;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+}
+{
+PyObject *tmp_called_value_117;
+tmp_called_value_117 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_117 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_117 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 189;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame.f_lineno = 189;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_117, mod_consts.const_tuple_str_digest_55d27838969947e85f4df1d34421d15e_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 189;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain_X25519, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 189;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+}
+{
+PyObject *tmp_called_value_118;
+tmp_called_value_118 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_118 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_118 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 190;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame.f_lineno = 190;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_118, mod_consts.const_tuple_str_digest_2bd272bb44927c0f33a3c332ad7c81ac_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 190;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain_X448, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 190;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+}
+{
+PyObject *tmp_called_value_119;
+tmp_called_value_119 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_119 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_119 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 191;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame.f_lineno = 191;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_119, mod_consts.const_tuple_str_digest_06987cfccee49a896525bf927684c3f1_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 191;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain_ED25519, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 191;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+}
+{
+PyObject *tmp_called_value_120;
+tmp_called_value_120 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_120 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_120 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 192;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame.f_lineno = 192;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_120, mod_consts.const_tuple_str_digest_d2aa151b2525d178415599466b9d6aee_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 192;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain_ED448, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 192;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+}
+{
+PyObject *tmp_called_value_121;
+tmp_called_value_121 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_121 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_121 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 193;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame.f_lineno = 193;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_121, mod_consts.const_tuple_str_digest_d4276f73f9fe48e814299ea9f5bc68fc_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 193;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain_ML_DSA_44, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 193;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+}
+{
+PyObject *tmp_called_value_122;
+tmp_called_value_122 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_122 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_122 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 194;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame.f_lineno = 194;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_122, mod_consts.const_tuple_str_digest_80fd62f760f87e5b9cae90470f25d9ee_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 194;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain_ML_DSA_65, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 194;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+}
+{
+PyObject *tmp_called_value_123;
+tmp_called_value_123 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_123 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_123 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 195;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame.f_lineno = 195;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_123, mod_consts.const_tuple_str_digest_46cdbf8ef9851e9a5311c55efee786ac_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 195;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain_ML_DSA_87, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 195;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+}
+{
+PyObject *tmp_called_value_124;
+tmp_called_value_124 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_124 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_124 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 196;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame.f_lineno = 196;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_124, mod_consts.const_tuple_str_digest_5122c43aaeb33bb235c3c4afc6aef2cc_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 196;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain_ML_KEM_768, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 196;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+}
+{
+PyObject *tmp_called_value_125;
+tmp_called_value_125 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_125 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_125 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 197;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame.f_lineno = 197;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_125, mod_consts.const_tuple_str_digest_c400104f335b965b7faf2c8e62cee0e5_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 197;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain_ML_KEM_1024, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 197;
+type_description_2 = "o";
+    goto frame_exception_exit_8;
+}
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8);
+
+
+goto frame_no_exception_7;
+frame_exception_exit_8:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+// Attaches locals to frame if any.
+Nuitka_Frame_AttachLocals(
+    frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8,
+    type_description_2,
+    outline_6_var___class__
+);
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_8);
+
+
+// Return the error.
+goto nested_frame_exit_7;
+frame_no_exception_7:;
+goto skip_nested_handling_7;
+nested_frame_exit_7:;
+
+goto try_except_handler_21;
+skip_nested_handling_7:;
+tmp_dictset_value = const_tuple_empty;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184, mod_consts.const_str_plain___static_attributes__, tmp_dictset_value);
+assert(!(tmp_result == false));
+{
+PyObject *tmp_assign_source_37;
+PyObject *tmp_metaclass_value_7;
+PyObject *tmp_name_value_9;
+PyObject *tmp_bases_value_7;
+PyObject *tmp_dict_arg_value_7;
+PyObject *tmp_class_decl_dict_value_7;
+PyObject *tmp_metaclass_args_7;
+tmp_metaclass_value_7 = (PyObject *)&PyType_Type;
+tmp_name_value_9 = mod_consts.const_str_plain_PublicKeyAlgorithmOID;
+tmp_bases_value_7 = const_tuple_empty;
+tmp_dict_arg_value_7 = locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184;
+CHECK_OBJECT(tmp_class_container$class_creation_7__class_decl_dict);
+tmp_class_decl_dict_value_7 = tmp_class_container$class_creation_7__class_decl_dict;
+tmp_metaclass_args_7 = MAKE_TUPLE3(tstate, tmp_name_value_9, tmp_bases_value_7, tmp_dict_arg_value_7);
+tmp_assign_source_37 = CALL_FUNCTION(tstate, tmp_metaclass_value_7, tmp_metaclass_args_7, tmp_class_decl_dict_value_7);
+CHECK_OBJECT(tmp_metaclass_args_7);
+Py_DECREF(tmp_metaclass_args_7);
+if (tmp_assign_source_37 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 184;
+
+    goto try_except_handler_21;
+}
+{
+    PyObject *old = outline_6_var___class__;
+    outline_6_var___class__ = tmp_assign_source_37;
+    Py_XDECREF(old);
+}
+
+}
+CHECK_OBJECT(outline_6_var___class__);
+tmp_assign_source_36 = outline_6_var___class__;
+Py_INCREF(tmp_assign_source_36);
+goto try_return_handler_21;
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_21:;
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184);
+locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184 = NULL;
+goto try_return_handler_20;
+// Exception handler code:
+try_except_handler_21:;
+exception_keeper_lineno_19 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_19 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184);
+locals_cryptography$hazmat$_oid$$$class__7_PublicKeyAlgorithmOID_184 = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_19;
+exception_lineno = exception_keeper_lineno_19;
+
+goto try_except_handler_20;
+// End of try:
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_20:;
+CHECK_OBJECT(outline_6_var___class__);
+CHECK_OBJECT(outline_6_var___class__);
+Py_DECREF(outline_6_var___class__);
+outline_6_var___class__ = NULL;
+goto outline_result_14;
+// Exception handler code:
+try_except_handler_20:;
+exception_keeper_lineno_20 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_20 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+// Re-raise.
+exception_state = exception_keeper_name_20;
+exception_lineno = exception_keeper_lineno_20;
+
+goto outline_exception_7;
+// End of try:
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_exception_7:;
+exception_lineno = 184;
+goto try_except_handler_19;
+outline_result_14:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_PublicKeyAlgorithmOID, tmp_assign_source_36);
+}
+goto try_end_7;
+// Exception handler code:
+try_except_handler_19:;
+exception_keeper_lineno_21 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_21 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+CHECK_OBJECT(tmp_class_container$class_creation_7__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_7__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_7__class_decl_dict);
+tmp_class_container$class_creation_7__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_7__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_7__prepared);
+Py_DECREF(tmp_class_container$class_creation_7__prepared);
+tmp_class_container$class_creation_7__prepared = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_21;
+exception_lineno = exception_keeper_lineno_21;
+
+goto frame_exception_exit_1;
+// End of try:
+try_end_7:;
+CHECK_OBJECT(tmp_class_container$class_creation_7__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_7__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_7__class_decl_dict);
+tmp_class_container$class_creation_7__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_7__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_7__prepared);
+Py_DECREF(tmp_class_container$class_creation_7__prepared);
+tmp_class_container$class_creation_7__prepared = NULL;
+tmp_outline_return_value_7 = Py_None;
+Py_INCREF_IMMORTAL(tmp_outline_return_value_7);
+goto outline_result_13;
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_result_13:;
+CHECK_OBJECT(tmp_outline_return_value_7);
+Py_DECREF(tmp_outline_return_value_7);
+}
+{
+PyObject *tmp_outline_return_value_8;
+{
+PyObject *tmp_assign_source_38;
+tmp_assign_source_38 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_8__class_decl_dict == NULL);
+tmp_class_container$class_creation_8__class_decl_dict = tmp_assign_source_38;
+}
+{
+PyObject *tmp_assign_source_39;
+tmp_assign_source_39 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_8__prepared == NULL);
+tmp_class_container$class_creation_8__prepared = tmp_assign_source_39;
+}
+// Tried code:
+{
+PyObject *tmp_assign_source_40;
+{
+PyObject *tmp_set_locals_8;
+CHECK_OBJECT(tmp_class_container$class_creation_8__prepared);
+tmp_set_locals_8 = tmp_class_container$class_creation_8__prepared;
+locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200 = tmp_set_locals_8;
+Py_INCREF(tmp_set_locals_8);
+}
+tmp_dictset_value = mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, const_str_plain___module__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_str_plain_ExtendedKeyUsageOID;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, const_str_plain___qualname__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_int_pos_200;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain___firstlineno__, tmp_dictset_value);
+assert(!(tmp_result == false));
+// Tried code:
+// Tried code:
+frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9 = MAKE_CLASS_FRAME(tstate, code_objects_3808ab962fd1d277c6507a4cdb95c636, module_cryptography$hazmat$_oid, NULL, sizeof(void *));
+Nuitka_Frame_AssignLocals(frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9, locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200);
+
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9) == 2);
+
+// Framed code:
+{
+PyObject *tmp_called_value_126;
+tmp_called_value_126 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_126 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_126 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 201;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9->m_frame.f_lineno = 201;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_126, mod_consts.const_tuple_str_digest_0376a15beee26a285b06cab589a6a7cd_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 201;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain_SERVER_AUTH, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 201;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+}
+{
+PyObject *tmp_called_value_127;
+tmp_called_value_127 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_127 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_127 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 202;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9->m_frame.f_lineno = 202;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_127, mod_consts.const_tuple_str_digest_87cdc7b3da2a01efa67fc002f5f9e93d_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 202;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain_CLIENT_AUTH, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 202;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+}
+{
+PyObject *tmp_called_value_128;
+tmp_called_value_128 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_128 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_128 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 203;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9->m_frame.f_lineno = 203;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_128, mod_consts.const_tuple_str_digest_ced7dfea6e2ba0f172c63b367fc544eb_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 203;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain_CODE_SIGNING, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 203;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+}
+{
+PyObject *tmp_called_value_129;
+tmp_called_value_129 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_129 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_129 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 204;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9->m_frame.f_lineno = 204;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_129, mod_consts.const_tuple_str_digest_3d2ee337e9731ea21bdde6fb3248081f_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 204;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain_EMAIL_PROTECTION, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 204;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+}
+{
+PyObject *tmp_called_value_130;
+tmp_called_value_130 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_130 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_130 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 205;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9->m_frame.f_lineno = 205;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_130, mod_consts.const_tuple_str_digest_abe352de3ffbaa69a49d347e2acd1e80_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 205;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain_TIME_STAMPING, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 205;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+}
+{
+PyObject *tmp_called_value_131;
+tmp_called_value_131 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_131 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_131 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 206;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9->m_frame.f_lineno = 206;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_131, mod_consts.const_tuple_str_digest_bfabc35e33098bc3bd4a248a68700379_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 206;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain_OCSP_SIGNING, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 206;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+}
+{
+PyObject *tmp_called_value_132;
+tmp_called_value_132 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_132 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_132 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 207;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9->m_frame.f_lineno = 207;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_132, mod_consts.const_tuple_str_digest_42920d8d1815b6383c6613f7be148048_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 207;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain_ANY_EXTENDED_KEY_USAGE, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 207;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+}
+{
+PyObject *tmp_called_value_133;
+tmp_called_value_133 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_133 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_133 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 208;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9->m_frame.f_lineno = 208;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_133, mod_consts.const_tuple_str_digest_b1f486d61430aa578028f269cd120ebf_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 208;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain_SMARTCARD_LOGON, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 208;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+}
+{
+PyObject *tmp_called_value_134;
+tmp_called_value_134 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_134 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_134 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 209;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9->m_frame.f_lineno = 209;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_134, mod_consts.const_tuple_str_digest_293ce32998aa7267f364392b869fabe6_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 209;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain_KERBEROS_PKINIT_KDC, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 209;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+}
+{
+PyObject *tmp_called_value_135;
+tmp_called_value_135 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_135 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_135 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 210;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9->m_frame.f_lineno = 210;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_135, mod_consts.const_tuple_str_digest_af8183ec75e29900eedf72665526f56f_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 210;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain_IPSEC_IKE, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 210;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+}
+{
+PyObject *tmp_called_value_136;
+tmp_called_value_136 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_136 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_136 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 211;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9->m_frame.f_lineno = 211;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_136, mod_consts.const_tuple_str_digest_5496e4ee75db5775d3d9a502efd647bd_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 211;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain_BUNDLE_SECURITY, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 211;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+}
+{
+PyObject *tmp_called_value_137;
+tmp_called_value_137 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_137 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_137 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 212;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9->m_frame.f_lineno = 212;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_137, mod_consts.const_tuple_str_digest_ccea41f396a418a256fc15419f5a5555_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 212;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain_CERTIFICATE_TRANSPARENCY, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 212;
+type_description_2 = "o";
+    goto frame_exception_exit_9;
+}
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9);
+
+
+goto frame_no_exception_8;
+frame_exception_exit_9:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+// Attaches locals to frame if any.
+Nuitka_Frame_AttachLocals(
+    frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9,
+    type_description_2,
+    outline_7_var___class__
+);
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_9);
+
+
+// Return the error.
+goto nested_frame_exit_8;
+frame_no_exception_8:;
+goto skip_nested_handling_8;
+nested_frame_exit_8:;
+
+goto try_except_handler_24;
+skip_nested_handling_8:;
+tmp_dictset_value = const_tuple_empty;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200, mod_consts.const_str_plain___static_attributes__, tmp_dictset_value);
+assert(!(tmp_result == false));
+{
+PyObject *tmp_assign_source_41;
+PyObject *tmp_metaclass_value_8;
+PyObject *tmp_name_value_10;
+PyObject *tmp_bases_value_8;
+PyObject *tmp_dict_arg_value_8;
+PyObject *tmp_class_decl_dict_value_8;
+PyObject *tmp_metaclass_args_8;
+tmp_metaclass_value_8 = (PyObject *)&PyType_Type;
+tmp_name_value_10 = mod_consts.const_str_plain_ExtendedKeyUsageOID;
+tmp_bases_value_8 = const_tuple_empty;
+tmp_dict_arg_value_8 = locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200;
+CHECK_OBJECT(tmp_class_container$class_creation_8__class_decl_dict);
+tmp_class_decl_dict_value_8 = tmp_class_container$class_creation_8__class_decl_dict;
+tmp_metaclass_args_8 = MAKE_TUPLE3(tstate, tmp_name_value_10, tmp_bases_value_8, tmp_dict_arg_value_8);
+tmp_assign_source_41 = CALL_FUNCTION(tstate, tmp_metaclass_value_8, tmp_metaclass_args_8, tmp_class_decl_dict_value_8);
+CHECK_OBJECT(tmp_metaclass_args_8);
+Py_DECREF(tmp_metaclass_args_8);
+if (tmp_assign_source_41 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 200;
+
+    goto try_except_handler_24;
+}
+{
+    PyObject *old = outline_7_var___class__;
+    outline_7_var___class__ = tmp_assign_source_41;
+    Py_XDECREF(old);
+}
+
+}
+CHECK_OBJECT(outline_7_var___class__);
+tmp_assign_source_40 = outline_7_var___class__;
+Py_INCREF(tmp_assign_source_40);
+goto try_return_handler_24;
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_24:;
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200);
+locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200 = NULL;
+goto try_return_handler_23;
+// Exception handler code:
+try_except_handler_24:;
+exception_keeper_lineno_22 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_22 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200);
+locals_cryptography$hazmat$_oid$$$class__8_ExtendedKeyUsageOID_200 = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_22;
+exception_lineno = exception_keeper_lineno_22;
+
+goto try_except_handler_23;
+// End of try:
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_23:;
+CHECK_OBJECT(outline_7_var___class__);
+CHECK_OBJECT(outline_7_var___class__);
+Py_DECREF(outline_7_var___class__);
+outline_7_var___class__ = NULL;
+goto outline_result_16;
+// Exception handler code:
+try_except_handler_23:;
+exception_keeper_lineno_23 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_23 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+// Re-raise.
+exception_state = exception_keeper_name_23;
+exception_lineno = exception_keeper_lineno_23;
+
+goto outline_exception_8;
+// End of try:
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_exception_8:;
+exception_lineno = 200;
+goto try_except_handler_22;
+outline_result_16:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_ExtendedKeyUsageOID, tmp_assign_source_40);
+}
+goto try_end_8;
+// Exception handler code:
+try_except_handler_22:;
+exception_keeper_lineno_24 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_24 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+CHECK_OBJECT(tmp_class_container$class_creation_8__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_8__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_8__class_decl_dict);
+tmp_class_container$class_creation_8__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_8__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_8__prepared);
+Py_DECREF(tmp_class_container$class_creation_8__prepared);
+tmp_class_container$class_creation_8__prepared = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_24;
+exception_lineno = exception_keeper_lineno_24;
+
+goto frame_exception_exit_1;
+// End of try:
+try_end_8:;
+CHECK_OBJECT(tmp_class_container$class_creation_8__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_8__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_8__class_decl_dict);
+tmp_class_container$class_creation_8__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_8__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_8__prepared);
+Py_DECREF(tmp_class_container$class_creation_8__prepared);
+tmp_class_container$class_creation_8__prepared = NULL;
+tmp_outline_return_value_8 = Py_None;
+Py_INCREF_IMMORTAL(tmp_outline_return_value_8);
+goto outline_result_15;
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_result_15:;
+CHECK_OBJECT(tmp_outline_return_value_8);
+Py_DECREF(tmp_outline_return_value_8);
+}
+{
+PyObject *tmp_outline_return_value_9;
+{
+PyObject *tmp_assign_source_42;
+tmp_assign_source_42 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_9__class_decl_dict == NULL);
+tmp_class_container$class_creation_9__class_decl_dict = tmp_assign_source_42;
+}
+{
+PyObject *tmp_assign_source_43;
+tmp_assign_source_43 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_9__prepared == NULL);
+tmp_class_container$class_creation_9__prepared = tmp_assign_source_43;
+}
+// Tried code:
+{
+PyObject *tmp_assign_source_44;
+{
+PyObject *tmp_set_locals_9;
+CHECK_OBJECT(tmp_class_container$class_creation_9__prepared);
+tmp_set_locals_9 = tmp_class_container$class_creation_9__prepared;
+locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215 = tmp_set_locals_9;
+Py_INCREF(tmp_set_locals_9);
+}
+tmp_dictset_value = mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215, const_str_plain___module__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_str_plain_OtherNameFormOID;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215, const_str_plain___qualname__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_int_pos_215;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215, mod_consts.const_str_plain___firstlineno__, tmp_dictset_value);
+assert(!(tmp_result == false));
+// Tried code:
+// Tried code:
+frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10 = MAKE_CLASS_FRAME(tstate, code_objects_65aba59f9200df8e9138bd8a6b9c9d42, module_cryptography$hazmat$_oid, NULL, sizeof(void *));
+Nuitka_Frame_AssignLocals(frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10, locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215);
+
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10) == 2);
+
+// Framed code:
+{
+PyObject *tmp_called_value_138;
+tmp_called_value_138 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_138 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_138 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 216;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10->m_frame.f_lineno = 216;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_138, mod_consts.const_tuple_str_digest_54731fe62fc1aa88853437677be0f551_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 216;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215, mod_consts.const_str_plain_PERMANENT_IDENTIFIER, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 216;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+}
+{
+PyObject *tmp_called_value_139;
+tmp_called_value_139 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_139 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_139 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 217;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10->m_frame.f_lineno = 217;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_139, mod_consts.const_tuple_str_digest_119861f2139b2f03ce565c8597226b29_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 217;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215, mod_consts.const_str_plain_HW_MODULE_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 217;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+}
+{
+PyObject *tmp_called_value_140;
+tmp_called_value_140 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_140 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_140 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 218;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10->m_frame.f_lineno = 218;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_140, mod_consts.const_tuple_str_digest_4ed534afb123635a182f7c580306d5f8_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 218;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215, mod_consts.const_str_plain_DNS_SRV, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 218;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+}
+{
+PyObject *tmp_called_value_141;
+tmp_called_value_141 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_141 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_141 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 219;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10->m_frame.f_lineno = 219;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_141, mod_consts.const_tuple_str_digest_a85bb3a108037fcb412e96c090ba22cd_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 219;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215, mod_consts.const_str_plain_NAI_REALM, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 219;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+}
+{
+PyObject *tmp_called_value_142;
+tmp_called_value_142 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_142 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_142 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 220;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10->m_frame.f_lineno = 220;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_142, mod_consts.const_tuple_str_digest_e5d892ec6de39d023c8f539b6763bcbf_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 220;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215, mod_consts.const_str_plain_SMTP_UTF8_MAILBOX, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 220;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+}
+{
+PyObject *tmp_called_value_143;
+tmp_called_value_143 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_143 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_143 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 221;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10->m_frame.f_lineno = 221;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_143, mod_consts.const_tuple_str_digest_7371190d099cbe3ab89fcdaec1d4094c_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 221;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215, mod_consts.const_str_plain_ACP_NODE_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 221;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+}
+{
+PyObject *tmp_called_value_144;
+tmp_called_value_144 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_144 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_144 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 222;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10->m_frame.f_lineno = 222;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_144, mod_consts.const_tuple_str_digest_8c0b077da28a1a6e1d53d45441f26ef6_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 222;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215, mod_consts.const_str_plain_BUNDLE_EID, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 222;
+type_description_2 = "o";
+    goto frame_exception_exit_10;
+}
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10);
+
+
+goto frame_no_exception_9;
+frame_exception_exit_10:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+// Attaches locals to frame if any.
+Nuitka_Frame_AttachLocals(
+    frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10,
+    type_description_2,
+    outline_8_var___class__
+);
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_10);
+
+
+// Return the error.
+goto nested_frame_exit_9;
+frame_no_exception_9:;
+goto skip_nested_handling_9;
+nested_frame_exit_9:;
+
+goto try_except_handler_27;
+skip_nested_handling_9:;
+tmp_dictset_value = const_tuple_empty;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215, mod_consts.const_str_plain___static_attributes__, tmp_dictset_value);
+assert(!(tmp_result == false));
+{
+PyObject *tmp_assign_source_45;
+PyObject *tmp_metaclass_value_9;
+PyObject *tmp_name_value_11;
+PyObject *tmp_bases_value_9;
+PyObject *tmp_dict_arg_value_9;
+PyObject *tmp_class_decl_dict_value_9;
+PyObject *tmp_metaclass_args_9;
+tmp_metaclass_value_9 = (PyObject *)&PyType_Type;
+tmp_name_value_11 = mod_consts.const_str_plain_OtherNameFormOID;
+tmp_bases_value_9 = const_tuple_empty;
+tmp_dict_arg_value_9 = locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215;
+CHECK_OBJECT(tmp_class_container$class_creation_9__class_decl_dict);
+tmp_class_decl_dict_value_9 = tmp_class_container$class_creation_9__class_decl_dict;
+tmp_metaclass_args_9 = MAKE_TUPLE3(tstate, tmp_name_value_11, tmp_bases_value_9, tmp_dict_arg_value_9);
+tmp_assign_source_45 = CALL_FUNCTION(tstate, tmp_metaclass_value_9, tmp_metaclass_args_9, tmp_class_decl_dict_value_9);
+CHECK_OBJECT(tmp_metaclass_args_9);
+Py_DECREF(tmp_metaclass_args_9);
+if (tmp_assign_source_45 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 215;
+
+    goto try_except_handler_27;
+}
+{
+    PyObject *old = outline_8_var___class__;
+    outline_8_var___class__ = tmp_assign_source_45;
+    Py_XDECREF(old);
+}
+
+}
+CHECK_OBJECT(outline_8_var___class__);
+tmp_assign_source_44 = outline_8_var___class__;
+Py_INCREF(tmp_assign_source_44);
+goto try_return_handler_27;
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_27:;
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215);
+locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215 = NULL;
+goto try_return_handler_26;
+// Exception handler code:
+try_except_handler_27:;
+exception_keeper_lineno_25 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_25 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215);
+locals_cryptography$hazmat$_oid$$$class__9_OtherNameFormOID_215 = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_25;
+exception_lineno = exception_keeper_lineno_25;
+
+goto try_except_handler_26;
+// End of try:
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_26:;
+CHECK_OBJECT(outline_8_var___class__);
+CHECK_OBJECT(outline_8_var___class__);
+Py_DECREF(outline_8_var___class__);
+outline_8_var___class__ = NULL;
+goto outline_result_18;
+// Exception handler code:
+try_except_handler_26:;
+exception_keeper_lineno_26 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_26 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+// Re-raise.
+exception_state = exception_keeper_name_26;
+exception_lineno = exception_keeper_lineno_26;
+
+goto outline_exception_9;
+// End of try:
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_exception_9:;
+exception_lineno = 215;
+goto try_except_handler_25;
+outline_result_18:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_OtherNameFormOID, tmp_assign_source_44);
+}
+goto try_end_9;
+// Exception handler code:
+try_except_handler_25:;
+exception_keeper_lineno_27 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_27 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+CHECK_OBJECT(tmp_class_container$class_creation_9__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_9__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_9__class_decl_dict);
+tmp_class_container$class_creation_9__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_9__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_9__prepared);
+Py_DECREF(tmp_class_container$class_creation_9__prepared);
+tmp_class_container$class_creation_9__prepared = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_27;
+exception_lineno = exception_keeper_lineno_27;
+
+goto frame_exception_exit_1;
+// End of try:
+try_end_9:;
+CHECK_OBJECT(tmp_class_container$class_creation_9__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_9__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_9__class_decl_dict);
+tmp_class_container$class_creation_9__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_9__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_9__prepared);
+Py_DECREF(tmp_class_container$class_creation_9__prepared);
+tmp_class_container$class_creation_9__prepared = NULL;
+tmp_outline_return_value_9 = Py_None;
+Py_INCREF_IMMORTAL(tmp_outline_return_value_9);
+goto outline_result_17;
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_result_17:;
+CHECK_OBJECT(tmp_outline_return_value_9);
+Py_DECREF(tmp_outline_return_value_9);
+}
+{
+PyObject *tmp_outline_return_value_10;
+{
+PyObject *tmp_assign_source_46;
+tmp_assign_source_46 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_10__class_decl_dict == NULL);
+tmp_class_container$class_creation_10__class_decl_dict = tmp_assign_source_46;
+}
+{
+PyObject *tmp_assign_source_47;
+tmp_assign_source_47 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_10__prepared == NULL);
+tmp_class_container$class_creation_10__prepared = tmp_assign_source_47;
+}
+// Tried code:
+{
+PyObject *tmp_assign_source_48;
+{
+PyObject *tmp_set_locals_10;
+CHECK_OBJECT(tmp_class_container$class_creation_10__prepared);
+tmp_set_locals_10 = tmp_class_container$class_creation_10__prepared;
+locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225 = tmp_set_locals_10;
+Py_INCREF(tmp_set_locals_10);
+}
+tmp_dictset_value = mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225, const_str_plain___module__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_str_plain_AuthorityInformationAccessOID;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225, const_str_plain___qualname__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_int_pos_225;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225, mod_consts.const_str_plain___firstlineno__, tmp_dictset_value);
+assert(!(tmp_result == false));
+// Tried code:
+// Tried code:
+frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11 = MAKE_CLASS_FRAME(tstate, code_objects_5a9b2b48863d40ec40f687f768417fa5, module_cryptography$hazmat$_oid, NULL, sizeof(void *));
+Nuitka_Frame_AssignLocals(frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11, locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225);
+
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11) == 2);
+
+// Framed code:
+{
+PyObject *tmp_called_value_145;
+tmp_called_value_145 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_145 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_145 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 226;
+type_description_2 = "o";
+    goto frame_exception_exit_11;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11->m_frame.f_lineno = 226;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_145, mod_consts.const_tuple_str_digest_07bbedf6f84f3fc5867dc620be5e095a_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 226;
+type_description_2 = "o";
+    goto frame_exception_exit_11;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225, mod_consts.const_str_plain_CA_ISSUERS, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 226;
+type_description_2 = "o";
+    goto frame_exception_exit_11;
+}
+}
+{
+PyObject *tmp_called_value_146;
+tmp_called_value_146 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_146 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_146 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 227;
+type_description_2 = "o";
+    goto frame_exception_exit_11;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11->m_frame.f_lineno = 227;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_146, mod_consts.const_tuple_str_digest_2b4acfbf018aa94fa2c4d751377b67ba_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 227;
+type_description_2 = "o";
+    goto frame_exception_exit_11;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225, mod_consts.const_str_plain_OCSP, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 227;
+type_description_2 = "o";
+    goto frame_exception_exit_11;
+}
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11);
+
+
+goto frame_no_exception_10;
+frame_exception_exit_11:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+// Attaches locals to frame if any.
+Nuitka_Frame_AttachLocals(
+    frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11,
+    type_description_2,
+    outline_9_var___class__
+);
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_11);
+
+
+// Return the error.
+goto nested_frame_exit_10;
+frame_no_exception_10:;
+goto skip_nested_handling_10;
+nested_frame_exit_10:;
+
+goto try_except_handler_30;
+skip_nested_handling_10:;
+tmp_dictset_value = const_tuple_empty;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225, mod_consts.const_str_plain___static_attributes__, tmp_dictset_value);
+assert(!(tmp_result == false));
+{
+PyObject *tmp_assign_source_49;
+PyObject *tmp_metaclass_value_10;
+PyObject *tmp_name_value_12;
+PyObject *tmp_bases_value_10;
+PyObject *tmp_dict_arg_value_10;
+PyObject *tmp_class_decl_dict_value_10;
+PyObject *tmp_metaclass_args_10;
+tmp_metaclass_value_10 = (PyObject *)&PyType_Type;
+tmp_name_value_12 = mod_consts.const_str_plain_AuthorityInformationAccessOID;
+tmp_bases_value_10 = const_tuple_empty;
+tmp_dict_arg_value_10 = locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225;
+CHECK_OBJECT(tmp_class_container$class_creation_10__class_decl_dict);
+tmp_class_decl_dict_value_10 = tmp_class_container$class_creation_10__class_decl_dict;
+tmp_metaclass_args_10 = MAKE_TUPLE3(tstate, tmp_name_value_12, tmp_bases_value_10, tmp_dict_arg_value_10);
+tmp_assign_source_49 = CALL_FUNCTION(tstate, tmp_metaclass_value_10, tmp_metaclass_args_10, tmp_class_decl_dict_value_10);
+CHECK_OBJECT(tmp_metaclass_args_10);
+Py_DECREF(tmp_metaclass_args_10);
+if (tmp_assign_source_49 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 225;
+
+    goto try_except_handler_30;
+}
+{
+    PyObject *old = outline_9_var___class__;
+    outline_9_var___class__ = tmp_assign_source_49;
+    Py_XDECREF(old);
+}
+
+}
+CHECK_OBJECT(outline_9_var___class__);
+tmp_assign_source_48 = outline_9_var___class__;
+Py_INCREF(tmp_assign_source_48);
+goto try_return_handler_30;
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_30:;
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225);
+locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225 = NULL;
+goto try_return_handler_29;
+// Exception handler code:
+try_except_handler_30:;
+exception_keeper_lineno_28 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_28 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225);
+locals_cryptography$hazmat$_oid$$$class__10_AuthorityInformationAccessOID_225 = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_28;
+exception_lineno = exception_keeper_lineno_28;
+
+goto try_except_handler_29;
+// End of try:
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_29:;
+CHECK_OBJECT(outline_9_var___class__);
+CHECK_OBJECT(outline_9_var___class__);
+Py_DECREF(outline_9_var___class__);
+outline_9_var___class__ = NULL;
+goto outline_result_20;
+// Exception handler code:
+try_except_handler_29:;
+exception_keeper_lineno_29 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_29 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+// Re-raise.
+exception_state = exception_keeper_name_29;
+exception_lineno = exception_keeper_lineno_29;
+
+goto outline_exception_10;
+// End of try:
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_exception_10:;
+exception_lineno = 225;
+goto try_except_handler_28;
+outline_result_20:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_AuthorityInformationAccessOID, tmp_assign_source_48);
+}
+goto try_end_10;
+// Exception handler code:
+try_except_handler_28:;
+exception_keeper_lineno_30 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_30 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+CHECK_OBJECT(tmp_class_container$class_creation_10__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_10__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_10__class_decl_dict);
+tmp_class_container$class_creation_10__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_10__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_10__prepared);
+Py_DECREF(tmp_class_container$class_creation_10__prepared);
+tmp_class_container$class_creation_10__prepared = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_30;
+exception_lineno = exception_keeper_lineno_30;
+
+goto frame_exception_exit_1;
+// End of try:
+try_end_10:;
+CHECK_OBJECT(tmp_class_container$class_creation_10__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_10__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_10__class_decl_dict);
+tmp_class_container$class_creation_10__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_10__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_10__prepared);
+Py_DECREF(tmp_class_container$class_creation_10__prepared);
+tmp_class_container$class_creation_10__prepared = NULL;
+tmp_outline_return_value_10 = Py_None;
+Py_INCREF_IMMORTAL(tmp_outline_return_value_10);
+goto outline_result_19;
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_result_19:;
+CHECK_OBJECT(tmp_outline_return_value_10);
+Py_DECREF(tmp_outline_return_value_10);
+}
+{
+PyObject *tmp_outline_return_value_11;
+{
+PyObject *tmp_assign_source_50;
+tmp_assign_source_50 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_11__class_decl_dict == NULL);
+tmp_class_container$class_creation_11__class_decl_dict = tmp_assign_source_50;
+}
+{
+PyObject *tmp_assign_source_51;
+tmp_assign_source_51 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_11__prepared == NULL);
+tmp_class_container$class_creation_11__prepared = tmp_assign_source_51;
+}
+// Tried code:
+{
+PyObject *tmp_assign_source_52;
+{
+PyObject *tmp_set_locals_11;
+CHECK_OBJECT(tmp_class_container$class_creation_11__prepared);
+tmp_set_locals_11 = tmp_class_container$class_creation_11__prepared;
+locals_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_230 = tmp_set_locals_11;
+Py_INCREF(tmp_set_locals_11);
+}
+tmp_dictset_value = mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_230, const_str_plain___module__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_str_plain_SubjectInformationAccessOID;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_230, const_str_plain___qualname__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_int_pos_230;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_230, mod_consts.const_str_plain___firstlineno__, tmp_dictset_value);
+assert(!(tmp_result == false));
+// Tried code:
+// Tried code:
+frame_frame_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_12 = MAKE_CLASS_FRAME(tstate, code_objects_296b24e3a409b2f459fa0aeacf37e58c, module_cryptography$hazmat$_oid, NULL, sizeof(void *));
+Nuitka_Frame_AssignLocals(frame_frame_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_12, locals_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_230);
+
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_12);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_12) == 2);
+
+// Framed code:
+{
+PyObject *tmp_called_value_147;
+tmp_called_value_147 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_147 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_147 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 231;
+type_description_2 = "o";
+    goto frame_exception_exit_12;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_12->m_frame.f_lineno = 231;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_147, mod_consts.const_tuple_str_digest_66e93f786830774b3f20fac3289ad8b4_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 231;
+type_description_2 = "o";
+    goto frame_exception_exit_12;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_230, mod_consts.const_str_plain_CA_REPOSITORY, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 231;
+type_description_2 = "o";
+    goto frame_exception_exit_12;
+}
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_12);
+
+
+goto frame_no_exception_11;
+frame_exception_exit_12:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_12, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_12->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_12, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+// Attaches locals to frame if any.
+Nuitka_Frame_AttachLocals(
+    frame_frame_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_12,
+    type_description_2,
+    outline_10_var___class__
+);
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_12);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_12);
+
+
+// Return the error.
+goto nested_frame_exit_11;
+frame_no_exception_11:;
+goto skip_nested_handling_11;
+nested_frame_exit_11:;
+
+goto try_except_handler_33;
+skip_nested_handling_11:;
+tmp_dictset_value = const_tuple_empty;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_230, mod_consts.const_str_plain___static_attributes__, tmp_dictset_value);
+assert(!(tmp_result == false));
+{
+PyObject *tmp_assign_source_53;
+PyObject *tmp_metaclass_value_11;
+PyObject *tmp_name_value_13;
+PyObject *tmp_bases_value_11;
+PyObject *tmp_dict_arg_value_11;
+PyObject *tmp_class_decl_dict_value_11;
+PyObject *tmp_metaclass_args_11;
+tmp_metaclass_value_11 = (PyObject *)&PyType_Type;
+tmp_name_value_13 = mod_consts.const_str_plain_SubjectInformationAccessOID;
+tmp_bases_value_11 = const_tuple_empty;
+tmp_dict_arg_value_11 = locals_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_230;
+CHECK_OBJECT(tmp_class_container$class_creation_11__class_decl_dict);
+tmp_class_decl_dict_value_11 = tmp_class_container$class_creation_11__class_decl_dict;
+tmp_metaclass_args_11 = MAKE_TUPLE3(tstate, tmp_name_value_13, tmp_bases_value_11, tmp_dict_arg_value_11);
+tmp_assign_source_53 = CALL_FUNCTION(tstate, tmp_metaclass_value_11, tmp_metaclass_args_11, tmp_class_decl_dict_value_11);
+CHECK_OBJECT(tmp_metaclass_args_11);
+Py_DECREF(tmp_metaclass_args_11);
+if (tmp_assign_source_53 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 230;
+
+    goto try_except_handler_33;
+}
+{
+    PyObject *old = outline_10_var___class__;
+    outline_10_var___class__ = tmp_assign_source_53;
+    Py_XDECREF(old);
+}
+
+}
+CHECK_OBJECT(outline_10_var___class__);
+tmp_assign_source_52 = outline_10_var___class__;
+Py_INCREF(tmp_assign_source_52);
+goto try_return_handler_33;
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_33:;
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_230);
+locals_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_230 = NULL;
+goto try_return_handler_32;
+// Exception handler code:
+try_except_handler_33:;
+exception_keeper_lineno_31 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_31 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_230);
+locals_cryptography$hazmat$_oid$$$class__11_SubjectInformationAccessOID_230 = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_31;
+exception_lineno = exception_keeper_lineno_31;
+
+goto try_except_handler_32;
+// End of try:
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_32:;
+CHECK_OBJECT(outline_10_var___class__);
+CHECK_OBJECT(outline_10_var___class__);
+Py_DECREF(outline_10_var___class__);
+outline_10_var___class__ = NULL;
+goto outline_result_22;
+// Exception handler code:
+try_except_handler_32:;
+exception_keeper_lineno_32 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_32 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+// Re-raise.
+exception_state = exception_keeper_name_32;
+exception_lineno = exception_keeper_lineno_32;
+
+goto outline_exception_11;
+// End of try:
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_exception_11:;
+exception_lineno = 230;
+goto try_except_handler_31;
+outline_result_22:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_SubjectInformationAccessOID, tmp_assign_source_52);
+}
+goto try_end_11;
+// Exception handler code:
+try_except_handler_31:;
+exception_keeper_lineno_33 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_33 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+CHECK_OBJECT(tmp_class_container$class_creation_11__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_11__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_11__class_decl_dict);
+tmp_class_container$class_creation_11__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_11__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_11__prepared);
+Py_DECREF(tmp_class_container$class_creation_11__prepared);
+tmp_class_container$class_creation_11__prepared = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_33;
+exception_lineno = exception_keeper_lineno_33;
+
+goto frame_exception_exit_1;
+// End of try:
+try_end_11:;
+CHECK_OBJECT(tmp_class_container$class_creation_11__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_11__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_11__class_decl_dict);
+tmp_class_container$class_creation_11__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_11__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_11__prepared);
+Py_DECREF(tmp_class_container$class_creation_11__prepared);
+tmp_class_container$class_creation_11__prepared = NULL;
+tmp_outline_return_value_11 = Py_None;
+Py_INCREF_IMMORTAL(tmp_outline_return_value_11);
+goto outline_result_21;
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_result_21:;
+CHECK_OBJECT(tmp_outline_return_value_11);
+Py_DECREF(tmp_outline_return_value_11);
+}
+{
+PyObject *tmp_outline_return_value_12;
+{
+PyObject *tmp_assign_source_54;
+tmp_assign_source_54 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_12__class_decl_dict == NULL);
+tmp_class_container$class_creation_12__class_decl_dict = tmp_assign_source_54;
+}
+{
+PyObject *tmp_assign_source_55;
+tmp_assign_source_55 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_12__prepared == NULL);
+tmp_class_container$class_creation_12__prepared = tmp_assign_source_55;
+}
+// Tried code:
+{
+PyObject *tmp_assign_source_56;
+{
+PyObject *tmp_set_locals_12;
+CHECK_OBJECT(tmp_class_container$class_creation_12__prepared);
+tmp_set_locals_12 = tmp_class_container$class_creation_12__prepared;
+locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234 = tmp_set_locals_12;
+Py_INCREF(tmp_set_locals_12);
+}
+tmp_dictset_value = mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234, const_str_plain___module__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_str_plain_CertificatePoliciesOID;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234, const_str_plain___qualname__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_int_pos_234;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234, mod_consts.const_str_plain___firstlineno__, tmp_dictset_value);
+assert(!(tmp_result == false));
+// Tried code:
+// Tried code:
+frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13 = MAKE_CLASS_FRAME(tstate, code_objects_1964df5e42678b99ca34d02d71d1541e, module_cryptography$hazmat$_oid, NULL, sizeof(void *));
+Nuitka_Frame_AssignLocals(frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13, locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234);
+
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13) == 2);
+
+// Framed code:
+{
+PyObject *tmp_called_value_148;
+tmp_called_value_148 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_148 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_148 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 235;
+type_description_2 = "o";
+    goto frame_exception_exit_13;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13->m_frame.f_lineno = 235;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_148, mod_consts.const_tuple_str_digest_50321ff2fccee4024d98999f9c8d9feb_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 235;
+type_description_2 = "o";
+    goto frame_exception_exit_13;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234, mod_consts.const_str_plain_CPS_QUALIFIER, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 235;
+type_description_2 = "o";
+    goto frame_exception_exit_13;
+}
+}
+{
+PyObject *tmp_called_value_149;
+tmp_called_value_149 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_149 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_149 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 236;
+type_description_2 = "o";
+    goto frame_exception_exit_13;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13->m_frame.f_lineno = 236;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_149, mod_consts.const_tuple_str_digest_03e57fcfeaffac79e0551f43c9be177f_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 236;
+type_description_2 = "o";
+    goto frame_exception_exit_13;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234, mod_consts.const_str_plain_CPS_USER_NOTICE, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 236;
+type_description_2 = "o";
+    goto frame_exception_exit_13;
+}
+}
+{
+PyObject *tmp_called_value_150;
+tmp_called_value_150 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_150 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_150 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 237;
+type_description_2 = "o";
+    goto frame_exception_exit_13;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13->m_frame.f_lineno = 237;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_150, mod_consts.const_tuple_str_digest_fbb6e1cc86dd0b99c46a7f9000416d62_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 237;
+type_description_2 = "o";
+    goto frame_exception_exit_13;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234, mod_consts.const_str_plain_ANY_POLICY, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 237;
+type_description_2 = "o";
+    goto frame_exception_exit_13;
+}
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13);
+
+
+goto frame_no_exception_12;
+frame_exception_exit_13:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+// Attaches locals to frame if any.
+Nuitka_Frame_AttachLocals(
+    frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13,
+    type_description_2,
+    outline_11_var___class__
+);
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_13);
+
+
+// Return the error.
+goto nested_frame_exit_12;
+frame_no_exception_12:;
+goto skip_nested_handling_12;
+nested_frame_exit_12:;
+
+goto try_except_handler_36;
+skip_nested_handling_12:;
+tmp_dictset_value = const_tuple_empty;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234, mod_consts.const_str_plain___static_attributes__, tmp_dictset_value);
+assert(!(tmp_result == false));
+{
+PyObject *tmp_assign_source_57;
+PyObject *tmp_metaclass_value_12;
+PyObject *tmp_name_value_14;
+PyObject *tmp_bases_value_12;
+PyObject *tmp_dict_arg_value_12;
+PyObject *tmp_class_decl_dict_value_12;
+PyObject *tmp_metaclass_args_12;
+tmp_metaclass_value_12 = (PyObject *)&PyType_Type;
+tmp_name_value_14 = mod_consts.const_str_plain_CertificatePoliciesOID;
+tmp_bases_value_12 = const_tuple_empty;
+tmp_dict_arg_value_12 = locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234;
+CHECK_OBJECT(tmp_class_container$class_creation_12__class_decl_dict);
+tmp_class_decl_dict_value_12 = tmp_class_container$class_creation_12__class_decl_dict;
+tmp_metaclass_args_12 = MAKE_TUPLE3(tstate, tmp_name_value_14, tmp_bases_value_12, tmp_dict_arg_value_12);
+tmp_assign_source_57 = CALL_FUNCTION(tstate, tmp_metaclass_value_12, tmp_metaclass_args_12, tmp_class_decl_dict_value_12);
+CHECK_OBJECT(tmp_metaclass_args_12);
+Py_DECREF(tmp_metaclass_args_12);
+if (tmp_assign_source_57 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 234;
+
+    goto try_except_handler_36;
+}
+{
+    PyObject *old = outline_11_var___class__;
+    outline_11_var___class__ = tmp_assign_source_57;
+    Py_XDECREF(old);
+}
+
+}
+CHECK_OBJECT(outline_11_var___class__);
+tmp_assign_source_56 = outline_11_var___class__;
+Py_INCREF(tmp_assign_source_56);
+goto try_return_handler_36;
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_36:;
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234);
+locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234 = NULL;
+goto try_return_handler_35;
+// Exception handler code:
+try_except_handler_36:;
+exception_keeper_lineno_34 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_34 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234);
+locals_cryptography$hazmat$_oid$$$class__12_CertificatePoliciesOID_234 = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_34;
+exception_lineno = exception_keeper_lineno_34;
+
+goto try_except_handler_35;
+// End of try:
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_35:;
+CHECK_OBJECT(outline_11_var___class__);
+CHECK_OBJECT(outline_11_var___class__);
+Py_DECREF(outline_11_var___class__);
+outline_11_var___class__ = NULL;
+goto outline_result_24;
+// Exception handler code:
+try_except_handler_35:;
+exception_keeper_lineno_35 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_35 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+// Re-raise.
+exception_state = exception_keeper_name_35;
+exception_lineno = exception_keeper_lineno_35;
+
+goto outline_exception_12;
+// End of try:
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_exception_12:;
+exception_lineno = 234;
+goto try_except_handler_34;
+outline_result_24:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_CertificatePoliciesOID, tmp_assign_source_56);
+}
+goto try_end_12;
+// Exception handler code:
+try_except_handler_34:;
+exception_keeper_lineno_36 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_36 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+CHECK_OBJECT(tmp_class_container$class_creation_12__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_12__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_12__class_decl_dict);
+tmp_class_container$class_creation_12__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_12__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_12__prepared);
+Py_DECREF(tmp_class_container$class_creation_12__prepared);
+tmp_class_container$class_creation_12__prepared = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_36;
+exception_lineno = exception_keeper_lineno_36;
+
+goto frame_exception_exit_1;
+// End of try:
+try_end_12:;
+CHECK_OBJECT(tmp_class_container$class_creation_12__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_12__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_12__class_decl_dict);
+tmp_class_container$class_creation_12__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_12__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_12__prepared);
+Py_DECREF(tmp_class_container$class_creation_12__prepared);
+tmp_class_container$class_creation_12__prepared = NULL;
+tmp_outline_return_value_12 = Py_None;
+Py_INCREF_IMMORTAL(tmp_outline_return_value_12);
+goto outline_result_23;
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_result_23:;
+CHECK_OBJECT(tmp_outline_return_value_12);
+Py_DECREF(tmp_outline_return_value_12);
+}
+{
+PyObject *tmp_outline_return_value_13;
+{
+PyObject *tmp_assign_source_58;
+tmp_assign_source_58 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_13__class_decl_dict == NULL);
+tmp_class_container$class_creation_13__class_decl_dict = tmp_assign_source_58;
+}
+{
+PyObject *tmp_assign_source_59;
+tmp_assign_source_59 = MAKE_DICT_EMPTY(tstate);
+assert(tmp_class_container$class_creation_13__prepared == NULL);
+tmp_class_container$class_creation_13__prepared = tmp_assign_source_59;
+}
+// Tried code:
+{
+PyObject *tmp_assign_source_60;
+{
+PyObject *tmp_set_locals_13;
+CHECK_OBJECT(tmp_class_container$class_creation_13__prepared);
+tmp_set_locals_13 = tmp_class_container$class_creation_13__prepared;
+locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240 = tmp_set_locals_13;
+Py_INCREF(tmp_set_locals_13);
+}
+tmp_dictset_value = mod_consts.const_str_digest_1ad2cf3b84b8bacd26104238bca76891;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240, const_str_plain___module__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_str_plain_AttributeOID;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240, const_str_plain___qualname__, tmp_dictset_value);
+assert(!(tmp_result == false));
+tmp_dictset_value = mod_consts.const_int_pos_240;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240, mod_consts.const_str_plain___firstlineno__, tmp_dictset_value);
+assert(!(tmp_result == false));
+// Tried code:
+// Tried code:
+frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14 = MAKE_CLASS_FRAME(tstate, code_objects_746e94169481cefee2899e233b5ab9b5, module_cryptography$hazmat$_oid, NULL, sizeof(void *));
+Nuitka_Frame_AssignLocals(frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14, locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240);
+
+
+// Push the new frame as the currently active one, and we should be exclusively
+// owning it.
+pushFrameStackCompiledFrame(tstate, frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14);
+assert(Py_REFCNT(frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14) == 2);
+
+// Framed code:
+{
+PyObject *tmp_called_value_151;
+tmp_called_value_151 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_151 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_151 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 241;
+type_description_2 = "o";
+    goto frame_exception_exit_14;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14->m_frame.f_lineno = 241;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_151, mod_consts.const_tuple_str_digest_a9cf6de721f933fda642f0879f2a9fc9_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 241;
+type_description_2 = "o";
+    goto frame_exception_exit_14;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240, mod_consts.const_str_plain_CHALLENGE_PASSWORD, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 241;
+type_description_2 = "o";
+    goto frame_exception_exit_14;
+}
+}
+{
+PyObject *tmp_called_value_152;
+tmp_called_value_152 = module_var_accessor_cryptography$hazmat$_oid$ObjectIdentifier(tstate);
+if (unlikely(tmp_called_value_152 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ObjectIdentifier);
+}
+
+if (tmp_called_value_152 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 242;
+type_description_2 = "o";
+    goto frame_exception_exit_14;
+}
+frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14->m_frame.f_lineno = 242;
+tmp_dictset_value = CALL_FUNCTION_WITH_POS_ARGS1(tstate, tmp_called_value_152, mod_consts.const_tuple_str_digest_d69ccf3d05e6659c8b3ce486a9cce8b0_tuple);
+
+if (tmp_dictset_value == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 242;
+type_description_2 = "o";
+    goto frame_exception_exit_14;
+}
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240, mod_consts.const_str_plain_UNSTRUCTURED_NAME, tmp_dictset_value);
+CHECK_OBJECT(tmp_dictset_value);
+Py_DECREF(tmp_dictset_value);
+if (tmp_result == false) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 242;
+type_description_2 = "o";
+    goto frame_exception_exit_14;
+}
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14);
+
+
+goto frame_no_exception_13;
+frame_exception_exit_14:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+// Attaches locals to frame if any.
+Nuitka_Frame_AttachLocals(
+    frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14,
+    type_description_2,
+    outline_12_var___class__
+);
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+Nuitka_Frame_ClearLocals(frame_frame_cryptography$hazmat$_oid$$$class__13_AttributeOID_14);
+
+
+// Return the error.
+goto nested_frame_exit_13;
+frame_no_exception_13:;
+goto skip_nested_handling_13;
+nested_frame_exit_13:;
+
+goto try_except_handler_39;
+skip_nested_handling_13:;
+tmp_dictset_value = const_tuple_empty;
+tmp_result = DICT_SET_ITEM(locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240, mod_consts.const_str_plain___static_attributes__, tmp_dictset_value);
+assert(!(tmp_result == false));
+{
+PyObject *tmp_assign_source_61;
+PyObject *tmp_metaclass_value_13;
+PyObject *tmp_name_value_15;
+PyObject *tmp_bases_value_13;
+PyObject *tmp_dict_arg_value_13;
+PyObject *tmp_class_decl_dict_value_13;
+PyObject *tmp_metaclass_args_13;
+tmp_metaclass_value_13 = (PyObject *)&PyType_Type;
+tmp_name_value_15 = mod_consts.const_str_plain_AttributeOID;
+tmp_bases_value_13 = const_tuple_empty;
+tmp_dict_arg_value_13 = locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240;
+CHECK_OBJECT(tmp_class_container$class_creation_13__class_decl_dict);
+tmp_class_decl_dict_value_13 = tmp_class_container$class_creation_13__class_decl_dict;
+tmp_metaclass_args_13 = MAKE_TUPLE3(tstate, tmp_name_value_15, tmp_bases_value_13, tmp_dict_arg_value_13);
+tmp_assign_source_61 = CALL_FUNCTION(tstate, tmp_metaclass_value_13, tmp_metaclass_args_13, tmp_class_decl_dict_value_13);
+CHECK_OBJECT(tmp_metaclass_args_13);
+Py_DECREF(tmp_metaclass_args_13);
+if (tmp_assign_source_61 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 240;
+
+    goto try_except_handler_39;
+}
+{
+    PyObject *old = outline_12_var___class__;
+    outline_12_var___class__ = tmp_assign_source_61;
+    Py_XDECREF(old);
+}
+
+}
+CHECK_OBJECT(outline_12_var___class__);
+tmp_assign_source_60 = outline_12_var___class__;
+Py_INCREF(tmp_assign_source_60);
+goto try_return_handler_39;
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_39:;
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240);
+locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240 = NULL;
+goto try_return_handler_38;
+// Exception handler code:
+try_except_handler_39:;
+exception_keeper_lineno_37 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_37 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+Py_DECREF(locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240);
+locals_cryptography$hazmat$_oid$$$class__13_AttributeOID_240 = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_37;
+exception_lineno = exception_keeper_lineno_37;
+
+goto try_except_handler_38;
+// End of try:
+NUITKA_CANNOT_GET_HERE("tried codes exits in all cases");
+return NULL;
+// Return handler code:
+try_return_handler_38:;
+CHECK_OBJECT(outline_12_var___class__);
+CHECK_OBJECT(outline_12_var___class__);
+Py_DECREF(outline_12_var___class__);
+outline_12_var___class__ = NULL;
+goto outline_result_26;
+// Exception handler code:
+try_except_handler_38:;
+exception_keeper_lineno_38 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_38 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+// Re-raise.
+exception_state = exception_keeper_name_38;
+exception_lineno = exception_keeper_lineno_38;
+
+goto outline_exception_13;
+// End of try:
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_exception_13:;
+exception_lineno = 240;
+goto try_except_handler_37;
+outline_result_26:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain_AttributeOID, tmp_assign_source_60);
+}
+goto try_end_13;
+// Exception handler code:
+try_except_handler_37:;
+exception_keeper_lineno_39 = exception_lineno;
+exception_lineno = 0;
+exception_keeper_name_39 = exception_state;
+INIT_ERROR_OCCURRED_STATE(&exception_state);
+
+CHECK_OBJECT(tmp_class_container$class_creation_13__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_13__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_13__class_decl_dict);
+tmp_class_container$class_creation_13__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_13__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_13__prepared);
+Py_DECREF(tmp_class_container$class_creation_13__prepared);
+tmp_class_container$class_creation_13__prepared = NULL;
+// Re-raise.
+exception_state = exception_keeper_name_39;
+exception_lineno = exception_keeper_lineno_39;
+
+goto frame_exception_exit_1;
+// End of try:
+try_end_13:;
+CHECK_OBJECT(tmp_class_container$class_creation_13__class_decl_dict);
+CHECK_OBJECT(tmp_class_container$class_creation_13__class_decl_dict);
+Py_DECREF(tmp_class_container$class_creation_13__class_decl_dict);
+tmp_class_container$class_creation_13__class_decl_dict = NULL;
+CHECK_OBJECT(tmp_class_container$class_creation_13__prepared);
+CHECK_OBJECT(tmp_class_container$class_creation_13__prepared);
+Py_DECREF(tmp_class_container$class_creation_13__prepared);
+tmp_class_container$class_creation_13__prepared = NULL;
+tmp_outline_return_value_13 = Py_None;
+Py_INCREF_IMMORTAL(tmp_outline_return_value_13);
+goto outline_result_25;
+NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
+return NULL;
+outline_result_25:;
+CHECK_OBJECT(tmp_outline_return_value_13);
+Py_DECREF(tmp_outline_return_value_13);
+}
+{
+PyObject *tmp_assign_source_62;
+PyObject *tmp_dict_key_2;
+PyObject *tmp_dict_value_2;
+PyObject *tmp_expression_value_33;
+tmp_expression_value_33 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_33 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_33 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 246;
+
+    goto frame_exception_exit_1;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_33, mod_consts.const_str_plain_COMMON_NAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 246;
+
+    goto frame_exception_exit_1;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_commonName;
+tmp_assign_source_62 = _PyDict_NewPresized( 115 );
+{
+PyObject *tmp_expression_value_34;
+PyObject *tmp_expression_value_35;
+PyObject *tmp_expression_value_36;
+PyObject *tmp_expression_value_37;
+PyObject *tmp_expression_value_38;
+PyObject *tmp_expression_value_39;
+PyObject *tmp_expression_value_40;
+PyObject *tmp_expression_value_41;
+PyObject *tmp_expression_value_42;
+PyObject *tmp_expression_value_43;
+PyObject *tmp_expression_value_44;
+PyObject *tmp_expression_value_45;
+PyObject *tmp_expression_value_46;
+PyObject *tmp_expression_value_47;
+PyObject *tmp_expression_value_48;
+PyObject *tmp_expression_value_49;
+PyObject *tmp_expression_value_50;
+PyObject *tmp_expression_value_51;
+PyObject *tmp_expression_value_52;
+PyObject *tmp_expression_value_53;
+PyObject *tmp_expression_value_54;
+PyObject *tmp_expression_value_55;
+PyObject *tmp_expression_value_56;
+PyObject *tmp_expression_value_57;
+PyObject *tmp_expression_value_58;
+PyObject *tmp_expression_value_59;
+PyObject *tmp_expression_value_60;
+PyObject *tmp_expression_value_61;
+PyObject *tmp_expression_value_62;
+PyObject *tmp_expression_value_63;
+PyObject *tmp_expression_value_64;
+PyObject *tmp_expression_value_65;
+PyObject *tmp_expression_value_66;
+PyObject *tmp_expression_value_67;
+PyObject *tmp_expression_value_68;
+PyObject *tmp_expression_value_69;
+PyObject *tmp_expression_value_70;
+PyObject *tmp_expression_value_71;
+PyObject *tmp_expression_value_72;
+PyObject *tmp_expression_value_73;
+PyObject *tmp_expression_value_74;
+PyObject *tmp_expression_value_75;
+PyObject *tmp_expression_value_76;
+PyObject *tmp_expression_value_77;
+PyObject *tmp_expression_value_78;
+PyObject *tmp_expression_value_79;
+PyObject *tmp_expression_value_80;
+PyObject *tmp_expression_value_81;
+PyObject *tmp_expression_value_82;
+PyObject *tmp_expression_value_83;
+PyObject *tmp_expression_value_84;
+PyObject *tmp_expression_value_85;
+PyObject *tmp_expression_value_86;
+PyObject *tmp_expression_value_87;
+PyObject *tmp_expression_value_88;
+PyObject *tmp_expression_value_89;
+PyObject *tmp_expression_value_90;
+PyObject *tmp_expression_value_91;
+PyObject *tmp_expression_value_92;
+PyObject *tmp_expression_value_93;
+PyObject *tmp_expression_value_94;
+PyObject *tmp_expression_value_95;
+PyObject *tmp_expression_value_96;
+PyObject *tmp_expression_value_97;
+PyObject *tmp_expression_value_98;
+PyObject *tmp_expression_value_99;
+PyObject *tmp_expression_value_100;
+PyObject *tmp_expression_value_101;
+PyObject *tmp_expression_value_102;
+PyObject *tmp_expression_value_103;
+PyObject *tmp_expression_value_104;
+PyObject *tmp_expression_value_105;
+PyObject *tmp_expression_value_106;
+PyObject *tmp_expression_value_107;
+PyObject *tmp_expression_value_108;
+PyObject *tmp_expression_value_109;
+PyObject *tmp_expression_value_110;
+PyObject *tmp_expression_value_111;
+PyObject *tmp_expression_value_112;
+PyObject *tmp_expression_value_113;
+PyObject *tmp_expression_value_114;
+PyObject *tmp_expression_value_115;
+PyObject *tmp_expression_value_116;
+PyObject *tmp_expression_value_117;
+PyObject *tmp_expression_value_118;
+PyObject *tmp_expression_value_119;
+PyObject *tmp_expression_value_120;
+PyObject *tmp_expression_value_121;
+PyObject *tmp_expression_value_122;
+PyObject *tmp_expression_value_123;
+PyObject *tmp_expression_value_124;
+PyObject *tmp_expression_value_125;
+PyObject *tmp_expression_value_126;
+PyObject *tmp_expression_value_127;
+PyObject *tmp_expression_value_128;
+PyObject *tmp_expression_value_129;
+PyObject *tmp_expression_value_130;
+PyObject *tmp_expression_value_131;
+PyObject *tmp_expression_value_132;
+PyObject *tmp_expression_value_133;
+PyObject *tmp_expression_value_134;
+PyObject *tmp_expression_value_135;
+PyObject *tmp_expression_value_136;
+PyObject *tmp_expression_value_137;
+PyObject *tmp_expression_value_138;
+PyObject *tmp_expression_value_139;
+PyObject *tmp_expression_value_140;
+PyObject *tmp_expression_value_141;
+PyObject *tmp_expression_value_142;
+PyObject *tmp_expression_value_143;
+PyObject *tmp_expression_value_144;
+PyObject *tmp_expression_value_145;
+PyObject *tmp_expression_value_146;
+PyObject *tmp_expression_value_147;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 246;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_34 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_34 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_34 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 247;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_34, mod_consts.const_str_plain_COUNTRY_NAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 247;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_countryName;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 247;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_35 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_35 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_35 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 248;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_35, mod_consts.const_str_plain_LOCALITY_NAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 248;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_localityName;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 248;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_36 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_36 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_36 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 249;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_36, mod_consts.const_str_plain_STATE_OR_PROVINCE_NAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 249;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_stateOrProvinceName;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 249;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_37 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_37 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_37 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 250;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_37, mod_consts.const_str_plain_STREET_ADDRESS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 250;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_streetAddress;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 250;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_38 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_38 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_38 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 251;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_38, mod_consts.const_str_plain_ORGANIZATION_NAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 251;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_organizationName;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 251;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_39 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_39 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_39 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 252;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_39, mod_consts.const_str_plain_ORGANIZATIONAL_UNIT_NAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 252;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_organizationalUnitName;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 252;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_40 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_40 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_40 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 253;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_40, mod_consts.const_str_plain_SERIAL_NUMBER);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 253;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_serialNumber;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 253;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_41 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_41 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_41 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 254;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_41, mod_consts.const_str_plain_SURNAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 254;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_surname;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 254;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_42 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_42 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_42 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 255;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_42, mod_consts.const_str_plain_GIVEN_NAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 255;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_givenName;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 255;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_43 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_43 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_43 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 256;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_43, mod_consts.const_str_plain_TITLE);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 256;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_title;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 256;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_44 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_44 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_44 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 257;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_44, mod_consts.const_str_plain_GENERATION_QUALIFIER);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 257;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_generationQualifier;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 257;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_45 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_45 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_45 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 258;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_45, mod_consts.const_str_plain_X500_UNIQUE_IDENTIFIER);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 258;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_x500UniqueIdentifier;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 258;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_46 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_46 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_46 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 259;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_46, mod_consts.const_str_plain_DN_QUALIFIER);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 259;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_dnQualifier;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 259;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_47 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_47 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_47 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 260;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_47, mod_consts.const_str_plain_PSEUDONYM);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 260;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_pseudonym;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 260;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_48 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_48 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_48 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 261;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_48, mod_consts.const_str_plain_USER_ID);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 261;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_userID;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 261;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_49 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_49 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_49 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 262;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_49, mod_consts.const_str_plain_DOMAIN_COMPONENT);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 262;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_domainComponent;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 262;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_50 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_50 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_50 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 263;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_50, mod_consts.const_str_plain_EMAIL_ADDRESS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 263;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_emailAddress;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 263;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_51 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_51 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_51 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 264;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_51, mod_consts.const_str_plain_JURISDICTION_COUNTRY_NAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 264;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_jurisdictionCountryName;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 264;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_52 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_52 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_52 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 265;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_52, mod_consts.const_str_plain_JURISDICTION_LOCALITY_NAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 265;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_jurisdictionLocalityName;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 265;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_53 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_53 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_53 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 266;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_53, mod_consts.const_str_plain_JURISDICTION_STATE_OR_PROVINCE_NAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 266;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_jurisdictionStateOrProvinceName;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 267;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_54 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_54 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_54 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 269;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_54, mod_consts.const_str_plain_BUSINESS_CATEGORY);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 269;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_businessCategory;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 269;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_55 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_55 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_55 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 270;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_55, mod_consts.const_str_plain_POSTAL_ADDRESS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 270;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_postalAddress;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 270;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_56 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_56 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_56 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 271;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_56, mod_consts.const_str_plain_POSTAL_CODE);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 271;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_postalCode;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 271;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_57 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_57 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_57 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 272;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_57, mod_consts.const_str_plain_INN);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 272;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_INN;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 272;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_58 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_58 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_58 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 273;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_58, mod_consts.const_str_plain_OGRN);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 273;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_OGRN;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 273;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_59 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_59 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_59 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 274;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_59, mod_consts.const_str_plain_SNILS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 274;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_SNILS;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 274;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_60 = module_var_accessor_cryptography$hazmat$_oid$NameOID(tstate);
+if (unlikely(tmp_expression_value_60 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_NameOID);
+}
+
+if (tmp_expression_value_60 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 275;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_60, mod_consts.const_str_plain_UNSTRUCTURED_NAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 275;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_unstructuredName;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 275;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_61 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_61 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_61 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 276;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_61, mod_consts.const_str_plain_RSA_WITH_MD5);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 276;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_md5WithRSAEncryption;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 276;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_62 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_62 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_62 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 277;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_62, mod_consts.const_str_plain_RSA_WITH_SHA1);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 277;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha1WithRSAEncryption;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 277;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_63 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_63 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_63 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 278;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_63, mod_consts.const_str_plain_RSA_WITH_SHA224);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 278;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha224WithRSAEncryption;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 278;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_64 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_64 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_64 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 279;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_64, mod_consts.const_str_plain_RSA_WITH_SHA256);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 279;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha256WithRSAEncryption;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 279;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_65 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_65 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_65 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 280;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_65, mod_consts.const_str_plain_RSA_WITH_SHA384);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 280;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha384WithRSAEncryption;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 280;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_66 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_66 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_66 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 281;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_66, mod_consts.const_str_plain_RSA_WITH_SHA512);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 281;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha512WithRSAEncryption;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 281;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_67 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_67 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_67 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 282;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_67, mod_consts.const_str_plain_RSASSA_PSS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 282;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_rsassaPss;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 282;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_68 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_68 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_68 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 283;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_68, mod_consts.const_str_plain_ECDSA_WITH_SHA1);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 283;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_c2fb55a1f09e586fc82a97de6fc73acc;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 283;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_69 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_69 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_69 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 284;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_69, mod_consts.const_str_plain_ECDSA_WITH_SHA224);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 284;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_557b29feaadb5ada1ad965906e5d1dd3;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 284;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_70 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_70 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_70 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 285;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_70, mod_consts.const_str_plain_ECDSA_WITH_SHA256);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 285;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_ad3c682658ab1bc2f4342a30cc4996e2;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 285;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_71 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_71 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_71 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 286;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_71, mod_consts.const_str_plain_ECDSA_WITH_SHA384);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 286;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_ff3f390793cb3f7a65e3ba0d8b30034e;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 286;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_72 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_72 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_72 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 287;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_72, mod_consts.const_str_plain_ECDSA_WITH_SHA512);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 287;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_8c168ca0bdafd4e71f4b6bf87eb46ded;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 287;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_73 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_73 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_73 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 288;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_73, mod_consts.const_str_plain_DSA_WITH_SHA1);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 288;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_17ca6fd46f3d026f6114676b663f8acd;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 288;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_74 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_74 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_74 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 289;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_74, mod_consts.const_str_plain_DSA_WITH_SHA224);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 289;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_3df3ca64dd8761c027ed0ba43961e89a;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 289;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_75 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_75 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_75 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 290;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_75, mod_consts.const_str_plain_DSA_WITH_SHA256);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 290;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_a0b774c3e9788e9c20a69f9b798eb899;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 290;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_76 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_76 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_76 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 291;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_76, mod_consts.const_str_plain_ED25519);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 291;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_ed25519;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 291;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_77 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_77 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_77 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 292;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_77, mod_consts.const_str_plain_ED448);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 292;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_ed448;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 292;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_78 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_78 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_78 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 293;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_78, mod_consts.const_str_plain_ML_DSA_44);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 293;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_45c372b4d789ac400c2ec357e6d8652d;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 293;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_79 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_79 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_79 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 294;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_79, mod_consts.const_str_plain_ML_DSA_65);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 294;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_474b62c6824a77bfb15ce78ce7281094;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 294;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_80 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_80 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_80 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 295;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_80, mod_consts.const_str_plain_ML_DSA_87);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 295;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_a0fd9643bd77b0727228b4f0b7764d68;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 295;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_81 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_81 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_81 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 296;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_81, mod_consts.const_str_plain_GOSTR3411_94_WITH_3410_2001);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 296;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_0fb317ec863119cbf9cf939b5b971c2c;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 297;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_82 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_82 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_82 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 299;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_82, mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_256);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 299;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_4df1fd561ce0921b6184b8e7367dd223;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 300;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_83 = module_var_accessor_cryptography$hazmat$_oid$SignatureAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_83 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SignatureAlgorithmOID);
+}
+
+if (tmp_expression_value_83 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 302;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_83, mod_consts.const_str_plain_GOSTR3410_2012_WITH_3411_2012_512);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 302;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_93703fb7c432dffdd6c487fa17fb7868;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 303;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_84 = module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_84 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_HashAlgorithmOID);
+}
+
+if (tmp_expression_value_84 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 305;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_84, mod_consts.const_str_plain_SHA1);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 305;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha1;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 305;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_85 = module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_85 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_HashAlgorithmOID);
+}
+
+if (tmp_expression_value_85 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 306;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_85, mod_consts.const_str_plain_SHA224);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 306;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha224;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 306;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_86 = module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_86 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_HashAlgorithmOID);
+}
+
+if (tmp_expression_value_86 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 307;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_86, mod_consts.const_str_plain_SHA256);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 307;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha256;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 307;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_87 = module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_87 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_HashAlgorithmOID);
+}
+
+if (tmp_expression_value_87 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 308;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_87, mod_consts.const_str_plain_SHA384);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 308;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha384;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 308;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_88 = module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_88 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_HashAlgorithmOID);
+}
+
+if (tmp_expression_value_88 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 309;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_88, mod_consts.const_str_plain_SHA512);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 309;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha512;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 309;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_89 = module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_89 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_HashAlgorithmOID);
+}
+
+if (tmp_expression_value_89 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 310;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_89, mod_consts.const_str_plain_SHA3_224);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 310;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha3_224;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 310;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_90 = module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_90 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_HashAlgorithmOID);
+}
+
+if (tmp_expression_value_90 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 311;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_90, mod_consts.const_str_plain_SHA3_256);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 311;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha3_256;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 311;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_91 = module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_91 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_HashAlgorithmOID);
+}
+
+if (tmp_expression_value_91 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 312;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_91, mod_consts.const_str_plain_SHA3_384);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 312;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha3_384;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 312;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_92 = module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_92 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_HashAlgorithmOID);
+}
+
+if (tmp_expression_value_92 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 313;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_92, mod_consts.const_str_plain_SHA3_512);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 313;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha3_512;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 313;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_93 = module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_93 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_HashAlgorithmOID);
+}
+
+if (tmp_expression_value_93 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 314;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_93, mod_consts.const_str_plain_SHA3_224_NIST);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 314;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha3_224;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 314;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_94 = module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_94 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_HashAlgorithmOID);
+}
+
+if (tmp_expression_value_94 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 315;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_94, mod_consts.const_str_plain_SHA3_256_NIST);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 315;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha3_256;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 315;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_95 = module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_95 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_HashAlgorithmOID);
+}
+
+if (tmp_expression_value_95 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 316;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_95, mod_consts.const_str_plain_SHA3_384_NIST);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 316;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha3_384;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 316;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_96 = module_var_accessor_cryptography$hazmat$_oid$HashAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_96 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_HashAlgorithmOID);
+}
+
+if (tmp_expression_value_96 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 317;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_96, mod_consts.const_str_plain_SHA3_512_NIST);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 317;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_sha3_512;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 317;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_97 = module_var_accessor_cryptography$hazmat$_oid$PublicKeyAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_97 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+}
+
+if (tmp_expression_value_97 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 318;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_97, mod_consts.const_str_plain_DSA);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 318;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_dsaEncryption;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 318;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_98 = module_var_accessor_cryptography$hazmat$_oid$PublicKeyAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_98 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+}
+
+if (tmp_expression_value_98 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 319;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_98, mod_consts.const_str_plain_EC_PUBLIC_KEY);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 319;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_7dfac6622a641613bdb887174c606fe6;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 319;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_99 = module_var_accessor_cryptography$hazmat$_oid$PublicKeyAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_99 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+}
+
+if (tmp_expression_value_99 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 320;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_99, mod_consts.const_str_plain_RSAES_PKCS1_v1_5);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 320;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_rsaEncryption;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 320;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_100 = module_var_accessor_cryptography$hazmat$_oid$PublicKeyAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_100 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+}
+
+if (tmp_expression_value_100 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 321;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_100, mod_consts.const_str_plain_X25519);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 321;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_X25519;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 321;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_101 = module_var_accessor_cryptography$hazmat$_oid$PublicKeyAlgorithmOID(tstate);
+if (unlikely(tmp_expression_value_101 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_PublicKeyAlgorithmOID);
+}
+
+if (tmp_expression_value_101 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 322;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_101, mod_consts.const_str_plain_X448);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 322;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_X448;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 322;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_102 = module_var_accessor_cryptography$hazmat$_oid$ExtendedKeyUsageOID(tstate);
+if (unlikely(tmp_expression_value_102 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtendedKeyUsageOID);
+}
+
+if (tmp_expression_value_102 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 323;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_102, mod_consts.const_str_plain_SERVER_AUTH);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 323;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_serverAuth;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 323;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_103 = module_var_accessor_cryptography$hazmat$_oid$ExtendedKeyUsageOID(tstate);
+if (unlikely(tmp_expression_value_103 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtendedKeyUsageOID);
+}
+
+if (tmp_expression_value_103 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 324;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_103, mod_consts.const_str_plain_CLIENT_AUTH);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 324;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_clientAuth;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 324;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_104 = module_var_accessor_cryptography$hazmat$_oid$ExtendedKeyUsageOID(tstate);
+if (unlikely(tmp_expression_value_104 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtendedKeyUsageOID);
+}
+
+if (tmp_expression_value_104 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 325;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_104, mod_consts.const_str_plain_CODE_SIGNING);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 325;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_codeSigning;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 325;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_105 = module_var_accessor_cryptography$hazmat$_oid$ExtendedKeyUsageOID(tstate);
+if (unlikely(tmp_expression_value_105 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtendedKeyUsageOID);
+}
+
+if (tmp_expression_value_105 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 326;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_105, mod_consts.const_str_plain_EMAIL_PROTECTION);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 326;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_emailProtection;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 326;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_106 = module_var_accessor_cryptography$hazmat$_oid$ExtendedKeyUsageOID(tstate);
+if (unlikely(tmp_expression_value_106 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtendedKeyUsageOID);
+}
+
+if (tmp_expression_value_106 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 327;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_106, mod_consts.const_str_plain_TIME_STAMPING);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 327;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_timeStamping;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 327;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_107 = module_var_accessor_cryptography$hazmat$_oid$ExtendedKeyUsageOID(tstate);
+if (unlikely(tmp_expression_value_107 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtendedKeyUsageOID);
+}
+
+if (tmp_expression_value_107 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 328;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_107, mod_consts.const_str_plain_OCSP_SIGNING);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 328;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_OCSPSigning;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 328;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_108 = module_var_accessor_cryptography$hazmat$_oid$ExtendedKeyUsageOID(tstate);
+if (unlikely(tmp_expression_value_108 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtendedKeyUsageOID);
+}
+
+if (tmp_expression_value_108 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 329;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_108, mod_consts.const_str_plain_SMARTCARD_LOGON);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 329;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_msSmartcardLogin;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 329;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_109 = module_var_accessor_cryptography$hazmat$_oid$ExtendedKeyUsageOID(tstate);
+if (unlikely(tmp_expression_value_109 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtendedKeyUsageOID);
+}
+
+if (tmp_expression_value_109 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 330;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_109, mod_consts.const_str_plain_KERBEROS_PKINIT_KDC);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 330;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_pkInitKDC;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 330;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_110 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_110 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_110 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 331;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_110, mod_consts.const_str_plain_SUBJECT_DIRECTORY_ATTRIBUTES);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 331;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_subjectDirectoryAttributes;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 331;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_111 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_111 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_111 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 332;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_111, mod_consts.const_str_plain_SUBJECT_KEY_IDENTIFIER);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 332;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_subjectKeyIdentifier;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 332;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_112 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_112 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_112 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 333;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_112, mod_consts.const_str_plain_KEY_USAGE);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 333;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_keyUsage;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 333;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_113 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_113 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_113 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 334;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_113, mod_consts.const_str_plain_PRIVATE_KEY_USAGE_PERIOD);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 334;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_privateKeyUsagePeriod;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 334;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_114 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_114 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_114 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 335;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_114, mod_consts.const_str_plain_SUBJECT_ALTERNATIVE_NAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 335;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_subjectAltName;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 335;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_115 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_115 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_115 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 336;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_115, mod_consts.const_str_plain_ISSUER_ALTERNATIVE_NAME);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 336;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_issuerAltName;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 336;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_116 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_116 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_116 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 337;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_116, mod_consts.const_str_plain_BASIC_CONSTRAINTS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 337;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_basicConstraints;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 337;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_117 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_117 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_117 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 338;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_117, mod_consts.const_str_plain_PRECERT_SIGNED_CERTIFICATE_TIMESTAMPS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 338;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_signedCertificateTimestampList;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 339;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_118 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_118 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_118 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 341;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_118, mod_consts.const_str_plain_SIGNED_CERTIFICATE_TIMESTAMPS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 341;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_signedCertificateTimestampList;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 342;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_119 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_119 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_119 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 344;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_119, mod_consts.const_str_plain_PRECERT_POISON);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 344;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_ctPoison;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 344;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_120 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_120 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_120 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 345;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_120, mod_consts.const_str_plain_MS_CERTIFICATE_TEMPLATE);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 345;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_msCertificateTemplate;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 345;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_121 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_121 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_121 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 346;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_121, mod_consts.const_str_plain_ADMISSIONS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 346;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_Admissions;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 346;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_122 = module_var_accessor_cryptography$hazmat$_oid$CRLEntryExtensionOID(tstate);
+if (unlikely(tmp_expression_value_122 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_CRLEntryExtensionOID);
+}
+
+if (tmp_expression_value_122 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 347;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_122, mod_consts.const_str_plain_CRL_REASON);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 347;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_cRLReason;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 347;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_123 = module_var_accessor_cryptography$hazmat$_oid$CRLEntryExtensionOID(tstate);
+if (unlikely(tmp_expression_value_123 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_CRLEntryExtensionOID);
+}
+
+if (tmp_expression_value_123 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 348;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_123, mod_consts.const_str_plain_INVALIDITY_DATE);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 348;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_invalidityDate;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 348;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_124 = module_var_accessor_cryptography$hazmat$_oid$CRLEntryExtensionOID(tstate);
+if (unlikely(tmp_expression_value_124 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_CRLEntryExtensionOID);
+}
+
+if (tmp_expression_value_124 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 349;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_124, mod_consts.const_str_plain_CERTIFICATE_ISSUER);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 349;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_certificateIssuer;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 349;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_125 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_125 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_125 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 350;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_125, mod_consts.const_str_plain_NAME_CONSTRAINTS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 350;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_nameConstraints;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 350;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_126 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_126 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_126 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 351;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_126, mod_consts.const_str_plain_CRL_DISTRIBUTION_POINTS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 351;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_cRLDistributionPoints;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 351;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_127 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_127 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_127 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 352;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_127, mod_consts.const_str_plain_CERTIFICATE_POLICIES);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 352;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_certificatePolicies;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 352;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_128 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_128 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_128 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 353;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_128, mod_consts.const_str_plain_POLICY_MAPPINGS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 353;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_policyMappings;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 353;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_129 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_129 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_129 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 354;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_129, mod_consts.const_str_plain_AUTHORITY_KEY_IDENTIFIER);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 354;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_authorityKeyIdentifier;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 354;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_130 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_130 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_130 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 355;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_130, mod_consts.const_str_plain_POLICY_CONSTRAINTS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 355;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_policyConstraints;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 355;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_131 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_131 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_131 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 356;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_131, mod_consts.const_str_plain_EXTENDED_KEY_USAGE);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 356;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_extendedKeyUsage;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 356;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_132 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_132 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_132 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 357;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_132, mod_consts.const_str_plain_FRESHEST_CRL);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 357;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_freshestCRL;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 357;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_133 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_133 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_133 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 358;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_133, mod_consts.const_str_plain_INHIBIT_ANY_POLICY);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 358;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_inhibitAnyPolicy;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 358;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_134 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_134 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_134 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 359;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_134, mod_consts.const_str_plain_ISSUING_DISTRIBUTION_POINT);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 359;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_issuingDistributionPoint;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 359;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_135 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_135 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_135 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 360;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_135, mod_consts.const_str_plain_AUTHORITY_INFORMATION_ACCESS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 360;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_authorityInfoAccess;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 360;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_136 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_136 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_136 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 361;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_136, mod_consts.const_str_plain_SUBJECT_INFORMATION_ACCESS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 361;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_subjectInfoAccess;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 361;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_137 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_137 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_137 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 362;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_137, mod_consts.const_str_plain_OCSP_NO_CHECK);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 362;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_OCSPNoCheck;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 362;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_138 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_138 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_138 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 363;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_138, mod_consts.const_str_plain_CRL_NUMBER);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 363;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_cRLNumber;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 363;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_139 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_139 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_139 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 364;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_139, mod_consts.const_str_plain_DELTA_CRL_INDICATOR);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 364;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_deltaCRLIndicator;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 364;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_140 = module_var_accessor_cryptography$hazmat$_oid$ExtensionOID(tstate);
+if (unlikely(tmp_expression_value_140 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_ExtensionOID);
+}
+
+if (tmp_expression_value_140 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 365;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_140, mod_consts.const_str_plain_TLS_FEATURE);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 365;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_TLSFeature;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 365;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_141 = module_var_accessor_cryptography$hazmat$_oid$AuthorityInformationAccessOID(tstate);
+if (unlikely(tmp_expression_value_141 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_AuthorityInformationAccessOID);
+}
+
+if (tmp_expression_value_141 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 366;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_141, mod_consts.const_str_plain_OCSP);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 366;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_OCSP;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 366;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_142 = module_var_accessor_cryptography$hazmat$_oid$AuthorityInformationAccessOID(tstate);
+if (unlikely(tmp_expression_value_142 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_AuthorityInformationAccessOID);
+}
+
+if (tmp_expression_value_142 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 367;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_142, mod_consts.const_str_plain_CA_ISSUERS);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 367;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_caIssuers;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 367;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_143 = module_var_accessor_cryptography$hazmat$_oid$SubjectInformationAccessOID(tstate);
+if (unlikely(tmp_expression_value_143 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_SubjectInformationAccessOID);
+}
+
+if (tmp_expression_value_143 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 368;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_143, mod_consts.const_str_plain_CA_REPOSITORY);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 368;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_caRepository;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 368;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_144 = module_var_accessor_cryptography$hazmat$_oid$CertificatePoliciesOID(tstate);
+if (unlikely(tmp_expression_value_144 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_CertificatePoliciesOID);
+}
+
+if (tmp_expression_value_144 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 369;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_144, mod_consts.const_str_plain_CPS_QUALIFIER);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 369;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_f452289eeaecab0c5424fd5ec7db97f7;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 369;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_145 = module_var_accessor_cryptography$hazmat$_oid$CertificatePoliciesOID(tstate);
+if (unlikely(tmp_expression_value_145 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_CertificatePoliciesOID);
+}
+
+if (tmp_expression_value_145 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 370;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_145, mod_consts.const_str_plain_CPS_USER_NOTICE);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 370;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_digest_e13ae27d769f6d1d70b1707fbd3f347b;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 370;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_146 = module_var_accessor_cryptography$hazmat$_oid$OCSPExtensionOID(tstate);
+if (unlikely(tmp_expression_value_146 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_OCSPExtensionOID);
+}
+
+if (tmp_expression_value_146 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 371;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_146, mod_consts.const_str_plain_NONCE);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 371;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_OCSPNonce;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 371;
+
+    goto dict_build_exception_2;
+}
+tmp_expression_value_147 = module_var_accessor_cryptography$hazmat$_oid$AttributeOID(tstate);
+if (unlikely(tmp_expression_value_147 == NULL)) {
+    RAISE_CURRENT_EXCEPTION_NAME_ERROR(tstate, &exception_state, mod_consts.const_str_plain_AttributeOID);
+}
+
+if (tmp_expression_value_147 == NULL) {
+    assert(HAS_EXCEPTION_STATE(&exception_state));
+
+
+
+exception_lineno = 372;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_key_2 = LOOKUP_ATTRIBUTE(tstate, tmp_expression_value_147, mod_consts.const_str_plain_CHALLENGE_PASSWORD);
+if (tmp_dict_key_2 == NULL) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 372;
+
+    goto dict_build_exception_2;
+}
+tmp_dict_value_2 = mod_consts.const_str_plain_challengePassword;
+tmp_res = PyDict_SetItem(tmp_assign_source_62, tmp_dict_key_2, tmp_dict_value_2);
+Py_DECREF(tmp_dict_key_2);
+if (tmp_res != 0) {
+    assert(HAS_ERROR_OCCURRED(tstate));
+
+    FETCH_ERROR_OCCURRED_STATE(tstate, &exception_state);
+
+
+exception_lineno = 372;
+
+    goto dict_build_exception_2;
+}
+}
+goto dict_build_no_exception_2;
+// Exception handling pass through code for dict_build:
+dict_build_exception_2:;
+Py_DECREF(tmp_assign_source_62);
+goto frame_exception_exit_1;
+// Finished with no exception for dict_build:
+dict_build_no_exception_2:;
+UPDATE_STRING_DICT1(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)mod_consts.const_str_plain__OID_NAMES, tmp_assign_source_62);
+}
+
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+
+goto frame_no_exception_14;
+frame_exception_exit_1:
+
+
+{
+    PyTracebackObject *exception_tb = GET_EXCEPTION_STATE_TRACEBACK(&exception_state);
+    if (exception_tb == NULL) {
+        exception_tb = MAKE_TRACEBACK(frame_frame_cryptography$hazmat$_oid, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    } else if (exception_tb->tb_frame != &frame_frame_cryptography$hazmat$_oid->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_frame_cryptography$hazmat$_oid, exception_lineno);
+        SET_EXCEPTION_STATE_TRACEBACK(&exception_state, exception_tb);
+    }
+}
+
+
+
+assertFrameObject(frame_frame_cryptography$hazmat$_oid);
+
+// Put the previous frame back on top.
+popFrameStack(tstate);
+
+// Return the error.
+goto module_exception_exit;
+frame_no_exception_14:;
+
+    // Report to PGO about leaving the module without error.
+    PGO_onModuleExit("cryptography$hazmat$_oid", false);
+
+#if _NUITKA_MODULE_MODE && 0
+    {
+        PyObject *post_load = IMPORT_EMBEDDED_MODULE(tstate, "cryptography.hazmat._oid" "-postLoad");
+        if (post_load == NULL) {
+            return NULL;
+        }
+    }
+#endif
+
+    Py_INCREF(module_cryptography$hazmat$_oid);
+    return module_cryptography$hazmat$_oid;
+    module_exception_exit:
+
+#if _NUITKA_MODULE_MODE && 0
+    {
+        PyObject *module_name = GET_STRING_DICT_VALUE(moduledict_cryptography$hazmat$_oid, (Nuitka_StringObject *)const_str_plain___name__);
+
+        if (module_name != NULL) {
+            Nuitka_DelModule(tstate, module_name);
+        }
+    }
+#endif
+    PGO_onModuleExit("cryptography$hazmat$_oid", false);
+
+    RESTORE_ERROR_OCCURRED_STATE(tstate, &exception_state);
+    return NULL;
+}

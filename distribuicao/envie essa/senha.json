@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "algorithm": "pbkdf2-sha256",
+  "iterations": 600000,
+  "salt": "e815546364afc30326495c1c4da0940f",
+  "digest": "2e67ed24be68fdb2f7396718de49b9926e9305458f31f984f7c0e5bf593d0476"
+}
