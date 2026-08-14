@@ -9,16 +9,10 @@ import time
 import tkinter as tk
 from datetime import datetime
 from pathlib import Path
-from tkinter import messagebox, simpledialog
 
 import pyautogui
 import requests
 from pynput import keyboard, mouse
-
-try:
-    from auth import activate, activation_status, load_protected_api_key
-except ModuleNotFoundError:
-    from StudyHotkey.auth import activate, activation_status, load_protected_api_key
 
 try:
     import msvcrt
@@ -100,11 +94,6 @@ class StudyHotkeyApp:
         self.root = tk.Tk()
         self.root.withdraw()
 
-        if not self.authenticate_device():
-            self.request_supervisor_stop()
-            self.root.destroy()
-            raise SystemExit("StudyHotkey nao autorizado neste computador.")
-
         self.modal = None
         self.busy = False
         self.last_capture_at = 0
@@ -115,55 +104,6 @@ class StudyHotkeyApp:
             on_release=self.on_key_release,
         )
         self.mouse_listener = mouse.Listener(on_click=self.on_mouse_click)
-
-    def authenticate_device(self) -> bool:
-        status = activation_status()
-        if status == "active":
-            return True
-
-        messages = {
-            "password_missing": (
-                "A senha nao foi configurada. Execute configurar-senha.bat."
-            ),
-            "other_machine": "Esta copia ja foi vinculada a outro computador.",
-            "invalid": "O arquivo de ativacao e invalido ou foi alterado.",
-        }
-        if status in messages:
-            messagebox.showerror(
-                "StudyHotkey",
-                messages[status],
-                parent=self.root,
-            )
-            return False
-
-        for _ in range(3):
-            password = simpledialog.askstring(
-                "Ativacao do StudyHotkey",
-                "Digite a senha para liberar este computador:",
-                show="*",
-                parent=self.root,
-            )
-            if password is None:
-                return False
-            if activate(password):
-                messagebox.showinfo(
-                    "StudyHotkey",
-                    "Computador liberado com sucesso.",
-                    parent=self.root,
-                )
-                return True
-            messagebox.showerror(
-                "StudyHotkey",
-                "Senha incorreta.",
-                parent=self.root,
-            )
-        return False
-
-    def request_supervisor_stop(self) -> None:
-        try:
-            (APP_DIR / "StudyHotkey.stop").write_text("STOP", encoding="utf-8")
-        except OSError:
-            pass
 
     def acquire_socket_lock(self):
         lock_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -477,10 +417,6 @@ class StudyHotkeyApp:
         return f"data:image/jpeg;base64,{encoded}"
 
     def load_api_key(self) -> str:
-        api_key = load_protected_api_key()
-        if self.is_valid_api_key_value(api_key):
-            return api_key
-
         api_key = os.getenv("OPENAI_API_KEY", "").strip()
         if self.is_valid_api_key_value(api_key):
             return api_key

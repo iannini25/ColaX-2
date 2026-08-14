@@ -1,0 +1,1 @@
+Comunicacao com a API funcionando. Modelo=gpt-4o; HTTP=200

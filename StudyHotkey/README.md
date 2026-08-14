@@ -11,7 +11,13 @@ prefixos como m, u, k e M. Em multipla escolha, o retorno exibido e somente a le
 
 ## Como usar
 
-1. Configure a chave da IA:
+1. Abra `iniciar-studyhotkey.vbs`, na pasta principal.
+
+Na primeira execucao, se a chave da API ainda nao estiver configurada, o inicializador
+pede a chave e a salva localmente em `StudyHotkey\openai_key.txt`. Nao e preciso editar
+o codigo. Esse arquivo contem uma credencial de cobranca e nao deve ser publicado.
+
+Como alternativa, configure a chave no Windows:
 
 ```powershell
 $env:OPENAI_API_KEY="sua-chave"
@@ -43,40 +49,16 @@ Use `STUDYHOTKEY_CAPTURE_MODE=cursor` se quiser capturar so uma area ao redor do
 Nesse modo, coloque o mouse em cima ou perto da questao antes de apertar o atalho.
 `STUDYHOTKEY_IMAGE_DETAIL`, `STUDYHOTKEY_MAX_IMAGE_SIZE` e `STUDYHOTKEY_JPEG_QUALITY` controlam qualidade e gasto por chamada. `STUDYHOTKEY_FALLBACK_ON_ERR=1` ativa uma segunda tentativa mais nitida quando a IA responder `Err.`, mas gasta mais.
 
-3. Execute:
+3. Para executar manualmente:
 
 ```powershell
 py main.py
 ```
 
-Ou de dois cliques em `iniciar-studyhotkey.vbs`, na pasta principal. O script localiza o Python,
-instala automaticamente as dependencias de `StudyHotkey\requirements.txt` e inicia
-o aplicativo em segundo plano. Se o Python ou alguma dependencia falhar, uma mensagem
-informa o problema.
-
-## Senha e vinculacao ao computador
-
-A senha inicial ja esta configurada e fica somente como hash protegido em
-`StudyHotkey\senha.json`; o texto original nao e salvo no projeto. Na primeira abertura,
-`iniciar-studyhotkey.vbs` pede a senha e cria `StudyHotkey\ativacao.json`, vinculado ao
-Windows atual. Depois disso, o programa abre sem pedir ou exibir a senha.
-
-Se a pasta ja ativada for copiada para outro computador, o aplicativo recusa a
-execucao. Para trocar a senha, execute `configurar-senha.bat`: a senha atual sera
-exigida, a nova senha fica oculta durante a digitacao e a ativacao anterior e removida.
-
-## Pasta para venda
-
-Execute `gerar-distribuicao.ps1` para compilar uma nova versao. O resultado fica em
-`distribuicao\envie essa`. Envie somente essa pasta ao comprador, que deve abrir
-`iniciar.vbs`. Para encerrar, deve abrir `parar.vbs`. A distribuicao inclui o Python e
-as dependencias compiladas, portanto o outro computador nao precisa instalar nada.
-Essa pasta nao contem arquivos `.py`, `.env`, chave em texto aberto ou ativacao de
-outro computador.
-
-A chave da API distribuida fica criptografada com a senha em `api_key.enc`. Na primeira
-ativacao ela e descriptografada apenas em memoria e armazenada novamente usando a
-protecao de dados do Windows para aquela conta e computador.
+O `iniciar-studyhotkey.vbs` localiza o Python, tenta instalar automaticamente o Python
+3.12 pelo `winget` quando necessario, instala as dependencias de
+`StudyHotkey\requirements.txt` e inicia o aplicativo em segundo plano. Nao existe senha,
+ativacao, vinculacao ao computador, executavel compilado ou pasta de distribuicao.
 
 O aplicativo e iniciado por um supervisor VBS (`wscript.exe`). Se o processo Python
 principal travar ou for encerrado isoladamente, ele sera iniciado novamente depois
@@ -90,16 +72,16 @@ inicializacao automatica junto com o sistema.
 
 ## Usar em outro computador
 
-Copie a pasta completa do projeto, preservando a pasta `StudyHotkey` e os arquivos
+Copie a pasta completa do projeto, preservando a pasta `StudyHotkey` e os tres arquivos
 `.vbs`. Nao basta copiar somente o inicializador. No outro computador:
 
-1. Instale o Python 3 para Windows, caso ainda nao esteja instalado.
-2. Configure `OPENAI_API_KEY` no ambiente ou no arquivo `StudyHotkey\.env`.
-3. Abra `iniciar-studyhotkey.vbs`.
+1. Abra `iniciar-studyhotkey.vbs`.
+2. Autorize a instalacao do Python, caso seja solicitada.
+3. Cole uma chave da API quando o inicializador pedir.
 
 O inicializador aceita Python disponivel pelos comandos `py` ou `python`, instala
 automaticamente as bibliotecas de `requirements.txt` e verifica todos os imports
-necessarios antes de iniciar. Nao e preciso alterar o codigo-fonte.
+necessarios antes de iniciar. Nao e preciso alterar o codigo-fonte nem informar senha.
 
 Atalho global:
 
