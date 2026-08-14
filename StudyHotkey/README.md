@@ -2,12 +2,14 @@
 
 Modo estudo com OCR na nuvem.
 
-O app local captura a tela, escuta o atalho e mostra a resposta. A IA na nuvem le o
-enunciado, interpreta o diagrama do circuito, realiza o calculo e identifica a alternativa.
+O app local captura a tela em qualquer programa, escuta o atalho e mostra a resposta.
+A IA na nuvem le o enunciado ou a expressao, realiza o calculo e identifica a resposta.
 
 O prompt esta preparado para questoes com resistores, fontes, associacoes em serie e
 paralelo, leis de Ohm e Kirchhoff, potencia, analise nodal/de malhas e grandezas com
-prefixos como m, u, k e M. Em multipla escolha, o retorno exibido e somente a letra.
+prefixos como m, u, k e M, alem de contas e questoes gerais. Expressoes isoladas como
+`2+2` tambem sao reconhecidas como exercicios. Em multipla escolha, o retorno exibido
+e somente a letra.
 
 ## Como usar
 

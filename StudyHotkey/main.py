@@ -21,18 +21,21 @@ except ImportError:
 
 
 AI_PROMPT = """
-Voce e um tutor especialista em circuitos eletricos e eletronica basica. Resolva
-questoes de estudo apresentadas como imagens, especialmente diagramas de circuitos
-com resistores, fontes, corrente, tensao, potencia e alternativas de multipla escolha.
+Voce e um tutor capaz de resolver questoes de estudo apresentadas como imagens em
+qualquer aplicativo, incluindo navegador, leitor de PDF, Paint, bloco de notas e
+programas de exercicios. Resolva matematica, fisica, circuitos eletricos e outras
+disciplinas. Uma conta ou expressao isolada, como 2+2, 5 x 8 ou x^2=9, conta como
+questao mesmo sem ponto de interrogacao, alternativas ou um enunciado completo.
 
 Ao receber a imagem:
 1. Leia a questao principal e todas as alternativas/campos relacionados.
 2. Se houver mais de uma questao visivel, use a mais proxima do centro da imagem
    (a captura regional ja e centralizada na posicao do cursor).
-3. Examine o diagrama visualmente: identifique nos, ramos, conexoes, componentes,
-   polaridades e quais elementos estao realmente em serie ou em paralelo. Nao conclua
-   a topologia apenas pela proximidade dos simbolos.
-4. Transcreva internamente cada valor com sua unidade. Interprete corretamente os
+3. Identifique o tipo de exercicio e resolva usando as regras adequadas da disciplina.
+   Se houver circuito, examine o diagrama visualmente: identifique nos, ramos,
+   conexoes, componentes, polaridades e quais elementos estao realmente em serie ou
+   em paralelo. Nao conclua a topologia apenas pela proximidade dos simbolos.
+4. Transcreva internamente cada valor, simbolo e unidade. Interprete corretamente os
    prefixos e notacoes usuais: m, u/micro, n, k, M; por exemplo, 1k5 = 1,5 kohm.
    Diferencie com cuidado mW de W, mA de A e kohm de ohm.
 5. Identifique exatamente a grandeza pedida e os dados fornecidos. Faca internamente
@@ -57,7 +60,8 @@ Para varios campos, apresente um resultado por linha e na ordem mostrada.
 
 Se a imagem estiver em branco, corrompida, desfocada, pequena demais ou cortada a
 ponto de impedir a leitura, responda somente: ERP
-Se a imagem estiver legivel, mas nao contiver nenhuma questao, responda somente: ERQ
+Se a imagem estiver legivel, mas nao contiver questao, conta, expressao para resolver
+ou exercicio identificavel, responda somente: ERQ
 Para outra falha que nao se encaixe nesses casos, responda somente: Err.
 Nao invente nada que nao esteja visivel.
 """
@@ -300,7 +304,7 @@ class StudyHotkeyApp:
             jpeg_quality=JPEG_QUALITY,
         )
 
-        if answer not in {"Err.", "ERP"} or not FALLBACK_ON_ERR:
+        if answer not in {"Err.", "ERP", "ERQ"} or not FALLBACK_ON_ERR:
             return answer
 
         self.write_status("IA retornou Err. Tentando novamente com imagem mais nitida...")
@@ -338,8 +342,9 @@ class StudyHotkeyApp:
                             {
                                 "type": "text",
                                 "text": (
-                                    "Encontre a questao principal de circuitos eletricos na imagem, "
-                                    "resolva-a com cuidado e responda somente a resposta final."
+                                    "Encontre a questao, conta ou exercicio principal na imagem, "
+                                    "independentemente do aplicativo e da disciplina. Resolva com "
+                                    "cuidado e responda somente a resposta final."
                                 ),
                             },
                             {

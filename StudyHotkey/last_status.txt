@@ -1,1 +1,1 @@
-Comunicacao com a API funcionando. Modelo=gpt-4o; HTTP=200
+Resposta da IA: 9,4 V
