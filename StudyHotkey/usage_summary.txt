@@ -1,8 +1,0 @@
-chamadas=299
-input_tokens=8223938
-output_tokens=1322
-total_tokens=8225260
-estimated_usd=1.23438390
-modelo=gpt-4o
-preco_input_por_1M=0.15
-preco_output_por_1M=0.6
