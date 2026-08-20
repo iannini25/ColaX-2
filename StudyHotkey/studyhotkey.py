@@ -29,6 +29,14 @@ AI_MAX_TOKENS = 80
 SHOW_ONLY_FINAL_ANSWER = False
 ANSWER_POSTPROCESSOR = None
 
+
+def extract_confirmed_option(answer: str) -> str:
+    matches = re.findall(
+        r"(?im)^\s*CONFERENCIA\s*:\s*([A-E])\s*=\s*\S.+$",
+        answer,
+    )
+    return matches[-1].upper() if matches else ""
+
 API_URL = os.getenv("STUDYHOTKEY_API_URL", "https://api.openai.com/v1/chat/completions")
 MODEL = os.getenv("STUDYHOTKEY_MODEL", "gpt-4o")
 IMAGE_DETAIL = os.getenv("STUDYHOTKEY_IMAGE_DETAIL", "high")

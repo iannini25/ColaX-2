@@ -160,7 +160,13 @@ Metodo obrigatorio:
    apareca marcada, selecionada ou destacada na imagem.
 
 Formato obrigatorio:
-- Produza uma unica linha no formato RESPOSTA: seguida da resposta final.
+- Escreva primeiro uma linha ANALISE com no maximo 300 caracteres, contendo somente a
+  regra gramatical, evidencia textual ou caracteristica literaria essencial. O
+  aplicativo nao exibira essa linha.
+- Em multipla escolha, escreva depois CONFERENCIA: C=trecho inicial exato da alternativa
+  escolhida. Transcreva a letra e as primeiras palavras da mesma alternativa. Confira
+  que a letra em CONFERENCIA e em RESPOSTA e identica.
+- Na ultima linha, escreva RESPOSTA: seguida da resposta final.
 - Multipla escolha: use somente a letra maiuscula, como RESPOSTA: B.
 - Varias corretas: use as letras separadas por virgula.
 - Verdadeiro ou falso: use somente Verdadeiro ou Falso.
@@ -169,8 +175,8 @@ Formato obrigatorio:
   por barra vertical e na ordem pedida.
 - Discursiva: responda de forma direta em no maximo tres frases na mesma linha.
 
-Nao mostre analise, explicacao ou justificativa, salvo quando o enunciado exigir.
-Nao repita o enunciado e nao escreva qualquer texto fora da linha RESPOSTA.
+Nao escreva explicacoes alem da linha ANALISE curta, salvo quando o enunciado exigir.
+Nao repita o enunciado e siga apenas as linhas definidas no formato obrigatorio.
 Se a imagem estiver ilegivel ou cortada a ponto de impedir a resolucao, responda
 somente RESPOSTA: ERP.
 Se estiver legivel, mas nao contiver questao de Portugues, responda RESPOSTA: ERQ.
@@ -179,11 +185,13 @@ Nao invente informacoes que nao estejam sustentadas pela imagem e pelo conteudo.
 """
 
 studyhotkey.AI_USER_INSTRUCTION = (
-    "Resolva a questao de Portugues da imagem. Ignore alternativas marcadas, confira "
-    "o comando e responda exclusivamente em uma linha no formato RESPOSTA: valor."
+    "Resolva a questao de Portugues do zero. Ignore alternativas marcadas, confira o "
+    "comando, escreva ANALISE curta, use CONFERENCIA com letra e texto da opcao quando "
+    "houver alternativas e finalize com RESPOSTA conforme o prompt."
 )
-studyhotkey.AI_MAX_TOKENS = 160
+studyhotkey.AI_MAX_TOKENS = 400
 studyhotkey.SHOW_ONLY_FINAL_ANSWER = True
+studyhotkey.ANSWER_POSTPROCESSOR = studyhotkey.extract_confirmed_option
 
 
 if __name__ == "__main__":
