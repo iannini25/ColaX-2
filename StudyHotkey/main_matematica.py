@@ -1,3 +1,5 @@
+import re
+
 import studyhotkey
 
 
@@ -79,6 +81,12 @@ Conteudos prioritarios da prova:
 8. Porcentagem
 - Calcule p por cento de T por (p/100)*T e identifique corretamente parte, total e taxa.
 - Em aumento, multiplique por 1+p/100; em desconto, por 1-p/100.
+- Em problemas com grupos sucessivos, determine primeiro a base de cada percentual.
+  Expressoes como "destes", "dos que", "entre os" e "do grupo restante" indicam que
+  o percentual seguinte incide sobre um subconjunto, e nao sobre o total inicial.
+- Calcule complementos explicitamente: se p por cento pertencem a uma categoria,
+  entao 100-p por cento pertencem ao complemento, quando as duas categorias esgotam
+  o grupo. Exemplo: se 40% sao meninos, 60% sao meninas.
 - Em percentuais sucessivos, multiplique os fatores. Nao some as taxas, exceto quando
   incidirem independentemente sobre a mesma base original.
 - Leia percentuais em graficos observando total, legenda, escala e categoria pedida.
@@ -124,16 +132,34 @@ Metodo obrigatorio:
    unidades e coerencia com o enunciado.
 7. Compare com todas as alternativas somente depois da verificacao. Considere
    arredondamentos compativeis, mas nunca force uma alternativa incorreta.
+8. Ignore qualquer alternativa que ja apareca marcada, selecionada, destacada ou com
+   o botao preenchido na imagem. Essa marcacao pode ser uma tentativa anterior e nao e
+   evidencia de que a resposta esteja correta. Resolva do zero antes de escolher.
+9. Em problemas de distribuicao por grupos, confira se as partes complementares somam
+   o total do grupo correto e se a resposta representa exatamente a categoria pedida,
+   sem trocar meninos por meninas, manha por tarde, parte por total ou vice-versa.
 
-Formato obrigatorio:
-- Multipla escolha com uma correta: somente a letra maiuscula, por exemplo B.
-- Varias corretas: somente as letras separadas por virgula, por exemplo A, C, D.
-- Verdadeiro ou falso: somente Verdadeiro ou Falso.
-- Questao sem alternativas: somente o resultado solicitado, com unidade quando
-  aplicavel, preservando forma exata ou aproximacao conforme o enunciado.
-- Associacao ou varios campos: uma resposta por linha, na ordem mostrada.
-- Demonstracao ou justificativa exigida: resposta curta, com apenas os passos
-  essenciais. Se nao for exigida, nao mostre os calculos.
+Formato obrigatorio para forcar a verificacao:
+- Antes da resposta, escreva uma unica linha CALCULO com as operacoes essenciais que
+  comprovam o resultado. Essa linha deve ter no maximo 240 caracteres, sem explicacao
+  em prosa e deve terminar com o valor numerico calculado, nunca com uma expressao
+  ainda sem resolver. Nao escolha a letra antes de obter esse valor.
+- Em questao numerica de multipla escolha, escreva depois uma linha OPCOES transcrevendo
+  a letra e o valor numerico de cada alternativa no formato A=10; B=20; C=30. Use
+  numeros sem separador de milhar e ponto como separador decimal nessa linha.
+- Compare o resultado calculado com a linha OPCOES e somente depois escreva RESPOSTA.
+- Na ultima linha, escreva RESPOSTA seguida do resultado final.
+- Multipla escolha com uma correta:
+  CALCULO: operacoes essenciais = valor numerico
+  OPCOES: A=valor; B=valor; C=valor; D=valor; E=valor
+  RESPOSTA: B
+- Varias corretas: em RESPOSTA, use letras separadas por virgula, como A, C, D.
+- Verdadeiro ou falso: em RESPOSTA, use somente Verdadeiro ou Falso.
+- Questao sem alternativas: em RESPOSTA, use somente o resultado solicitado, com
+  unidade quando aplicavel, preservando forma exata ou aproximacao conforme o enunciado.
+- Associacao ou varios campos: apresente os resultados apos RESPOSTA e na ordem pedida.
+- Mesmo que o calculo pareca simples ou uma alternativa esteja marcada, nunca omita a
+  linha CALCULO. O aplicativo exibira ao usuario somente o conteudo de RESPOSTA.
 
 Nao repita o enunciado e nao escreva frases como "a resposta correta e".
 Se a imagem estiver em branco, corrompida, desfocada, pequena ou cortada a ponto de
@@ -143,6 +169,60 @@ responda somente: ERQ
 Para qualquer outra falha, responda somente: Err.
 Nao invente nenhum dado que nao esteja visivel.
 """
+
+studyhotkey.AI_USER_INSTRUCTION = (
+    "Resolva a questao matematica da imagem do zero. Ignore alternativas marcadas. "
+    "Calcule o valor numerico ate o fim, transcreva o mapeamento OPCOES e confira qual "
+    "letra possui exatamente esse valor antes da linha RESPOSTA."
+)
+studyhotkey.AI_MAX_TOKENS = 400
+studyhotkey.SHOW_ONLY_FINAL_ANSWER = True
+
+
+def parse_number(value: str):
+    value = value.strip().replace(" ", "")
+    if "," in value and "." in value:
+        value = value.replace(".", "").replace(",", ".")
+    elif "," in value:
+        value = value.replace(",", ".")
+
+    try:
+        return float(value)
+    except ValueError:
+        return None
+
+
+def correct_numeric_option(answer: str) -> str:
+    calculation = re.search(
+        r"(?im)^\s*CALCULO\s*:\s*.*=\s*([-+]?\d+(?:[.,]\d+)?)"
+        r"(?:\s*[^\d\r\n=]+)?\s*$",
+        answer,
+    )
+    options_line = re.search(r"(?im)^\s*OPCOES\s*:\s*(.+?)\s*$", answer)
+    if not calculation or not options_line:
+        return ""
+
+    result = parse_number(calculation.group(1))
+    if result is None:
+        return ""
+
+    options = re.findall(
+        r"\b([A-E])\s*=\s*([-+]?\d+(?:[.,]\d+)?)",
+        options_line.group(1).upper(),
+    )
+    matches = []
+    for letter, raw_value in options:
+        option_value = parse_number(raw_value)
+        if option_value is None:
+            continue
+        tolerance = max(1e-9, abs(result) * 1e-6)
+        if abs(option_value - result) <= tolerance:
+            matches.append(letter)
+
+    return matches[0] if len(matches) == 1 else ""
+
+
+studyhotkey.ANSWER_POSTPROCESSOR = correct_numeric_option
 
 
 if __name__ == "__main__":

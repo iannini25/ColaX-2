@@ -1,8 +1,8 @@
-chamadas=13
-input_tokens=5506
-output_tokens=28
-total_tokens=5534
-estimated_usd=0.00084270
+chamadas=81
+input_tokens=218875
+output_tokens=3707
+total_tokens=222582
+estimated_usd=0.03505545
 modelo=gpt-4o
 preco_input_por_1M=0.15
 preco_output_por_1M=0.6

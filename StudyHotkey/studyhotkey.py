@@ -21,6 +21,13 @@ except ImportError:
 
 
 AI_PROMPT = ""
+AI_USER_INSTRUCTION = (
+    "Encontre a questao principal na imagem, resolva com cuidado e siga exatamente "
+    "o formato de resposta definido pelo prompt da materia."
+)
+AI_MAX_TOKENS = 80
+SHOW_ONLY_FINAL_ANSWER = False
+ANSWER_POSTPROCESSOR = None
 
 API_URL = os.getenv("STUDYHOTKEY_API_URL", "https://api.openai.com/v1/chat/completions")
 MODEL = os.getenv("STUDYHOTKEY_MODEL", "gpt-4o")
@@ -300,11 +307,7 @@ class StudyHotkeyApp:
                         "content": [
                             {
                                 "type": "text",
-                                "text": (
-                                    "Encontre a questao, conta ou exercicio principal na imagem, "
-                                    "independentemente do aplicativo e da disciplina. Resolva com "
-                                    "cuidado e responda somente a resposta final."
-                                ),
+                                "text": AI_USER_INSTRUCTION,
                             },
                             {
                                 "type": "image_url",
@@ -317,7 +320,7 @@ class StudyHotkeyApp:
                     },
                 ],
                 "temperature": 0,
-                "max_tokens": 80,
+                "max_tokens": AI_MAX_TOKENS,
             },
         )
         self.write_status(f"Resposta HTTP da IA: {response.status_code}")
@@ -329,6 +332,11 @@ class StudyHotkeyApp:
         answer = data["choices"][0]["message"]["content"].strip()
         (APP_DIR / "last_answer_raw.txt").write_text(answer, encoding="utf-8")
         self.record_usage(data.get("usage", {}))
+        finish_reason = data["choices"][0].get("finish_reason", "desconhecido")
+        if finish_reason == "length":
+            self.log_error(
+                f"Resposta da IA truncada no limite de {AI_MAX_TOKENS} tokens."
+            )
         self.write_status(f"Resposta da IA: {answer[:200]}")
         return self.clean_answer(answer)
 
@@ -430,6 +438,14 @@ class StudyHotkeyApp:
         if answer.strip().lower().startswith("err"):
             return "Err."
 
+        if callable(ANSWER_POSTPROCESSOR):
+            processed_answer = ANSWER_POSTPROCESSOR(answer)
+            if processed_answer:
+                return processed_answer
+
+        if SHOW_ONLY_FINAL_ANSWER:
+            return StudyHotkeyApp.extract_strict_final_answer(answer)
+
         answer = re.sub(r"(?i)^#+\s*", "", answer)
         answer = re.sub(r"(?i)\*\*(resposta|motivo)\s*:\*\*", r"\1:", answer)
 
@@ -464,6 +480,49 @@ class StudyHotkeyApp:
                 return ", ".join(letters)
 
         return answer[:320]
+
+    @staticmethod
+    def extract_strict_final_answer(answer: str) -> str:
+        plain_answer = re.sub(r"[*_`#]", "", answer)
+        marker_pattern = (
+            r"(?im)^\s*(?:-\s*)?"
+            r"(?:resposta|resultado)(?:\s+final)?\s*[:\-]\s*(.+?)\s*$"
+        )
+        matches = re.findall(marker_pattern, plain_answer)
+        if matches:
+            final_answer = matches[-1].strip()
+            return final_answer[:180] if final_answer else "Err."
+
+        compact_answer = plain_answer.strip()
+        if "\n" not in compact_answer and len(compact_answer) <= 180:
+            if re.match(r"(?i)^\s*(calculo|resolucao|verificacao)\s*:", compact_answer):
+                return "Err."
+            if StudyHotkeyApp.looks_like_letter_answer(compact_answer):
+                letters = StudyHotkeyApp.extract_letters(compact_answer)
+                return ", ".join(letters) if letters else "Err."
+            if re.fullmatch(r"(?i)verdadeiro|falso", compact_answer):
+                return compact_answer.capitalize()
+            if re.match(r"^\s*(?:[-+]?\d|[a-zA-Z]\s*=)", compact_answer):
+                return compact_answer
+            return "Err."
+
+        for line in reversed(plain_answer.splitlines()):
+            clean_line = line.strip()
+            if not clean_line:
+                continue
+
+            if StudyHotkeyApp.looks_like_letter_answer(clean_line):
+                letters = StudyHotkeyApp.extract_letters(clean_line)
+                return ", ".join(letters) if letters else "Err."
+
+            alternative = re.fullmatch(
+                r"(?i)(?:portanto,?\s*)?(?:alternativa|opcao|letra)\s*[:\-]?\s*([A-E])\.?",
+                clean_line,
+            )
+            if alternative:
+                return alternative.group(1).upper()
+
+        return "Err."
 
     @staticmethod
     def extract_final_answer(answer: str) -> str:
