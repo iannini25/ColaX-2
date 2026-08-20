@@ -2,8 +2,9 @@ Set shell = CreateObject("WScript.Shell")
 Set fso = CreateObject("Scripting.FileSystemObject")
 
 appDir = fso.GetParentFolderName(WScript.ScriptFullName)
-mainPath = fso.BuildPath(appDir, "main.py")
 studyHotkeyDir = fso.BuildPath(appDir, "StudyHotkey")
+direitoMainPath = fso.BuildPath(studyHotkeyDir, "main_direito.py")
+matematicaMainPath = fso.BuildPath(studyHotkeyDir, "main_matematica.py")
 supervisorPath = fso.BuildPath(appDir, "supervisionar-studyhotkey.vbs")
 stopPath = fso.BuildPath(studyHotkeyDir, "StudyHotkey.stop")
 
@@ -24,7 +25,8 @@ Set pythonProcesses = processService.ExecQuery( _
 
 For Each process In pythonProcesses
     If Not IsNull(process.CommandLine) Then
-        If InStr(1, process.CommandLine, mainPath, vbTextCompare) > 0 Then
+        If InStr(1, process.CommandLine, direitoMainPath, vbTextCompare) > 0 Or _
+           InStr(1, process.CommandLine, matematicaMainPath, vbTextCompare) > 0 Then
             process.Terminate
         End If
     End If

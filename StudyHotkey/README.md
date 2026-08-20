@@ -1,19 +1,23 @@
-# StudyHotkey - Circuitos Eletricos
+# StudyHotkey - Modos por materia
 
 Modo estudo com OCR na nuvem.
 
 O app local captura a tela em qualquer programa, escuta o atalho e mostra a resposta.
 A IA na nuvem le o enunciado ou a expressao, realiza o calculo e identifica a resposta.
 
-O prompt esta preparado para questoes com resistores, fontes, associacoes em serie e
-paralelo, leis de Ohm e Kirchhoff, potencia, analise nodal/de malhas e grandezas com
-prefixos como m, u, k e M, alem de contas e questoes gerais. Expressoes isoladas como
-`2+2` tambem sao reconhecidas como exercicios. Em multipla escolha, o retorno exibido
-e somente a letra.
+Existem entradas separadas por materia. Atualmente estao disponiveis Direito e
+Matematica. As duas usam o mesmo mecanismo de captura e os mesmos atalhos, mas cada
+uma possui seu proprio prompt especializado. Execute somente uma materia por vez.
 
 ## Como usar
 
-1. Abra `iniciar-studyhotkey.vbs`, na pasta principal.
+1. Na pasta principal, abra o inicializador da materia desejada:
+
+- `iniciar-direito.vbs`
+- `iniciar-matematica.vbs`
+
+Para trocar de materia, primeiro use `parar-studyhotkey.vbs` e depois abra o outro
+inicializador.
 
 Na primeira execucao, se a chave da API ainda nao estiver configurada, o inicializador
 pede a chave e a salva localmente em `StudyHotkey\openai_key.txt`. Nao e preciso editar
@@ -54,8 +58,11 @@ Nesse modo, coloque o mouse em cima ou perto da questao antes de apertar o atalh
 3. Para executar manualmente:
 
 ```powershell
-py main.py
+py StudyHotkey\main_direito.py
+py StudyHotkey\main_matematica.py
 ```
+
+Execute apenas um dos dois comandos por vez.
 
 O `iniciar-studyhotkey.vbs` localiza o Python, tenta instalar automaticamente o Python
 3.12 pelo `winget` quando necessario, instala as dependencias de

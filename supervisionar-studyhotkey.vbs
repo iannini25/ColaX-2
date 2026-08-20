@@ -2,8 +2,8 @@ Set shell = CreateObject("WScript.Shell")
 Set fso = CreateObject("Scripting.FileSystemObject")
 
 appDir = fso.GetParentFolderName(WScript.ScriptFullName)
-mainPath = fso.BuildPath(appDir, "main.py")
 studyHotkeyDir = fso.BuildPath(appDir, "StudyHotkey")
+mainPath = fso.BuildPath(studyHotkeyDir, "main_direito.py")
 stopPath = fso.BuildPath(studyHotkeyDir, "StudyHotkey.stop")
 statusPath = fso.BuildPath(studyHotkeyDir, "supervisor_status.txt")
 
@@ -12,6 +12,10 @@ If WScript.Arguments.Count = 0 Then
 End If
 
 pythonPath = WScript.Arguments(0)
+
+If WScript.Arguments.Count > 1 Then
+    mainPath = WScript.Arguments(1)
+End If
 
 If Not fso.FileExists(pythonPath) Or Not fso.FileExists(mainPath) Then
     WScript.Quit 1
@@ -23,7 +27,7 @@ End If
 
 Do
     Set statusFile = fso.CreateTextFile(statusPath, True)
-    statusFile.WriteLine Now & " Aplicativo iniciado pelo supervisor VBS."
+    statusFile.WriteLine Now & " Aplicativo iniciado pelo supervisor VBS: " & fso.GetFileName(mainPath)
     statusFile.Close
 
     runCommand = """" & pythonPath & """ """ & mainPath & """"

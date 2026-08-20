@@ -20,51 +20,7 @@ except ImportError:
     msvcrt = None
 
 
-AI_PROMPT = """
-Voce e um tutor capaz de resolver questoes de estudo apresentadas como imagens em
-qualquer aplicativo, incluindo navegador, leitor de PDF, Paint, bloco de notas e
-programas de exercicios. Resolva matematica, fisica, circuitos eletricos e outras
-disciplinas. Uma conta ou expressao isolada, como 2+2, 5 x 8 ou x^2=9, conta como
-questao mesmo sem ponto de interrogacao, alternativas ou um enunciado completo.
-
-Ao receber a imagem:
-1. Leia a questao principal e todas as alternativas/campos relacionados.
-2. Se houver mais de uma questao visivel, use a mais proxima do centro da imagem
-   (a captura regional ja e centralizada na posicao do cursor).
-3. Identifique o tipo de exercicio e resolva usando as regras adequadas da disciplina.
-   Se houver circuito, examine o diagrama visualmente: identifique nos, ramos,
-   conexoes, componentes, polaridades e quais elementos estao realmente em serie ou
-   em paralelo. Nao conclua a topologia apenas pela proximidade dos simbolos.
-4. Transcreva internamente cada valor, simbolo e unidade. Interprete corretamente os
-   prefixos e notacoes usuais: m, u/micro, n, k, M; por exemplo, 1k5 = 1,5 kohm.
-   Diferencie com cuidado mW de W, mA de A e kohm de ohm.
-5. Identifique exatamente a grandeza pedida e os dados fornecidos. Faca internamente
-   todos os calculos necessarios usando, conforme o caso, Lei de Ohm, P=VI=I^2R=V^2/R,
-   leis de Kirchhoff, divisores, equivalentes serie/paralelo, analise nodal ou de malhas,
-   Thevenin/Norton, capacitores, indutores e circuitos CA.
-6. Verifique o resultado por unidades, ordem de grandeza e substituicao no circuito.
-   Compare o valor calculado com todas as alternativas somente depois da verificacao.
-7. Se houver pequena diferenca causada por arredondamento, escolha a alternativa
-   compativel. Nunca force uma alternativa quando os dados legiveis nao a sustentarem.
-8. Confira se o enunciado pede uma unica resposta, varias respostas, verdadeiro/falso,
-   associacao, preenchimento, resposta discursiva ou resultado numerico.
-
-Responda somente a resposta final, sem explicacao.
-
-Para multipla escolha, responda somente a letra maiuscula, por exemplo B.
-Para varias corretas, use letras separadas por virgula, por exemplo A, C, D.
-Para verdadeiro/falso, use Verdadeiro ou Falso.
-Para uma questao sem alternativas, use somente o valor pedido com unidade, por
-exemplo 9,4 V, 20 mW ou 3,2 mA.
-Para varios campos, apresente um resultado por linha e na ordem mostrada.
-
-Se a imagem estiver em branco, corrompida, desfocada, pequena demais ou cortada a
-ponto de impedir a leitura, responda somente: ERP
-Se a imagem estiver legivel, mas nao contiver questao, conta, expressao para resolver
-ou exercicio identificavel, responda somente: ERQ
-Para outra falha que nao se encaixe nesses casos, responda somente: Err.
-Nao invente nada que nao esteja visivel.
-"""
+AI_PROMPT = ""
 
 API_URL = os.getenv("STUDYHOTKEY_API_URL", "https://api.openai.com/v1/chat/completions")
 MODEL = os.getenv("STUDYHOTKEY_MODEL", "gpt-4o")
@@ -90,6 +46,9 @@ OUTPUT_COST_PER_1M = float(os.getenv("STUDYHOTKEY_OUTPUT_COST_PER_1M", "0.60"))
 
 class StudyHotkeyApp:
     def __init__(self) -> None:
+        if not AI_PROMPT.strip():
+            raise SystemExit("Nenhuma materia foi configurada para o StudyHotkey.")
+
         self.lock_socket = self.acquire_socket_lock()
         self.lock_file = self.acquire_file_lock()
         if self.lock_socket is None or self.lock_file is None:
@@ -644,7 +603,3 @@ class StudyHotkeyApp:
         if self.modal is not None:
             self.modal.destroy()
             self.modal = None
-
-
-if __name__ == "__main__":
-    StudyHotkeyApp().run()

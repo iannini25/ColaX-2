@@ -43,8 +43,14 @@ Function FindPythonExecutable(shellObject, fileSystemObject)
 End Function
 
 appDir = fso.GetParentFolderName(WScript.ScriptFullName)
-mainPath = fso.BuildPath(appDir, "main.py")
 studyHotkeyDir = fso.BuildPath(appDir, "StudyHotkey")
+mainPath = fso.BuildPath(studyHotkeyDir, "main_direito.py")
+
+If WScript.Arguments.Count > 0 Then
+    requestedMain = fso.GetFileName(WScript.Arguments(0))
+    mainPath = fso.BuildPath(studyHotkeyDir, requestedMain)
+End If
+
 supervisorPath = fso.BuildPath(appDir, "supervisionar-studyhotkey.vbs")
 requirementsPath = fso.BuildPath(studyHotkeyDir, "requirements.txt")
 apiKeyPath = fso.BuildPath(studyHotkeyDir, "openai_key.txt")
@@ -158,5 +164,5 @@ If Not fso.FileExists(pythonwPath) Then
     pythonwPath = pythonPath
 End If
 
-startCommand = "wscript.exe """ & supervisorPath & """ """ & pythonwPath & """"
+startCommand = "wscript.exe """ & supervisorPath & """ """ & pythonwPath & """ """ & mainPath & """"
 shell.Run startCommand, 0, False
