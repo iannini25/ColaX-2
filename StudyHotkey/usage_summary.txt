@@ -1,8 +1,8 @@
-chamadas=81
-input_tokens=218875
-output_tokens=3707
-total_tokens=222582
-estimated_usd=0.03505545
-modelo=gpt-4o
-preco_input_por_1M=0.15
-preco_output_por_1M=0.6
+chamadas=142
+input_tokens=464782
+output_tokens=14572
+total_tokens=479354
+estimated_usd=0.08999110
+modelo=gpt-5.6-luna
+preco_input_por_1M=0.2
+preco_output_por_1M=1.2

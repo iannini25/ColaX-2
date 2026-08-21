@@ -192,36 +192,31 @@ Metodo obrigatorio:
    destacada ou com botao preenchido na imagem.
 7. Nao use informacao atual para alterar uma resposta cujo enunciado define outro ano.
 
-Formato obrigatorio para verificacao:
-- Escreva primeiro uma linha ANALISE com no maximo 300 caracteres, contendo apenas o
-  fato, conceito, relacao causal ou leitura de dados essencial. Ela nao sera exibida.
-- Em multipla escolha, escreva CONFERENCIA: C=trecho inicial exato da alternativa
-  escolhida. A letra deve corresponder ao texto transcrito e ser a mesma de RESPOSTA.
-- Na ultima linha, escreva RESPOSTA seguida somente da resposta final.
-- Multipla escolha: RESPOSTA: B.
-- Varias corretas: RESPOSTA: A, C, D.
-- Verdadeiro ou falso: RESPOSTA: Verdadeiro ou RESPOSTA: Falso.
-- Associacao ou varios campos: uma unica linha, separando itens por barra vertical.
-- Discursiva: no maximo tres frases na mesma linha apos RESPOSTA.
+Formato obrigatorio de saida estruturada:
+- Retorne somente um objeto JSON, sem markdown ou texto adicional.
+- Use exatamente os campos analise, letra, alternativa e resposta.
+- analise: fato, conceito, relacao causal ou leitura de dados essencial, com no maximo
+  300 caracteres.
+- Em multipla escolha, letra deve conter a letra escolhida, alternativa deve transcrever
+  o inicio exato dessa opcao e resposta deve repetir a mesma letra.
+- Sem alternativas, deixe letra e alternativa vazios e coloque apenas o resultado final
+  em resposta. Discursivas devem ter no maximo tres frases.
+- Confira novamente o ano, a fonte, a legenda e comandos como incorreta, NAO e exceto.
 
-Nao mostre explicacoes alem da linha ANALISE curta, salvo se o enunciado exigir.
-Nao repita o enunciado. Siga apenas as linhas do formato obrigatorio.
-Se a imagem estiver ilegivel ou cortada a ponto de impedir a resolucao, responda
-somente RESPOSTA: ERP.
-Se estiver legivel, mas nao contiver questao identificavel, responda RESPOSTA: ERQ.
-Para qualquer outra falha, responda RESPOSTA: Err.
+Nao repita o enunciado e nao mostre explicacao ao usuario.
+Se a imagem impedir a leitura, use resposta "ERP" e os demais campos vazios.
+Se nao houver questao identificavel, use resposta "ERQ" e os demais campos vazios.
+Para qualquer outra falha, use resposta "Err." e os demais campos vazios.
 Nao invente dados, datas, rankings ou relacoes que nao estejam sustentados pela imagem
 e pelo conhecimento historico e geografico aplicavel.
 """
 
 studyhotkey.AI_USER_INSTRUCTION = (
     "Resolva a questao de Historia ou Geografia do zero. Ignore alternativas marcadas, "
-    "respeite o ano e a fonte, escreva ANALISE curta, use CONFERENCIA com letra e texto "
-    "da opcao quando houver alternativas e finalize com RESPOSTA conforme o prompt."
+    "respeite o ano e a fonte e retorne somente o JSON exigido, conferindo letra, texto "
+    "da alternativa e resposta antes de enviar."
 )
-studyhotkey.AI_MAX_TOKENS = 400
-studyhotkey.SHOW_ONLY_FINAL_ANSWER = True
-studyhotkey.ANSWER_POSTPROCESSOR = studyhotkey.extract_confirmed_option
+studyhotkey.configure_fast_text_subject("STUDYHOTKEY_GEOGRAFIA_HISTORIA_MODEL")
 
 
 if __name__ == "__main__":

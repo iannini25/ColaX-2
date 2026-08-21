@@ -1,3 +1,7 @@
+import ast
+import json
+import operator
+import os
 import re
 
 import studyhotkey
@@ -139,44 +143,61 @@ Metodo obrigatorio:
    o total do grupo correto e se a resposta representa exatamente a categoria pedida,
    sem trocar meninos por meninas, manha por tarde, parte por total ou vice-versa.
 
-Formato obrigatorio para forcar a verificacao:
-- Antes da resposta, escreva uma unica linha CALCULO com as operacoes essenciais que
-  comprovam o resultado. Essa linha deve ter no maximo 240 caracteres, sem explicacao
-  em prosa e deve terminar com o valor numerico calculado, nunca com uma expressao
-  ainda sem resolver. Nao escolha a letra antes de obter esse valor.
-- Em questao numerica de multipla escolha, escreva depois uma linha OPCOES transcrevendo
-  a letra e o valor numerico de cada alternativa no formato A=10; B=20; C=30. Use
-  numeros sem separador de milhar e ponto como separador decimal nessa linha.
-- Compare o resultado calculado com a linha OPCOES e somente depois escreva RESPOSTA.
-- Na ultima linha, escreva RESPOSTA seguida do resultado final.
-- Multipla escolha com uma correta:
-  CALCULO: operacoes essenciais = valor numerico
-  OPCOES: A=valor; B=valor; C=valor; D=valor; E=valor
-  RESPOSTA: B
-- Varias corretas: em RESPOSTA, use letras separadas por virgula, como A, C, D.
-- Verdadeiro ou falso: em RESPOSTA, use somente Verdadeiro ou Falso.
-- Questao sem alternativas: em RESPOSTA, use somente o resultado solicitado, com
-  unidade quando aplicavel, preservando forma exata ou aproximacao conforme o enunciado.
-- Associacao ou varios campos: apresente os resultados apos RESPOSTA e na ordem pedida.
-- Mesmo que o calculo pareca simples ou uma alternativa esteja marcada, nunca omita a
-  linha CALCULO. O aplicativo exibira ao usuario somente o conteudo de RESPOSTA.
+Formato obrigatorio de saida estruturada:
+- Retorne somente um objeto JSON, sem markdown e sem texto antes ou depois.
+- Use exatamente os campos expressao, resultado, opcoes e resposta.
+- Em expressao, escreva apenas a expressao aritmetica final com numeros, ponto decimal,
+  parenteses e operadores +, -, *, / ou **. Nao use virgula decimal. Se a questao nao
+  permitir expressao numerica, use uma string vazia.
+- Em resultado, escreva somente o valor calculado ou uma string vazia.
+- Em opcoes, transcreva alternativas numericas no formato A=10; B=20; C=30, usando
+  ponto decimal e sem separador de milhar. Se nao forem numericas, use string vazia.
+- Em resposta, escreva somente a letra, letras ou resultado final.
+- A expressao deve representar o calculo completo daquilo que foi perguntado, incluindo
+  divisao em doses, conversao de unidade, porcentagem ou outra operacao final do enunciado.
+- Antes de enviar, avalie a expressao novamente: ela deve produzir exatamente resultado,
+  e resultado deve coincidir com o valor da alternativa indicada em resposta.
+- Resolva do zero e ignore completamente qualquer alternativa marcada na imagem.
 
 Nao repita o enunciado e nao escreva frases como "a resposta correta e".
 Se a imagem estiver em branco, corrompida, desfocada, pequena ou cortada a ponto de
-impedir a leitura, responda somente: ERP
+impedir a leitura, mantenha o JSON e use "resposta": "ERP", deixando os outros campos vazios.
 Se estiver legivel, mas nao contiver questao, expressao ou problema matematico,
-responda somente: ERQ
-Para qualquer outra falha, responda somente: Err.
+use "resposta": "ERQ", deixando os outros campos vazios.
+Para qualquer outra falha, use "resposta": "Err.", deixando os outros campos vazios.
 Nao invente nenhum dado que nao esteja visivel.
 """
 
 studyhotkey.AI_USER_INSTRUCTION = (
-    "Resolva a questao matematica da imagem do zero. Ignore alternativas marcadas. "
-    "Calcule o valor numerico ate o fim, transcreva o mapeamento OPCOES e confira qual "
-    "letra possui exatamente esse valor antes da linha RESPOSTA."
+    "Resolva a questao matematica do zero e ignore alternativas marcadas. Retorne "
+    "somente o JSON exigido, com expressao aritmetica avaliavel, resultado, opcoes e resposta."
 )
-studyhotkey.AI_MAX_TOKENS = 400
+studyhotkey.AI_MAX_TOKENS = 180
+studyhotkey.AI_MAX_COMPLETION_TOKENS = 800
+studyhotkey.AI_TEMPERATURE = None
 studyhotkey.SHOW_ONLY_FINAL_ANSWER = True
+studyhotkey.FALLBACK_ON_ERR = False
+studyhotkey.MODEL = os.getenv("STUDYHOTKEY_MATH_MODEL", "gpt-5.6-luna")
+studyhotkey.INPUT_COST_PER_1M = 0.20
+studyhotkey.OUTPUT_COST_PER_1M = 1.20
+studyhotkey.AI_RESPONSE_FORMAT = {
+    "type": "json_schema",
+    "json_schema": {
+        "name": "resposta_matematica",
+        "strict": True,
+        "schema": {
+            "type": "object",
+            "properties": {
+                "expressao": {"type": "string"},
+                "resultado": {"type": "string"},
+                "opcoes": {"type": "string"},
+                "resposta": {"type": "string"},
+            },
+            "required": ["expressao", "resultado", "opcoes", "resposta"],
+            "additionalProperties": False,
+        },
+    },
+}
 
 
 def parse_number(value: str):
@@ -192,37 +213,103 @@ def parse_number(value: str):
         return None
 
 
+ALLOWED_BINARY_OPERATORS = {
+    ast.Add: operator.add,
+    ast.Sub: operator.sub,
+    ast.Mult: operator.mul,
+    ast.Div: operator.truediv,
+    ast.Pow: operator.pow,
+}
+ALLOWED_UNARY_OPERATORS = {
+    ast.UAdd: operator.pos,
+    ast.USub: operator.neg,
+}
+
+
+def evaluate_arithmetic(expression: str):
+    if not expression or len(expression) > 240:
+        return None
+
+    try:
+        tree = ast.parse(expression, mode="eval")
+    except (SyntaxError, ValueError):
+        return None
+
+    def evaluate_node(node):
+        if isinstance(node, ast.Expression):
+            return evaluate_node(node.body)
+        if isinstance(node, ast.Constant) and type(node.value) in (int, float):
+            return float(node.value)
+        if isinstance(node, ast.UnaryOp) and type(node.op) in ALLOWED_UNARY_OPERATORS:
+            return ALLOWED_UNARY_OPERATORS[type(node.op)](evaluate_node(node.operand))
+        if isinstance(node, ast.BinOp) and type(node.op) in ALLOWED_BINARY_OPERATORS:
+            left = evaluate_node(node.left)
+            right = evaluate_node(node.right)
+            if isinstance(node.op, ast.Pow) and abs(right) > 100:
+                raise ValueError("Expoente fora do limite")
+            return ALLOWED_BINARY_OPERATORS[type(node.op)](left, right)
+        raise ValueError("Expressao nao permitida")
+
+    try:
+        result = evaluate_node(tree)
+        return result if abs(result) < 1e100 else None
+    except (ArithmeticError, OverflowError, ValueError):
+        return None
+
+
 def correct_numeric_option(answer: str) -> str:
-    calculation = re.search(
-        r"(?im)^\s*CALCULO\s*:\s*.*=\s*([-+]?\d+(?:[.,]\d+)?)"
-        r"(?:\s*[^\d\r\n=]+)?\s*$",
-        answer,
-    )
-    options_line = re.search(r"(?im)^\s*OPCOES\s*:\s*(.+?)\s*$", answer)
-    if not calculation or not options_line:
+    try:
+        data = json.loads(answer)
+    except (json.JSONDecodeError, TypeError):
         return ""
 
-    result = parse_number(calculation.group(1))
-    if result is None:
+    if not isinstance(data, dict):
         return ""
+
+    response = str(data.get("resposta", "")).strip()
+    expression = str(data.get("expressao", "")).strip()
+    options_text = str(data.get("opcoes", "")).strip()
+    result = evaluate_arithmetic(expression)
+    reported_result = parse_number(str(data.get("resultado", "")))
+    if result is None:
+        result = reported_result
 
     options = re.findall(
         r"\b([A-E])\s*=\s*([-+]?\d+(?:[.,]\d+)?)",
-        options_line.group(1).upper(),
+        options_text.upper(),
     )
     matches = []
-    for letter, raw_value in options:
-        option_value = parse_number(raw_value)
-        if option_value is None:
-            continue
-        tolerance = max(1e-9, abs(result) * 1e-6)
-        if abs(option_value - result) <= tolerance:
-            matches.append(letter)
+    if result is not None:
+        for letter, raw_value in options:
+            option_value = parse_number(raw_value)
+            if option_value is None:
+                continue
+            normalized_value = raw_value.strip().replace(",", ".")
+            decimal_places = (
+                len(normalized_value.split(".", 1)[1])
+                if "." in normalized_value
+                else 0
+            )
+            rounding_interval = 0.5 * (10 ** -decimal_places)
+            tolerance = rounding_interval + max(1e-9, abs(result) * 1e-9)
+            if abs(option_value - result) <= tolerance:
+                matches.append(letter)
 
-    return matches[0] if len(matches) == 1 else ""
+    if len(matches) == 1:
+        return matches[0]
+
+    if options and result is not None:
+        return "Err."
+
+    if re.fullmatch(r"[A-E](?:\s*,\s*[A-E])*", response.upper()):
+        return response.upper()
+    if response and len(response) <= 180:
+        return response
+    return ""
 
 
 studyhotkey.ANSWER_POSTPROCESSOR = correct_numeric_option
+studyhotkey.IMAGE_PREPROCESSOR = studyhotkey.neutralize_selection_marks
 
 
 if __name__ == "__main__":

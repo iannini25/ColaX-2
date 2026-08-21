@@ -131,38 +131,28 @@ Metodo obrigatorio:
 10. Observe com cuidado comandos como correta, incorreta, NAO, exceto, verdadeira e
     falsa. Antes de finalizar, confirme que respondeu exatamente ao comando pedido.
 
-Formato obrigatorio para verificacao:
-- Escreva primeiro uma linha ANALISE com no maximo 300 caracteres, contendo apenas a
-  regra juridica ou verificacao essencial. O aplicativo nao exibira essa linha.
-- Em multipla escolha, escreva depois CONFERENCIA: C=trecho inicial exato da alternativa
-  escolhida. Transcreva a letra e as primeiras palavras da mesma alternativa. Confira
-  que a letra em CONFERENCIA e em RESPOSTA e identica.
-- Na ultima linha, escreva RESPOSTA seguida apenas do resultado final.
-- Multipla escolha: RESPOSTA: B.
-- Varias corretas: RESPOSTA: A, C, D.
-- Verdadeiro ou falso: RESPOSTA: Verdadeiro ou RESPOSTA: Falso.
-- Associacao ou varios campos: coloque os resultados na mesma linha, separados por
-  barra vertical e na ordem mostrada.
-- Lacuna: use somente o conteudo que a completa apos RESPOSTA.
-- Discursiva: use no maximo tres frases na mesma linha apos RESPOSTA, salvo se o
-  enunciado exigir outro formato.
+Formato obrigatorio de saida estruturada:
+- Retorne somente um objeto JSON, sem markdown ou texto adicional.
+- Use exatamente os campos analise, letra, alternativa e resposta.
+- analise: regra juridica ou verificacao essencial, com no maximo 300 caracteres.
+- Em multipla escolha, letra deve conter a letra escolhida, alternativa deve transcrever
+  o inicio exato dessa opcao e resposta deve repetir a mesma letra.
+- Sem alternativas, deixe letra e alternativa vazios e coloque apenas o resultado final
+  em resposta. Discursivas devem ter no maximo tres frases.
+- Confira novamente palavras como correta, incorreta, NAO e exceto antes de enviar.
 
-Nao repita o enunciado. Nao escreva frases como "a resposta correta e". Nao invente
-artigo, requisito, excecao, decisao ou fato que nao possa ser sustentado pela questao.
-Se a imagem estiver em branco, corrompida, desfocada, pequena ou cortada a ponto de
-impedir a leitura, responda somente: ERP
-Se estiver legivel, mas nao contiver uma questao identificavel, responda somente: ERQ
-Para qualquer outra falha, responda somente: Err.
+Nao repita o enunciado. Nao invente artigo, requisito, excecao, decisao ou fato.
+Se a imagem impedir a leitura, use resposta "ERP" e os demais campos vazios.
+Se nao houver questao identificavel, use resposta "ERQ" e os demais campos vazios.
+Para qualquer outra falha, use resposta "Err." e os demais campos vazios.
 """
 
 studyhotkey.AI_USER_INSTRUCTION = (
     "Resolva a questao juridica do zero, ignore alternativas marcadas e verifique o "
-    "comando. Use ANALISE curta, CONFERENCIA com letra e texto da opcao quando houver "
-    "alternativas, e finalize com RESPOSTA conforme o prompt."
+    "comando. Retorne somente o JSON exigido, conferindo letra, texto da alternativa "
+    "e resposta antes de enviar."
 )
-studyhotkey.AI_MAX_TOKENS = 400
-studyhotkey.SHOW_ONLY_FINAL_ANSWER = True
-studyhotkey.ANSWER_POSTPROCESSOR = studyhotkey.extract_confirmed_option
+studyhotkey.configure_fast_text_subject("STUDYHOTKEY_DIREITO_MODEL")
 
 
 if __name__ == "__main__":

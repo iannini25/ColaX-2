@@ -1,3 +1,1 @@
-Resposta da IA: CALCULO: ((1241 - 1150) / 1150) * 100 = 7.91
-OPCOES: A=13.7; B=9.1; C=10.7; D=1.3; E=7.9
-RESPOSTA: E
+Resposta da IA: {"expressao":"","resultado":"","opcoes":"","resposta":"ERP"}

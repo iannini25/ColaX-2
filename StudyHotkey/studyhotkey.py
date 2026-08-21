@@ -1,6 +1,7 @@
 import base64
 import csv
 import io
+import json
 import os
 import re
 import socket
@@ -12,6 +13,7 @@ from pathlib import Path
 
 import pyautogui
 import requests
+from PIL import Image, ImageChops
 from pynput import keyboard, mouse
 
 try:
@@ -26,8 +28,31 @@ AI_USER_INSTRUCTION = (
     "o formato de resposta definido pelo prompt da materia."
 )
 AI_MAX_TOKENS = 80
+AI_MAX_COMPLETION_TOKENS = None
+AI_TEMPERATURE = 0
 SHOW_ONLY_FINAL_ANSWER = False
 ANSWER_POSTPROCESSOR = None
+AI_RESPONSE_FORMAT = None
+IMAGE_PREPROCESSOR = None
+
+TEXT_RESPONSE_FORMAT = {
+    "type": "json_schema",
+    "json_schema": {
+        "name": "resposta_academica",
+        "strict": True,
+        "schema": {
+            "type": "object",
+            "properties": {
+                "analise": {"type": "string"},
+                "letra": {"type": "string"},
+                "alternativa": {"type": "string"},
+                "resposta": {"type": "string"},
+            },
+            "required": ["analise", "letra", "alternativa", "resposta"],
+            "additionalProperties": False,
+        },
+    },
+}
 
 
 def extract_confirmed_option(answer: str) -> str:
@@ -36,6 +61,105 @@ def extract_confirmed_option(answer: str) -> str:
         answer,
     )
     return matches[-1].upper() if matches else ""
+
+
+def extract_structured_answer(answer: str) -> str:
+    try:
+        data = json.loads(answer)
+    except (json.JSONDecodeError, TypeError):
+        return ""
+
+    if not isinstance(data, dict):
+        return ""
+
+    response = str(data.get("resposta", "")).strip()
+    letter = str(data.get("letra", "")).strip().upper()
+    alternative = str(data.get("alternativa", "")).strip()
+    if re.fullmatch(r"(?i)ERP|ERQ|Err\.?", response):
+        return "Err." if response.lower().startswith("err") else response.upper()
+
+    normalized_response = response.upper()
+    if re.fullmatch(r"[A-E]", normalized_response):
+        return normalized_response if letter == normalized_response and alternative else "Err."
+
+    if re.fullmatch(r"[A-E](?:\s*,\s*[A-E])+", normalized_response):
+        normalized_letter = re.sub(r"\s+", "", letter)
+        normalized_response = re.sub(r"\s+", "", normalized_response)
+        return normalized_response if normalized_letter == normalized_response and alternative else "Err."
+
+    if response and len(response) <= 500:
+        return response
+    return ""
+
+
+def neutralize_selection_marks(image):
+    width, height = image.size
+    top = max(0, int(height * 0.12))
+    region = image.crop((0, top, width, height))
+    hue, saturation, _ = region.convert("HSV").split()
+    hue_mask = hue.point(lambda value: 255 if 150 <= value <= 215 else 0)
+    saturation_mask = saturation.point(lambda value: 255 if value >= 55 else 0)
+    purple_mask = ImageChops.multiply(hue_mask, saturation_mask)
+
+    mask_values = (
+        purple_mask.get_flattened_data()
+        if hasattr(purple_mask, "get_flattened_data")
+        else purple_mask.getdata()
+    )
+    purple_points = {
+        (index % width, index // width)
+        for index, value in enumerate(mask_values)
+        if value
+    }
+    removable_points = set()
+    while purple_points:
+        start = purple_points.pop()
+        component = {start}
+        pending = [start]
+        while pending:
+            x, y = pending.pop()
+            for neighbor in (
+                (x - 1, y - 1), (x, y - 1), (x + 1, y - 1),
+                (x - 1, y),                     (x + 1, y),
+                (x - 1, y + 1), (x, y + 1), (x + 1, y + 1),
+            ):
+                if neighbor in purple_points:
+                    purple_points.remove(neighbor)
+                    component.add(neighbor)
+                    pending.append(neighbor)
+
+        xs = [point[0] for point in component]
+        ys = [point[1] for point in component]
+        if max(xs) - min(xs) <= 50 and max(ys) - min(ys) <= 50:
+            removable_points.update(component)
+
+    selection_mask = Image.new("L", region.size, 0)
+    selection_pixels = selection_mask.load()
+    for x, y in removable_points:
+        selection_pixels[x, y] = 255
+    region.paste((255, 255, 255), mask=selection_mask)
+
+    sanitized = image.copy()
+    sanitized.paste(region, (0, top))
+    return sanitized
+
+
+def configure_fast_text_subject(model_env_name: str) -> None:
+    global MODEL, AI_MAX_COMPLETION_TOKENS, AI_TEMPERATURE
+    global SHOW_ONLY_FINAL_ANSWER, FALLBACK_ON_ERR, AI_RESPONSE_FORMAT
+    global ANSWER_POSTPROCESSOR, IMAGE_PREPROCESSOR
+    global INPUT_COST_PER_1M, OUTPUT_COST_PER_1M
+
+    MODEL = os.getenv(model_env_name, "gpt-5.6-luna")
+    AI_MAX_COMPLETION_TOKENS = 800
+    AI_TEMPERATURE = None
+    SHOW_ONLY_FINAL_ANSWER = True
+    FALLBACK_ON_ERR = False
+    AI_RESPONSE_FORMAT = TEXT_RESPONSE_FORMAT
+    ANSWER_POSTPROCESSOR = extract_structured_answer
+    IMAGE_PREPROCESSOR = neutralize_selection_marks
+    INPUT_COST_PER_1M = 0.20
+    OUTPUT_COST_PER_1M = 1.20
 
 API_URL = os.getenv("STUDYHOTKEY_API_URL", "https://api.openai.com/v1/chat/completions")
 MODEL = os.getenv("STUDYHOTKEY_MODEL", "gpt-4o")
@@ -304,33 +428,38 @@ class StudyHotkeyApp:
             f"max_img={max_size}; jpeg={jpeg_quality}; imagem_base64_chars={len(image_url)}"
         )
 
-        response = self.post_to_ai(
-            api_key=api_key,
-            payload={
-                "model": MODEL,
-                "messages": [
-                    {"role": "system", "content": AI_PROMPT},
-                    {
-                        "role": "user",
-                        "content": [
-                            {
-                                "type": "text",
-                                "text": AI_USER_INSTRUCTION,
+        payload = {
+            "model": MODEL,
+            "messages": [
+                {"role": "system", "content": AI_PROMPT},
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": AI_USER_INSTRUCTION,
+                        },
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": image_url,
+                                "detail": detail,
                             },
-                            {
-                                "type": "image_url",
-                                "image_url": {
-                                    "url": image_url,
-                                    "detail": detail,
-                                },
-                            },
-                        ],
-                    },
-                ],
-                "temperature": 0,
-                "max_tokens": AI_MAX_TOKENS,
-            },
-        )
+                        },
+                    ],
+                },
+            ],
+        }
+        if AI_TEMPERATURE is not None:
+            payload["temperature"] = AI_TEMPERATURE
+        if AI_MAX_COMPLETION_TOKENS is not None:
+            payload["max_completion_tokens"] = AI_MAX_COMPLETION_TOKENS
+        else:
+            payload["max_tokens"] = AI_MAX_TOKENS
+        if AI_RESPONSE_FORMAT is not None:
+            payload["response_format"] = AI_RESPONSE_FORMAT
+
+        response = self.post_to_ai(api_key=api_key, payload=payload)
         self.write_status(f"Resposta HTTP da IA: {response.status_code}")
         if not response.ok:
             self.log_api_error(response)
@@ -342,8 +471,9 @@ class StudyHotkeyApp:
         self.record_usage(data.get("usage", {}))
         finish_reason = data["choices"][0].get("finish_reason", "desconhecido")
         if finish_reason == "length":
+            token_limit = AI_MAX_COMPLETION_TOKENS or AI_MAX_TOKENS
             self.log_error(
-                f"Resposta da IA truncada no limite de {AI_MAX_TOKENS} tokens."
+                f"Resposta da IA truncada no limite de {token_limit} tokens."
             )
         self.write_status(f"Resposta da IA: {answer[:200]}")
         return self.clean_answer(answer)
@@ -389,6 +519,8 @@ class StudyHotkeyApp:
     def image_to_data_url(self, image, max_size: int, jpeg_quality: int) -> str:
         image = image.convert("RGB")
         image.thumbnail((max_size, max_size))
+        if callable(IMAGE_PREPROCESSOR):
+            image = IMAGE_PREPROCESSOR(image)
         image.save(APP_DIR / "last_screenshot.jpg", format="JPEG", quality=jpeg_quality)
 
         buffer = io.BytesIO()

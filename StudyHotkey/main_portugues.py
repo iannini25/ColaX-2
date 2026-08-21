@@ -159,39 +159,30 @@ Metodo obrigatorio:
 6. Compare todas as alternativas antes de responder e ignore qualquer opcao que ja
    apareca marcada, selecionada ou destacada na imagem.
 
-Formato obrigatorio:
-- Escreva primeiro uma linha ANALISE com no maximo 300 caracteres, contendo somente a
-  regra gramatical, evidencia textual ou caracteristica literaria essencial. O
-  aplicativo nao exibira essa linha.
-- Em multipla escolha, escreva depois CONFERENCIA: C=trecho inicial exato da alternativa
-  escolhida. Transcreva a letra e as primeiras palavras da mesma alternativa. Confira
-  que a letra em CONFERENCIA e em RESPOSTA e identica.
-- Na ultima linha, escreva RESPOSTA: seguida da resposta final.
-- Multipla escolha: use somente a letra maiuscula, como RESPOSTA: B.
-- Varias corretas: use as letras separadas por virgula.
-- Verdadeiro ou falso: use somente Verdadeiro ou Falso.
-- Lacuna: use somente o trecho que a completa.
-- Associacao ou varios campos: coloque todas as respostas na mesma linha, separadas
-  por barra vertical e na ordem pedida.
-- Discursiva: responda de forma direta em no maximo tres frases na mesma linha.
+Formato obrigatorio de saida estruturada:
+- Retorne somente um objeto JSON, sem markdown ou texto adicional.
+- Use exatamente os campos analise, letra, alternativa e resposta.
+- analise: regra gramatical, evidencia textual ou caracteristica literaria essencial,
+  com no maximo 300 caracteres.
+- Em multipla escolha, letra deve conter a letra escolhida, alternativa deve transcrever
+  o inicio exato dessa opcao e resposta deve repetir a mesma letra.
+- Sem alternativas, deixe letra e alternativa vazios e coloque apenas o resultado final
+  em resposta. Discursivas devem ter no maximo tres frases.
+- Confira novamente comandos como correta, incorreta, NAO e exceto antes de enviar.
 
-Nao escreva explicacoes alem da linha ANALISE curta, salvo quando o enunciado exigir.
-Nao repita o enunciado e siga apenas as linhas definidas no formato obrigatorio.
-Se a imagem estiver ilegivel ou cortada a ponto de impedir a resolucao, responda
-somente RESPOSTA: ERP.
-Se estiver legivel, mas nao contiver questao de Portugues, responda RESPOSTA: ERQ.
-Para qualquer outra falha, responda RESPOSTA: Err.
+Nao repita o enunciado e nao mostre explicacao ao usuario.
+Se a imagem impedir a leitura, use resposta "ERP" e os demais campos vazios.
+Se nao houver questao de Portugues, use resposta "ERQ" e os demais campos vazios.
+Para qualquer outra falha, use resposta "Err." e os demais campos vazios.
 Nao invente informacoes que nao estejam sustentadas pela imagem e pelo conteudo.
 """
 
 studyhotkey.AI_USER_INSTRUCTION = (
     "Resolva a questao de Portugues do zero. Ignore alternativas marcadas, confira o "
-    "comando, escreva ANALISE curta, use CONFERENCIA com letra e texto da opcao quando "
-    "houver alternativas e finalize com RESPOSTA conforme o prompt."
+    "comando e retorne somente o JSON exigido, conferindo letra, texto da alternativa "
+    "e resposta antes de enviar."
 )
-studyhotkey.AI_MAX_TOKENS = 400
-studyhotkey.SHOW_ONLY_FINAL_ANSWER = True
-studyhotkey.ANSWER_POSTPROCESSOR = studyhotkey.extract_confirmed_option
+studyhotkey.configure_fast_text_subject("STUDYHOTKEY_PORTUGUES_MODEL")
 
 
 if __name__ == "__main__":
