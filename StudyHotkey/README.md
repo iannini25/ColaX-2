@@ -6,8 +6,9 @@ O app local captura a tela em qualquer programa, escuta o atalho e mostra a resp
 A IA na nuvem le o enunciado ou a expressao, realiza o calculo e identifica a resposta.
 
 Existem entradas separadas por materia. Atualmente estao disponiveis Direito,
-Matematica e Portugues. Todas usam o mesmo mecanismo de captura e os mesmos atalhos,
-mas cada uma possui seu proprio prompt especializado. Execute somente uma materia por vez.
+Matematica, Portugues e Historia/Geografia. Todas usam o mesmo mecanismo de captura e
+os mesmos atalhos, mas cada uma possui seu proprio prompt especializado. Execute
+somente uma materia por vez.
 
 ## Como usar
 
@@ -16,6 +17,7 @@ mas cada uma possui seu proprio prompt especializado. Execute somente uma materi
 - `iniciar-direito.vbs`
 - `iniciar-matematica.vbs`
 - `iniciar-portugues.vbs`
+- `iniciar-geografia-historia.vbs`
 
 Para trocar de materia, primeiro use `parar-studyhotkey.vbs` e depois abra o outro
 inicializador.
@@ -62,6 +64,7 @@ Nesse modo, coloque o mouse em cima ou perto da questao antes de apertar o atalh
 py StudyHotkey\main_direito.py
 py StudyHotkey\main_matematica.py
 py StudyHotkey\main_portugues.py
+py StudyHotkey\main_geografia_historia.py
 ```
 
 Execute apenas um dos dois comandos por vez.
