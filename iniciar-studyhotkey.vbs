@@ -30,8 +30,9 @@ Function FindPythonExecutable(shellObject, fileSystemObject)
 
     localAppData = shellObject.ExpandEnvironmentStrings("%LOCALAPPDATA%")
     knownPythonPaths = Array( _
-        fileSystemObject.BuildPath(localAppData, "Programs\Python\Python312\python.exe"), _
-        fileSystemObject.BuildPath(localAppData, "Programs\Python\Python313\python.exe") _
+        fileSystemObject.BuildPath(localAppData, "Programs\Python\Python314\python.exe"), _
+        fileSystemObject.BuildPath(localAppData, "Programs\Python\Python313\python.exe"), _
+        fileSystemObject.BuildPath(localAppData, "Programs\Python\Python312\python.exe") _
     )
 
     For Each pythonCandidate In knownPythonPaths
@@ -52,17 +53,11 @@ If WScript.Arguments.Count > 0 Then
 End If
 
 supervisorPath = fso.BuildPath(appDir, "supervisionar-studyhotkey.vbs")
-requirementsPath = fso.BuildPath(studyHotkeyDir, "requirements.txt")
 apiKeyPath = fso.BuildPath(studyHotkeyDir, "openai_key.txt")
 envPath = fso.BuildPath(studyHotkeyDir, ".env")
 
 If Not fso.FileExists(mainPath) Then
     MsgBox "Arquivo principal nao encontrado:" & vbCrLf & mainPath, vbCritical, "StudyHotkey"
-    WScript.Quit 1
-End If
-
-If Not fso.FileExists(requirementsPath) Then
-    MsgBox "Arquivo de dependencias nao encontrado:" & vbCrLf & requirementsPath, vbCritical, "StudyHotkey"
     WScript.Quit 1
 End If
 
@@ -87,51 +82,15 @@ Next
 
 pythonPath = FindPythonExecutable(shell, fso)
 If pythonPath = "" Then
-    installPython = MsgBox( _
-        "Python nao foi encontrado. Deseja instalar automaticamente agora?", _
-        vbYesNo + vbQuestion, _
-        "StudyHotkey" _
-    )
-
-    If installPython = vbYes Then
-        On Error Resume Next
-        Err.Clear
-        pythonInstallExitCode = shell.Run( _
-            "winget install --id Python.Python.3.12 -e --scope user --accept-package-agreements --accept-source-agreements", _
-            1, _
-            True _
-        )
-        wingetError = Err.Number
-        On Error GoTo 0
-
-        If wingetError <> 0 Then
-            MsgBox "O instalador automatico do Windows (winget) nao esta disponivel.", vbExclamation, "StudyHotkey"
-        End If
-
-        pythonPath = FindPythonExecutable(shell, fso)
-    End If
-
-    If pythonPath = "" Then
-        MsgBox "O Python nao foi instalado. Instale o Python 3.12 para Windows e abra este arquivo novamente.", vbCritical, "StudyHotkey"
-        WScript.Quit 1
-    End If
-End If
-
-installCommand = """" & pythonPath & """ -m pip install --disable-pip-version-check -r """ & requirementsPath & """"
-installExitCode = shell.Run(installCommand, 0, True)
-
-If installExitCode <> 0 Then
-    MsgBox "Nao foi possivel instalar as dependencias do requirements.txt." & vbCrLf & _
-        "Execute manualmente:" & vbCrLf & _
-        "py -m pip install -r """ & requirementsPath & """", vbCritical, "StudyHotkey"
-    WScript.Quit installExitCode
+    MsgBox "Python nao encontrado. Execute primeiro o arquivo instalar-requisitos.vbs.", vbCritical, "StudyHotkey"
+    WScript.Quit 1
 End If
 
 verifyCommand = """" & pythonPath & """ -c ""import tkinter, PIL, pyautogui, requests, pynput"""
 verifyExitCode = shell.Run(verifyCommand, 0, True)
 
 If verifyExitCode <> 0 Then
-    MsgBox "As dependencias foram instaladas, mas a verificacao final falhou.", vbCritical, "StudyHotkey"
+    MsgBox "Dependencias ausentes. Execute primeiro o arquivo instalar-requisitos.vbs.", vbCritical, "StudyHotkey"
     WScript.Quit verifyExitCode
 End If
 

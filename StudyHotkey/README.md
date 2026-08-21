@@ -12,7 +12,13 @@ somente uma materia por vez.
 
 ## Como usar
 
-1. Na pasta principal, abra o inicializador da materia desejada:
+1. Na primeira utilizacao, abra `instalar-requisitos.vbs`. Ele localiza ou instala o
+Python e instala todas as bibliotecas de `StudyHotkey\requirements.txt`.
+
+Esse instalador so precisa ser executado novamente se o Python ou as dependencias
+forem removidos ou se o `requirements.txt` for alterado.
+
+2. Depois da instalacao, abra o inicializador da materia desejada:
 
 - `iniciar-direito.vbs`
 - `iniciar-matematica.vbs`
@@ -38,7 +44,7 @@ Se estiver rodando pelo VS Code e a chave nao pegar, crie um arquivo chamado `.e
 OPENAI_API_KEY=sua-chave
 ```
 
-2. Opcional:
+3. Opcional:
 
 ```powershell
 $env:STUDYHOTKEY_MODEL="gpt-4o-mini"
@@ -58,7 +64,7 @@ Use `STUDYHOTKEY_CAPTURE_MODE=cursor` se quiser capturar so uma area ao redor do
 Nesse modo, coloque o mouse em cima ou perto da questao antes de apertar o atalho.
 `STUDYHOTKEY_IMAGE_DETAIL`, `STUDYHOTKEY_MAX_IMAGE_SIZE` e `STUDYHOTKEY_JPEG_QUALITY` controlam qualidade e gasto por chamada. `STUDYHOTKEY_FALLBACK_ON_ERR=1` ativa uma segunda tentativa mais nitida quando a IA responder `Err.`, mas gasta mais.
 
-3. Para executar manualmente:
+4. Para executar manualmente:
 
 ```powershell
 py StudyHotkey\main_direito.py
@@ -67,12 +73,12 @@ py StudyHotkey\main_portugues.py
 py StudyHotkey\main_geografia_historia.py
 ```
 
-Execute apenas um dos dois comandos por vez.
+Execute apenas um dos comandos por vez.
 
-O `iniciar-studyhotkey.vbs` localiza o Python, tenta instalar automaticamente o Python
-3.12 pelo `winget` quando necessario, instala as dependencias de
-`StudyHotkey\requirements.txt` e inicia o aplicativo em segundo plano. Nao existe senha,
-ativacao, vinculacao ao computador, executavel compilado ou pasta de distribuicao.
+O `instalar-requisitos.vbs` cuida da instalacao. Os inicializadores das materias apenas
+verificam se o Python e as dependencias ja existem e iniciam o aplicativo em segundo
+plano. Eles nao executam `pip install`. Nao existe senha, ativacao, vinculacao ao
+computador, executavel compilado ou pasta de distribuicao.
 
 O aplicativo e iniciado por um supervisor VBS (`wscript.exe`). Se o processo Python
 principal travar ou for encerrado isoladamente, ele sera iniciado novamente depois
@@ -86,16 +92,16 @@ inicializacao automatica junto com o sistema.
 
 ## Usar em outro computador
 
-Copie a pasta completa do projeto, preservando a pasta `StudyHotkey` e os tres arquivos
+Copie a pasta completa do projeto, preservando a pasta `StudyHotkey` e os arquivos
 `.vbs`. Nao basta copiar somente o inicializador. No outro computador:
 
-1. Abra `iniciar-studyhotkey.vbs`.
-2. Autorize a instalacao do Python, caso seja solicitada.
+1. Abra `instalar-requisitos.vbs` e conclua a instalacao.
+2. Abra o inicializador da materia desejada.
 3. Cole uma chave da API quando o inicializador pedir.
 
-O inicializador aceita Python disponivel pelos comandos `py` ou `python`, instala
-automaticamente as bibliotecas de `requirements.txt` e verifica todos os imports
-necessarios antes de iniciar. Nao e preciso alterar o codigo-fonte nem informar senha.
+O instalador aceita Python disponivel pelos comandos `py` ou `python`, instala as
+bibliotecas de `requirements.txt` e verifica todos os imports. Os inicializadores das
+materias apenas conferem o ambiente. Nao e preciso alterar o codigo-fonte nem informar senha.
 
 Atalho global:
 
