@@ -1,1 +1,0 @@
-Comunicacao com a API funcionando. Modelo=gpt-5.6-luna; HTTP=200
