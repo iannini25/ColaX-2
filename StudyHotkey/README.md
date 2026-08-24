@@ -12,11 +12,11 @@ somente uma materia por vez.
 
 ## Como usar
 
-1. Na primeira utilizacao, abra `instalar-requisitos.vbs`. Ele localiza ou instala o
-Python e instala todas as bibliotecas de `StudyHotkey\requirements.txt`.
+1. O computador precisa ter Python 3.14 de 64 bits. As demais bibliotecas ja estao
+dentro de `StudyHotkey\vendor` e nao precisam ser instaladas com `pip`.
 
-Esse instalador so precisa ser executado novamente se o Python ou as dependencias
-forem removidos ou se o `requirements.txt` for alterado.
+Opcionalmente, abra `instalar-requisitos.vbs` para verificar o Python e as bibliotecas
+locais. Esse arquivo nao baixa nem instala nada.
 
 2. Depois da instalacao, abra o inicializador da materia desejada:
 
@@ -75,10 +75,9 @@ py StudyHotkey\main_geografia_historia.py
 
 Execute apenas um dos comandos por vez.
 
-O `instalar-requisitos.vbs` cuida da instalacao. Os inicializadores das materias apenas
-verificam se o Python e as dependencias ja existem e iniciam o aplicativo em segundo
-plano. Eles nao executam `pip install`. Nao existe senha, ativacao, vinculacao ao
-computador, executavel compilado ou pasta de distribuicao.
+Os inicializadores verificam o Python e as bibliotecas da pasta `vendor` e iniciam o
+aplicativo em segundo plano. Eles nao executam `pip install`. Nao existe senha,
+ativacao, vinculacao ao computador ou executavel compilado.
 
 O aplicativo e iniciado por um supervisor VBS (`wscript.exe`). Se o processo Python
 principal travar ou for encerrado isoladamente, ele sera iniciado novamente depois
@@ -95,13 +94,14 @@ inicializacao automatica junto com o sistema.
 Copie a pasta completa do projeto, preservando a pasta `StudyHotkey` e os arquivos
 `.vbs`. Nao basta copiar somente o inicializador. No outro computador:
 
-1. Abra `instalar-requisitos.vbs` e conclua a instalacao.
+1. Tenha o Python 3.14 de 64 bits instalado e, se quiser, abra
+   `instalar-requisitos.vbs` para verificar a compatibilidade.
 2. Abra o inicializador da materia desejada.
 3. Cole uma chave da API quando o inicializador pedir.
 
-O instalador aceita Python disponivel pelos comandos `py` ou `python`, instala as
-bibliotecas de `requirements.txt` e verifica todos os imports. Os inicializadores das
-materias apenas conferem o ambiente. Nao e preciso alterar o codigo-fonte nem informar senha.
+As bibliotecas foram empacotadas para Windows de 64 bits e Python 3.14. O verificador
+aceita Python disponivel pelos comandos `py` ou `python` e testa todos os imports sem
+acessar a internet. Nao e preciso alterar o codigo-fonte nem instalar pacotes com `pip`.
 
 Atalho global:
 

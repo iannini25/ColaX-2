@@ -1,1 +1,0 @@
-21/08/2026 07:42:02 Aplicativo iniciado pelo supervisor VBS: main_matematica.py

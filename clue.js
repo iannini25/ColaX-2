@@ -37,7 +37,7 @@ Object.defineProperty(Document.prototype, 'fullscreenElement', {
 // ─────────── 2. CAPTURA DE TELA SEM PERGUNTAR (html2canvas) ───────────
 (function() {
   // ─── CONFIGURAÇÕES ─────────────────────────────────────────────
-  const API_KEY = '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';  // sua chave
+  const API_KEY = 'COLE_SUA_CHAVE_AQUI';  // sua chave
   const API_URL = 'https://api.openai.com/v1/chat/completions';
   const MODEL = 'gpt-4o';
 

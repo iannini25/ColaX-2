@@ -5,11 +5,18 @@ import json
 import os
 import re
 import socket
+import sys
 import threading
 import time
 import tkinter as tk
 from datetime import datetime
 from pathlib import Path
+
+# Usa primeiro as bibliotecas que acompanham o projeto. Assim, nao e necessario
+# executar pip install na maquina de destino.
+VENDOR_DIR = Path(__file__).resolve().parent / "vendor"
+if VENDOR_DIR.is_dir():
+    sys.path.insert(0, str(VENDOR_DIR))
 
 import pyautogui
 import requests
@@ -307,25 +314,36 @@ class StudyHotkeyApp:
             api_key = self.load_api_key()
             if not api_key:
                 self.log_error("OPENAI_API_KEY nao configurada.")
+                result = "API FALHOU\nSEM CHAVE"
                 return
+
+            payload = {
+                "model": MODEL,
+                "messages": [
+                    {
+                        "role": "user",
+                        "content": "Responda somente OK.",
+                    }
+                ],
+            }
+            if AI_TEMPERATURE is not None:
+                payload["temperature"] = AI_TEMPERATURE
+            if AI_MAX_COMPLETION_TOKENS is not None:
+                payload["max_completion_tokens"] = min(
+                    AI_MAX_COMPLETION_TOKENS,
+                    200,
+                )
+            else:
+                payload["max_tokens"] = max(16, min(AI_MAX_TOKENS, 80))
 
             response = self.post_to_ai(
                 api_key=api_key,
-                payload={
-                    "model": MODEL,
-                    "messages": [
-                        {
-                            "role": "user",
-                            "content": "Responda somente OK.",
-                        }
-                    ],
-                    "temperature": 0,
-                    "max_tokens": 5,
-                },
+                payload=payload,
             )
 
             if not response.ok:
                 self.log_api_error(response)
+                result = f"API FALHOU\nHTTP {response.status_code}"
                 return
 
             data = response.json()
@@ -337,8 +355,10 @@ class StudyHotkeyApp:
             result = "API OK"
         except requests.RequestException as error:
             self.log_error(f"Falha de comunicacao com a API: {error}")
+            result = "API FALHOU\nREDE"
         except (KeyError, TypeError, ValueError) as error:
             self.log_error(f"Resposta invalida da API: {error}")
+            result = "API FALHOU\nRESPOSTA"
         finally:
             self.busy = False
             self.root.after(0, lambda: self.show_modal(result))

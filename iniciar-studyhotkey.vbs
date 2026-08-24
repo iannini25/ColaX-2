@@ -2,7 +2,7 @@ Set shell = CreateObject("WScript.Shell")
 Set fso = CreateObject("Scripting.FileSystemObject")
 
 Function FindPythonExecutable(shellObject, fileSystemObject)
-    commands = Array("py", "python")
+    commands = Array("py -3.14", "py", "python")
     FindPythonExecutable = ""
 
     For Each commandName In commands
@@ -30,6 +30,7 @@ Function FindPythonExecutable(shellObject, fileSystemObject)
 
     localAppData = shellObject.ExpandEnvironmentStrings("%LOCALAPPDATA%")
     knownPythonPaths = Array( _
+        fileSystemObject.BuildPath(localAppData, "Python\pythoncore-3.14-64\python.exe"), _
         fileSystemObject.BuildPath(localAppData, "Programs\Python\Python314\python.exe"), _
         fileSystemObject.BuildPath(localAppData, "Programs\Python\Python313\python.exe"), _
         fileSystemObject.BuildPath(localAppData, "Programs\Python\Python312\python.exe") _
@@ -82,15 +83,17 @@ Next
 
 pythonPath = FindPythonExecutable(shell, fso)
 If pythonPath = "" Then
-    MsgBox "Python nao encontrado. Execute primeiro o arquivo instalar-requisitos.vbs.", vbCritical, "StudyHotkey"
+    MsgBox "Python nao encontrado. Instale o Python 3.14 de 64 bits.", vbCritical, "StudyHotkey"
     WScript.Quit 1
 End If
 
-verifyCommand = """" & pythonPath & """ -c ""import tkinter, PIL, pyautogui, requests, pynput"""
+vendorPath = fso.BuildPath(studyHotkeyDir, "vendor")
+verifyCommand = """" & pythonPath & """ -c ""import sys; sys.path.insert(0, sys.argv[1]); import tkinter, PIL, pyautogui, requests, pynput"" """ & vendorPath & """"
 verifyExitCode = shell.Run(verifyCommand, 0, True)
 
 If verifyExitCode <> 0 Then
-    MsgBox "Dependencias ausentes. Execute primeiro o arquivo instalar-requisitos.vbs.", vbCritical, "StudyHotkey"
+    MsgBox "As bibliotecas locais nao puderam ser carregadas." & vbCrLf & _
+        "Use Python 3.14 de 64 bits e copie a pasta completa do projeto.", vbCritical, "StudyHotkey"
     WScript.Quit verifyExitCode
 End If
 

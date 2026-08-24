@@ -2,7 +2,7 @@ Set shell = CreateObject("WScript.Shell")
 Set fso = CreateObject("Scripting.FileSystemObject")
 
 Function FindPythonExecutable(shellObject, fileSystemObject)
-    commands = Array("py", "python")
+    commands = Array("py -3.14", "py", "python")
     FindPythonExecutable = ""
 
     For Each commandName In commands
@@ -31,8 +31,7 @@ Function FindPythonExecutable(shellObject, fileSystemObject)
     localAppData = shellObject.ExpandEnvironmentStrings("%LOCALAPPDATA%")
     knownPythonPaths = Array( _
         fileSystemObject.BuildPath(localAppData, "Programs\Python\Python314\python.exe"), _
-        fileSystemObject.BuildPath(localAppData, "Programs\Python\Python313\python.exe"), _
-        fileSystemObject.BuildPath(localAppData, "Programs\Python\Python312\python.exe") _
+        fileSystemObject.BuildPath(localAppData, "Python\pythoncore-3.14-64\python.exe") _
     )
 
     For Each pythonCandidate In knownPythonPaths
@@ -45,61 +44,31 @@ End Function
 
 appDir = fso.GetParentFolderName(WScript.ScriptFullName)
 studyHotkeyDir = fso.BuildPath(appDir, "StudyHotkey")
-requirementsPath = fso.BuildPath(studyHotkeyDir, "requirements.txt")
+vendorPath = fso.BuildPath(studyHotkeyDir, "vendor")
+pythonPath = FindPythonExecutable(shell, fso)
 
-If Not fso.FileExists(requirementsPath) Then
-    MsgBox "Arquivo de dependencias nao encontrado:" & vbCrLf & requirementsPath, vbCritical, "Instalar requisitos"
+If pythonPath = "" Then
+    MsgBox "Python nao encontrado." & vbCrLf & _
+        "Instale o Python 3.14 de 64 bits. As outras bibliotecas ja acompanham o projeto.", _
+        vbCritical, "Verificar StudyHotkey"
     WScript.Quit 1
 End If
 
-pythonPath = FindPythonExecutable(shell, fso)
-If pythonPath = "" Then
-    installPython = MsgBox( _
-        "Python nao foi encontrado. Deseja instalar automaticamente o Python 3.12?", _
-        vbYesNo + vbQuestion, _
-        "Instalar requisitos do StudyHotkey" _
-    )
-
-    If installPython = vbYes Then
-        On Error Resume Next
-        Err.Clear
-        pythonInstallExitCode = shell.Run( _
-            "winget install --id Python.Python.3.12 -e --scope user --accept-package-agreements --accept-source-agreements", _
-            1, _
-            True _
-        )
-        wingetError = Err.Number
-        On Error GoTo 0
-
-        If wingetError <> 0 Or pythonInstallExitCode <> 0 Then
-            MsgBox "Nao foi possivel instalar o Python automaticamente pelo winget.", vbExclamation, "Instalar requisitos"
-        End If
-
-        pythonPath = FindPythonExecutable(shell, fso)
-    End If
-
-    If pythonPath = "" Then
-        MsgBox "Instale o Python para Windows e execute este instalador novamente.", vbCritical, "Instalar requisitos"
-        WScript.Quit 1
-    End If
+If Not fso.FolderExists(vendorPath) Then
+    MsgBox "A pasta de bibliotecas locais nao foi encontrada:" & vbCrLf & vendorPath, _
+        vbCritical, "Verificar StudyHotkey"
+    WScript.Quit 1
 End If
 
-installCommand = """" & pythonPath & """ -m pip install --disable-pip-version-check -r """ & requirementsPath & """"
-installExitCode = shell.Run(installCommand, 1, True)
-
-If installExitCode <> 0 Then
-    MsgBox "Nao foi possivel instalar as dependencias do requirements.txt." & vbCrLf & _
-        "Execute manualmente:" & vbCrLf & _
-        "py -m pip install -r """ & requirementsPath & """", vbCritical, "Instalar requisitos"
-    WScript.Quit installExitCode
-End If
-
-verifyCommand = """" & pythonPath & """ -c ""import tkinter, PIL, pyautogui, requests, pynput"""
+verifyCommand = """" & pythonPath & """ -c ""import sys; sys.path.insert(0, sys.argv[1]); import tkinter, PIL, pyautogui, requests, pynput"" """ & vendorPath & """"
 verifyExitCode = shell.Run(verifyCommand, 0, True)
 
 If verifyExitCode <> 0 Then
-    MsgBox "A instalacao terminou, mas a verificacao das dependencias falhou.", vbCritical, "Instalar requisitos"
+    MsgBox "As bibliotecas locais nao sao compativeis com este Python." & vbCrLf & _
+        "Use Python 3.14 de 64 bits e copie a pasta completa do projeto.", _
+        vbCritical, "Verificar StudyHotkey"
     WScript.Quit verifyExitCode
 End If
 
-MsgBox "Python e dependencias instalados corretamente.", vbInformation, "StudyHotkey pronto"
+MsgBox "Tudo pronto. Nenhuma biblioteca foi baixada ou instalada.", _
+    vbInformation, "StudyHotkey pronto"
