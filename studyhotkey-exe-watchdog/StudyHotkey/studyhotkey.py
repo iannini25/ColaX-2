@@ -12,7 +12,6 @@ import time
 import tkinter as tk
 from datetime import datetime
 from pathlib import Path
-from tkinter import messagebox, simpledialog
 
 # Usa primeiro as bibliotecas que acompanham o projeto. Assim, nao e necessario
 # executar pip install na maquina de destino.
@@ -29,7 +28,7 @@ if not getattr(sys, "frozen", False):
 
 import pyautogui
 import requests
-from PIL import Image, ImageChops
+from PIL import Image, ImageChops, ImageEnhance, ImageFilter, ImageGrab
 from pynput import keyboard, mouse
 
 try:
@@ -38,12 +37,17 @@ except ImportError:
     msvcrt = None
 
 
+BUILTIN_OPENAI_API_KEY = (
+    "sk-proj-ijKkgUzFEcBiXMJfWinA3yj2C8En6ASz78ZFimi_ajWQ3jl6tcGlz99wpAnYa0mt-"
+    "eK7Cojy9cT3BlbkFJCKwO7-hcinLugdUnaycS-VVHGHIuHT2NvuD1S1s1o_0fJLfoLLFC9GAfcqKmkEbXlMJ9l9MoIA"
+)
+
 AI_PROMPT = ""
 AI_USER_INSTRUCTION = (
     "Encontre a questao principal na imagem, resolva com cuidado e siga exatamente "
     "o formato de resposta definido pelo prompt da materia."
 )
-AI_MAX_TOKENS = 80
+AI_MAX_TOKENS = None
 AI_MAX_COMPLETION_TOKENS = None
 AI_TEMPERATURE = 0
 SHOW_ONLY_FINAL_ANSWER = False
@@ -79,33 +83,77 @@ def extract_confirmed_option(answer: str) -> str:
     return matches[-1].upper() if matches else ""
 
 
+def extract_letter_from_text(answer: str) -> str:
+    if not answer:
+        return ""
+    match = re.search(
+        r'"(?:letra|resposta)"\s*:\s*"([A-E](?:\s*,\s*[A-E])*)"',
+        answer,
+        re.I,
+    )
+    if match:
+        return re.sub(r"\s+", "", match.group(1).upper())
+    return ""
+
+
 def extract_structured_answer(answer: str) -> str:
     try:
         data = json.loads(answer)
     except (json.JSONDecodeError, TypeError):
-        return ""
+        return extract_letter_from_text(answer)
 
     if not isinstance(data, dict):
-        return ""
+        return extract_letter_from_text(answer)
 
     response = str(data.get("resposta", "")).strip()
     letter = str(data.get("letra", "")).strip().upper()
-    alternative = str(data.get("alternativa", "")).strip()
     if re.fullmatch(r"(?i)ERP|ERQ|Err\.?", response):
         return "Err." if response.lower().startswith("err") else response.upper()
 
-    normalized_response = response.upper()
-    if re.fullmatch(r"[A-E]", normalized_response):
-        return normalized_response if letter == normalized_response and alternative else "Err."
+    compact_letter = re.sub(r"\s+", "", letter)
+    if re.fullmatch(r"[A-E](?:,[A-E])*", compact_letter):
+        return compact_letter
 
-    if re.fullmatch(r"[A-E](?:\s*,\s*[A-E])+", normalized_response):
-        normalized_letter = re.sub(r"\s+", "", letter)
-        normalized_response = re.sub(r"\s+", "", normalized_response)
-        return normalized_response if normalized_letter == normalized_response and alternative else "Err."
+    normalized_response = re.sub(r"\s+", "", response.upper())
+    if re.fullmatch(r"[A-E](?:,[A-E])*", normalized_response):
+        return normalized_response
 
     if response and len(response) <= 500:
         return response
+    return extract_letter_from_text(answer)
+
+
+def extract_answer_letter(text: str) -> str:
+    compact = re.sub(r"\s+", "", text.strip().upper())
+    if re.fullmatch(r"[A-E](?:,[A-E])*", compact):
+        return compact
     return ""
+
+
+def format_overlay_text(text: str) -> str:
+    compact = re.sub(r"\s+", "", text.strip().upper())
+    if re.fullmatch(r"[A-E](?:,[A-E])*", compact):
+        return compact.replace(",", "")
+    stripped = text.strip()
+    if re.fullmatch(r"(?i)ERP|ERQ|ERR\.?", stripped):
+        return "Err." if stripped.lower().startswith("err") else stripped.upper()
+    first_line = stripped.splitlines()[0].strip() if stripped else stripped
+    return first_line[:32]
+
+
+def enable_dpi_awareness() -> None:
+    if sys.platform != "win32":
+        return
+    try:
+        ctypes.windll.shcore.SetProcessDpiAwareness(2)
+    except (AttributeError, OSError):
+        try:
+            ctypes.windll.user32.SetProcessDPIAware()
+        except (AttributeError, OSError):
+            pass
+
+
+enable_dpi_awareness()
 
 
 def neutralize_selection_marks(image):
@@ -167,10 +215,10 @@ def configure_fast_text_subject(model_env_name: str) -> None:
     global INPUT_COST_PER_1M, OUTPUT_COST_PER_1M
 
     MODEL = os.getenv(model_env_name, "gpt-5.6-luna")
-    AI_MAX_COMPLETION_TOKENS = 800
+    AI_MAX_COMPLETION_TOKENS = None
     AI_TEMPERATURE = None
     SHOW_ONLY_FINAL_ANSWER = True
-    FALLBACK_ON_ERR = False
+    FALLBACK_ON_ERR = True
     AI_RESPONSE_FORMAT = TEXT_RESPONSE_FORMAT
     ANSWER_POSTPROCESSOR = extract_structured_answer
     IMAGE_PREPROCESSOR = neutralize_selection_marks
@@ -180,18 +228,18 @@ def configure_fast_text_subject(model_env_name: str) -> None:
 API_URL = os.getenv("STUDYHOTKEY_API_URL", "https://api.openai.com/v1/chat/completions")
 MODEL = os.getenv("STUDYHOTKEY_MODEL", "gpt-4o")
 IMAGE_DETAIL = os.getenv("STUDYHOTKEY_IMAGE_DETAIL", "high")
-MAX_IMAGE_SIZE = int(os.getenv("STUDYHOTKEY_MAX_IMAGE_SIZE", "1600"))
-JPEG_QUALITY = int(os.getenv("STUDYHOTKEY_JPEG_QUALITY", "88"))
+MAX_IMAGE_SIZE = int(os.getenv("STUDYHOTKEY_MAX_IMAGE_SIZE", "4096"))
+JPEG_QUALITY = int(os.getenv("STUDYHOTKEY_JPEG_QUALITY", "100"))
 FALLBACK_IMAGE_DETAIL = os.getenv("STUDYHOTKEY_FALLBACK_IMAGE_DETAIL", "high")
-FALLBACK_MAX_IMAGE_SIZE = int(os.getenv("STUDYHOTKEY_FALLBACK_MAX_IMAGE_SIZE", "2000"))
-FALLBACK_JPEG_QUALITY = int(os.getenv("STUDYHOTKEY_FALLBACK_JPEG_QUALITY", "92"))
+FALLBACK_MAX_IMAGE_SIZE = int(os.getenv("STUDYHOTKEY_FALLBACK_MAX_IMAGE_SIZE", "4096"))
+FALLBACK_JPEG_QUALITY = int(os.getenv("STUDYHOTKEY_FALLBACK_JPEG_QUALITY", "100"))
 FALLBACK_ON_ERR = os.getenv("STUDYHOTKEY_FALLBACK_ON_ERR", "1") == "1"
 CAPTURE_MODE = os.getenv("STUDYHOTKEY_CAPTURE_MODE", "full")
 CURSOR_REGION_WIDTH = int(os.getenv("STUDYHOTKEY_CURSOR_REGION_WIDTH", "900"))
 CURSOR_REGION_HEIGHT = int(os.getenv("STUDYHOTKEY_CURSOR_REGION_HEIGHT", "650"))
-TIMEOUT_SECONDS = 18
+TIMEOUT_SECONDS = None
 COOLDOWN_SECONDS = 2
-RETRY_DELAYS = (1, 2)
+RETRY_DELAYS = (2, 4, 8, 16)
 HIDE_FROM_TASKBAR = False
 
 
@@ -262,25 +310,15 @@ class StudyHotkeyApp:
         self.mouse_listener = mouse.Listener(on_click=self.on_mouse_click)
 
     def ensure_api_key(self) -> None:
-        if self.load_api_key():
+        api_key = self.load_api_key()
+        if not api_key:
             return
-
-        api_key = simpledialog.askstring(
-            "StudyHotkey",
-            "Cole a chave da API da OpenAI. Ela sera salva somente neste computador.",
-            parent=self.root,
-        )
-        api_key = (api_key or "").strip()
-        if not api_key or not self.is_valid_api_key_value(api_key):
-            messagebox.showwarning(
-                "StudyHotkey",
-                "A chave da API nao foi informada. O aplicativo nao foi iniciado.",
-                parent=self.root,
-            )
-            raise SystemExit("OPENAI_API_KEY nao configurada.")
-
         key_path = APP_DIR / "openai_key.txt"
-        key_path.write_text(api_key, encoding="utf-8")
+        if not key_path.exists():
+            try:
+                key_path.write_text(api_key, encoding="utf-8")
+            except OSError:
+                pass
 
     def acquire_socket_lock(self):
         lock_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -396,13 +434,7 @@ class StudyHotkeyApp:
             }
             if AI_TEMPERATURE is not None:
                 payload["temperature"] = AI_TEMPERATURE
-            if AI_MAX_COMPLETION_TOKENS is not None:
-                payload["max_completion_tokens"] = min(
-                    AI_MAX_COMPLETION_TOKENS,
-                    200,
-                )
-            else:
-                payload["max_tokens"] = max(16, min(AI_MAX_TOKENS, 80))
+            self.apply_token_limits(payload)
 
             response = self.post_to_ai(
                 api_key=api_key,
@@ -434,7 +466,7 @@ class StudyHotkeyApp:
     def capture_and_answer(self) -> None:
         try:
             try:
-                screenshot = pyautogui.screenshot(region=self.get_region())
+                screenshot = self.capture_screen()
             except Exception as error:
                 self.log_error(f"Falha ao capturar o print: {error}")
                 self.root.after(0, lambda: self.show_modal("ERP"))
@@ -490,16 +522,49 @@ class StudyHotkeyApp:
             jpeg_quality=JPEG_QUALITY,
         )
 
-        if answer not in {"Err.", "ERP", "ERQ"} or not FALLBACK_ON_ERR:
+        letter = extract_answer_letter(answer)
+        if letter:
+            self.write_status(f"Conferindo alternativa {letter}...")
+            confirmed = self.ask_ai_once(
+                api_key=api_key,
+                screenshot=screenshot,
+                detail=IMAGE_DETAIL,
+                max_size=MAX_IMAGE_SIZE,
+                jpeg_quality=JPEG_QUALITY,
+                extra_user_text=(
+                    f"Revise se a alternativa {letter} esta correta. "
+                    "Se estiver errada, envie a letra certa. "
+                    "Se estiver certa, mantenha a mesma letra."
+                ),
+            )
+            confirmed_letter = extract_answer_letter(confirmed)
+            if confirmed_letter:
+                return confirmed_letter
+            return letter
+
+        if answer not in {"Err.", "ERP", "ERQ"}:
             return answer
 
-        self.write_status("IA retornou Err. Tentando novamente com imagem mais nitida...")
+        if FALLBACK_ON_ERR:
+            self.write_status("IA retornou Err. Tentando novamente com imagem mais nitida...")
+            answer = self.ask_ai_once(
+                api_key=api_key,
+                screenshot=screenshot,
+                detail=FALLBACK_IMAGE_DETAIL,
+                max_size=FALLBACK_MAX_IMAGE_SIZE,
+                jpeg_quality=FALLBACK_JPEG_QUALITY,
+            )
+            if answer not in {"Err.", "ERP", "ERQ"}:
+                return answer
+
+        self.write_status("IA retornou Err. Tentando novamente sem formato JSON restrito...")
         return self.ask_ai_once(
             api_key=api_key,
             screenshot=screenshot,
             detail=FALLBACK_IMAGE_DETAIL,
             max_size=FALLBACK_MAX_IMAGE_SIZE,
             jpeg_quality=FALLBACK_JPEG_QUALITY,
+            use_response_format=False,
         )
 
     def ask_ai_once(
@@ -509,12 +574,18 @@ class StudyHotkeyApp:
         detail: str,
         max_size: int,
         jpeg_quality: int,
+        use_response_format: bool = True,
+        extra_user_text: str = "",
     ) -> str:
         image_url = self.image_to_data_url(screenshot, max_size, jpeg_quality)
         self.write_status(
             f"Enviando para IA. Modelo={MODEL}; detalhe={detail}; "
-            f"max_img={max_size}; jpeg={jpeg_quality}; imagem_base64_chars={len(image_url)}"
+            f"max_img={max_size}; png; imagem_base64_chars={len(image_url)}"
         )
+
+        user_text = AI_USER_INSTRUCTION
+        if extra_user_text:
+            user_text = f"{AI_USER_INSTRUCTION}\n\n{extra_user_text}"
 
         payload = {
             "model": MODEL,
@@ -525,7 +596,7 @@ class StudyHotkeyApp:
                     "content": [
                         {
                             "type": "text",
-                            "text": AI_USER_INSTRUCTION,
+                            "text": user_text,
                         },
                         {
                             "type": "image_url",
@@ -540,11 +611,8 @@ class StudyHotkeyApp:
         }
         if AI_TEMPERATURE is not None:
             payload["temperature"] = AI_TEMPERATURE
-        if AI_MAX_COMPLETION_TOKENS is not None:
-            payload["max_completion_tokens"] = AI_MAX_COMPLETION_TOKENS
-        else:
-            payload["max_tokens"] = AI_MAX_TOKENS
-        if AI_RESPONSE_FORMAT is not None:
+        self.apply_token_limits(payload)
+        if use_response_format and AI_RESPONSE_FORMAT is not None:
             payload["response_format"] = AI_RESPONSE_FORMAT
 
         response = self.post_to_ai(api_key=api_key, payload=payload)
@@ -558,39 +626,80 @@ class StudyHotkeyApp:
         (APP_DIR / "last_answer_raw.txt").write_text(answer, encoding="utf-8")
         self.record_usage(data.get("usage", {}))
         finish_reason = data["choices"][0].get("finish_reason", "desconhecido")
+        cleaned = self.clean_answer(answer)
+        if finish_reason == "length" or cleaned in {"Err.", ""}:
+            salvaged = extract_letter_from_text(answer)
+            if salvaged:
+                self.write_status(f"Letra recuperada da resposta incompleta: {salvaged}")
+                return salvaged
         if finish_reason == "length":
-            token_limit = AI_MAX_COMPLETION_TOKENS or AI_MAX_TOKENS
-            self.log_error(
-                f"Resposta da IA truncada no limite de {token_limit} tokens."
-            )
+            self.log_error("Resposta da IA ficou incompleta. Tentando de novo sem limite.")
         self.write_status(f"Resposta da IA: {answer[:200]}")
-        return self.clean_answer(answer)
+        return cleaned
+
+    def apply_token_limits(self, payload: dict) -> None:
+        if AI_MAX_COMPLETION_TOKENS is not None:
+            payload["max_completion_tokens"] = AI_MAX_COMPLETION_TOKENS
+        elif AI_MAX_TOKENS is not None:
+            payload["max_tokens"] = AI_MAX_TOKENS
+
+    def capture_screen(self):
+        region = self.get_region()
+        if region:
+            x, y, width, height = region
+            image = ImageGrab.grab(bbox=(x, y, x + width, y + height), all_screens=True)
+        else:
+            image = ImageGrab.grab(all_screens=True)
+        return self.prepare_screenshot(image)
+
+    def prepare_screenshot(self, image):
+        image = image.convert("RGB")
+        min_side = 2000
+        largest = max(image.size)
+        if largest < min_side:
+            scale = min_side / largest
+            image = image.resize(
+                (int(image.width * scale), int(image.height * scale)),
+                Image.Resampling.LANCZOS,
+            )
+        image = ImageEnhance.Contrast(image).enhance(1.08)
+        return ImageEnhance.Sharpness(image).enhance(1.15)
 
     def post_to_ai(self, api_key: str, payload: dict):
         last_response = None
+        last_error = None
 
         for attempt, delay in enumerate((0, *RETRY_DELAYS), start=1):
             if delay:
-                self.write_status(f"429 recebido. Tentando novamente em {delay}s...")
+                self.write_status(f"Tentando novamente em {delay}s...")
                 time.sleep(delay)
 
-            response = requests.post(
-                API_URL,
-                headers={
-                    "Authorization": f"Bearer {api_key}",
-                    "Content-Type": "application/json",
-                },
-                json=payload,
-                timeout=TIMEOUT_SECONDS,
-            )
-            last_response = response
+            try:
+                response = requests.post(
+                    API_URL,
+                    headers={
+                        "Authorization": f"Bearer {api_key}",
+                        "Content-Type": "application/json",
+                    },
+                    json=payload,
+                    timeout=TIMEOUT_SECONDS,
+                )
+            except requests.RequestException as error:
+                last_error = error
+                self.log_error(f"Tentativa {attempt}: falha de rede. {error}")
+                continue
 
-            if response.status_code != 429:
+            last_response = response
+            if response.status_code not in {429, 500, 502, 503, 504}:
                 return response
 
-            self.log_error(f"Tentativa {attempt}: API retornou 429. {response.text[:500]}")
+            self.log_error(
+                f"Tentativa {attempt}: API retornou {response.status_code}. {response.text[:500]}"
+            )
 
-        return last_response
+        if last_response is not None:
+            return last_response
+        raise last_error
 
     def log_api_error(self, response) -> None:
         details = response.text[:800]
@@ -606,15 +715,17 @@ class StudyHotkeyApp:
 
     def image_to_data_url(self, image, max_size: int, jpeg_quality: int) -> str:
         image = image.convert("RGB")
-        image.thumbnail((max_size, max_size))
+        if max(image.size) > max_size:
+            image.thumbnail((max_size, max_size), Image.Resampling.LANCZOS)
         if callable(IMAGE_PREPROCESSOR):
             image = IMAGE_PREPROCESSOR(image)
-        image.save(APP_DIR / "last_screenshot.jpg", format="JPEG", quality=jpeg_quality)
+        image.save(APP_DIR / "last_screenshot.png", format="PNG")
+        image.save(APP_DIR / "last_screenshot.jpg", format="JPEG", quality=95)
 
         buffer = io.BytesIO()
-        image.save(buffer, format="JPEG", quality=jpeg_quality, optimize=True)
+        image.save(buffer, format="PNG", optimize=True)
         encoded = base64.b64encode(buffer.getvalue()).decode("ascii")
-        return f"data:image/jpeg;base64,{encoded}"
+        return f"data:image/png;base64,{encoded}"
 
     def load_api_key(self) -> str:
         api_key = os.getenv("OPENAI_API_KEY", "").strip()
@@ -631,6 +742,9 @@ class StudyHotkeyApp:
                 api_key = key_path.read_text(encoding="utf-8").strip()
                 if self.is_valid_api_key_value(api_key):
                     return api_key
+
+        if self.is_valid_api_key_value(BUILTIN_OPENAI_API_KEY):
+            return BUILTIN_OPENAI_API_KEY
 
         return ""
 
@@ -865,27 +979,34 @@ class StudyHotkeyApp:
             self.modal.destroy()
 
         x, y = pyautogui.position()
+        display = format_overlay_text(text)
+        chroma = "#00FF01"
         self.modal = tk.Toplevel(self.root)
         self.modal.overrideredirect(True)
         self.modal.attributes("-topmost", True)
-        self.modal.configure(bg="white")
+        self.modal.configure(bg=chroma)
+        try:
+            self.modal.attributes("-transparentcolor", chroma)
+        except tk.TclError:
+            pass
         hide_window_from_taskbar(self.modal)
 
         label = tk.Label(
             self.modal,
-            text=text,
-            bg="white",
-            fg="black",
-            font=("Segoe UI", 8),
-            padx=5,
-            pady=3,
+            text=display,
+            bg=chroma,
+            fg="#E10600",
+            font=("Segoe UI", 28, "bold"),
+            bd=0,
+            highlightthickness=0,
+            padx=0,
+            pady=0,
             justify="left",
-            wraplength=260,
         )
         label.pack()
 
-        self.modal.geometry(f"+{x + 12}+{y + 12}")
-        self.modal.after(3500, self.hide_modal)
+        self.modal.geometry(f"+{x + 14}+{y + 10}")
+        self.modal.after(4000, self.hide_modal)
 
     def hide_modal(self) -> None:
         if self.modal is not None:

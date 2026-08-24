@@ -13,6 +13,17 @@ questao matematica apresentada como imagem, mesmo quando o assunto nao estiver
 explicitamente listado neste prompt. Leia todo o enunciado, diagramas, graficos,
 tabelas, expressoes, unidades e alternativas antes de calcular.
 
+Regras criticas para acertar:
+- Copie as 5 alternativas na integra antes de calcular.
+- Em grafico de parabola, o maximo/minimo e o VERTICE. Leia x e y nas linhas da grade.
+  Nao confunda o intercepto no eixo vertical com o lucro ou valor maximo.
+  Exemplo: vertice em x=20 e y=600 significa 20 encomendas e R$ 600,00.
+- Em divisao INVERSAMENTE proporcional, os pesos sao 1/n. Nao use as faltas/pesos crus.
+  Exemplo: faltas 2, 3 e 6 e total 1200 -> pesos 1/2, 1/3 e 1/6. Quem tem 2 faltas
+  recebe 1200*(1/2)/(1/2+1/3+1/6)=600.
+- Depois do calculo, escolha a alternativa cujo texto INTEIRO bate, nao so um dos numeros.
+- O campo letra deve ser uma unica letra A, B, C, D ou E.
+
 Conteudos prioritarios da prova:
 
 1. Funcao afim ou funcao do primeiro grau
@@ -169,14 +180,15 @@ Nao invente nenhum dado que nao esteja visivel.
 """
 
 studyhotkey.AI_USER_INSTRUCTION = (
-    "Resolva a questao matematica do zero e ignore alternativas marcadas. Retorne "
-    "somente o JSON exigido, com expressao aritmetica avaliavel, resultado, opcoes e resposta."
+    "Resolva a questao matematica do zero, ignore alternativas ja marcadas e leia o "
+    "grafico/tabela com calma. Retorne somente o JSON exigido. A letra final tem de "
+    "bater com o calculo e com o texto completo da alternativa."
 )
-studyhotkey.AI_MAX_TOKENS = 180
-studyhotkey.AI_MAX_COMPLETION_TOKENS = 800
+studyhotkey.AI_MAX_TOKENS = None
+studyhotkey.AI_MAX_COMPLETION_TOKENS = None
 studyhotkey.AI_TEMPERATURE = None
 studyhotkey.SHOW_ONLY_FINAL_ANSWER = True
-studyhotkey.FALLBACK_ON_ERR = False
+studyhotkey.FALLBACK_ON_ERR = True
 studyhotkey.MODEL = os.getenv("STUDYHOTKEY_MATH_MODEL", "gpt-5.6-luna")
 studyhotkey.INPUT_COST_PER_1M = 0.20
 studyhotkey.OUTPUT_COST_PER_1M = 1.20
@@ -188,12 +200,14 @@ studyhotkey.AI_RESPONSE_FORMAT = {
         "schema": {
             "type": "object",
             "properties": {
+                "letra": {"type": "string"},
+                "alternativa": {"type": "string"},
                 "expressao": {"type": "string"},
                 "resultado": {"type": "string"},
                 "opcoes": {"type": "string"},
                 "resposta": {"type": "string"},
             },
-            "required": ["expressao", "resultado", "opcoes", "resposta"],
+            "required": ["letra", "alternativa", "expressao", "resultado", "opcoes", "resposta"],
             "additionalProperties": False,
         },
     },
@@ -295,14 +309,19 @@ def correct_numeric_option(answer: str) -> str:
             if abs(option_value - result) <= tolerance:
                 matches.append(letter)
 
+    letter = str(data.get("letra", "")).strip().upper()
+    compact_letter = re.sub(r"\s+", "", letter)
+    if re.fullmatch(r"[A-E](?:,[A-E])*", compact_letter):
+        letter_answer = compact_letter
+    elif re.fullmatch(r"[A-E](?:\s*,\s*[A-E])*", response.upper()):
+        letter_answer = response.upper()
+    else:
+        letter_answer = ""
+
+    if letter_answer:
+        return letter_answer
     if len(matches) == 1:
         return matches[0]
-
-    if options and result is not None:
-        return "Err."
-
-    if re.fullmatch(r"[A-E](?:\s*,\s*[A-E])*", response.upper()):
-        return response.upper()
     if response and len(response) <= 180:
         return response
     return ""

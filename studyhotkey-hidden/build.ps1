@@ -48,6 +48,12 @@ foreach ($name in $copies) {
     Copy-Item -Force $sourceExe (Join-Path $distDir $name)
 }
 
+$keySource = Join-Path $PSScriptRoot "StudyHotkey\openai_key.txt"
+$keyDest = Join-Path $distDir "openai_key.txt"
+if (Test-Path $keySource) {
+    Copy-Item -Force $keySource $keyDest
+}
+
 Write-Host ""
 Write-Host "Pronto. Copie a pasta inteira:"
 Write-Host "  $distDir"
