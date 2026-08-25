@@ -1,0 +1,8 @@
+chamadas=29
+input_tokens=31148
+output_tokens=6217
+total_tokens=37365
+estimated_usd=0.24893200
+modelo=gpt-5.6-sol
+preco_input_por_1M=4.0
+preco_output_por_1M=20.0
