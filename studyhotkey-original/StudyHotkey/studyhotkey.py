@@ -37,11 +37,6 @@ except ImportError:
     msvcrt = None
 
 
-BUILTIN_OPENAI_API_KEY = (
-    "sk-proj-ijKkgUzFEcBiXMJfWinA3yj2C8En6ASz78ZFimi_ajWQ3jl6tcGlz99wpAnYa0mt-"
-    "eK7Cojy9cT3BlbkFJCKwO7-hcinLugdUnaycS-VVHGHIuHT2NvuD1S1s1o_0fJLfoLLFC9GAfcqKmkEbXlMJ9l9MoIA"
-)
-
 AI_PROMPT = ""
 AI_USER_INSTRUCTION = (
     "Encontre a questao principal na imagem, resolva com cuidado e siga exatamente "
@@ -742,9 +737,6 @@ class StudyHotkeyApp:
                 api_key = key_path.read_text(encoding="utf-8").strip()
                 if self.is_valid_api_key_value(api_key):
                     return api_key
-
-        if self.is_valid_api_key_value(BUILTIN_OPENAI_API_KEY):
-            return BUILTIN_OPENAI_API_KEY
 
         return ""
 
