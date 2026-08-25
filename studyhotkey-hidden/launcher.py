@@ -54,6 +54,10 @@ def worker_pid_path() -> Path:
     return runtime_dir() / "worker.pid"
 
 
+def guardian_pid_path() -> Path:
+    return runtime_dir() / "guardian.pid"
+
+
 def executable_stem() -> str:
     if getattr(sys, "frozen", False):
         return Path(sys.executable).stem.lower()
@@ -155,10 +159,27 @@ def worker_command(subject: str):
     return [sys.executable, str(Path(__file__).resolve()), "--worker", subject]
 
 
+def subject_executable(subject: str) -> Path:
+    return runtime_dir() / f"iniciar-{subject}.exe"
+
+
 def supervisor_command(subject: str):
     if getattr(sys, "frozen", False):
-        return [sys.executable, subject]
+        executable = subject_executable(subject)
+        return [str(executable if executable.exists() else sys.executable), subject]
     return [sys.executable, str(Path(__file__).resolve()), subject]
+
+
+def guardian_command(subject: str):
+    if getattr(sys, "frozen", False):
+        executable = runtime_dir() / "StudyHotkey-Guardian.exe"
+        return [str(executable if executable.exists() else sys.executable), "--guardian", subject]
+    return [
+        sys.executable,
+        str(Path(__file__).resolve()),
+        "--guardian",
+        subject,
+    ]
 
 
 def stop_requested() -> bool:
@@ -188,6 +209,29 @@ def watch_supervisor(subject: str) -> None:
         time.sleep(1)
 
 
+def watch_guardian(subject: str) -> None:
+    while not stop_requested():
+        guardian_pid = read_pid(guardian_pid_path())
+        if not pid_is_running(guardian_pid):
+            process = hidden_popen(guardian_command(subject), str(runtime_dir()))
+            write_pid(guardian_pid_path(), process.pid)
+        time.sleep(1)
+
+
+def run_guardian(subject: str) -> None:
+    existing = read_pid(guardian_pid_path())
+    if existing and existing != os.getpid() and pid_is_running(existing):
+        return
+
+    write_pid(guardian_pid_path(), os.getpid())
+    while not stop_requested():
+        supervisor_pid = read_pid(supervisor_pid_path())
+        if not pid_is_running(supervisor_pid):
+            process = hidden_popen(supervisor_command(subject), str(runtime_dir()))
+            write_pid(supervisor_pid_path(), process.pid)
+        time.sleep(1)
+
+
 def run_supervisor(subject: str) -> None:
     existing = read_pid(supervisor_pid_path())
     if existing and existing != os.getpid() and pid_is_running(existing):
@@ -197,6 +241,12 @@ def run_supervisor(subject: str) -> None:
     stop = stop_path()
     if stop.exists():
         stop.unlink()
+
+    threading.Thread(
+        target=watch_guardian,
+        args=(subject,),
+        daemon=True,
+    ).start()
 
     while True:
         if stop_requested():
@@ -226,9 +276,10 @@ def run_supervisor(subject: str) -> None:
 def request_stop() -> None:
     stop = stop_path()
     stop.write_text("STOP", encoding="utf-8")
+    terminate_pid(read_pid(guardian_pid_path()))
     terminate_pid(read_pid(worker_pid_path()))
     terminate_pid(read_pid(supervisor_pid_path()))
-    time.sleep(0.4)
+    time.sleep(1.2)
     if stop.exists():
         stop.unlink(missing_ok=True)
 
@@ -240,6 +291,9 @@ def main() -> None:
         request_stop()
         return
     subject = detect_subject()
+    if "--guardian" in sys.argv:
+        run_guardian(subject)
+        return
     if "--worker" in sys.argv:
         run_app(subject)
         return

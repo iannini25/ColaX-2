@@ -13,17 +13,6 @@ questao matematica apresentada como imagem, mesmo quando o assunto nao estiver
 explicitamente listado neste prompt. Leia todo o enunciado, diagramas, graficos,
 tabelas, expressoes, unidades e alternativas antes de calcular.
 
-Regras criticas para acertar:
-- Copie as 5 alternativas na integra antes de calcular.
-- Em grafico de parabola, o maximo/minimo e o VERTICE. Leia x e y nas linhas da grade.
-  Nao confunda o intercepto no eixo vertical com o lucro ou valor maximo.
-  Exemplo: vertice em x=20 e y=600 significa 20 encomendas e R$ 600,00.
-- Em divisao INVERSAMENTE proporcional, os pesos sao 1/n. Nao use as faltas/pesos crus.
-  Exemplo: faltas 2, 3 e 6 e total 1200 -> pesos 1/2, 1/3 e 1/6. Quem tem 2 faltas
-  recebe 1200*(1/2)/(1/2+1/3+1/6)=600.
-- Depois do calculo, escolha a alternativa cujo texto INTEIRO bate, nao so um dos numeros.
-- O campo letra deve ser uma unica letra A, B, C, D ou E.
-
 Conteudos prioritarios da prova:
 
 1. Funcao afim ou funcao do primeiro grau
@@ -179,19 +168,36 @@ Para qualquer outra falha, use "resposta": "Err.", deixando os outros campos vaz
 Nao invente nenhum dado que nao esteja visivel.
 """
 
+studyhotkey.AI_PROMPT = """
+Voce resolve questoes academicas de Matematica a partir de uma imagem. Leia integralmente
+enunciado, expressoes, diagramas, graficos, tabelas, unidades e alternativas. Resolva
+do zero, sem confiar em opcao marcada. Identifique o que foi pedido, faca o calculo com
+unidades e sinais corretos e valide o resultado por substituicao, estimativa ou operacao
+inversa quando possivel. Compare todas as alternativas e confira negacoes e arredondamento.
+
+Retorne somente o JSON definido pelo schema, com expressao, resultado, opcoes e resposta.
+Use em expressao uma conta aritmetica final valida quando isso representar a solucao;
+liste opcoes como A=valor, B=valor etc.; resposta deve ser a letra correta. Em questao
+sem alternativas, resposta deve conter apenas o resultado. Use ERP se a imagem estiver
+ilegivel, ERQ se nao houver questao e Err. para falha tecnica.
+"""
+
 studyhotkey.AI_USER_INSTRUCTION = (
-    "Resolva a questao matematica do zero, ignore alternativas ja marcadas e leia o "
-    "grafico/tabela com calma. Retorne somente o JSON exigido. A letra final tem de "
-    "bater com o calculo e com o texto completo da alternativa."
+    "Resolva a questao matematica do zero e ignore alternativas marcadas. Retorne "
+    "somente o JSON exigido, com expressao aritmetica avaliavel, resultado, opcoes e resposta."
 )
-studyhotkey.AI_MAX_TOKENS = None
-studyhotkey.AI_MAX_COMPLETION_TOKENS = None
+studyhotkey.AI_MAX_TOKENS = 180
+studyhotkey.AI_MAX_COMPLETION_TOKENS = 800
 studyhotkey.AI_TEMPERATURE = None
 studyhotkey.SHOW_ONLY_FINAL_ANSWER = True
-studyhotkey.FALLBACK_ON_ERR = True
-studyhotkey.MODEL = os.getenv("STUDYHOTKEY_MATH_MODEL", "gpt-5.6-luna")
-studyhotkey.INPUT_COST_PER_1M = 0.20
-studyhotkey.OUTPUT_COST_PER_1M = 1.20
+studyhotkey.FALLBACK_ON_ERR = False
+studyhotkey.MODEL = os.getenv("STUDYHOTKEY_MATH_MODEL", "gpt-5.6-sol")
+studyhotkey.INPUT_COST_PER_1M = float(
+    os.getenv("STUDYHOTKEY_INPUT_COST_PER_1M", "4.00")
+)
+studyhotkey.OUTPUT_COST_PER_1M = float(
+    os.getenv("STUDYHOTKEY_OUTPUT_COST_PER_1M", "20.00")
+)
 studyhotkey.AI_RESPONSE_FORMAT = {
     "type": "json_schema",
     "json_schema": {
@@ -200,14 +206,12 @@ studyhotkey.AI_RESPONSE_FORMAT = {
         "schema": {
             "type": "object",
             "properties": {
-                "letra": {"type": "string"},
-                "alternativa": {"type": "string"},
                 "expressao": {"type": "string"},
                 "resultado": {"type": "string"},
                 "opcoes": {"type": "string"},
                 "resposta": {"type": "string"},
             },
-            "required": ["letra", "alternativa", "expressao", "resultado", "opcoes", "resposta"],
+            "required": ["expressao", "resultado", "opcoes", "resposta"],
             "additionalProperties": False,
         },
     },
@@ -309,26 +313,21 @@ def correct_numeric_option(answer: str) -> str:
             if abs(option_value - result) <= tolerance:
                 matches.append(letter)
 
-    letter = str(data.get("letra", "")).strip().upper()
-    compact_letter = re.sub(r"\s+", "", letter)
-    if re.fullmatch(r"[A-E](?:,[A-E])*", compact_letter):
-        letter_answer = compact_letter
-    elif re.fullmatch(r"[A-E](?:\s*,\s*[A-E])*", response.upper()):
-        letter_answer = response.upper()
-    else:
-        letter_answer = ""
-
-    if letter_answer:
-        return letter_answer
     if len(matches) == 1:
         return matches[0]
+
+    if options and result is not None:
+        return "Err."
+
+    if re.fullmatch(r"[A-E](?:\s*,\s*[A-E])*", response.upper()):
+        return response.upper()
     if response and len(response) <= 180:
         return response
     return ""
 
 
 studyhotkey.ANSWER_POSTPROCESSOR = correct_numeric_option
-studyhotkey.IMAGE_PREPROCESSOR = studyhotkey.neutralize_selection_marks
+studyhotkey.IMAGE_PREPROCESSOR = None
 
 
 if __name__ == "__main__":

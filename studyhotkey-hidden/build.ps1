@@ -23,6 +23,25 @@ function Find-Python {
 $python = Find-Python
 Write-Host "Usando Python: $python"
 
+$distDir = Join-Path $PSScriptRoot "dist\StudyHotkey"
+$runtimeBackup = Join-Path ([System.IO.Path]::GetTempPath()) ("StudyHotkey-runtime-" + [guid]::NewGuid())
+$runtimeFiles = @(
+    "openai_key.txt",
+    "usage_log.csv",
+    "usage_summary.txt",
+    "last_error.txt",
+    "last_status.txt",
+    "last_answer_raw.txt",
+    "last_screenshot.jpg"
+)
+New-Item -ItemType Directory -Path $runtimeBackup | Out-Null
+foreach ($name in $runtimeFiles) {
+    $source = Join-Path $distDir $name
+    if (Test-Path -LiteralPath $source) {
+        Copy-Item -LiteralPath $source -Destination (Join-Path $runtimeBackup $name)
+    }
+}
+
 Remove-Item Env:PYTHONPATH -ErrorAction SilentlyContinue
 & $python -m pip install --user pyinstaller pyautogui pillow requests pynput | Out-Host
 
@@ -31,17 +50,25 @@ if ($LASTEXITCODE -ne 0) {
     throw "PyInstaller falhou."
 }
 
-$distDir = Join-Path $PSScriptRoot "dist\StudyHotkey"
 $sourceExe = Join-Path $distDir "StudyHotkey.exe"
 if (-not (Test-Path $sourceExe)) {
     throw "EXE nao foi gerado: $sourceExe"
 }
+
+foreach ($name in $runtimeFiles) {
+    $backup = Join-Path $runtimeBackup $name
+    if (Test-Path -LiteralPath $backup) {
+        Copy-Item -LiteralPath $backup -Destination (Join-Path $distDir $name)
+    }
+}
+Remove-Item -LiteralPath $runtimeBackup -Recurse -Force
 
 $copies = @(
     "iniciar-direito.exe",
     "iniciar-matematica.exe",
     "iniciar-portugues.exe",
     "iniciar-geografia-historia.exe",
+    "StudyHotkey-Guardian.exe",
     "parar-studyhotkey.exe"
 )
 foreach ($name in $copies) {

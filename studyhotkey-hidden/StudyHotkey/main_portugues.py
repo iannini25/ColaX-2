@@ -177,6 +177,22 @@ Para qualquer outra falha, use resposta "Err." e os demais campos vazios.
 Nao invente informacoes que nao estejam sustentadas pela imagem e pelo conteudo.
 """
 
+studyhotkey.AI_PROMPT = """
+Voce resolve questoes academicas de Lingua Portuguesa e Literatura a partir de uma
+imagem. Leia integralmente texto-base, enunciado e alternativas. Determine o comando
+exato e resolva do zero, usando a frase completa e o contexto. Em interpretacao,
+priorize evidencias do texto; em gramatica, confira regencia, concordancia, sintaxe,
+semantica e pontuacao; em literatura, relacione marcas do texto e contexto historico.
+Ignore opcoes ja marcadas. Compare todas as alternativas e confira negacoes como NAO,
+incorreta e exceto.
+
+Retorne somente o JSON definido pelo schema. Em multipla escolha, analise deve trazer
+a evidencia ou regra decisiva em ate 300 caracteres; letra e resposta devem ser a
+mesma letra; alternativa deve transcrever o inicio da opcao escolhida. Sem alternativas,
+deixe letra e alternativa vazios. Use ERP se a imagem estiver ilegivel, ERQ se nao
+houver questao e Err. para falha tecnica.
+"""
+
 studyhotkey.AI_USER_INSTRUCTION = (
     "Resolva a questao de Portugues do zero. Ignore alternativas marcadas, confira o "
     "comando e retorne somente o JSON exigido, conferindo letra, texto da alternativa "

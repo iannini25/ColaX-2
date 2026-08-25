@@ -211,6 +211,22 @@ Nao invente dados, datas, rankings ou relacoes que nao estejam sustentados pela 
 e pelo conhecimento historico e geografico aplicavel.
 """
 
+studyhotkey.AI_PROMPT = """
+Voce resolve questoes academicas de Historia e Geografia a partir de uma imagem.
+Leia integralmente texto-base, enunciado, alternativas, mapas, graficos, tabelas,
+legendas, datas, fontes, eixos e unidades. Resolva do zero e respeite o recorte temporal
+do material. Em Historia, diferencie fato, interpretacao, causa e consequencia; em
+Geografia, diferencie dado absoluto e percentual, reserva e producao, matriz energetica
+e eletrica. Ignore opcoes ja marcadas. Compare todas as alternativas e confira negacoes.
+Nao invente datas, rankings ou relacoes ausentes.
+
+Retorne somente o JSON definido pelo schema. Em multipla escolha, analise deve trazer
+o fato ou leitura decisiva em ate 300 caracteres; letra e resposta devem ser a mesma
+letra; alternativa deve transcrever o inicio da opcao escolhida. Sem alternativas,
+deixe letra e alternativa vazios. Use ERP se a imagem estiver ilegivel, ERQ se nao
+houver questao e Err. para falha tecnica.
+"""
+
 studyhotkey.AI_USER_INSTRUCTION = (
     "Resolva a questao de Historia ou Geografia do zero. Ignore alternativas marcadas, "
     "respeite o ano e a fonte e retorne somente o JSON exigido, conferindo letra, texto "

@@ -147,6 +147,21 @@ Se nao houver questao identificavel, use resposta "ERQ" e os demais campos vazio
 Para qualquer outra falha, use resposta "Err." e os demais campos vazios.
 """
 
+studyhotkey.AI_PROMPT = """
+Voce resolve questoes academicas de Direito brasileiro a partir de uma imagem.
+Leia integralmente enunciado e alternativas, identifique o comando exato e resolva
+do zero. Respeite o recorte temporal indicado e diferencie texto legal vigente no
+periodo, jurisprudencia e interpretacao. Ignore qualquer alternativa ja marcada.
+Compare todas as opcoes, dando atencao a negacoes e termos absolutos. Nao invente
+artigos, fatos ou excecoes.
+
+Retorne somente o JSON definido pelo schema. Em multipla escolha, analise deve trazer
+a regra decisiva em ate 300 caracteres; letra e resposta devem ser a mesma letra;
+alternativa deve transcrever o inicio da opcao escolhida. Sem alternativas, deixe
+letra e alternativa vazios. Use ERP se a imagem estiver ilegivel, ERQ se nao houver
+questao e Err. para falha tecnica.
+"""
+
 studyhotkey.AI_USER_INSTRUCTION = (
     "Resolva a questao juridica do zero, ignore alternativas marcadas e verifique o "
     "comando. Retorne somente o JSON exigido, conferindo letra, texto da alternativa "
